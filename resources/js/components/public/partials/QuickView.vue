@@ -1,203 +1,260 @@
 <template>
-    <div>
-     <loading :active.sync="isLoading"
-
-        :is-full-page="fullPage"></loading>
-      <div  v-if="quick_view_modal" style="display:block;" class="modal modal_overlay" >
-        <div class="modal-dialog modal-xl" >
-          <div class="row">
-            <div class="col-md-10 col-sm-12">
-               <div class="modal-content">
-
-             <div v-if="quick_loading" class="animator  text-center">
-               <i  class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
-               <span class="sr-only">Loading...</span>
+  <div>
+    <loading :active.sync="isLoading" :is-full-page="fullPage"></loading>
+    <div
+      v-if="quick_view_modal"
+      style="display:block;"
+      class="modal modal_overlay"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="row">
+          <div class="col-md-10 col-sm-12">
+            <div class="modal-content">
+              <div v-if="quick_loading" class="animator  text-center">
+                <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+                <span class="sr-only">Loading...</span>
               </div>
 
               <div v-else class="quick_content">
-                  <div class="modal-header">
-                    <h2 class="modal-title">Quick View</h2>
-                    <button type="button " class="close close_sign" data-dismiss="modal" @click="closeModal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
+                <div class="modal-header">
+                  <h2 class="modal-title">Quick View</h2>
+                  <button
+                    type="button "
+                    class="close close_sign"
+                    data-dismiss="modal"
+                    @click="closeModal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                      <img
+                        class="quick_view_image"
+                        :src="base_url + quick_view_product.thumbnail_img"
+                        alt=""
+                      />
+                      <div class="preview_img_box_container">
+                        <div class="__preview_image_box">
+                          <!-- <img src="" class="__preview_img" /> -->
+                          <img
+                            class="img-fluid"
+                            src="/storage/images/products/1qhNboF9Lwq4CESKKSsxzULeW4aVWtyMOzFZv94n.jpg"
+                            width="100%"
+                          />
+                        </div>
+                      </div>
                     </div>
-                  <div class="modal-body">
 
-                    <div class="row">
-                      <div class="col-md-4 col-sm-12">
-                          <img class="quick_view_image"  :src="base_url+quick_view_product.thumbnail_img" alt="">
-                      </div>
-
-                       <div class="col-md-4 col-sm-12">
-
+                    <div class="col-md-4 col-sm-12">
                       <ul class="list-unstyled description">
+                        <li>
+                          <h3 class="single_p_name">
+                            {{ quick_view_product.name }}
+                          </h3>
+                        </li>
 
-                  <li>
-
-                    <h3 class="single_p_name" >{{ quick_view_product.name }}</h3>
-
-                  </li>
-
-                   <li>
-                      <div class="s_price_container_1">
-                            <div v-if="quick_view_product.discount" class="s_price_container_2">
-                                <p>
-                                    &#2547;{{quick_view_product.sale_price}} 
-                                </p>
+                        <li>
+                          <div class="s_price_container_1">
+                            <div
+                              v-if="quick_view_product.discount"
+                              class="s_price_container_2"
+                            >
+                              <p>&#2547;{{ quick_view_product.sale_price }}</p>
                             </div>
-                            <p>
-                                &#2547;{{quick_view_product.price}}
-                            </p>
-                      </div>
-
-                    </li>
-                            
-                    </ul>
-                        <div id="product">
-                          <div class="col-lg-12 col-md-12 col-xs-12" v-if="quick_view_product.product_variant.length>0 && quick_view_product.product_attribute">
-                            <div class="ps-product__variations">
-                                <div class="pr_switch_wrap">
-                                    <div class="product-attributes">
-                                      <hr>
-                                      <div v-if="quick_view_product.product_attribute.attribute.name.toLowerCase()=='size'" class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
-                                          data-type="text">
-                                          <label class="attribute-name">Size:</label>
-                                          <div class="attribute-values">
-                                              <ul class="text-swatch attribute-swatch color-swatch">
-                                                <li v-for="(variant,index) in quick_view_product.product_variant" :key="index"
-                                                    class="attribute-swatch-item pe-none">
-                                                    <div>
-                                                        <label>
-                                                            <input class="product-filter-item variant_size"
-                                                                type="radio" v-model="cart.variant_id" name="size"
-                                                                :value="variant.variant.id" >
-                                                            <span>{{ variant.variant.name }}</span>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                              </ul>
-                                          </div>
-                                      </div>
-                                      <hr>
-
-                                      <div v-if="quick_view_product.product_attribute.attribute.name.toLowerCase()=='size'" class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
-                                          data-type="text">
-                                          <label class="attribute-name">Color:</label>
-                                          <div class="attribute-values">
-                                              <ul class="text-swatch attribute-swatch color-swatch">
-                                                <li v-for="(variant,index) in quick_view_product.product_variant" :key="index"
-                                                    class="attribute-swatch-item pe-none">
-                                                    <div>
-                                                        <label>
-                                                            <input class="variant_color"
-                                                                type="radio" v-model="cart.variant_id" name="size"
-                                                                :value="variant.variant.id" >
-                                                            <span>{{ variant.variant.name }}</span>
-                                                        </label>
-                                                    </div>
-                                                </li>
-                                              </ul>
-                                          </div>
-                                      </div>
-                                      <hr>
-                                    </div>
-                                </div>
-                            </div>
+                            <p>&#2547;{{ quick_view_product.price }}</p>
                           </div>
-                          <div class="row">
-                            <div class="col-lg-12 col-md-12 col-xs-12">
-                              <div class="qty_container">
-                                  <div @click="decrementQty" class="">
-                                  <i  class="fa fa-minus"></i>
-                                </div>
-
-                                    <input
-                                    type="text"
-                                    name="quantity"
-                                    v-model="cart.quantity"
-                                    value="1"
-                                    class="form-control input_qty"
-                                    @change="validation"
-                                    @keyup="validation"
-                                  />
-                                <div @click="incrementQty" class="">
-                                  <i  class="fa fa-plus"></i>
-                                </div>
-                                
-
-                                <div class="col-lg-5 col-md-5 col-xs-6">
-                                  <button
-                                    @click.prevent="CartToAdd"
-                                    type="button"
-                                    class="btn btn-sm btn-block btn_buy_cart"
+                        </li>
+                      </ul>
+                      <div id="product">
+                        <div
+                          class="col-lg-12 col-md-12 col-xs-12"
+                          v-if="
+                            quick_view_product.product_variant.length > 0 &&
+                              quick_view_product.product_attribute
+                          "
+                        >
+                          <div class="ps-product__variations">
+                            <div class="pr_switch_wrap">
+                              <div class="product-attributes">
+                                <hr />
+                                <div
+                                  v-if="
+                                    quick_view_product.product_attribute.attribute.name.toLowerCase() ==
+                                      'size'
+                                  "
+                                  class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
+                                  data-type="text"
+                                >
+                                  <label class="attribute-name">Size:</label>
+                                  <div class="attribute-values">
+                                    <ul
+                                      class="text-swatch attribute-swatch color-swatch"
                                     >
-                                  <span>ADD TO CART</span>
-                                  </button>
+                                      <li
+                                        v-for="(variant,
+                                        index) in quick_view_product.product_variant"
+                                        :key="index"
+                                        class="attribute-swatch-item pe-none"
+                                      >
+                                        <div>
+                                          <label>
+                                            <input
+                                              class="product-filter-item variant_size"
+                                              type="radio"
+                                              v-model="cart.variant_id"
+                                              name="size"
+                                              :value="variant.variant.id"
+                                            />
+                                            <span>{{
+                                              variant.variant.name
+                                            }}</span>
+                                          </label>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
                                 </div>
+                                <hr />
 
-                                <div class="col-lg-5 col-md-5 col-xs-6">
-                                  <button
-                                    @click.prevent="buyNow"
-                                    type="button"
-                                  
-                                    class="btn  btn-sm btn_buy_cart"
-                                    >BUY NOW</button>
+                                <div
+                                  v-if="
+                                    quick_view_product.product_attribute.attribute.name.toLowerCase() ==
+                                      'size'
+                                  "
+                                  class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
+                                  data-type="text"
+                                >
+                                  <label class="attribute-name">Color:</label>
+                                  <div class="attribute-values">
+                                    <input
+                                      type="radio"
+                                      name="gender"
+                                      class="color_att"
+                                      value="male"
+                                    />
+                                  </div>
                                 </div>
-                                <div class="col-lg-5 col-md-5">
-
-
-                            </div>
+                                <hr />
                               </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-xs-12">
-                              <div class="add_wishlist">
-                                  <a><i class="fa fa-heart fa-2x" style="color: #CC8E46"></i><sup><i class="fa fa-plus fa-sm"></i></sup> <span style="margin-left:10px; color: #C9C9C9">ADD TO WISHLIST</span></a>
-                              </div>
-                            </div>
-
-
-                            <div class="col-lg-12 col-md-12 col-xs-12">
-                              <div class="call-us">
-                                  <img class="img-fluid" src="/storage/images/call_us/call_us.png" width="100%" height="50px;">
-                              </div>
-                            </div>
-
-
-                            <div class="col-lg-12 col-md-12 col-xs-12">
-                              <div class="share_to">
-                                <h4 style="float: left">Share to: </h4>
-                                <div class="share_to_icon">
-                                  <i class="fa fa-facebook-square" aria-hidden="true"></i> 
-                                  <i class="fa fa-pinterest-square" aria-hidden="true"></i>
-                                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                  <i class="fa-facebook-messenger"></i>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-12 col-md-12 col-xs-12">
-                              <button class="btn btn-warning" type="submit">View Full Product Details >></button>
                             </div>
                           </div>
                         </div>
-                       </div>
+                        <div class="row">
+                          <div class="col-lg-12 col-md-12 col-xs-12">
+                            <div class="qty_container">
+                              <div @click="decrementQty" class="">
+                                <i class="fa fa-minus"></i>
+                              </div>
+
+                              <input
+                                type="text"
+                                name="quantity"
+                                v-model="cart.quantity"
+                                value="1"
+                                class="form-control input_qty"
+                                @change="validation"
+                                @keyup="validation"
+                              />
+                              <div @click="incrementQty" class="">
+                                <i class="fa fa-plus"></i>
+                              </div>
+
+                              <div class="col-lg-5 col-md-5 col-xs-6">
+                                <button
+                                  @click.prevent="CartToAdd"
+                                  type="button"
+                                  class="btn btn-sm btn-block btn_buy_cart"
+                                >
+                                  <span>ADD TO CART</span>
+                                </button>
+                              </div>
+
+                              <div class="col-lg-5 col-md-5 col-xs-6">
+                                <button
+                                  @click.prevent="buyNow"
+                                  type="button"
+                                  class="btn  btn-sm btn_buy_cart"
+                                >
+                                  BUY NOW
+                                </button>
+                              </div>
+                              <div class="col-lg-5 col-md-5"></div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-xs-12">
+                            <div class="add_wishlist">
+                              <a
+                                ><i
+                                  class="fa fa-heart fa-2x"
+                                  style="color: #CC8E46"
+                                ></i
+                                ><sup><i class="fa fa-plus fa-sm"></i></sup>
+                                <span style="margin-left:10px; color: #C9C9C9"
+                                  >ADD TO WISHLIST</span
+                                ></a
+                              >
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12 col-md-12 col-xs-12">
+                            <div class="call-us">
+                              <img
+                                class="img-fluid"
+                                src="/storage/images/call_us/call_us.png"
+                                width="100%"
+                                height="50px;"
+                              />
+                            </div>
+                          </div>
+
+                          <div class="col-lg-12 col-md-12 col-xs-12">
+                            <div class="share_to">
+                              <h4 style="float: left">Share to:</h4>
+                              <div class="share_to_icon">
+                                <i
+                                  class="fa fa-facebook-square"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-pinterest-square"
+                                  aria-hidden="true"
+                                ></i>
+                                <i
+                                  class="fa fa-whatsapp"
+                                  aria-hidden="true"
+                                ></i>
+                                <i class="fa-facebook-messenger"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-12 col-md-12 col-xs-12">
+                            <button class="btn btn-warning" type="submit">
+                              View Full Product Details >>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-               </div>
+                </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
+  </div>
 </template>
 
 <script>
-import Loading from 'vue-loading-overlay';
-import Swal from 'sweetalert2' ;
-import 'vue-loading-overlay/dist/vue-loading.css';
+import Loading from "vue-loading-overlay";
+import Swal from "sweetalert2";
+import "vue-loading-overlay/dist/vue-loading.css";
 export default {
-  name:"quick_view_modal",
+  name: "quick_view_modal",
   created() {
     this.productQuickView();
   },
@@ -219,14 +276,13 @@ export default {
       },
       quick_view_product: "",
       quick_view_modal: false,
-      recommended_products:"",
+      recommended_products: "",
       isLoading: true,
-     fullPage: true
+      fullPage: true,
     };
   },
 
   methods: {
-
     productQuickView() {
       this.$Progress.start();
       axios
@@ -234,22 +290,22 @@ export default {
           "/_public/api/get/single/prodocut/for/quick/view/" + this.quick_v_p_id
         )
         .then((resp) => {
-         this.$Progress.finish();
-         this.isLoading=false;
-           console.log(resp);
+          this.$Progress.finish();
+          this.isLoading = false;
+          console.log(resp);
           if (resp.data.status == "OK") {
             this.quick_view_product = resp.data.product;
-            this.recommended_products=resp.data.recommended_products;
+            this.recommended_products = resp.data.recommended_products;
             this.quick_view_modal = true;
             this.quick_loading = false;
           }
         });
     },
 
-    recommended_replace(index){
-      this.$Progress.start()
-      this.quick_view_product=this.recommended_products[index];
-      console.log(this.recommended_products[index])
+    recommended_replace(index) {
+      this.$Progress.start();
+      this.quick_view_product = this.recommended_products[index];
+      console.log(this.recommended_products[index]);
       this.$Progress.finish();
     },
 
@@ -259,17 +315,19 @@ export default {
     },
 
     CartToAdd() {
-      if (this.quick_view_product.product_variant.length > 0 ) {
-         this.cart.attrribute_id = this.quick_view_product.product_attribute.attribute.id ;
+      if (this.quick_view_product.product_variant.length > 0) {
+        this.cart.attrribute_id = this.quick_view_product.product_attribute.attribute.id;
         if (this.cart.variant_id < 1) {
-                Swal.fire({
-                position: 'top-center',
-                icon: 'error',
-                title: 'please,select product '+this.quick_view_product.product_attribute.attribute.name,
-                showConfirmButton: false,
-                timer: 1500
-              })
-            return ;
+          Swal.fire({
+            position: "top-center",
+            icon: "error",
+            title:
+              "please,select product " +
+              this.quick_view_product.product_attribute.attribute.name,
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          return;
         }
       }
       axios
@@ -297,8 +355,7 @@ export default {
               duration: 1000,
             });
           }
-        })
-
+        });
     },
     validation() {
       if (this.cart.quantity < 1) {
@@ -327,17 +384,16 @@ export default {
       this.cart.variant_id = variant_id;
       this.validation();
     },
-
   },
-  components:{
-    Loading
-  }
+  components: {
+    Loading,
+  },
 };
 </script>
 
 <style scoped>
-.modal_overlay{
-      background: #00000073;
+.modal_overlay {
+  background: #00000073;
 }
 .quick_view_image {
   width: 250px !important;
@@ -346,7 +402,7 @@ export default {
 
 .close_sign {
   font-size: 40px !important;
-  margin-top: -19px !important;
+  margin-top: -45px !important;
   color: red !important;
 }
 
@@ -367,48 +423,46 @@ export default {
   width: 90% !important;
   position: absolute;
   left: 10%;
-  transition: .3s;
+  transition: 0.3s;
 }
 
-.quick_content{
+.quick_content {
   background: #fff;
 }
 
-.quick_description{
-    font-size: 14px;
-    height: 250px;
-    overflow-y: auto;
+.quick_description {
+  font-size: 14px;
+  height: 250px;
+  overflow-y: auto;
 }
 
-
-.r_p_title{
-  font-size: 12px ;
+.r_p_title {
+  font-size: 12px;
 }
 
 .r_p_image {
-   width:110px;
-   height:100px;
-   border-radius: 5px;
+  width: 110px;
+  height: 100px;
+  border-radius: 5px;
 }
 
 .r_p_button {
-    margin-left: 35px;
-    border-radius: 5px;
+  margin-left: 35px;
+  border-radius: 5px;
 }
 
 .r_p_button:hover {
-    border-radius: 50px;
-    background: #db3700;
+  border-radius: 50px;
+  background: #db3700;
 }
 .related_quick_row[data-v-587a0637] {
-    margin: 5px;
-    max-height: 180px;
-    overflow-y: scroll;
+  margin: 5px;
+  max-height: 180px;
+  overflow-y: scroll;
 }
 .r_quick_body {
-    padding: 15px 10px;
+  padding: 15px 10px;
 }
-
 
 @media screen and (max-width: 350px) {
   .related_quick_row {
@@ -461,7 +515,7 @@ export default {
   .quick_description {
     font-size: 14px;
     line-height: 15px;
-    margin-left:-30px;
+    margin-left: -30px;
   }
 
   .animator {
@@ -499,6 +553,6 @@ export default {
   }
 }
 .col-md-2 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 }
 </style>

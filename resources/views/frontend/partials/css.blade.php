@@ -1302,11 +1302,7 @@ span.price-old {
   margin-top: -19px !important;
   color: var(--primary-color) !important;
 }
- .close_sign {
-  font-size: 40px !important;
-  margin-top: -19px !important;
- color: black !important;
-}
+ 
 
 #_qvm .animator {
   margin-top: 100px;
@@ -2592,7 +2588,6 @@ span.price-old {
     font-weight: bold;
     height: 36px !important;
     width: 32px !important;
-    border: none;
     margin-top: -7px;
 }
 
@@ -2623,6 +2618,7 @@ span.price-old {
         margin-left: 20px;
         font-family: sans-serif;
         background: #CC8D46;
+        width: auto;
     }
 
      .btn_buy_cart:hover {
@@ -3080,6 +3076,7 @@ span.price-old {
             margin-top: 20px;
             font-size: 14px;
             margin-bottom: 25px;
+            
         }
 
 
@@ -5097,5 +5094,15 @@ input[data-v-c157765e] {
     color: #848383;
     font-family: 'Montserrat-Regular';
     font-size: 17px;
+}
+
+
+.close{
+    font-size: 40px !important;
+    margin-top: -42px !important;
+    color: green !important;
+}
+.color_att{
+    font-size: 12px;
 }
 </style>

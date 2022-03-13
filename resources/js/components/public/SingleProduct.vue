@@ -1,205 +1,227 @@
 <template>
   <div class="wrapper-wide">
-    <loading :active.sync="isLoading" :can-cancel="true" :is-full-page="fullPage"></loading>
+    <loading
+      :active.sync="isLoading"
+      :can-cancel="true"
+      :is-full-page="fullPage"
+    ></loading>
     <frontend-header></frontend-header>
     <div id="container" v-if="!isLoading">
       <div class="container">
-       <div class="single-product-box" >
+        <div class="single-product-box">
           <div class="row">
-
             <div class="col-lg-5 col-md-5 col-xs-12">
-
-                <div class="single_product_img_container"  >
-
-                  <image-zoom v-if="zooming_img.length"
-                    :regular="zooming_img"
-                    img-class="single_product_image"
-                    >
-                  </image-zoom>
-                  </div>
+              <div class="single_product_img_container">
+                <image-zoom
+                  v-if="zooming_img.length"
+                  :regular="zooming_img"
+                  img-class="single_product_image"
+                >
+                </image-zoom>
+              </div>
 
               <div class="preview_img_box_container">
-               <div v-for="(image,index) in product_images" :key="index" :class="{__active_border :index==0}" class="__preview_image_box">
-                  <img    @click="displayeImageFromBox"
-                          class="__preview_img"
-                          :src="base_url+image.product_image"
-                    />
+                <div
+                  v-for="(image, index) in product_images"
+                  :key="index"
+                  :class="{ __active_border: index == 0 }"
+                  class="__preview_image_box"
+                >
+                  <img
+                    @click="displayeImageFromBox"
+                    class="__preview_img"
+                    :src="base_url + image.product_image"
+                  />
+                </div>
               </div>
-             </div>
-
             </div>
 
             <div class="col-lg-4 col-md-4 col-xs-12">
-               <ul class="list-unstyled description">
+              <ul class="list-unstyled description">
+                <li>
+                  <h3 class="single_p_name">{{ product.name }}</h3>
+                </li>
 
-                  <li>
+                <li>
+                  <div class="s_price_container_1">
+                    <div v-if="product.discount" class="s_price_container_2">
+                      <p>&#2547;{{ product.sale_price }}</p>
+                    </div>
+                    <p>&#2547;{{ product.price }}</p>
+                  </div>
 
-                    <h3 class="single_p_name" >{{ product.name }}</h3>
-
-                  </li>
-
-                   <li>
-                      <div class="s_price_container_1">
-                            <div v-if="product.discount" class="s_price_container_2">
-                                <p>
-                                    &#2547;{{product.sale_price}} 
-                                </p>
-                            </div>
-                            <p>
-                                &#2547;{{product.price}}
-                            </p>
-                      </div>
-                      
-
-                         <!-- <div v-if="product.discount" class="s_price_container_3">
+                  <!-- <div v-if="product.discount" class="s_price_container_3">
                            <h4> You Save : </h4>
                               <p>
                                 {{ ((product.discount/product.sale_price)*100).toFixed(0) }}% <span>off</span>
                               </p>
                         </div> -->
+                </li>
 
-                    </li>
-
-                    <!-- <li>
+                <!-- <li>
                       <h4 class="single_p_code">
                          Code: <span class="p_code"> {{ product.product_code }} </span>
                       </h4>
                     </li> -->
+              </ul>
 
-                  </ul>
-
-                  <div id="product">
-                    <div class="row">
-
-                      <div class="col-lg-12 col-md-12 col-xs-12" v-if="product.product_variant.length>0 && product.product_attribute">
-
-                        <div class="ps-product__variations">
-                            <div class="pr_switch_wrap">
-                                <div class="product-attributes">
-                                  <hr>
-                                  <div v-if="product.product_attribute.attribute.name.toLowerCase()=='size'" class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
-                                      data-type="text">
-                                      <label class="attribute-name">Size:</label>
-                                      <div class="attribute-values">
-                                          <ul class="text-swatch attribute-swatch color-swatch">
-                                            <li v-for="(variant,index) in product.product_variant" :key="index"
-                                                class="attribute-swatch-item pe-none">
-                                                <div>
-                                                    <label>
-                                                        <input class="product-filter-item variant_size"
-                                                            type="radio" v-model="cart.variant_id" name="size"
-                                                            :value="variant.variant.id" >
-                                                        <span>{{ variant.variant.name }}</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                          </ul>
-                                      </div>
+              <div id="product">
+                <div class="row">
+                  <div
+                    class="col-lg-12 col-md-12 col-xs-12"
+                    v-if="
+                      product.product_variant.length > 0 &&
+                        product.product_attribute
+                    "
+                  >
+                    <div class="ps-product__variations">
+                      <div class="pr_switch_wrap">
+                        <div class="product-attributes">
+                          <hr />
+                          <div
+                            v-if="
+                              product.product_attribute.attribute.name.toLowerCase() ==
+                                'size'
+                            "
+                            class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
+                            data-type="text"
+                          >
+                            <label class="attribute-name">Size:</label>
+                            <div class="attribute-values">
+                              <ul
+                                class="text-swatch attribute-swatch color-swatch"
+                              >
+                                <li
+                                  v-for="(variant,
+                                  index) in product.product_variant"
+                                  :key="index"
+                                  class="attribute-swatch-item pe-none"
+                                >
+                                  <div>
+                                    <label>
+                                      <input
+                                        class="product-filter-item variant_size"
+                                        type="radio"
+                                        v-model="cart.variant_id"
+                                        name="size"
+                                        :value="variant.variant.id"
+                                      />
+                                      <span>{{ variant.variant.name }}</span>
+                                    </label>
                                   </div>
-                                  <hr>
-
-                                  <div v-if="product.product_attribute.attribute.name.toLowerCase()=='size'" class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
-                                      data-type="text">
-                                      <label class="attribute-name">Color:</label>
-                                      <div class="attribute-values">
-                                          <ul class="text-swatch attribute-swatch color-swatch">
-                                            <li v-for="(variant,index) in product.product_variant" :key="index"
-                                                class="attribute-swatch-item pe-none">
-                                                <div>
-                                                    <label>
-                                                        <input class="variant_color"
-                                                            type="radio" v-model="cart.variant_id" name="size"
-                                                            :value="variant.variant.id" >
-                                                        <span>{{ variant.variant.name }}</span>
-                                                    </label>
-                                                </div>
-                                            </li>
-                                          </ul>
-                                      </div>
-                                  </div>
-                                  <hr>
-                                </div>
+                                </li>
+                              </ul>
                             </div>
+                          </div>
+                          <hr />
+
+                          <div
+                            v-if="
+                              product.product_attribute.attribute.name.toLowerCase() ==
+                                'size'
+                            "
+                            class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
+                            data-type="text"
+                          >
+                            <label class="attribute-name">Color:</label>
+                            <div class="attribute-values">
+                              <input
+                                type="radio"
+                                name="gender"
+                                class="color_att"
+                                value="male"
+                              />
+                            </div>
+                          </div>
+                          <hr />
                         </div>
-
-
                       </div>
-                       <div class="col-lg-12 col-md-12 col-xs-12">
-                        <div class="qty_container">
-                          <!-- <h4 >
+                    </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="qty_container">
+                      <!-- <h4 >
                             Quantity:
                           </h4> -->
-                            <div @click="decrementQty" class="">
-                             <i  class="fa fa-minus"></i>
-                          </div>
-
-                              <input
-                              type="text"
-                              name="quantity"
-                              v-model="cart.quantity"
-                              value="1"
-                              class="form-control input_qty"
-                              @change="validation"
-                              @keyup="validation"
-                            />
-                           <div @click="incrementQty" class="">
-                             <i  class="fa fa-plus"></i>
-                          </div>
-                          
-
-                          <div class="col-lg-5 col-md-5 col-xs-6">
-                            <button
-                              @click.prevent="CartToAdd"
-                              type="button"
-                              class="btn btn-sm btn-block btn_buy_cart"
-                              >
-                            <span>ADD TO CART</span>
-                            </button>
-                          </div>
-
-                          <div class="col-lg-5 col-md-5 col-xs-6">
-                            <button
-                              @click.prevent="buyNow"
-                              type="button"
-                             
-                              class="btn  btn-sm btn_buy_cart"
-                              >BUY NOW</button>
-                          </div>
-                          <div class="col-lg-5 col-md-5">
-
-
-                      </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-12 col-md-12 col-xs-12">
-                        <div class="add_wishlist">
-                            <a><i class="fa fa-heart fa-2x" style="color: #CC8E46"></i><sup><i class="fa fa-plus fa-sm"></i></sup> <span style="margin-left:10px; color: #C9C9C9">ADD TO WISHLIST</span></a>
-                        </div>
+                      <div @click="decrementQty" class="">
+                        <i class="fa fa-minus"></i>
                       </div>
 
-
-                       <div class="col-lg-12 col-md-12 col-xs-12">
-                        <div class="call-us">
-                            <img class="img-fluid" src="/storage/images/call_us/call_us.png" width="100%" height="50px;">
-                        </div>
+                      <input
+                        type="text"
+                        name="quantity"
+                        v-model="cart.quantity"
+                        value="1"
+                        class="form-control input_qty"
+                        @change="validation"
+                        @keyup="validation"
+                      />
+                      <div @click="incrementQty" class="">
+                        <i class="fa fa-plus"></i>
                       </div>
 
-
-                      <div class="col-lg-12 col-md-12 col-xs-12">
-                        <div class="share_to">
-                          <h4 style="float: left">Share to: </h4>
-                          <div class="share_to_icon">
-                            <i class="fa fa-facebook-square" aria-hidden="true"></i> 
-                            <i class="fa fa-pinterest-square" aria-hidden="true"></i>
-                            <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                            <i class="fa-facebook-messenger"></i>
-                          </div>
-                        </div>
+                      <div class="col-lg-5 col-md-5 col-xs-6">
+                        <button
+                          @click.prevent="CartToAdd"
+                          type="button"
+                          class="btn btn-sm btn-block btn_buy_cart"
+                        >
+                          <span>ADD TO CART</span>
+                        </button>
                       </div>
 
+                      <div class="col-lg-5 col-md-5 col-xs-6">
+                        <button
+                          @click.prevent="buyNow"
+                          type="button"
+                          class="btn  btn-sm btn_buy_cart"
+                        >
+                          BUY NOW
+                        </button>
+                      </div>
+                      <div class="col-lg-5 col-md-5"></div>
                     </div>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="add_wishlist">
+                      <a
+                        ><i class="fa fa-heart fa-2x" style="color: #CC8E46"></i
+                        ><sup><i class="fa fa-plus fa-sm"></i></sup>
+                        <span style="margin-left:10px; color: #C9C9C9"
+                          >ADD TO WISHLIST</span
+                        ></a
+                      >
+                    </div>
+                  </div>
 
-                    <!-- <div v-if="product.stock > 0" class="row">
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="call-us">
+                      <img
+                        class="img-fluid"
+                        src="/storage/images/call_us/call_us.png"
+                        width="100%"
+                        height="50px;"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-12 col-md-12 col-xs-12">
+                    <div class="share_to">
+                      <h4 style="float: left">Share to:</h4>
+                      <div class="share_to_icon">
+                        <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                        <i
+                          class="fa fa-pinterest-square"
+                          aria-hidden="true"
+                        ></i>
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                        <i class="fa-facebook-messenger"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div v-if="product.stock > 0" class="row">
 
                       <div class="col-lg-5 col-md-5 col-xs-6">
                         <button
@@ -226,7 +248,7 @@
                     </div>
                     </div> -->
 
-                    <!-- <div  class="row">
+                <!-- <div  class="row">
 
                       <div class="col-lg-5 col-md-5">
                         <button
@@ -243,71 +265,109 @@
 
                       </div>
                     </div> -->
-
-                  </div>
+              </div>
             </div>
-
-         </div>
+          </div>
         </div>
 
-          <div class="product-details-tabe">
-               <ul class="details-tab-menu-list">
-                    <li class="details-tab-menu-item"  @click="tab_content=1" :class="{'tab-menu-item-active':tab_content==1}">Description</li>
-                    <li class="details-tab-menu-item" @click="tab_content=2" :class="{'tab-menu-item-active':tab_content==2}" >How To Buy</li>
-                    <li class="details-tab-menu-item"  @click="tab_content=3" :class="{'tab-menu-item-active':tab_content==3}">Return Policy</li>
-                 </ul>
-              <div class="product-tab-content">
-                <div v-html="product.details" class="product-details" :class="{block:tab_content==1}"></div>
-                <div class="how-to-buy" :class="{block:tab_content==2}">
-                  <ul>
-                    <li class="h-b-li">Select number of product you want to buy.</li>
-                    <li class="h-b-li">Click <strong>Add To Cart</strong> Button</li>
-                    <li class="h-b-li">Then go to checkout page</li>
-                    <li class="h-b-li">If you are a new user, please click on Sign Up.provide us uour valid inormation information.</li>
-                    <li class="h-b-li">Complete your checkout, we received your order, and for order confirmation or customer service contact with you</li>
-                  </ul>
-                </div>
-                 <div class="how-to-buy"  :class="{block:tab_content==3}">
-                  <ul>
-                    <li class="h-b-li">If your product is damaged, defective, incorrect or incomplete at the time of delivery, please file a return request on call to customer care support number within 3 days of the delivery date</li>
-                    <li class="h-b-li">Change of mind is not applicable as a Return Reason for this product</li>
-
-                  </ul>
-                </div>
-
-              </div>
-              </div>
-
-          <div class="row">
-            <h3 class="related_p_heading" >Related Products</h3>
-            <br>
-            <hr>
-            <div class="line"></div>
+        <div class="product-details-tabe">
+          <ul class="details-tab-menu-list">
+            <li
+              class="details-tab-menu-item"
+              @click="tab_content = 1"
+              :class="{ 'tab-menu-item-active': tab_content == 1 }"
+            >
+              Description
+            </li>
+            <li
+              class="details-tab-menu-item"
+              @click="tab_content = 2"
+              :class="{ 'tab-menu-item-active': tab_content == 2 }"
+            >
+              How To Buy
+            </li>
+            <li
+              class="details-tab-menu-item"
+              @click="tab_content = 3"
+              :class="{ 'tab-menu-item-active': tab_content == 3 }"
+            >
+              Return Policy
+            </li>
+          </ul>
+          <div class="product-tab-content">
+            <div
+              v-html="product.details"
+              class="product-details"
+              :class="{ block: tab_content == 1 }"
+            ></div>
+            <div class="how-to-buy" :class="{ block: tab_content == 2 }">
+              <ul>
+                <li class="h-b-li">
+                  Select number of product you want to buy.
+                </li>
+                <li class="h-b-li">
+                  Click <strong>Add To Cart</strong> Button
+                </li>
+                <li class="h-b-li">Then go to checkout page</li>
+                <li class="h-b-li">
+                  If you are a new user, please click on Sign Up.provide us uour
+                  valid inormation information.
+                </li>
+                <li class="h-b-li">
+                  Complete your checkout, we received your order, and for order
+                  confirmation or customer service contact with you
+                </li>
+              </ul>
+            </div>
+            <div class="how-to-buy" :class="{ block: tab_content == 3 }">
+              <ul>
+                <li class="h-b-li">
+                  If your product is damaged, defective, incorrect or incomplete
+                  at the time of delivery, please file a return request on call
+                  to customer care support number within 3 days of the delivery
+                  date
+                </li>
+                <li class="h-b-li">
+                  Change of mind is not applicable as a Return Reason for this
+                  product
+                </li>
+              </ul>
+            </div>
           </div>
-           <Products :products="related_products" />
+        </div>
 
+        <div class="row">
+          <h3 class="related_p_heading">Related Products</h3>
+          <br />
+          <hr />
+          <div class="line"></div>
+        </div>
+        <Products :products="related_products" />
 
-           <infinite-loading @infinite="getRelatedProducts">
-            <div slot="no-more"></div>
-          </infinite-loading>
-
+        <infinite-loading @infinite="getRelatedProducts">
+          <div slot="no-more"></div>
+        </infinite-loading>
       </div>
     </div>
     <frontend-footer></frontend-footer>
-
   </div>
-
 </template>
 
-
 <script>
-import Products from "../public/partials/Products.vue"
-import {Facebook,Linkedin,Pinterest,WhatsApp, Email,Google} from "vue-socialmedia-share";
+import Products from "../public/partials/Products.vue";
+import {
+  Facebook,
+  Linkedin,
+  Pinterest,
+  WhatsApp,
+  Email,
+  Google,
+} from "vue-socialmedia-share";
 import Loading from "vue-loading-overlay";
 import "vue-loading-overlay/dist/vue-loading.css";
-import imageZoom from 'vue-image-zoomer';
-import 'lazysizes'
-import Swal from 'sweetalert2' ;
+import imageZoom from "vue-image-zoomer";
+import "lazysizes";
+import Swal from "sweetalert2";
 
 export default {
   beforeCreated() {
@@ -317,7 +377,7 @@ export default {
       this.validation();
     }, 200);
   },
-  created(){
+  created() {
     this.getRelatedProducts();
     this.$store.dispatch("product_images", this.$route.params.slug);
     this.$store.dispatch("single_product", this.$route.params.slug);
@@ -328,7 +388,12 @@ export default {
     Loading,
     imageZoom,
     Products,
-    Facebook,Linkedin,Pinterest,WhatsApp,Email,Google
+    Facebook,
+    Linkedin,
+    Pinterest,
+    WhatsApp,
+    Email,
+    Google,
   },
 
   data() {
@@ -338,7 +403,7 @@ export default {
       disabled: true,
       variant_index: "",
       base_url: this.$store.state.image_base_link,
-       cart: {
+      cart: {
         product_id: "",
         variant_id: "",
         attrribute_id: "",
@@ -346,15 +411,14 @@ export default {
       },
       related_products: [],
       page: 1,
-      tab_content:1,
-      quick_v_product_id:"",
-      o_modal:false,
-       zooming_img:''
+      tab_content: 1,
+      quick_v_product_id: "",
+      o_modal: false,
+      zooming_img: "",
     };
   },
   methods: {
-
-    displayeImageFromBox(e){
+    displayeImageFromBox(e) {
       let target_element = e.target;
       let active_images = document.getElementsByClassName("__active_border");
 
@@ -363,51 +427,48 @@ export default {
           active_images[i].classList.remove("__active_border");
         }
       }
-         target_element.classList.add("__active_border");
-         this.zooming_img=target_element.src
-
+      target_element.classList.add("__active_border");
+      this.zooming_img = target_element.src;
     },
 
-
-    decrementQty(){
+    decrementQty() {
       if (this.cart.quantity > 1) {
-          let qty = this.cart.quantity
-          this.cart.quantity= qty - 1 ;
+        let qty = this.cart.quantity;
+        this.cart.quantity = qty - 1;
       }
     },
-     incrementQty(){
-          let qty = this.cart.quantity
-          this.cart.quantity= qty + 1 ;
+    incrementQty() {
+      let qty = this.cart.quantity;
+      this.cart.quantity = qty + 1;
     },
 
-   addToWishList(id){
-    axios.get('/_public/api/wishlist/store/'+id)
-    .then(resp=>{
-      if (resp.data.status=="OK") {
-          this.$store.dispatch('wishlistContent');
-            this.$toasted.show(resp.data.message, {
-                type: "success",
-                position: "top-center",
-                duration: 2000,
-            });
-      }
-    })
-  },
-
-
+    addToWishList(id) {
+      axios.get("/_public/api/wishlist/store/" + id).then((resp) => {
+        if (resp.data.status == "OK") {
+          this.$store.dispatch("wishlistContent");
+          this.$toasted.show(resp.data.message, {
+            type: "success",
+            position: "top-center",
+            duration: 2000,
+          });
+        }
+      });
+    },
 
     CartToAdd() {
-      if (this.product.product_variant.length > 0 ) {
-         this.cart.attrribute_id = this.product.product_attribute.attribute.id ;
+      if (this.product.product_variant.length > 0) {
+        this.cart.attrribute_id = this.product.product_attribute.attribute.id;
         if (this.cart.variant_id < 1) {
-             Swal.fire({
-                position: 'top-center',
-                icon: 'error',
-                title: 'please,select product '+this.product.product_attribute.attribute.name,
-                showConfirmButton: false,
-                timer: 1500
-              })
-            return ;
+          Swal.fire({
+            position: "top-center",
+            icon: "error",
+            title:
+              "please,select product " +
+              this.product.product_attribute.attribute.name,
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          return;
         }
       }
       axios
@@ -420,7 +481,7 @@ export default {
           },
         })
         .then((resp) => {
-        //  console.log(resp);
+          //  console.log(resp);
           if (resp.data.status == "SUCCESS") {
             this.$toasted.show(resp.data.message, {
               position: "top-center",
@@ -436,20 +497,22 @@ export default {
               duration: 4000,
             });
           }
-        })
+        });
     },
-     buyNow() {
-       if (this.product.product_variant.length > 0 ) {
-         this.cart.attrribute_id = this.product.product_attribute.attribute.id ;
+    buyNow() {
+      if (this.product.product_variant.length > 0) {
+        this.cart.attrribute_id = this.product.product_attribute.attribute.id;
         if (this.cart.variant_id < 1) {
-             Swal.fire({
-                position: 'top-center',
-                icon: 'error',
-                title: 'please,select product '+this.product.product_attribute.attribute.name,
-                showConfirmButton: false,
-                timer: 1500
-              })
-            return ;
+          Swal.fire({
+            position: "top-center",
+            icon: "error",
+            title:
+              "please,select product " +
+              this.product.product_attribute.attribute.name,
+            showConfirmButton: false,
+            timer: 1500,
+          });
+          return;
         }
       }
       axios
@@ -462,15 +525,15 @@ export default {
           },
         })
         .then((resp) => {
-         // console.log(resp);
+          // console.log(resp);
           if (resp.data.status == "SUCCESS") {
-              this.$store.dispatch("getCartContent");
-              this.$toasted.show(resp.data.message, {
+            this.$store.dispatch("getCartContent");
+            this.$toasted.show(resp.data.message, {
               position: "bottom-left",
               type: "success",
               duration: 2000,
             });
-           this.$router.push({ name: "checkout" });
+            this.$router.push({ name: "checkout" });
           } else if (resp.data.status == "error") {
             this.$toasted.show(resp.data.message, {
               position: "top-center",
@@ -478,9 +541,8 @@ export default {
               duration: 4000,
             });
           }
-        })
-
-     },
+        });
+    },
     validation() {
       if (this.cart.quantity < 1) {
         this.cart.quantity = 1;
@@ -498,10 +560,11 @@ export default {
       }
     },
     SelectVaraint() {
-     // this.product.product_variant.length=0;
+      // this.product.product_variant.length=0;
       let index = this.variant_index;
       let variant_id = this.product.product_variant[index].variant_id;
-      let attribute_id = this.product.product_variant[index].variant.attribute_id;
+      let attribute_id = this.product.product_variant[index].variant
+        .attribute_id;
       this.cart.attrribute_id = attribute_id;
       this.cart.variant_id = variant_id;
       this.validation();
@@ -509,7 +572,7 @@ export default {
 
     getRelatedProducts($state) {
       axios
-        .get("/_public/related/products/?page="+this.page, {
+        .get("/_public/related/products/?page=" + this.page, {
           params: {
             product_slug: this.$route.params.slug,
           },
@@ -522,39 +585,36 @@ export default {
           } else {
             $state.complete();
           }
-        })
-
+        });
     },
-
   },
 
   computed: {
     product() {
       return this.$store.getters.single_product;
     },
-    product_images(){
+    product_images() {
       return this.$store.getters.product_images;
     },
-     user() {
+    user() {
       return this.$store.getters.user;
     },
     general_setting() {
       return this.$store.getters.general_setting;
     },
-
   },
 
-  watch:{
-    product_images:function(value){
-      if(Object.keys(value).length>0){
-       this.isLoading=false;
+  watch: {
+    product_images: function(value) {
+      if (Object.keys(value).length > 0) {
+        this.isLoading = false;
       }
     },
-     product: function (value) {
-        if(value.product_image.length>0){
-            this.zooming_img=this.base_url+value.product_image[0].product_image;
-        }
+    product: function(value) {
+      if (value.product_image.length > 0) {
+        this.zooming_img = this.base_url + value.product_image[0].product_image;
+      }
     },
-  }
+  },
 };
 </script>
