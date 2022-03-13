@@ -6,68 +6,71 @@
 
     <div id="container">
       <div class="container">
-        <!-- Breadcrumb End-->
         <div class="row" v-if="cart.total>0">
           <!--Middle Part Start-->
           <div id="content">
             <div class="row">
-              <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+              <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="custom-box">
-                  <h2 class="title">Place Your Order</h2>
+                  <h3 class="title">DELIVERY AND & BILLING INFO</h3>
                   <form @submit.prevent="submitOrder">
-                    <div class="form-group">
-                      <label class="control-label" for="name">Name<b class="text-danger">*</b></label>
-                      <input
-                        type="text"
-                        name="name"
-                        required
-                        placeholder="Full Name"
-                        class="form-control"
-                        :class="{ 'is-invalid': form.errors.has('name') }"
-                        v-model="form.name"
-                        autofocus
-                      />
-                      <has-error :form="form" field="name"></has-error>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label" for="mobile_no">Mobile Number <b class="text-danger">*</b></label>
-                      <input
-                        type="text"
-                        name="mobile_no"
-                        placeholder="01xxx-xxxxx"
-                        class="form-control"
-                        maxlength="11"
-                        minlength="11"
-                        :class="{ 'is-invalid': form.errors.has('mobile_no') }"
-                        v-model="form.mobile_no"
-                        required
-                      />
-                      <has-error :form="form" field="mobile_no"></has-error>
-                    </div>
-
-                    <div class="form-group">
-                      <label class="control-label" for="input-password">Address <b class="text-danger">*</b></label>
-                      <textarea
-                        name="address"
-                        placeholder="Address"
-                        class="form-control"
-                        :class="{ 'is-invalid': form.errors.has('address') }"
-                        v-model="form.address"
-                        @keyup="validation"
-                      ></textarea>
-                      <has-error :form="form" field="address"></has-error>
-
-                      <br />
+                    <div class="col-md-6">
                       <div class="form-group">
-                        <label class="control-label" for="input-email">City <b class="text-danger">*</b></label>
+                        <label class="control-label" for="name">Name<b class="text-danger">*</b></label>
+                        <input
+                          name="name"
+                          required
+                          placeholder="Customer Name"
+                          class="form-control"
+                          :class="{ 'is-invalid': form.errors.has('name') }"
+                          v-model="form.name"
+                          autofocus
+                        />
+                        <has-error :form="form" field="name"></has-error>
+                      </div>
+                     </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label" for="mobile_no">Phone Number <b class="text-danger">*</b></label>
+                        <input
+                          
+                          name="mobile_no"
+                          placeholder="Phone Number"
+                          class="form-control"
+                          maxlength="11"
+                          minlength="11"
+                          :class="{ 'is-invalid': form.errors.has('mobile_no') }"
+                          v-model="form.mobile_no"
+                          required
+                        />
+                        <has-error :form="form" field="mobile_no"></has-error>
+                      </div>
+                     </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label" for="input-password">Address <b class="text-danger">*</b></label>
+                        <input
+                          name="address"
+                          placeholder="Detail Address"
+                          class="form-control"
+                          :class="{ 'is-invalid': form.errors.has('address') }"
+                          v-model="form.address"
+                          @keyup="validation"
+                        >
+                        <has-error :form="form" field="address"></has-error>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label class="control-label" for="input-email">District <b class="text-danger">*</b></label>
                         <select
                           name="city"
-                         :class="{ 'is-invalid': form.errors.has('city') }"
+                        :class="{ 'is-invalid': form.errors.has('city') }"
                           class="form-control"
                           v-model="form.city"
                           @change="selectCity"
                         >
-                          <option value="" selected disabled>Select City </option>
+                          <option value="" selected disabled>Select District </option>
                           <option
                             value
                             v-for="(city,index) in cities"
@@ -77,49 +80,167 @@
                         </select>
                         <has-error :form="form" field="city"></has-error>
                       </div>
-
-                       <div class="form-group">
-                    <label>Sub City <b class="text-danger">*</b></label>
-                    <select @change="validation" class="form-control" name="sub_city"  :class="{ 'is-invalid': form.errors.has('sub_city') }" v-model="form.sub_city">
-                      <option disabled value="">select sub city</option>
-                      <option v-if="sub_cities.length > 0 " v-for="sub_city in sub_cities" :key="sub_city.id" :value="sub_city.id">{{sub_city.name}}</option>
-                    </select>
-                    <has-error :form="form" field="sub_city"></has-error>
-
-                  </div>
-                      <br />
                     </div>
-                    <button
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label>Thana <b class="text-danger">*</b></label>
+                        <select @change="validation" class="form-control" name="sub_city"  :class="{ 'is-invalid': form.errors.has('sub_city') }" v-model="form.sub_city">
+                          <option disabled value="">Select Thana</option>
+                          <option v-if="sub_cities.length > 0 " v-for="sub_city in sub_cities" :key="sub_city.id" :value="sub_city.id">{{sub_city.name}}</option>
+                        </select>
+                        <has-error :form="form" field="sub_city"></has-error>
+                      </div>
+                    </div>
+
+                      <div class="col-md-6">
+                        <div class="form-group">
+                          <label>Email <b class="text-danger">*</b></label>
+                          <input type="email" class="form-control" placeholder="Email Address">
+                        </div>
+                      </div>
+
+                      <div class="col-md-12">
+                        <div class="form-group">
+                          <label>ORDER NOTE(OPTIONAL)</label>
+                          <input type="email" class="form-control" placeholder="Additional Information(Anything you want to add)">
+                        </div>
+                      </div>
+                    <!-- <button
 
                       class="btn btn-block btn-primary"
                       type="submit"
                       :disabled="form.busy || disabled"
                     >
                       <i class="fa fa-spinner fa-spin" v-if="form.busy"></i>PLACE ORDER
-                    </button>
+                    </button> -->
                   </form>
+                  <div class="payment">
+                    <h4>PAYMENT METHOD</h4>
+                    <div class="payment-method">
+                      <form action="">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-check-input cash" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" height="0">
+                            <label class="form-check-label" for="inlineRadio1"> Cash On Delivery</label>
+                            <img class="img-fluid" src="/storage/images/payment/cash_on_delivery.png" height="50px" width="100%">
+                          </div>
+                        </div>
+
+                        <div class="col-md-6">
+                          <div class="form-group">
+                            <input class="form-check-input pay" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label pay" for="inlineRadio1"> Pay Online</label>
+                            <img class="img-fluid" src="/storage/images/payment/online_payment.png" width="100%">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
                 </div>
               </div>
 
               <div class="col-lg-5 col-md-5 col-xs-12 col-sm-12">
                 <div class="custom-box">
+                  <h3 class="title">ORDER OVERVIEW</h3>
+                  <h4>YOUR CART: 3 ITEMS</h4>
+                  <br>
+                  <hr>
+                  <div class="total_carts_products">
+
+                  
+                  <div class="carts-products">
+                    <div class="product-img">
+                      <img class="img-fluid" src="/storage/images/product_view/product-1.png" width="100%">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-title">Hijab Gown Purple Color</span>
+                        <p class="product_price">
+                          <span class="price_old">
+                            &#2547; 2525</span >
+                            <span class="price_new"> &#2547; 25222</span>
+                        </p>
+                        <span class="product-size">M</span>
+                        <div class="qty_container">
+                          <p>
+                            Quantity:
+                          </p>
+                            <input
+                            type="text"
+                            name="quantity"
+                            value="1"
+                            class="form-control input_quantity"
+                          />
+                          <i class="fa fa-check-circle fa-lg" style="color: #626365"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carts-products">
+                    <div class="product-img">
+                      <img class="img-fluid" src="/storage/images/product_view/product-2.png" width="100%">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-title">Hijab Gown Purple Color</span>
+                        <p class="product_price">
+                          <span class="price_old">
+                            &#2547; 2525</span >
+                            <span class="price_new"> &#2547; 25222</span>
+                        </p>
+                        <span class="product-size">M</span>
+                        <div class="qty_container">
+                          <p>
+                            Quantity:
+                          </p>
+                            <input
+                            type="text"
+                            name="quantity"
+                            value="1"
+                            class="form-control input_quantity"
+                          />
+                          <i class="fa fa-check-circle fa-lg" style="color: #626365"></i>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="carts-products">
+                    <div class="product-img">
+                      <img class="img-fluid" src="/storage/images/product_view/product-1.png" width="100%">
+                    </div>
+                    <div class="product-content">
+                        <span class="product-title">Hijab Gown Purple Color</span>
+                        <p class="product_price">
+                          <span class="price_old">
+                            &#2547; 2525</span >
+                            <span class="price_new"> &#2547; 25222</span>
+                        </p>
+                        <span class="product-size">M</span>
+                        <div class="qty_container">
+                          <p>
+                            Quantity:
+                          </p>
+                            <input
+                            type="text"
+                            name="quantity"
+                            value="1"
+                            class="form-control input_quantity"
+                          />
+                          <i class="fa fa-check-circle fa-lg" style="color: #626365"></i>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
                   <div class="cart-total">
                     <table class="table">
                       <tbody>
                         <tr>
-                          <td>Sub Total</td>
-                          <td colspan="4"></td>
+                          <td>SUB TOTAL</td>
                           <td>
-                            :
                             <span v-if="form.shipping_cost">&#2547; {{form.total}}</span>
-                            <span v-else>.....</span>
+                            <span v-else>&#2547; 2000</span>
                           </td>
                         </tr>
-
-                        <br/>
                          <tr v-if="form.coupon_discount > 0">
                           <td>Coupon Discount</td>
-                          <td colspan="4"></td>
                           <td>
                             :
                             <span v-if="form.coupon_discount">&#2547;{{form.coupon_discount}}</span>
@@ -128,7 +249,6 @@
 
                          <tr v-if="form.premium_member_discount > 0">
                           <td>Membership Discount</td>
-                          <td colspan="4"></td>
                           <td>
                             :
                             <span v-if="form.premium_member_discount">&#2547;{{form.premium_member_discount}}</span>
@@ -136,43 +256,57 @@
                         </tr>
 
                         <tr>
-                          <td>Shipping Charge</td>
-                          <td colspan="4"></td>
+                          <td>DELIVERY CHARGE</td>
                           <td>
-                            :
+                            
                             <span v-if="form.shipping_cost">&#2547;{{ form.shipping_cost }}</span>
-                            <span v-else>.....</span>
+                            <span v-else>&#2547; 2000</span>
                           </td>
                         </tr>
-                        <br />
                         <tr>
-                          <td>Payable Amount</td>
-                          <td colspan="4"></td>
+                          <td>TOTAL</td>
                           <td>
-                                 :
+                                 
                             <span
                               v-if="form.shipping_cost"
                             >&#2547;{{(parseInt(form.total.replace(',','') - parseInt(form.coupon_discount ) - parseInt(form.premium_member_discount)   )) + parseInt(form.shipping_cost)}}</span>
-                            <span v-else>.....</span>
+                            <span v-else>&#2547; 2000</span>
                           </td>
                         </tr>
                       </tbody>
                     </table>
                   </div>
                 </div>
-              </div>
-               <div class="col-lg-5 col-md-5 col-xs-12 col-sm-12"  style="margin-top:10px;">
-
-                <br/>
-                <div class="custom-box" >
-                   <ul class="list-group">
-                     <!-- <li class="list-group-item">
-                        <h5  class="extra_d " > your available wallet point is
-                       {{ customer_wallet_point}} = &#2547;
-                        {{ (  parseInt(customer_wallet_point) / parseInt(general_setting.wallet_point_value) )  }}
-                         <a class="btn btn-primary p_a_btn">apply</a>
+                <div class="promo_code" >
+                  <div class="coupon">
+                   
+                    <h4> <i class="fa fa-gift fa-2x" aria-hidden="true"></i> Have a Coupon or Promo Code?</h4>
+                    <input class="form-control coupon_code" type="text" placeholder="Coupon Code Here">
+                    <button class="btn btn-secondary code_btn" type="submit">APPLY</button>
+                  </div>
+                   <!-- <ul class="list-group">
+                      <li v-show="member_type.length" class="list-group-item">
+                        <h5  class="extra_d " > you are now {{ member_type }} member
+                         <a @click="applyMemberDiscount" class="btn btn-primary p_a_btn">apply {{ member_discount }} % discount </a>
                        </h5>
-                        </li> -->
+                      </li>
+                     <li class="list-group-item">  <h5  class=" extra_d coupon-apply" @click.prevent="coupon = !coupon">Have a Coupon or Promo Code? <i class="fa fa-angle-down"></i> </h5>  </li>
+                   </ul>
+
+                  <div v-if="coupon" class="coupon">
+                    <label for="">
+                      <strong>Apply Coupon Here</strong>
+                    </label>
+                   <div style="display:flex">
+                      <input id="coupon_code" style="width:60%" v-model="coupon_code" type="text" class="form-control">
+                    <button :disabled="coupon_code.length <=0 " class="btn btn-primary" @click.prevent="applyCoupon" style="border-radius:0px;">Apply</button>
+                   </div>
+                  </div> -->
+                </div>
+              </div>
+               <!-- <div class="col-lg-5 col-md-5 col-xs-12 col-sm-12">
+                <div class="" >
+                   <ul class="list-group">
                       <li v-show="member_type.length" class="list-group-item">
                         <h5  class="extra_d " > you are now {{ member_type }} member
                          <a @click="applyMemberDiscount" class="btn btn-primary p_a_btn">apply {{ member_discount }} % discount </a>
@@ -191,7 +325,7 @@
                    </div>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

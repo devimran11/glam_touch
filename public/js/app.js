@@ -3590,6 +3590,51 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -69556,11 +69601,13 @@ var staticRenderFns = [
             }),
             _vm._v(" "),
             _c("div", { staticClass: "footer-info" }, [
-              _c("p", { staticClass: "footer-color" }, [
+              _c("p", { staticClass: "footer-number" }, [
                 _vm._v("+880 9639148048")
               ]),
               _vm._v(" "),
-              _c("p", [_vm._v("Worktime: SAT - FRI, 10AM - 11PM")]),
+              _c("p", { staticClass: "work_time" }, [
+                _vm._v("Worktime: SAT - FRI, 10AM - 11PM")
+              ]),
               _vm._v(" "),
               _c("i", { staticClass: "fa fa-facebook-square fa-2x" }),
               _vm._v(" "),
@@ -70920,7 +70967,9 @@ var render = function() {
                           ])
                         : _c("div", { staticClass: "quick_content" }, [
                             _c("div", { staticClass: "modal-header" }, [
-                              _c("h5", { staticClass: "modal-title" }),
+                              _c("h2", { staticClass: "modal-title" }, [
+                                _vm._v("Quick View")
+                              ]),
                               _vm._v(" "),
                               _c(
                                 "button",
@@ -70973,11 +71022,8 @@ var render = function() {
                                       [
                                         _c("li", [
                                           _c(
-                                            "h4",
-                                            {
-                                              staticClass: "title",
-                                              attrs: { itemprop: "name" }
-                                            },
+                                            "h3",
+                                            { staticClass: "single_p_name" },
                                             [
                                               _vm._v(
                                                 _vm._s(
@@ -70989,386 +71035,555 @@ var render = function() {
                                         ]),
                                         _vm._v(" "),
                                         _c("li", [
-                                          _c("h4", [
-                                            _c("b", [_vm._v("Product Code:")]),
-                                            _vm._v(" "),
-                                            _c(
-                                              "span",
-                                              { attrs: { itemprop: "mpn" } },
-                                              [
-                                                _vm._v(
-                                                  _vm._s(
-                                                    _vm.quick_view_product
-                                                      .product_code
-                                                  )
-                                                )
-                                              ]
-                                            )
-                                          ])
-                                        ]),
-                                        _vm._v(" "),
-                                        _c("li", [
-                                          _c("h4", [
-                                            _c("b", [_vm._v("Availability:")]),
-                                            _vm._v(" "),
-                                            _vm.quick_view_product.stock > 0
-                                              ? _c(
-                                                  "span",
-                                                  { staticClass: "instock" },
-                                                  [
-                                                    _vm._v("Stock In "),
-                                                    _c("small", [
-                                                      _vm._v(
-                                                        "(" +
-                                                          _vm._s(
-                                                            _vm
-                                                              .quick_view_product
-                                                              .stock
-                                                          ) +
-                                                          ")"
-                                                      )
-                                                    ])
-                                                  ]
-                                                )
-                                              : _c(
-                                                  "span",
-                                                  { staticClass: "outstcok" },
-                                                  [_vm._v("Stock Out")]
-                                                )
-                                          ])
-                                        ])
-                                      ]
-                                    ),
-                                    _vm._v(" "),
-                                    _c("ul", { staticClass: "price-box" }, [
-                                      _c("li", [
-                                        _c(
-                                          "h4",
-                                          {
-                                            staticStyle: {
-                                              "margin-left": "-40px"
-                                            }
-                                          },
-                                          [
-                                            _c("b", [_vm._v("Price:")]),
-                                            _vm._v(" "),
-                                            _vm.quick_view_product.discount
-                                              ? _c(
-                                                  "span",
-                                                  {
-                                                    staticClass: "price-old",
-                                                    staticStyle: {
-                                                      "font-size": "18px"
-                                                    }
-                                                  },
-                                                  [
-                                                    _vm._v(
-                                                      "BDT " +
-                                                        _vm._s(
-                                                          _vm.quick_view_product
-                                                            .sale_price
+                                          _c(
+                                            "div",
+                                            {
+                                              staticClass: "s_price_container_1"
+                                            },
+                                            [
+                                              _vm.quick_view_product.discount
+                                                ? _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "s_price_container_2"
+                                                    },
+                                                    [
+                                                      _c("p", [
+                                                        _vm._v(
+                                                          "\n                                ৳" +
+                                                            _vm._s(
+                                                              _vm
+                                                                .quick_view_product
+                                                                .sale_price
+                                                            ) +
+                                                            " \n                            "
                                                         )
-                                                    )
-                                                  ]
-                                                )
-                                              : _vm._e(),
-                                            _vm._v(" "),
-                                            _c(
-                                              "span",
-                                              { staticClass: "price-new" },
-                                              [
+                                                      ])
+                                                    ]
+                                                  )
+                                                : _vm._e(),
+                                              _vm._v(" "),
+                                              _c("p", [
                                                 _vm._v(
-                                                  "BDT " +
+                                                  "\n                            ৳" +
                                                     _vm._s(
                                                       _vm.quick_view_product
                                                         .price
-                                                    )
+                                                    ) +
+                                                    "\n                        "
                                                 )
-                                              ]
-                                            )
-                                          ]
-                                        )
-                                      ]),
-                                      _vm._v(" "),
-                                      _c("li")
-                                    ]),
+                                              ])
+                                            ]
+                                          )
+                                        ])
+                                      ]
+                                    ),
                                     _vm._v(" "),
                                     _c("div", { attrs: { id: "product" } }, [
                                       _vm.quick_view_product.product_variant
                                         .length > 0 &&
                                       _vm.quick_view_product.product_attribute
-                                        ? _c("div", [
-                                            _c(
-                                              "div",
-                                              { staticClass: "form-group" },
-                                              [
-                                                _c(
-                                                  "h4",
-                                                  {
-                                                    staticStyle: {
-                                                      display: "flex"
-                                                    }
-                                                  },
-                                                  [
-                                                    _c("b", [
-                                                      _vm._v(
-                                                        _vm._s(
-                                                          _vm.quick_view_product
-                                                            .product_attribute
-                                                            .attribute.name
-                                                        ) + ":"
-                                                      )
-                                                    ]),
-                                                    _vm._v(" "),
-                                                    _c(
-                                                      "select",
-                                                      {
-                                                        directives: [
-                                                          {
-                                                            name: "model",
-                                                            rawName: "v-model",
-                                                            value:
-                                                              _vm.variant_index,
-                                                            expression:
-                                                              "variant_index"
-                                                          }
-                                                        ],
-                                                        staticClass:
-                                                          "form-control",
-                                                        on: {
-                                                          change: [
-                                                            function($event) {
-                                                              var $$selectedVal = Array.prototype.filter
-                                                                .call(
-                                                                  $event.target
-                                                                    .options,
-                                                                  function(o) {
-                                                                    return o.selected
+                                        ? _c(
+                                            "div",
+                                            {
+                                              staticClass:
+                                                "col-lg-12 col-md-12 col-xs-12"
+                                            },
+                                            [
+                                              _c(
+                                                "div",
+                                                {
+                                                  staticClass:
+                                                    "ps-product__variations"
+                                                },
+                                                [
+                                                  _c(
+                                                    "div",
+                                                    {
+                                                      staticClass:
+                                                        "pr_switch_wrap"
+                                                    },
+                                                    [
+                                                      _c(
+                                                        "div",
+                                                        {
+                                                          staticClass:
+                                                            "product-attributes"
+                                                        },
+                                                        [
+                                                          _c("hr"),
+                                                          _vm._v(" "),
+                                                          _vm.quick_view_product.product_attribute.attribute.name.toLowerCase() ==
+                                                          "size"
+                                                            ? _c(
+                                                                "div",
+                                                                {
+                                                                  staticClass:
+                                                                    "text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color",
+                                                                  attrs: {
+                                                                    "data-type":
+                                                                      "text"
                                                                   }
-                                                                )
-                                                                .map(function(
-                                                                  o
-                                                                ) {
-                                                                  var val =
-                                                                    "_value" in
-                                                                    o
-                                                                      ? o._value
-                                                                      : o.value
-                                                                  return val
-                                                                })
-                                                              _vm.variant_index = $event
-                                                                .target.multiple
-                                                                ? $$selectedVal
-                                                                : $$selectedVal[0]
-                                                            },
-                                                            _vm.SelectVaraint
-                                                          ]
-                                                        }
-                                                      },
-                                                      [
-                                                        _c(
-                                                          "option",
-                                                          {
-                                                            attrs: {
-                                                              value: "",
-                                                              disabled: ""
-                                                            }
-                                                          },
-                                                          [
-                                                            _vm._v(
-                                                              "--Please Select--"
-                                                            )
-                                                          ]
-                                                        ),
-                                                        _vm._v(" "),
-                                                        _vm._l(
-                                                          _vm.quick_view_product
-                                                            .product_variant,
-                                                          function(variant, v) {
-                                                            return _c(
-                                                              "option",
-                                                              {
-                                                                key: v,
-                                                                domProps: {
-                                                                  value: v
-                                                                }
-                                                              },
-                                                              [
-                                                                _vm._v(
-                                                                  _vm._s(
-                                                                    variant
-                                                                      .variant
-                                                                      .name
+                                                                },
+                                                                [
+                                                                  _c(
+                                                                    "label",
+                                                                    {
+                                                                      staticClass:
+                                                                        "attribute-name"
+                                                                    },
+                                                                    [
+                                                                      _vm._v(
+                                                                        "Size:"
+                                                                      )
+                                                                    ]
+                                                                  ),
+                                                                  _vm._v(" "),
+                                                                  _c(
+                                                                    "div",
+                                                                    {
+                                                                      staticClass:
+                                                                        "attribute-values"
+                                                                    },
+                                                                    [
+                                                                      _c(
+                                                                        "ul",
+                                                                        {
+                                                                          staticClass:
+                                                                            "text-swatch attribute-swatch color-swatch"
+                                                                        },
+                                                                        _vm._l(
+                                                                          _vm
+                                                                            .quick_view_product
+                                                                            .product_variant,
+                                                                          function(
+                                                                            variant,
+                                                                            index
+                                                                          ) {
+                                                                            return _c(
+                                                                              "li",
+                                                                              {
+                                                                                key: index,
+                                                                                staticClass:
+                                                                                  "attribute-swatch-item pe-none"
+                                                                              },
+                                                                              [
+                                                                                _c(
+                                                                                  "div",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "label",
+                                                                                      [
+                                                                                        _c(
+                                                                                          "input",
+                                                                                          {
+                                                                                            directives: [
+                                                                                              {
+                                                                                                name:
+                                                                                                  "model",
+                                                                                                rawName:
+                                                                                                  "v-model",
+                                                                                                value:
+                                                                                                  _vm
+                                                                                                    .cart
+                                                                                                    .variant_id,
+                                                                                                expression:
+                                                                                                  "cart.variant_id"
+                                                                                              }
+                                                                                            ],
+                                                                                            staticClass:
+                                                                                              "product-filter-item variant_size",
+                                                                                            attrs: {
+                                                                                              type:
+                                                                                                "radio",
+                                                                                              name:
+                                                                                                "size"
+                                                                                            },
+                                                                                            domProps: {
+                                                                                              value:
+                                                                                                variant
+                                                                                                  .variant
+                                                                                                  .id,
+                                                                                              checked: _vm._q(
+                                                                                                _vm
+                                                                                                  .cart
+                                                                                                  .variant_id,
+                                                                                                variant
+                                                                                                  .variant
+                                                                                                  .id
+                                                                                              )
+                                                                                            },
+                                                                                            on: {
+                                                                                              change: function(
+                                                                                                $event
+                                                                                              ) {
+                                                                                                return _vm.$set(
+                                                                                                  _vm.cart,
+                                                                                                  "variant_id",
+                                                                                                  variant
+                                                                                                    .variant
+                                                                                                    .id
+                                                                                                )
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        ),
+                                                                                        _vm._v(
+                                                                                          " "
+                                                                                        ),
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          [
+                                                                                            _vm._v(
+                                                                                              _vm._s(
+                                                                                                variant
+                                                                                                  .variant
+                                                                                                  .name
+                                                                                              )
+                                                                                            )
+                                                                                          ]
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          }
+                                                                        ),
+                                                                        0
+                                                                      )
+                                                                    ]
                                                                   )
-                                                                )
-                                                              ]
-                                                            )
-                                                          }
-                                                        )
-                                                      ],
-                                                      2
-                                                    )
-                                                  ]
-                                                )
-                                              ]
-                                            )
-                                          ])
+                                                                ]
+                                                              )
+                                                            : _vm._e(),
+                                                          _vm._v(" "),
+                                                          _c("hr"),
+                                                          _vm._v(" "),
+                                                          _vm.quick_view_product.product_attribute.attribute.name.toLowerCase() ==
+                                                          "size"
+                                                            ? _c(
+                                                                "div",
+                                                                {
+                                                                  staticClass:
+                                                                    "text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color",
+                                                                  attrs: {
+                                                                    "data-type":
+                                                                      "text"
+                                                                  }
+                                                                },
+                                                                [
+                                                                  _c(
+                                                                    "label",
+                                                                    {
+                                                                      staticClass:
+                                                                        "attribute-name"
+                                                                    },
+                                                                    [
+                                                                      _vm._v(
+                                                                        "Color:"
+                                                                      )
+                                                                    ]
+                                                                  ),
+                                                                  _vm._v(" "),
+                                                                  _c(
+                                                                    "div",
+                                                                    {
+                                                                      staticClass:
+                                                                        "attribute-values"
+                                                                    },
+                                                                    [
+                                                                      _c(
+                                                                        "ul",
+                                                                        {
+                                                                          staticClass:
+                                                                            "text-swatch attribute-swatch color-swatch"
+                                                                        },
+                                                                        _vm._l(
+                                                                          _vm
+                                                                            .quick_view_product
+                                                                            .product_variant,
+                                                                          function(
+                                                                            variant,
+                                                                            index
+                                                                          ) {
+                                                                            return _c(
+                                                                              "li",
+                                                                              {
+                                                                                key: index,
+                                                                                staticClass:
+                                                                                  "attribute-swatch-item pe-none"
+                                                                              },
+                                                                              [
+                                                                                _c(
+                                                                                  "div",
+                                                                                  [
+                                                                                    _c(
+                                                                                      "label",
+                                                                                      [
+                                                                                        _c(
+                                                                                          "input",
+                                                                                          {
+                                                                                            directives: [
+                                                                                              {
+                                                                                                name:
+                                                                                                  "model",
+                                                                                                rawName:
+                                                                                                  "v-model",
+                                                                                                value:
+                                                                                                  _vm
+                                                                                                    .cart
+                                                                                                    .variant_id,
+                                                                                                expression:
+                                                                                                  "cart.variant_id"
+                                                                                              }
+                                                                                            ],
+                                                                                            staticClass:
+                                                                                              "variant_color",
+                                                                                            attrs: {
+                                                                                              type:
+                                                                                                "radio",
+                                                                                              name:
+                                                                                                "size"
+                                                                                            },
+                                                                                            domProps: {
+                                                                                              value:
+                                                                                                variant
+                                                                                                  .variant
+                                                                                                  .id,
+                                                                                              checked: _vm._q(
+                                                                                                _vm
+                                                                                                  .cart
+                                                                                                  .variant_id,
+                                                                                                variant
+                                                                                                  .variant
+                                                                                                  .id
+                                                                                              )
+                                                                                            },
+                                                                                            on: {
+                                                                                              change: function(
+                                                                                                $event
+                                                                                              ) {
+                                                                                                return _vm.$set(
+                                                                                                  _vm.cart,
+                                                                                                  "variant_id",
+                                                                                                  variant
+                                                                                                    .variant
+                                                                                                    .id
+                                                                                                )
+                                                                                              }
+                                                                                            }
+                                                                                          }
+                                                                                        ),
+                                                                                        _vm._v(
+                                                                                          " "
+                                                                                        ),
+                                                                                        _c(
+                                                                                          "span",
+                                                                                          [
+                                                                                            _vm._v(
+                                                                                              _vm._s(
+                                                                                                variant
+                                                                                                  .variant
+                                                                                                  .name
+                                                                                              )
+                                                                                            )
+                                                                                          ]
+                                                                                        )
+                                                                                      ]
+                                                                                    )
+                                                                                  ]
+                                                                                )
+                                                                              ]
+                                                                            )
+                                                                          }
+                                                                        ),
+                                                                        0
+                                                                      )
+                                                                    ]
+                                                                  )
+                                                                ]
+                                                              )
+                                                            : _vm._e(),
+                                                          _vm._v(" "),
+                                                          _c("hr")
+                                                        ]
+                                                      )
+                                                    ]
+                                                  )
+                                                ]
+                                              )
+                                            ]
+                                          )
                                         : _vm._e(),
                                       _vm._v(" "),
                                       _c("div", { staticClass: "row" }, [
                                         _c(
                                           "div",
-                                          { staticClass: "col-md-6 col-sm-6 " },
+                                          {
+                                            staticClass:
+                                              "col-lg-12 col-md-12 col-xs-12"
+                                          },
                                           [
-                                            _c("div", {}, [
-                                              _vm._m(0),
-                                              _vm._v(" "),
-                                              _c("input", {
-                                                directives: [
+                                            _c(
+                                              "div",
+                                              { staticClass: "qty_container" },
+                                              [
+                                                _c(
+                                                  "div",
                                                   {
-                                                    name: "model",
-                                                    rawName: "v-model",
-                                                    value: _vm.cart.quantity,
-                                                    expression: "cart.quantity"
-                                                  }
-                                                ],
-                                                staticClass: "form-control",
-                                                attrs: {
-                                                  type: "number",
-                                                  name: "quantity",
-                                                  size: "2",
-                                                  value: "1"
-                                                },
-                                                domProps: {
-                                                  value: _vm.cart.quantity
-                                                },
-                                                on: {
-                                                  change: _vm.validation,
-                                                  keyup: _vm.validation,
-                                                  input: function($event) {
-                                                    if (
-                                                      $event.target.composing
-                                                    ) {
-                                                      return
+                                                    on: {
+                                                      click: _vm.decrementQty
                                                     }
-                                                    _vm.$set(
-                                                      _vm.cart,
-                                                      "quantity",
-                                                      $event.target.value
-                                                    )
+                                                  },
+                                                  [
+                                                    _c("i", {
+                                                      staticClass: "fa fa-minus"
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c("input", {
+                                                  directives: [
+                                                    {
+                                                      name: "model",
+                                                      rawName: "v-model",
+                                                      value: _vm.cart.quantity,
+                                                      expression:
+                                                        "cart.quantity"
+                                                    }
+                                                  ],
+                                                  staticClass:
+                                                    "form-control input_qty",
+                                                  attrs: {
+                                                    type: "text",
+                                                    name: "quantity",
+                                                    value: "1"
+                                                  },
+                                                  domProps: {
+                                                    value: _vm.cart.quantity
+                                                  },
+                                                  on: {
+                                                    change: _vm.validation,
+                                                    keyup: _vm.validation,
+                                                    input: function($event) {
+                                                      if (
+                                                        $event.target.composing
+                                                      ) {
+                                                        return
+                                                      }
+                                                      _vm.$set(
+                                                        _vm.cart,
+                                                        "quantity",
+                                                        $event.target.value
+                                                      )
+                                                    }
                                                   }
-                                                }
-                                              }),
-                                              _vm._v(" "),
-                                              _c("div", {
-                                                staticClass: "clear"
-                                              })
-                                            ])
+                                                }),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    on: {
+                                                      click: _vm.incrementQty
+                                                    }
+                                                  },
+                                                  [
+                                                    _c("i", {
+                                                      staticClass: "fa fa-plus"
+                                                    })
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "col-lg-5 col-md-5 col-xs-6"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "button",
+                                                      {
+                                                        staticClass:
+                                                          "btn btn-sm btn-block btn_buy_cart",
+                                                        attrs: {
+                                                          type: "button"
+                                                        },
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            $event.preventDefault()
+                                                            return _vm.CartToAdd(
+                                                              $event
+                                                            )
+                                                          }
+                                                        }
+                                                      },
+                                                      [
+                                                        _c("span", [
+                                                          _vm._v("ADD TO CART")
+                                                        ])
+                                                      ]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c(
+                                                  "div",
+                                                  {
+                                                    staticClass:
+                                                      "col-lg-5 col-md-5 col-xs-6"
+                                                  },
+                                                  [
+                                                    _c(
+                                                      "button",
+                                                      {
+                                                        staticClass:
+                                                          "btn  btn-sm btn_buy_cart",
+                                                        attrs: {
+                                                          type: "button"
+                                                        },
+                                                        on: {
+                                                          click: function(
+                                                            $event
+                                                          ) {
+                                                            $event.preventDefault()
+                                                            return _vm.buyNow(
+                                                              $event
+                                                            )
+                                                          }
+                                                        }
+                                                      },
+                                                      [_vm._v("BUY NOW")]
+                                                    )
+                                                  ]
+                                                ),
+                                                _vm._v(" "),
+                                                _c("div", {
+                                                  staticClass:
+                                                    "col-lg-5 col-md-5"
+                                                })
+                                              ]
+                                            )
                                           ]
                                         ),
                                         _vm._v(" "),
-                                        _c(
-                                          "div",
-                                          { staticClass: "col-md-6 col-sm-6 " },
-                                          [
-                                            _c(
-                                              "button",
-                                              {
-                                                staticClass:
-                                                  "btn btn-primary btn-sm  btn-block",
-                                                staticStyle: {
-                                                  "margin-top": "38px",
-                                                  height: "36px"
-                                                },
-                                                attrs: { type: "button" },
-                                                on: {
-                                                  click: function($event) {
-                                                    $event.preventDefault()
-                                                    return _vm.CartToAdd($event)
-                                                  }
-                                                }
-                                              },
-                                              [_vm._v("Add To Cart ")]
-                                            )
-                                          ]
-                                        )
+                                        _vm._m(0),
+                                        _vm._v(" "),
+                                        _vm._m(1),
+                                        _vm._v(" "),
+                                        _vm._m(2),
+                                        _vm._v(" "),
+                                        _vm._m(3)
                                       ])
                                     ])
                                   ]
-                                ),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  { staticClass: "col-md-4 col-sm-12 " },
-                                  [
-                                    _c("p", {
-                                      staticClass: "quick_description",
-                                      domProps: {
-                                        innerHTML: _vm._s(
-                                          _vm.quick_view_product.details
-                                        )
-                                      }
-                                    })
-                                  ]
                                 )
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "div",
-                                { staticClass: "row related_quick_row" },
-                                [
-                                  _vm._m(1),
-                                  _vm._v(" "),
-                                  _c(
-                                    "div",
-                                    { staticClass: "r_quick_body" },
-                                    _vm._l(_vm.recommended_products, function(
-                                      r_product,
-                                      index
-                                    ) {
-                                      return _c(
-                                        "div",
-                                        {
-                                          key: index,
-                                          staticClass: "col-md-2 "
-                                        },
-                                        [
-                                          _c("img", {
-                                            staticClass:
-                                              "img-responsive r_p_image",
-                                            attrs: {
-                                              src:
-                                                _vm.base_url +
-                                                r_product.thumbnail_img
-                                            }
-                                          }),
-                                          _vm._v(" "),
-                                          _c(
-                                            "a",
-                                            {
-                                              staticClass: "r_p_title",
-                                              on: {
-                                                mouseover: function($event) {
-                                                  $event.preventDefault()
-                                                  return _vm.recommended_replace(
-                                                    index
-                                                  )
-                                                }
-                                              }
-                                            },
-                                            [
-                                              _vm._v(
-                                                _vm._s(r_product.name) + " "
-                                              )
-                                            ]
-                                          )
-                                        ]
-                                      )
-                                    }),
-                                    0
-                                  )
-                                ]
-                              )
+                              ])
                             ])
                           ])
                     ])
@@ -71387,18 +71602,80 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "h4",
-      { staticClass: "control-label", attrs: { for: "input-quantity" } },
-      [_c("b", [_vm._v("Quantity")])]
-    )
+    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+      _c("div", { staticClass: "add_wishlist" }, [
+        _c("a", [
+          _c("i", {
+            staticClass: "fa fa-heart fa-2x",
+            staticStyle: { color: "#CC8E46" }
+          }),
+          _c("sup", [_c("i", { staticClass: "fa fa-plus fa-sm" })]),
+          _vm._v(" "),
+          _c(
+            "span",
+            { staticStyle: { "margin-left": "10px", color: "#C9C9C9" } },
+            [_vm._v("ADD TO WISHLIST")]
+          )
+        ])
+      ])
+    ])
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "r_quick_heading text-center" }, [
-      _c("h4", { staticClass: "heading" }, [_vm._v(" Recomended Products ")])
+    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+      _c("div", { staticClass: "call-us" }, [
+        _c("img", {
+          staticClass: "img-fluid",
+          attrs: {
+            src: "/storage/images/call_us/call_us.png",
+            width: "100%",
+            height: "50px;"
+          }
+        })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+      _c("div", { staticClass: "share_to" }, [
+        _c("h4", { staticStyle: { float: "left" } }, [_vm._v("Share to: ")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "share_to_icon" }, [
+          _c("i", {
+            staticClass: "fa fa-facebook-square",
+            attrs: { "aria-hidden": "true" }
+          }),
+          _vm._v(" "),
+          _c("i", {
+            staticClass: "fa fa-pinterest-square",
+            attrs: { "aria-hidden": "true" }
+          }),
+          _vm._v(" "),
+          _c("i", {
+            staticClass: "fa fa-whatsapp",
+            attrs: { "aria-hidden": "true" }
+          }),
+          _vm._v(" "),
+          _c("i", { staticClass: "fa-facebook-messenger" })
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+      _c(
+        "button",
+        { staticClass: "btn btn-warning", attrs: { type: "submit" } },
+        [_vm._v("View Full Product Details >>")]
+      )
     ])
   }
 ]
@@ -91999,8 +92276,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\project\sufiglobal_web_app\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\project\sufiglobal_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

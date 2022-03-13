@@ -21,25 +21,25 @@
     <div class="container">
       <div class="row">
           <div class="col-md-12">
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="policy">
                 <img class="img-fluid" src="/storage/images/policy/first_shipping.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="policy">
                 <img class="img-fluid" src="/storage/images/policy/Easy-return.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="policy">
                 <img class="img-fluid" src="/storage/images/policy/online_support.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="policy">
                 <img class="img-fluid" src="/storage/images/policy/new_design.png" width="100%">
               </div>
@@ -50,47 +50,47 @@
 
     
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center">
           <h4 class="section_title">DON'T MISS OUR MOST LOVED CATEGORIES</h4>
           <br>
           <hr>
           <div class="line"></div>
         </div>
-        <div class="col-lg-12 col-md-12 col-xs-12">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="col-md-3 loved-category">
             <img src="/storage/images/don't_miss/best-sealing-1.png" alt="" class="img-fluid" height="434px" width="100%">
           </div>
           <div class="col-md-9 loved-category">
-            <div class="col-md-4 col-sm-4 col-xs-6 loved-category">
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
                 <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid"  width="100%">
               </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 loved-category">
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
                 <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-6 loved-category">
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
                 <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
               </div>
             </div>
 
 
-            <div class="col-md-4 col-sm-4 col-xs-6 loved-category">
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
                 <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
               </div>
             </div>
-            <div class="col-md-4 col-sm-4 col-xs-6 loved-category">
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
                 <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-6 loved-category">
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
                 <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
               </div>
@@ -140,27 +140,31 @@
 
 
       <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
-          <div class="col-md-12">
-            <div class="col-md-3">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center">
+           <h4 class="section_title">COUPON</h4>
+            <br>
+            <hr>
+          <div class="line"></div>
+          <div class="col-md-12 coupon_top">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-1.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-2.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-3.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3">
+            <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-4.png" width="100%">
               </div>
@@ -171,165 +175,7 @@
       </div>
 
 
-      <!-- <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
-          <div class="coupon" style="margin-top: 20px">
-            <h4 class="text-left">GOWN & KURTIS</h4>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-
-
-
-      <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
-          <div class="coupon" style="margin-top: 20px">
-            <h4 class="text-left">MODEST FASHION</h4>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-
-
-      <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
-          <div class="coupon" style="margin-top: 20px">
-            <h4 class="text-left">TRADITIONAL DRESSES</h4>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-
-
-      <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
-          <div class="coupon" style="margin-top: 20px">
-            <h4 class="text-left">WESTERN DRESS</h4>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          
-        </div>
-
-      </div>
-
-
-      <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
-          <div class="coupon" style="margin-top: 20px">
-            <h4 class="text-left">PREMIUM HIJAB</h4>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-
-          <div class="col-md-3">
-            <div class="coupon-img">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, error.</p>
-            </div>
-          </div>
-          
-        </div>
-
-      </div> -->
+     
 
     <div class="new_arrival_section">
         <div class="row gown_kurtis">

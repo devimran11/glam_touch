@@ -236,160 +236,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1154,7 +1000,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
           _c("div", { staticClass: "policy" }, [
             _c("img", {
               staticClass: "img-fluid",
@@ -1166,7 +1012,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
           _c("div", { staticClass: "policy" }, [
             _c("img", {
               staticClass: "img-fluid",
@@ -1178,7 +1024,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
           _c("div", { staticClass: "policy" }, [
             _c("img", {
               staticClass: "img-fluid",
@@ -1190,7 +1036,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-3" }, [
+        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
           _c("div", { staticClass: "policy" }, [
             _c("img", {
               staticClass: "img-fluid",
@@ -1213,7 +1059,7 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "col-lg-12 col-md-12 col-xs-12 margin_container text-center"
+            "col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center"
         },
         [
           _c("h4", { staticClass: "section_title" }, [
@@ -1228,7 +1074,7 @@ var staticRenderFns = [
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+      _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" }, [
         _c("div", { staticClass: "col-md-3 loved-category" }, [
           _c("img", {
             staticClass: "img-fluid",
@@ -1244,7 +1090,7 @@ var staticRenderFns = [
         _c("div", { staticClass: "col-md-9 loved-category" }, [
           _c(
             "div",
-            { staticClass: "col-md-4 col-sm-4 col-xs-6 loved-category" },
+            { staticClass: "col-md-4 col-sm-6 col-xs-6 loved-category" },
             [
               _c("div", { staticClass: "miss-img" }, [
                 _c("img", {
@@ -1261,7 +1107,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-md-4 col-sm-4 col-xs-6 loved-category" },
+            { staticClass: "col-md-4 col-sm-6 col-xs-6 loved-category" },
             [
               _c("div", { staticClass: "miss-img" }, [
                 _c("img", {
@@ -1278,7 +1124,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-md-4 col-sm-4 col-xs-6 loved-category" },
+            { staticClass: "col-md-4 col-sm-6 col-xs-6 loved-category" },
             [
               _c("div", { staticClass: "miss-img" }, [
                 _c("img", {
@@ -1295,7 +1141,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-md-4 col-sm-4 col-xs-6 loved-category" },
+            { staticClass: "col-md-4 col-sm-6 col-xs-6 loved-category" },
             [
               _c("div", { staticClass: "miss-img" }, [
                 _c("img", {
@@ -1312,7 +1158,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-md-4 col-sm-4 col-xs-6 loved-category" },
+            { staticClass: "col-md-4 col-sm-6 col-xs-6 loved-category" },
             [
               _c("div", { staticClass: "miss-img" }, [
                 _c("img", {
@@ -1329,7 +1175,7 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-md-4 col-sm-4 col-xs-6 loved-category" },
+            { staticClass: "col-md-4 col-sm-6 col-xs-6 loved-category" },
             [
               _c("div", { staticClass: "miss-img" }, [
                 _c("img", {
@@ -1399,11 +1245,19 @@ var staticRenderFns = [
         "div",
         {
           staticClass:
-            "col-lg-12 col-md-12 col-xs-12 margin_container text-center"
+            "col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center"
         },
         [
-          _c("div", { staticClass: "col-md-12" }, [
-            _c("div", { staticClass: "col-md-3" }, [
+          _c("h4", { staticClass: "section_title" }, [_vm._v("COUPON")]),
+          _vm._v(" "),
+          _c("br"),
+          _vm._v(" "),
+          _c("hr"),
+          _vm._v(" "),
+          _c("div", { staticClass: "line" }),
+          _vm._v(" "),
+          _c("div", { staticClass: "col-md-12 coupon_top" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",
@@ -1415,7 +1269,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",
@@ -1427,7 +1281,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",
@@ -1439,7 +1293,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",

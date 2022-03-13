@@ -16,7 +16,7 @@
 
               <div v-else class="quick_content">
                   <div class="modal-header">
-                    <h5 class="modal-title"></h5>
+                    <h2 class="modal-title">Quick View</h2>
                     <button type="button " class="close close_sign" data-dismiss="modal" @click="closeModal" aria-label="Close">
                       <span aria-hidden="true">&times;</span>
                     </button>
@@ -31,111 +31,156 @@
                        <div class="col-md-4 col-sm-12">
 
                       <ul class="list-unstyled description">
-                               <li>
-                      <h4 class="title" itemprop="name">{{  quick_view_product.name  }}</h4>
 
-                      </li>
-                        <li>
-                          <h4>
-                            <b>Product Code:</b>
-                            <span itemprop="mpn">{{ quick_view_product.product_code }}</span>
-                          </h4>
-                        </li>
-                            <li>
-                              <h4>
-                                <b>Availability:</b>
-                                <span class="instock" v-if="quick_view_product.stock > 0">Stock In <small>({{quick_view_product.stock }})</small></span>
-                                <span class="outstcok" v-else>Stock Out</span>
-                              </h4>
-                            </li>
-                          </ul>
-                          <ul class="price-box">
-                          <li>
-                          <h4 style="margin-left:-40px;">
-                            <b>Price:</b>
-                            <span style="font-size:18px;" class="price-old" v-if="quick_view_product.discount">BDT {{quick_view_product.sale_price}}</span>
-                            <span class="price-new">BDT {{quick_view_product.price}}</span>
+                  <li>
 
-                          </h4>
-                          </li>
-                          <li></li>
-                        </ul>
+                    <h3 class="single_p_name" >{{ quick_view_product.name }}</h3>
+
+                  </li>
+
+                   <li>
+                      <div class="s_price_container_1">
+                            <div v-if="quick_view_product.discount" class="s_price_container_2">
+                                <p>
+                                    &#2547;{{quick_view_product.sale_price}} 
+                                </p>
+                            </div>
+                            <p>
+                                &#2547;{{quick_view_product.price}}
+                            </p>
+                      </div>
+
+                    </li>
+                            
+                    </ul>
                         <div id="product">
-                          <div v-if="quick_view_product.product_variant.length>0 && quick_view_product.product_attribute">
-                            <!-- <h3 class="subtitle">Available Options</h3> -->
-                            <div class="form-group">
-                              <h4 style="display:flex">
-                                <b>{{ quick_view_product.product_attribute.attribute.name }}:</b>
-                              <select
-                                class="form-control"
-                                v-model="variant_index"
-                                @change="SelectVaraint"
-                              >
-                                <option value disabled>--Please Select--</option>
-                                <option
-                                  v-for="(variant,v) in quick_view_product.product_variant"
-                                  :key="v"
-                                  :value="v"
-                                >{{variant.variant.name}}</option>
-                              </select>
-                              </h4>
+                          <div class="col-lg-12 col-md-12 col-xs-12" v-if="quick_view_product.product_variant.length>0 && quick_view_product.product_attribute">
+                            <div class="ps-product__variations">
+                                <div class="pr_switch_wrap">
+                                    <div class="product-attributes">
+                                      <hr>
+                                      <div v-if="quick_view_product.product_attribute.attribute.name.toLowerCase()=='size'" class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
+                                          data-type="text">
+                                          <label class="attribute-name">Size:</label>
+                                          <div class="attribute-values">
+                                              <ul class="text-swatch attribute-swatch color-swatch">
+                                                <li v-for="(variant,index) in quick_view_product.product_variant" :key="index"
+                                                    class="attribute-swatch-item pe-none">
+                                                    <div>
+                                                        <label>
+                                                            <input class="product-filter-item variant_size"
+                                                                type="radio" v-model="cart.variant_id" name="size"
+                                                                :value="variant.variant.id" >
+                                                            <span>{{ variant.variant.name }}</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <hr>
+
+                                      <div v-if="quick_view_product.product_attribute.attribute.name.toLowerCase()=='size'" class="text-swatches-wrapper attribute-swatches-wrapper attribute-swatches-wrapper form-group product__attribute product__color"
+                                          data-type="text">
+                                          <label class="attribute-name">Color:</label>
+                                          <div class="attribute-values">
+                                              <ul class="text-swatch attribute-swatch color-swatch">
+                                                <li v-for="(variant,index) in quick_view_product.product_variant" :key="index"
+                                                    class="attribute-swatch-item pe-none">
+                                                    <div>
+                                                        <label>
+                                                            <input class="variant_color"
+                                                                type="radio" v-model="cart.variant_id" name="size"
+                                                                :value="variant.variant.id" >
+                                                            <span>{{ variant.variant.name }}</span>
+                                                        </label>
+                                                    </div>
+                                                </li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                      <hr>
+                                    </div>
+                                </div>
                             </div>
                           </div>
                           <div class="row">
-                            <div class="col-md-6 col-sm-6 ">
-                              <div class>
-                                <h4 class="control-label" for="input-quantity">
-                                  <b>Quantity</b>
-                                </h4>
-                                <input
-                                  type="number"
-                                  name="quantity"
-                                  v-model="cart.quantity"
-                                  size="2"
-                                  value="1"
-                                  class="form-control"
-                                  @change="validation"
-                                  @keyup="validation"
-                                />
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                              <div class="qty_container">
+                                  <div @click="decrementQty" class="">
+                                  <i  class="fa fa-minus"></i>
+                                </div>
 
-                                <div class="clear"></div>
+                                    <input
+                                    type="text"
+                                    name="quantity"
+                                    v-model="cart.quantity"
+                                    value="1"
+                                    class="form-control input_qty"
+                                    @change="validation"
+                                    @keyup="validation"
+                                  />
+                                <div @click="incrementQty" class="">
+                                  <i  class="fa fa-plus"></i>
+                                </div>
+                                
+
+                                <div class="col-lg-5 col-md-5 col-xs-6">
+                                  <button
+                                    @click.prevent="CartToAdd"
+                                    type="button"
+                                    class="btn btn-sm btn-block btn_buy_cart"
+                                    >
+                                  <span>ADD TO CART</span>
+                                  </button>
+                                </div>
+
+                                <div class="col-lg-5 col-md-5 col-xs-6">
+                                  <button
+                                    @click.prevent="buyNow"
+                                    type="button"
+                                  
+                                    class="btn  btn-sm btn_buy_cart"
+                                    >BUY NOW</button>
+                                </div>
+                                <div class="col-lg-5 col-md-5">
+
+
+                            </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                              <div class="add_wishlist">
+                                  <a><i class="fa fa-heart fa-2x" style="color: #CC8E46"></i><sup><i class="fa fa-plus fa-sm"></i></sup> <span style="margin-left:10px; color: #C9C9C9">ADD TO WISHLIST</span></a>
                               </div>
                             </div>
 
-                            <div class="col-md-6 col-sm-6 ">
-                              <button
-                                @click.prevent="CartToAdd"
-                                type="button"
-                                class="btn btn-primary btn-sm  btn-block"
-                                style="margin-top:38px;height:36px;"
-                          >Add To Cart </button>
-                        </div>
-                    </div>
-                  </div>
-                       </div>
 
-                      <div class="col-md-4 col-sm-12 ">
-                       <p class="quick_description" v-html="quick_view_product.details" >  </p>
-
-                      </div>
-                    </div>
-
-                    <div class="row related_quick_row">
-                         <div class="r_quick_heading text-center">
-                            <h4 class="heading"> Recomended Products </h4>
-                         </div>
-                         <div class="r_quick_body">
-
-                            <div v-for="(r_product,index) in recommended_products " :key="index" class="col-md-2 ">
-                                  <img :src="base_url+r_product.thumbnail_img" class="img-responsive r_p_image" >
-                                  <a class="r_p_title" @mouseover.prevent="recommended_replace(index)" >{{ r_product.name }} </a>
-
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                              <div class="call-us">
+                                  <img class="img-fluid" src="/storage/images/call_us/call_us.png" width="100%" height="50px;">
+                              </div>
                             </div>
 
-                         </div>
 
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                              <div class="share_to">
+                                <h4 style="float: left">Share to: </h4>
+                                <div class="share_to_icon">
+                                  <i class="fa fa-facebook-square" aria-hidden="true"></i> 
+                                  <i class="fa fa-pinterest-square" aria-hidden="true"></i>
+                                  <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                  <i class="fa-facebook-messenger"></i>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12">
+                              <button class="btn btn-warning" type="submit">View Full Product Details >></button>
+                            </div>
+                          </div>
+                        </div>
+                       </div>
                     </div>
-
                   </div>
                </div>
               </div>

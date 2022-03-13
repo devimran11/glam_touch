@@ -14,8 +14,8 @@
                   ></p> -->
                   <img src="storage/images/footer/logo.png" alt="">
                   <div class="footer-info">
-                    <p class="footer-color">+880 9639148048</p>
-                    <p>Worktime: SAT - FRI, 10AM - 11PM</p>
+                    <p class="footer-number">+880 9639148048</p>
+                    <p class="work_time">Worktime: SAT - FRI, 10AM - 11PM</p>
                     <i class="fa fa-facebook-square fa-2x"></i> 
                     <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
                     <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>

@@ -141,14 +141,14 @@ $color=App\Models\BackgroundAndColor::first();
         margin-top: 20px !important;
         margin: auto;
         border-radius: 10px ;
-        box-shadow: 3px 3px 3px #ddd ;
+        /* box-shadow: 3px 3px 3px #ddd ; */
     }
 
     .title { margin:0px 0px 20px 0px; }
 
     .custom-box .title {
         font-family: 'Poppins', sans-serif;
-        text-align: center;
+        /* text-align: center; */
         border-bottom: 2px solid var(--primary-color);
     }
 
@@ -161,10 +161,10 @@ $color=App\Models\BackgroundAndColor::first();
     }
 
     .cart-total {
-        background: #21180F;
+        /* background: #21180F; */
         width: 100%;
-        padding: 5px;
-        font-size: 20px;
+        padding: 0px;
+        font-size: 14px;
     }
 
     span.badge-danger {
@@ -3003,7 +3003,7 @@ span.price-old {
         margin-top: 20px !important;
         margin: auto;
         border-radius: 10px ;
-        box-shadow: 0 1pt 12pt rgb(150 165 237) ;
+        /* box-shadow: 0 1pt 12pt rgb(150 165 237) ; */
     }
 
 
@@ -4997,5 +4997,42 @@ sup {
 }
 .related_produc{
     margin-top: 15px;
+}
+input[data-v-c157765e] {
+    height: 44px;
+}
+.product-img{
+    float: left;
+    margin-right: 20px;
+}
+
+.product-content{
+   
+}
+.product-title{
+    color: #A6A6A6;
+}
+.product-size{
+    font-weight: bold;
+}
+.input_quantity {
+    padding: 12px 3% !important;
+    margin-left: 1%;
+    font-size: 16px;
+    font-weight: bold;
+    height: 32px !important;
+    width: 32px !important;
+    margin-top: -7px;
+    margin-right: 5px;
+}
+
+.total_carts_products{
+    margin-bottom: 20px; 
+    height: 255px;
+    overflow-x: auto;
+}
+
+.carts-products{
+    margin-bottom: 10px;
 }
 </style><?php /**PATH D:\project\sufiglobal_web_app\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

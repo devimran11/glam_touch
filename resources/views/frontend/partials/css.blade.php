@@ -13,8 +13,18 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{asset('frontend/fonts/Montserrat-Bold.ttf')}}"  type='text/css'>
+<link rel="stylesheet" href="{{asset('frontend/fonts/Montserrat-Regular.ttf')}}"  type='text/css'>
 {{-- poppins fornt end  --}}
-
+{{-- <link
+  href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.css"
+  rel="stylesheet"
+/>
+<!-- MDB -->
+<script
+  type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.10.2/mdb.min.js"
+></script> --}}
 <?php
 $color=App\Models\BackgroundAndColor::first();
 ?>
@@ -137,18 +147,18 @@ $color=App\Models\BackgroundAndColor::first();
         width: 100%;
         height: auto ;
         background: #fff ;
-        padding: 25px 40px ;
+        padding: 15px 40px ;
         margin-top: 20px !important;
         margin: auto;
         border-radius: 10px ;
-        box-shadow: 3px 3px 3px #ddd ;
+        /* box-shadow: 3px 3px 3px #ddd ; */
     }
 
     .title { margin:0px 0px 20px 0px; }
 
     .custom-box .title {
         font-family: 'Poppins', sans-serif;
-        text-align: center;
+        /* text-align: center; */
         border-bottom: 2px solid var(--primary-color);
     }
 
@@ -161,10 +171,10 @@ $color=App\Models\BackgroundAndColor::first();
     }
 
     .cart-total {
-        background: #21180F;
+        /* background: #21180F; */
         width: 100%;
-        padding: 5px;
-        font-size: 20px;
+        padding: 0px;
+        font-size: 14px;
     }
 
     span.badge-danger {
@@ -1292,6 +1302,11 @@ span.price-old {
   margin-top: -19px !important;
   color: var(--primary-color) !important;
 }
+ .close_sign {
+  font-size: 40px !important;
+  margin-top: -19px !important;
+ color: black !important;
+}
 
 #_qvm .animator {
   margin-top: 100px;
@@ -1673,10 +1688,9 @@ span.price-old {
 
     .section_title {
         text-transform: uppercase;
-        font-weight: 500;
         margin-top: 10px;
         margin-left: 10px;
-        font-family: 'Poppins', sans-serif;
+        /* font-family: 'Poppins', sans-serif; */
         font-size: 26px;
     }
 
@@ -1714,7 +1728,7 @@ span.price-old {
     .content_link{
         font-size: 16px;
         color: var(--primary-text-color);
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat-Regular';
         margin-left: 5px !important;
         margin: 0 0 0px;
     }
@@ -3003,7 +3017,7 @@ span.price-old {
         margin-top: 20px !important;
         margin: auto;
         border-radius: 10px ;
-        box-shadow: 0 1pt 12pt rgb(150 165 237) ;
+        /* box-shadow: 0 1pt 12pt rgb(150 165 237) ; */
     }
 
 
@@ -4880,6 +4894,10 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Montserrat-Bold';
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 
@@ -4904,8 +4922,11 @@ sup {
   background-repeat: no-repeat;
   background-size: cover;
 }
-.footer-color{
-    color: #EC971F;
+.footer-number{
+    color: #cc8e46;
+    font-family: 'Montserrat-Bold';
+    font-size: 30px;
+    font-weight: 600;
 }
 .gown_kurtis{
     margin-top: 10px;
@@ -4970,14 +4991,13 @@ sup {
    margin: 0 !important;
 }
 .content_link a{
-    color: #C9C9C9;
+    color: #939494;
 }
 
 .section_title_left{
-    text-transform: uppercase;
-    font-weight: 500;
-    font-family: 'Poppins', sans-serif;
-    font-size: 26px;
+    font-family: 'Montserrat-Bold';
+    font-weight: bold;
+    font-size: 28px;
 }
 
 .plus-minus{
@@ -4997,5 +5017,85 @@ sup {
 }
 .related_produc{
     margin-top: 15px;
+}
+input[data-v-c157765e] {
+    height: 44px;
+}
+.product-img{
+    float: left;
+    margin-right: 20px;
+}
+
+.product-content{
+   
+}
+.product-title{
+    color: #A6A6A6;
+}
+.product-size{
+    font-weight: bold;
+}
+.input_quantity {
+    padding: 12px 3% !important;
+    margin-left: 1%;
+    font-size: 16px;
+    font-weight: bold;
+    height: 32px !important;
+    width: 32px !important;
+    margin-top: -7px;
+    margin-right: 5px;
+}
+
+.total_carts_products{
+    margin-bottom: 20px; 
+    height: 255px;
+    overflow-x: auto;
+}
+
+.carts-products{
+    margin-bottom: 10px;
+}
+
+.promo_code{
+    margin-left: 50px;
+}
+
+.coupon_code{
+    height: 35px !important;
+    width: 60%;
+    float: left;
+    margin-right: 10px;
+}
+.code_btn{
+    background-color: #555555;
+    color: white;
+}
+.modal-header{
+    padding: 8px;
+}
+.modal-title{
+    text-align: center;
+    color: #463420;
+    font-weight: blod;
+}
+.modal-body{
+    height: 520px;
+}
+.section_title{
+    font-family: 'Montserrat-Bold';
+    font-weight: bold;
+}
+.coupon_top{
+    margin-top: 28px;
+}
+.work_time{
+     font-family: 'Montserrat-Regular';
+     font-size: 14px;
+     color: #d0d0d0;
+}
+.link_line li{
+    color: #848383;
+    font-family: 'Montserrat-Regular';
+    font-size: 17px;
 }
 </style>

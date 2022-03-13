@@ -1,0 +1,100 @@
+%!Adobe-FontList 1.14
+%Locale:0x809
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:BonbonLight
+FamilyName:BonbonLight
+StyleName:☞
+FullName:BonbonLight
+MenuName:BonbonLight
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\project\Glam Touch UI Design\Font\Bonbon Light [TheFontsMaster.com].otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+FileLength:552652
+FileModTime:1442279476
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Bold
+FamilyName:Montserrat
+StyleName:Bold
+FullName:Montserrat Bold
+MenuName:Montserrat
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\project\Glam Touch UI Design\Font\Montserrat-Bold.ttf
+DataFormat:sfntData
+FileLength:244468
+FileModTime:1323712800
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Montserrat-Regular
+FamilyName:Montserrat
+StyleName:Regular
+FullName:Montserrat Regular
+MenuName:Montserrat
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\project\Glam Touch UI Design\Font\Montserrat-Regular.ttf
+DataFormat:sfntData
+FileLength:245708
+FileModTime:1323712800
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Bold
+FamilyName:Roboto
+StyleName:Bold
+FullName:Roboto Bold
+MenuName:Roboto
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\project\Glam Touch UI Design\Font\Roboto-Bold.ttf
+DataFormat:sfntData
+FileLength:163448
+FileModTime:1322551016
+WeightClass:700
+WidthClass:5
+AngleClass:0
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Roboto-Regular
+FamilyName:Roboto
+StyleName:Regular
+FullName:Roboto Regular
+MenuName:Roboto
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\project\Glam Touch UI Design\Font\Roboto-Regular.ttf
+DataFormat:sfntData
+FileLength:158604
+FileModTime:1322551018
+WeightClass:400
+WidthClass:5
+AngleClass:0
+%EndFont
+
