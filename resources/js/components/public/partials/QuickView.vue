@@ -8,6 +8,7 @@
     >
       <div class="modal-dialog modal-xl">
         <div class="row">
+          
           <div class="col-md-10 col-sm-12">
             <div class="modal-content">
               <div v-if="quick_loading" class="animator  text-center">
@@ -30,25 +31,32 @@
                 </div>
                 <div class="modal-body">
                   <div class="row">
-                    <div class="col-md-4 col-sm-12">
-                      <img
-                        class="quick_view_image"
-                        :src="base_url + quick_view_product.thumbnail_img"
-                        alt=""
-                      />
-                      <div class="preview_img_box_container">
-                        <div class="__preview_image_box">
-                          <!-- <img src="" class="__preview_img" /> -->
+                    <div class="col-md-6 col-sm-12">
+                      <div class="single_img_view">
+                        <div class="zoom_btn">
+                          <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="quick_preview_img">
                           <img
-                            class="img-fluid"
-                            src="/storage/images/products/1qhNboF9Lwq4CESKKSsxzULeW4aVWtyMOzFZv94n.jpg"
-                            width="100%"
+                            class="quick_view_image"
+                            :src="base_url + quick_view_product.thumbnail_img"
+                            alt=""
                           />
+                          <div class="preview_img_box_container">
+                            <div class="__preview_image_box">
+                              <!-- <img src="" class="__preview_img" /> -->
+                              <img
+                                class="img-fluid"
+                                src="/storage/images/products/1qhNboF9Lwq4CESKKSsxzULeW4aVWtyMOzFZv94n.jpg"
+                                width="100%"
+                              />
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
 
-                    <div class="col-md-4 col-sm-12">
+                    <div class="col-md-6 col-sm-12">
                       <ul class="list-unstyled description">
                         <li>
                           <h3 class="single_p_name">
@@ -396,14 +404,15 @@ export default {
   background: #00000073;
 }
 .quick_view_image {
-  width: 250px !important;
-  height: 250px !important;
+  width: 300px !important;
+  height: 350px !important;
 }
 
 .close_sign {
-  font-size: 40px !important;
-  margin-top: -45px !important;
-  color: red !important;
+  font-size: 50px !important;
+  margin-top: -52px !important;
+  color: #45341E !important;
+  margin-right: 10px;
 }
 
 .animator {
@@ -554,5 +563,9 @@ export default {
 }
 .col-md-2 {
   margin-bottom: 25px;
+}
+.__preview_image_box{
+  margin-left: 103px;
+
 }
 </style>

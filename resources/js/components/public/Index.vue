@@ -135,7 +135,8 @@
           <div class="line"></div>
         </div>
 
-        <SuggestProducts />
+        <!-- <SuggestProducts /> -->
+        <TopSellingProducts />
       </div>
 
 
@@ -181,6 +182,21 @@
         <div class="row gown_kurtis">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <h4 class="section_title_left">GOWN & KURTIS</h4>
+            <br>
+            <hr>
+            <div class="line-left"></div>
+          </div>
+
+          <!-- <NewProductsHorizontalSlide /> -->
+        </div>
+
+        <TopSellingProducts />
+      </div>
+
+      <div class="new_arrival_section">
+        <div class="row gown_kurtis">
+          <div class="col-lg-12 col-md-12 col-xs-12">
+            <h4 class="section_title_left">MODEST FASHION</h4>
             <br>
             <hr>
             <div class="line-left"></div>

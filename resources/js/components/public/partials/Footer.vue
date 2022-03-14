@@ -72,7 +72,7 @@
               <!-- <div class="line"></div> -->
               <ul class="link_line">
                 <li>
-                  <i class="fa fa-map-marker" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam numquam repellat corrupti quis delectus!
+                  <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam numquam repellat corrupti quis delectus!
                 </li>
                 <br>
                 <li>

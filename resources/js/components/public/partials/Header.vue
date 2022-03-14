@@ -15,6 +15,7 @@
 
         <div class="col-md-10">
           <div class="col-md-12">
+            
             <div class="main-header-right">
                 <li class="mobile_menubar_header" >
                   <i @click.prevent="menuShow" class="fa fa-bars" id="__icon_fa_menu" ></i>
@@ -25,7 +26,9 @@
                 </li>
                 
                 <li>
+                  
                   <form id="search_form" class="header_search_form"  @submit.prevent="subMitAutoComppleteForm">
+                    
                     <input
                       type="text"
                       class="search-input"
@@ -63,7 +66,6 @@
                     </div>
                   </form>
                 </li>
-
               
 
               <div class="vl" style="border-left: 1px solid rgb(215, 215, 215); height: 40px; margin-top: 6px;"></div>
@@ -110,13 +112,11 @@
                     </div>
                   </div>
                 </li>
-              <li v-else>
-
-                  <router-link  class="user_login"  :to="{name:'otpLogin'}">
-                    <i class="fa fa-phone"></i>
-                  </router-link>
-
-              </li>
+                <li v-else>
+                    <router-link  class="user_login"  :to="{name:'otpLogin'}">
+                      <i class="fa fa-phone"></i>
+                    </router-link>
+                </li>
                 
                 <li>
                   <router-link :to="{name:'wishlist'}" class="header_wishlist" > <img :src="base_url+'images/basic_img/heart.png'" /><sub> {{ wishlistContent.item_count}} </sub> </router-link>
@@ -125,7 +125,7 @@
                   <a @click="cartOpen" class="header_cart"> <img :src="base_url+'images/basic_img/shopping-bag.png'" > <sub>{{ cart.itemCount }}</sub></a>
                 </li> -->
                 <li>
-                  <router-link class="merchant_login"   target="_blank" :to="{name : 'merchant_login' }" > <i class="fa fa-user"></i> Login / Join</router-link>
+                  <router-link class="merchant_login"   target="_blank" :to="{name : 'merchant_login' }" > <i class="fa fa-user" style="color: #fff; text-shadow: 0 0 1px #494A4A;"></i> Login / Join</router-link>
                 </li>
             </div>
             
@@ -134,7 +134,7 @@
           <div class="col-md-12">
             
             <div class="menu" id="navbar">
-              <hr>
+              <div class="header-line"></div>
               <ul class="menu-list" id="menu_list">
                 <li v-for="(category,category_index) in categories" :key="category_index" class="menu-item">
                   <router-link
@@ -189,12 +189,7 @@
                     </li>
                   </ul>
                 </li>
-                  <li class="menu-item">
-                    <router-link  class="menu-item-link" :to="{name:'category_new_arrival_products'}"> New Arrival</router-link>
-                  </li>
-                  <li class="menu-item">
-                    <router-link  class="menu-item-link" :to="{name:'category_offer_products'}"> Offer</router-link>
-                  </li>
+                  
               </ul>
             </div>
 
@@ -277,9 +272,12 @@
     <div class="cart-open" @click="cartOpen">
       <div class="cart-total">
         <i class="fa fa-shopping-bag"></i>
-        <h5>{{ cart.total }}</h5>
+        <div class="cart-item-total">{{ cart.itemCount }} items</div>
       </div>
-      <div class="cart-item-total">{{ cart.itemCount }} items</div>
+      <div class="cart_amount">
+        <h5>&#2547; {{ Math.floor(cart.total) }}</h5>
+      </div>
+      
     </div>
 
 

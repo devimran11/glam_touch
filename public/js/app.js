@@ -3074,8 +3074,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-//
-//
 
 
 
@@ -3441,6 +3439,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_2__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8261,7 +8267,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".vld-shown {\r\n  overflow: hidden;\r\n}\r\n\r\n.vld-overlay {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  align-items: center;\r\n  display: none;\r\n  justify-content: center;\r\n  overflow: hidden;\r\n  z-index: 9999;\r\n}\r\n\r\n.vld-overlay.is-active {\r\n  display: flex;\r\n}\r\n\r\n.vld-overlay.is-full-page {\r\n  z-index: 9999;\r\n  position: fixed;\r\n}\r\n\r\n.vld-overlay .vld-background {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  background: #fff;\r\n  opacity: 0.5;\r\n}\r\n\r\n.vld-overlay .vld-icon, .vld-parent {\r\n  position: relative;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".vld-shown {\n  overflow: hidden;\n}\n\n.vld-overlay {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  align-items: center;\n  display: none;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 9999;\n}\n\n.vld-overlay.is-active {\n  display: flex;\n}\n\n.vld-overlay.is-full-page {\n  z-index: 9999;\n  position: fixed;\n}\n\n.vld-overlay .vld-background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  background: #fff;\n  opacity: 0.5;\n}\n\n.vld-overlay .vld-icon, .vld-parent {\n  position: relative;\n}\n\n", ""]);
 
 // exports
 
@@ -8299,7 +8305,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 250px !important;\r\n  height: 250px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 40px !important;\r\n  margin-top: -45px !important;\r\n  color: red !important;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\r\n", ""]);
+exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 300px !important;\r\n  height: 350px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 50px !important;\r\n  margin-top: -52px !important;\r\n  color: #45341E !important;\r\n  margin-right: 10px;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\n.__preview_image_box[data-v-68ee6900]{\r\n  margin-left: 103px;\n}\r\n", ""]);
 
 // exports
 
@@ -69696,7 +69702,7 @@ var staticRenderFns = [
         _c("ul", { staticClass: "link_line" }, [
           _c("li", [
             _c("i", {
-              staticClass: "fa fa-map-marker",
+              staticClass: "fa fa-map-marker fa-2x",
               attrs: { "aria-hidden": "true" }
             }),
             _vm._v(
@@ -70101,7 +70107,13 @@ var render = function() {
                         }
                       },
                       [
-                        _c("i", { staticClass: "fa fa-user" }),
+                        _c("i", {
+                          staticClass: "fa fa-user",
+                          staticStyle: {
+                            color: "#fff",
+                            "text-shadow": "0 0 1px #494A4A"
+                          }
+                        }),
                         _vm._v(" Login / Join")
                       ]
                     )
@@ -70113,177 +70125,137 @@ var render = function() {
             _vm._v(" "),
             _c("div", { staticClass: "col-md-12" }, [
               _c("div", { staticClass: "menu", attrs: { id: "navbar" } }, [
-                _c("hr"),
+                _c("div", { staticClass: "header-line" }),
                 _vm._v(" "),
                 _c(
                   "ul",
                   { staticClass: "menu-list", attrs: { id: "menu_list" } },
-                  [
-                    _vm._l(_vm.categories, function(category, category_index) {
-                      return _c(
-                        "li",
-                        { key: category_index, staticClass: "menu-item" },
-                        [
-                          _c(
-                            "router-link",
-                            {
-                              staticClass: "menu-item-link",
-                              attrs: {
-                                to: {
-                                  name: "PublcaCategory",
-                                  params: { slug: category.slug }
-                                }
-                              }
-                            },
-                            [
-                              _vm._v(
-                                "\n                  " +
-                                  _vm._s(category.name) +
-                                  "\n                "
-                              )
-                            ]
-                          ),
-                          _vm._v(" "),
-                          category.sub_category.length > 0
-                            ? _c("i", {
-                                staticClass: "fa fa-angle-down menu-icon",
-                                on: { click: _vm.shownextElement }
-                              })
-                            : _vm._e(),
-                          _vm._v(" "),
-                          category.sub_category.length > 0
-                            ? _c(
-                                "ul",
-                                { staticClass: "sub-item-list" },
-                                _vm._l(category.sub_category, function(
-                                  sub_category
-                                ) {
-                                  return _c(
-                                    "li",
-                                    {
-                                      key: sub_category.id,
-                                      staticClass: "sub-item"
-                                    },
-                                    [
-                                      _c(
-                                        "router-link",
-                                        {
-                                          staticClass: "sub-item-link",
-                                          attrs: {
-                                            to: {
-                                              name: "PublicSubCategory",
-                                              params: {
-                                                slug: sub_category.slug
-                                              }
-                                            }
-                                          }
-                                        },
-                                        [_vm._v(_vm._s(sub_category.name))]
-                                      ),
-                                      _vm._v(" "),
-                                      sub_category.sub_sub_category.length
-                                        ? _c("i", {
-                                            staticClass:
-                                              "fa fa-angle-down sub-menu-icon",
-                                            on: { click: _vm.shownextElement }
-                                          })
-                                        : _vm._e(),
-                                      _vm._v(" "),
-                                      sub_category.sub_sub_category.length
-                                        ? _c(
-                                            "ul",
-                                            {
-                                              staticClass: "sub-sub-item-list"
-                                            },
-                                            _vm._l(
-                                              sub_category.sub_sub_category,
-                                              function(sub_sub_category) {
-                                                return _c(
-                                                  "li",
-                                                  {
-                                                    key: sub_sub_category.id,
-                                                    staticClass: "sub-sub-item"
-                                                  },
-                                                  [
-                                                    _c(
-                                                      "router-link",
-                                                      {
-                                                        staticClass:
-                                                          "sub-sub-item-link",
-                                                        attrs: {
-                                                          to: {
-                                                            name:
-                                                              "PublicSubSUbCategory",
-                                                            params: {
-                                                              slug:
-                                                                sub_sub_category.slug
-                                                            }
-                                                          }
-                                                        }
-                                                      },
-                                                      [
-                                                        _vm._v(
-                                                          _vm._s(
-                                                            sub_sub_category.name
-                                                          )
-                                                        )
-                                                      ]
-                                                    )
-                                                  ],
-                                                  1
-                                                )
-                                              }
-                                            ),
-                                            0
-                                          )
-                                        : _vm._e()
-                                    ],
-                                    1
-                                  )
-                                }),
-                                0
-                              )
-                            : _vm._e()
-                        ],
-                        1
-                      )
-                    }),
-                    _vm._v(" "),
-                    _c(
+                  _vm._l(_vm.categories, function(category, category_index) {
+                    return _c(
                       "li",
-                      { staticClass: "menu-item" },
+                      { key: category_index, staticClass: "menu-item" },
                       [
                         _c(
                           "router-link",
                           {
                             staticClass: "menu-item-link",
                             attrs: {
-                              to: { name: "category_new_arrival_products" }
+                              to: {
+                                name: "PublcaCategory",
+                                params: { slug: category.slug }
+                              }
                             }
                           },
-                          [_vm._v(" New Arrival")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      { staticClass: "menu-item" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass: "menu-item-link",
-                            attrs: { to: { name: "category_offer_products" } }
-                          },
-                          [_vm._v(" Offer")]
-                        )
+                          [
+                            _vm._v(
+                              "\n                  " +
+                                _vm._s(category.name) +
+                                "\n                "
+                            )
+                          ]
+                        ),
+                        _vm._v(" "),
+                        category.sub_category.length > 0
+                          ? _c("i", {
+                              staticClass: "fa fa-angle-down menu-icon",
+                              on: { click: _vm.shownextElement }
+                            })
+                          : _vm._e(),
+                        _vm._v(" "),
+                        category.sub_category.length > 0
+                          ? _c(
+                              "ul",
+                              { staticClass: "sub-item-list" },
+                              _vm._l(category.sub_category, function(
+                                sub_category
+                              ) {
+                                return _c(
+                                  "li",
+                                  {
+                                    key: sub_category.id,
+                                    staticClass: "sub-item"
+                                  },
+                                  [
+                                    _c(
+                                      "router-link",
+                                      {
+                                        staticClass: "sub-item-link",
+                                        attrs: {
+                                          to: {
+                                            name: "PublicSubCategory",
+                                            params: { slug: sub_category.slug }
+                                          }
+                                        }
+                                      },
+                                      [_vm._v(_vm._s(sub_category.name))]
+                                    ),
+                                    _vm._v(" "),
+                                    sub_category.sub_sub_category.length
+                                      ? _c("i", {
+                                          staticClass:
+                                            "fa fa-angle-down sub-menu-icon",
+                                          on: { click: _vm.shownextElement }
+                                        })
+                                      : _vm._e(),
+                                    _vm._v(" "),
+                                    sub_category.sub_sub_category.length
+                                      ? _c(
+                                          "ul",
+                                          { staticClass: "sub-sub-item-list" },
+                                          _vm._l(
+                                            sub_category.sub_sub_category,
+                                            function(sub_sub_category) {
+                                              return _c(
+                                                "li",
+                                                {
+                                                  key: sub_sub_category.id,
+                                                  staticClass: "sub-sub-item"
+                                                },
+                                                [
+                                                  _c(
+                                                    "router-link",
+                                                    {
+                                                      staticClass:
+                                                        "sub-sub-item-link",
+                                                      attrs: {
+                                                        to: {
+                                                          name:
+                                                            "PublicSubSUbCategory",
+                                                          params: {
+                                                            slug:
+                                                              sub_sub_category.slug
+                                                          }
+                                                        }
+                                                      }
+                                                    },
+                                                    [
+                                                      _vm._v(
+                                                        _vm._s(
+                                                          sub_sub_category.name
+                                                        )
+                                                      )
+                                                    ]
+                                                  )
+                                                ],
+                                                1
+                                              )
+                                            }
+                                          ),
+                                          0
+                                        )
+                                      : _vm._e()
+                                  ],
+                                  1
+                                )
+                              }),
+                              0
+                            )
+                          : _vm._e()
                       ],
                       1
                     )
-                  ],
-                  2
+                  }),
+                  0
                 )
               ])
             ])
@@ -70468,11 +70440,13 @@ var render = function() {
       _c("div", { staticClass: "cart-total" }, [
         _c("i", { staticClass: "fa fa-shopping-bag" }),
         _vm._v(" "),
-        _c("h5", [_vm._v(_vm._s(_vm.cart.total))])
+        _c("div", { staticClass: "cart-item-total" }, [
+          _vm._v(_vm._s(_vm.cart.itemCount) + " items")
+        ])
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "cart-item-total" }, [
-        _vm._v(_vm._s(_vm.cart.itemCount) + " items")
+      _c("div", { staticClass: "cart_amount" }, [
+        _c("h5", [_vm._v("৳ " + _vm._s(Math.floor(_vm.cart.total)))])
       ])
     ]),
     _vm._v(" "),
@@ -71053,25 +71027,40 @@ var render = function() {
                               _c("div", { staticClass: "row" }, [
                                 _c(
                                   "div",
-                                  { staticClass: "col-md-4 col-sm-12" },
+                                  { staticClass: "col-md-6 col-sm-12" },
                                   [
-                                    _c("img", {
-                                      staticClass: "quick_view_image",
-                                      attrs: {
-                                        src:
-                                          _vm.base_url +
-                                          _vm.quick_view_product.thumbnail_img,
-                                        alt: ""
-                                      }
-                                    }),
-                                    _vm._v(" "),
-                                    _vm._m(0)
+                                    _c(
+                                      "div",
+                                      { staticClass: "single_img_view" },
+                                      [
+                                        _vm._m(0),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          { staticClass: "quick_preview_img" },
+                                          [
+                                            _c("img", {
+                                              staticClass: "quick_view_image",
+                                              attrs: {
+                                                src:
+                                                  _vm.base_url +
+                                                  _vm.quick_view_product
+                                                    .thumbnail_img,
+                                                alt: ""
+                                              }
+                                            }),
+                                            _vm._v(" "),
+                                            _vm._m(1)
+                                          ]
+                                        )
+                                      ]
+                                    )
                                   ]
                                 ),
                                 _vm._v(" "),
                                 _c(
                                   "div",
-                                  { staticClass: "col-md-4 col-sm-12" },
+                                  { staticClass: "col-md-6 col-sm-12" },
                                   [
                                     _c(
                                       "ul",
@@ -71347,7 +71336,7 @@ var render = function() {
                                                                     ]
                                                                   ),
                                                                   _vm._v(" "),
-                                                                  _vm._m(1)
+                                                                  _vm._m(2)
                                                                 ]
                                                               )
                                                             : _vm._e(),
@@ -71520,13 +71509,13 @@ var render = function() {
                                           ]
                                         ),
                                         _vm._v(" "),
-                                        _vm._m(2),
-                                        _vm._v(" "),
                                         _vm._m(3),
                                         _vm._v(" "),
                                         _vm._m(4),
                                         _vm._v(" "),
-                                        _vm._m(5)
+                                        _vm._m(5),
+                                        _vm._v(" "),
+                                        _vm._m(6)
                                       ])
                                     ])
                                   ]
@@ -71546,6 +71535,17 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "zoom_btn" }, [
+      _c("i", {
+        staticClass: "fa fa-search-plus fa-2x",
+        attrs: { "aria-hidden": "true" }
+      })
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement
@@ -92256,8 +92256,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

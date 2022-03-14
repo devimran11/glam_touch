@@ -48,7 +48,7 @@
                   </span> -->
                 </p>
                 <div class="add-to-cart d-flex justify-content-center">
-                  <button class="btn btn-warning btn-sm carts"> <span><i class="fa fa-shopping-cart fa-lg" aria-hidden="true"></i></span> ADD TO CART</button>
+                  <button class="btn btn-warning btn-sm carts"> <i class="fa fa-solid fa fa-cart-arrow-down fa-lg"></i> <span style="margin-top: 2px;">ADD TO CART</span></button>
                   <i class="fa fa-heart fa-2x" style="color: #CC8E46; margin-left: 10px"></i><sup><i class="fa fa-plus fa-sm"></i></sup>
                 </div>
               </div>

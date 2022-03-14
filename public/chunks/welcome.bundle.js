@@ -236,6 +236,22 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -961,7 +977,7 @@ var render = function() {
         _c(
           "div",
           { staticClass: "row suggetion_product_row" },
-          [_vm._m(3), _vm._v(" "), _c("SuggestProducts")],
+          [_vm._m(3), _vm._v(" "), _c("TopSellingProducts")],
           1
         ),
         _vm._v(" "),
@@ -974,7 +990,14 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _vm._m(6)
+        _c(
+          "div",
+          { staticClass: "new_arrival_section" },
+          [_vm._m(6), _vm._v(" "), _c("TopSellingProducts")],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(7)
       ]),
       _vm._v(" "),
       _c("frontend-footer"),
@@ -1317,6 +1340,24 @@ var staticRenderFns = [
       _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
         _c("h4", { staticClass: "section_title_left" }, [
           _vm._v("GOWN & KURTIS")
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("div", { staticClass: "line-left" })
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "row gown_kurtis" }, [
+      _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
+        _c("h4", { staticClass: "section_title_left" }, [
+          _vm._v("MODEST FASHION")
         ]),
         _vm._v(" "),
         _c("br"),
@@ -2149,14 +2190,16 @@ var render = function() {
                                     staticClass: "btn btn-warning btn-sm carts"
                                   },
                                   [
-                                    _c("span", [
-                                      _c("i", {
-                                        staticClass:
-                                          "fa fa-shopping-cart fa-lg",
-                                        attrs: { "aria-hidden": "true" }
-                                      })
-                                    ]),
-                                    _vm._v(" ADD TO CART")
+                                    _c("i", {
+                                      staticClass:
+                                        "fa fa-solid fa fa-cart-arrow-down fa-lg"
+                                    }),
+                                    _vm._v(" "),
+                                    _c(
+                                      "span",
+                                      { staticStyle: { "margin-top": "2px" } },
+                                      [_vm._v("ADD TO CART")]
+                                    )
                                   ]
                                 ),
                                 _vm._v(" "),
