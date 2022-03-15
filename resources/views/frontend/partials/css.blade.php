@@ -147,7 +147,7 @@ $color=App\Models\BackgroundAndColor::first();
         width: 100%;
         height: auto ;
         background: #fff ;
-        padding: 15px 40px ;
+        padding: 15px 68px ;
         margin-top: 20px !important;
         margin: auto;
         border-radius: 10px ;
@@ -157,8 +157,10 @@ $color=App\Models\BackgroundAndColor::first();
     .title { margin:0px 0px 20px 0px; }
 
     .custom-box .title {
-        font-family: 'Poppins', sans-serif;
-        /* text-align: center; */
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #070707;
+        font-size: 18px;
         border-bottom: 2px solid var(--primary-color);
     }
 
@@ -540,7 +542,7 @@ ul.side-nav li:hover>.left-sub-menu {
 
 .single-product-box {
     background: #fff;
-    padding: 15px 25px;
+    padding: 15px 65px;
     border-radius: 5px;
     height: auto;
 }
@@ -702,6 +704,7 @@ ul.side-nav li:hover>.left-sub-menu {
     padding: px;
     /* box-shadow: 3px 3px 3px #ddd; */
     border-radius: 10px;
+    margin-left: 15px;
 }
 ul.details-tab-menu-list {
     width: 100%;
@@ -712,10 +715,13 @@ ul.details-tab-menu-list {
 }
 
 .details-tab-menu-item {
-    padding: 10px;
-    color: #000;
-    font-weight: bolder;
+    padding: 0px;
+    color: #adadad;
     cursor: pointer;
+    margin-left: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-right: 35px;
 }
 
 
@@ -738,6 +744,10 @@ ul.details-tab-menu-list {
 li.h-b-li {
     list-style-type: square;
     padding: 2px;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: #1a1a1a;
+    font-size: 15px;
 
 }
 .product-thumb .image:hover {
@@ -1914,7 +1924,7 @@ span.price-old {
     }
 
     .single_product_img_container .single_product_image{
-        width: 100%;
+        width: 80%;
         height: 100% ;
     }
 
@@ -2317,18 +2327,17 @@ span.price-old {
         display: flex;
     }
     .__preview_image_box {
-        width: 80px;
-        height: 90px;
-        /* border-radius: 10px; */
+        width: 100px;
+        height: 100px;
         margin: 5px 5px;
     }
 
     .__preview_img {
         cursor: pointer;
-        width: 75px;
-        height: 85px;
-        /* border-radius: 10px; */
-        margin: 1px;
+        width: 70px;
+        height: 96px;
+        margin: 0 15px;
+        text-align: center;
     }
 
     .__active_border{
@@ -2378,6 +2387,7 @@ span.price-old {
             margin-bottom: 9px;
             max-width: 60px;
             margin-right: 0px;
+            font-family: 'Montserrat';
         }
 
 
@@ -2433,8 +2443,8 @@ span.price-old {
         }
 
         * {
-        font-family: 'Work Sans', sans-serif ;
-        font-weight: 400;
+        font-family: 'Montserrat', sans-serif ;
+        font-weight: 600;
         }
 
         *, ::after, ::before {
@@ -2443,14 +2453,16 @@ span.price-old {
 
 
         .text-swatch li span {
-        background-color: #fff;
-        border: 1px solid #ccc;
-        cursor: pointer;
-        display: inline-block;
-        overflow: hidden;
-        padding: 5px 15px;
-        position: relative;
-        transition: .2s;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            display: inline-block;
+            overflow: hidden;
+            padding: 2px 9px;
+            position: relative;
+            transition: .2s;
+            margin-top: 3px;
+            color: #9e9e9e;
         }
 
         .custom-checkbox input[type=checkbox]:checked~span:before, .custom-checkbox input[type=radio]:checked~span:before, .custom-radio input[type=checkbox]:checked~span:before, .custom-radio input[type=radio]:checked~span:before {
@@ -2556,6 +2568,9 @@ span.price-old {
        font-size: 18px;
         margin-top: 10px;
         color: var(--primary-text-color);
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #202021;
     }
 
     .s_price_container_2 p {
@@ -2563,7 +2578,9 @@ span.price-old {
         font-size: 18px;
         margin-top: 10px;
         text-decoration: line-through;
-        color: red;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        color: #202021;
     }
 
     .s_price_container_3 p {
@@ -2587,6 +2604,7 @@ span.price-old {
 
      .qty_container {
          display: flex;
+         color: #9e9e9e;
      }
 
     .qty_container>h4 {
@@ -2605,12 +2623,12 @@ span.price-old {
     } */
 
 .input_qty {
-    padding: 17px 0% !important;
-    margin-left: 10px;
+    padding: 14px 0% !important;
+    margin-left: 8px;
     font-size: 14px;
     font-weight: bold;
-    height: 28px !important;
-    width: 32px !important;
+    height: 27px !important;
+    width: 30px !important;
     margin-top: -8px;
     margin-right: 10px;
     text-align: center;
@@ -2635,15 +2653,15 @@ span.price-old {
     }
 
     .btn_buy_cart {
-        /* box-shadow: 0 1pt 12pt rgb(150 165 237); */
         color: #fff;
         transition: .1s ease;
-        height: 36px;
-        font-size: 14px;
-        margin-left: 20px;
-        font-family: sans-serif;
+        height: 30px;
+        font-size: 13px;
+        font-family: 'Montserrat';
         background: #CC8D46;
+        font-weight: bold;
         width: auto;
+        margin-top: -7px;
     }
 
      .btn_buy_cart:hover {
@@ -2692,9 +2710,10 @@ span.price-old {
       .single_p_name {
             margin-top: 2px;
             font-size: 20px;
-            font-weight: 600;
-            font-family: 'Poppins', sans-serif;
-            color: ##CACACA;
+            font-weight: 400;
+            font-family: 'Montserrat', sans-serif;
+            color: #939494;
+
         }
 
         .single_p_code {
@@ -2776,7 +2795,7 @@ span.price-old {
     }
     .related_p_heading {
         font-size: 22px;
-         font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat';
         text-align: center;
         font-weight: bold;
     }
@@ -5038,6 +5057,12 @@ sup {
 
 .share_to{
     margin-top: 10px;
+    font-weight: 400;
+    color: #858585;
+}
+.share_to h4{
+    float: left;
+    
 }
 .share_to_icon i{
     padding: 0px 5px;
@@ -5098,15 +5123,16 @@ input[data-v-c157765e] {
     background-color: #555555;
     color: white;
 }
-.modal-header{
-    padding: 8px;
+.modal-header {
+    padding: 3px;
+    background: #E8E8E8;
 }
 .modal-title{
     text-align: center;
     color: #463420 !important;
-    font-family: 'Montserrat-Bold';
-    font-size: 38px;
-    font-weight: 600;
+    font-family: 'Montserrat';
+    font-size: 30px;
+    font-weight: bold;
 }
 .modal-body{
     height: 520px;
@@ -5141,12 +5167,13 @@ input[data-v-c157765e] {
     color: #B3B5B8;
     margin-top: 15px;
     float: left;
+    margin-left: 20px;
 }
 .single_img_view{
     border: 1px solid #B3B5B8;
 }
 .quick_preview_img{
-    text-align: center;
+    margin-left: 85px;
 }
 .merchant_login i{
     color: #fff;
@@ -5177,5 +5204,79 @@ input[data-v-c157765e] {
     font-weight: bold;
     font-size: 18px;
 }
+.attribute-values{
+    margin-left: 5px;
+}
 
+.call-us{
+    background: #CC8E46;
+    width: 210px;
+    border-radius: 20px;
+}
+.call-background{
+}
+.call-background h4{
+    padding: 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    margin-left: 70px;
+}
+.phone_icon{
+    float: left;
+    font-size: 40px;
+    margin-left: 3px;
+    font-weight: bold;
+    margin-top: -15px;
+    color: #914E22;
+}
+.detail_btn {
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+
+.checkout-title{
+    margin-left: 70px;
+    padding: 8px 0px;
+}
+.checkout-title h3{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #040404;
+}
+
+.checkout-login{
+    margin-left: 70px;
+}
+.checkout-line{
+    height: 1px;
+    border: 1px solid #0F549A;
+}
+.return-customer{
+    float: left;
+}
+.facebook-login{
+    float: left;
+    margin-left: 15px;
+}
+.google-login{
+    float: left;
+    margin-left: 30px;
+}
+.login{
+    padding: 15px;
+}
+.facebook{
+    background: #0F549A;
+    color: white;
+    padding: 0px 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.google{
+    background: #E43E2B;
+    color: white;
+    padding: 0px 10px;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
 </style>

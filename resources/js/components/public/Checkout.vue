@@ -10,6 +10,30 @@
           <!--Middle Part Start-->
           <div id="content">
             <div class="row">
+              <div class="col-md-12">
+                <div class="checkout-title">
+                  <h3>CHECKOUT</h3>
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <div class="checkout-login">
+                  <div class="checkout-line"></div>
+                  <div class="login">
+                    <div class="return-customer">
+                        <p>Returning customer? <strong>Click here to login</strong></p>
+                    </div>
+                    <div class="facebook-login">
+                        <button class="btn btn-sm facebook"> <i class="fa fa-facebook-square fa-2x"></i> LOGIN WITH FACEBOOK </button>
+                    </div>
+                    <div class="google-login">
+                        <button class="btn btn-sm google"> <i class="fa fa-google fa-2x"></i>LOGIN WITH GOOGLE</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
               <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="custom-box">
                   <h3 class="title">DELIVERY AND & BILLING INFO</h3>

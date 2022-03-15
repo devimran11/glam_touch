@@ -275,5 +275,6 @@
     "/chunks/viewSale.bundle.js": "/chunks/viewSale.bundle.js",
     "/chunks/welcome.bundle.js": "/chunks/welcome.bundle.js",
     "/chunks/wholesaleOrder.bundle.js": "/chunks/wholesaleOrder.bundle.js",
-    "/chunks/wishlist.bundle.js": "/chunks/wishlist.bundle.js"
+    "/chunks/wishlist.bundle.js": "/chunks/wishlist.bundle.js",
+    "/chunks/vendors~single_product~welcome.bundle.js": "/chunks/vendors~single_product~welcome.bundle.js"
 }

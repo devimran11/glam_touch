@@ -42,16 +42,31 @@
                             :src="base_url + quick_view_product.thumbnail_img"
                             alt=""
                           />
-                          <div class="preview_img_box_container">
-                            <div class="__preview_image_box">
-                              <!-- <img src="" class="__preview_img" /> -->
+                          <!-- <div class="preview_img_box_container">
+                            <div
+                              v-for="(image, index) in product_images"
+                              :key="index"
+                              :class="{ __active_border: index == 0 }"
+                              class="__preview_image_box"
+                            >
                               <img
-                                class="img-fluid"
-                                src="/storage/images/products/1qhNboF9Lwq4CESKKSsxzULeW4aVWtyMOzFZv94n.jpg"
-                                width="100%"
+                                @click="displayeImageFromBox"
+                                class="__preview_img"
+                                :src="base_url + image.product_image"
                               />
                             </div>
-                          </div>
+                          </div> -->
+                          
+                        </div>
+                      </div>
+                      <div class="preview_img_box_container">
+                        <div class="__preview_image_box __active_border">
+                          <!-- <img src="" class="__preview_img" /> -->
+                          <img
+                            class="__preview_img"
+                            src="/storage/images/products/1qhNboF9Lwq4CESKKSsxzULeW4aVWtyMOzFZv94n.jpg"
+                            width="100%"
+                          />
                         </div>
                       </div>
                     </div>
@@ -176,7 +191,7 @@
                                   type="button"
                                   class="btn btn-sm btn-block btn_buy_cart"
                                 >
-                                  <span>ADD TO CART</span>
+                                  ADD TO CART
                                 </button>
                               </div>
 
@@ -208,19 +223,22 @@
                           </div>
 
                           <div class="col-lg-12 col-md-12 col-xs-12">
+                             
                             <div class="call-us">
-                              <img
-                                class="img-fluid"
-                                src="/storage/images/call_us/call_us.png"
-                                width="100%"
-                                height="50px;"
-                              />
+                              <div class="call-background">
+                                <div class="phone_icon">
+                                  <i class="fa fa-phone"></i>
+                                </div>
+                                  <div class="phn_num">
+                                    <h4>01768821248</h4>
+                                  </div>
+                              </div>
                             </div>
                           </div>
 
                           <div class="col-lg-12 col-md-12 col-xs-12">
                             <div class="share_to">
-                              <h4 style="float: left">Share to:</h4>
+                              <h4>Share to:</h4>
                               <div class="share_to_icon">
                                 <i
                                   class="fa fa-facebook-square"
@@ -239,9 +257,11 @@
                             </div>
                           </div>
                           <div class="col-lg-12 col-md-12 col-xs-12">
-                            <button class="btn btn-warning" type="submit">
-                              View Full Product Details >>
-                            </button>
+                            <div class="view_full_product">
+                              <button class="btn btn-warning detail_btn" type="submit">
+                                View Full Product Details >>
+                              </button>
+                            </div>
                           </div>
                         </div>
                       </div>
@@ -565,7 +585,7 @@ export default {
   margin-bottom: 25px;
 }
 .__preview_image_box{
-  margin-left: 103px;
+  margin-left: 20px;
 
 }
 </style>

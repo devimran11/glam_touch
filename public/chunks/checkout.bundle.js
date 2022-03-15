@@ -359,6 +359,30 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -740,6 +764,10 @@ var render = function() {
             ? _c("div", { staticClass: "row" }, [
                 _c("div", { attrs: { id: "content" } }, [
                   _c("div", { staticClass: "row" }, [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _vm._m(1),
+                    _vm._v(" "),
                     _c(
                       "div",
                       { staticClass: "col-lg-7 col-md-7 col-sm-12 col-xs-12" },
@@ -765,7 +793,7 @@ var render = function() {
                                   "div",
                                   { staticClass: "form-group" },
                                   [
-                                    _vm._m(0),
+                                    _vm._m(2),
                                     _vm._v(" "),
                                     _c("input", {
                                       directives: [
@@ -816,7 +844,7 @@ var render = function() {
                                   "div",
                                   { staticClass: "form-group" },
                                   [
-                                    _vm._m(1),
+                                    _vm._m(3),
                                     _vm._v(" "),
                                     _c("input", {
                                       directives: [
@@ -871,7 +899,7 @@ var render = function() {
                                   "div",
                                   { staticClass: "form-group" },
                                   [
-                                    _vm._m(2),
+                                    _vm._m(4),
                                     _vm._v(" "),
                                     _c("input", {
                                       directives: [
@@ -924,7 +952,7 @@ var render = function() {
                                   "div",
                                   { staticClass: "form-group" },
                                   [
-                                    _vm._m(3),
+                                    _vm._m(5),
                                     _vm._v(" "),
                                     _c(
                                       "select",
@@ -1017,7 +1045,7 @@ var render = function() {
                                   "div",
                                   { staticClass: "form-group" },
                                   [
-                                    _vm._m(4),
+                                    _vm._m(6),
                                     _vm._v(" "),
                                     _c(
                                       "select",
@@ -1106,13 +1134,13 @@ var render = function() {
                                 )
                               ]),
                               _vm._v(" "),
-                              _vm._m(5),
+                              _vm._m(7),
                               _vm._v(" "),
-                              _vm._m(6)
+                              _vm._m(8)
                             ]
                           ),
                           _vm._v(" "),
-                          _vm._m(7)
+                          _vm._m(9)
                         ])
                       ]
                     ),
@@ -1132,7 +1160,7 @@ var render = function() {
                           _vm._v(" "),
                           _c("hr"),
                           _vm._v(" "),
-                          _vm._m(8),
+                          _vm._m(10),
                           _vm._v(" "),
                           _c("div", { staticClass: "cart-total" }, [
                             _c("table", { staticClass: "table" }, [
@@ -1244,13 +1272,13 @@ var render = function() {
                           ])
                         ]),
                         _vm._v(" "),
-                        _vm._m(9)
+                        _vm._m(11)
                       ]
                     )
                   ])
                 ])
               ])
-            : _c("div", { staticClass: "row" }, [_vm._m(10)])
+            : _c("div", { staticClass: "row" }, [_vm._m(12)])
         ])
       ]),
       _vm._v(" "),
@@ -1260,6 +1288,49 @@ var render = function() {
   )
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12" }, [
+      _c("div", { staticClass: "checkout-title" }, [
+        _c("h3", [_vm._v("CHECKOUT")])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12" }, [
+      _c("div", { staticClass: "checkout-login" }, [
+        _c("div", { staticClass: "checkout-line" }),
+        _vm._v(" "),
+        _c("div", { staticClass: "login" }, [
+          _c("div", { staticClass: "return-customer" }, [
+            _c("p", [
+              _vm._v("Returning customer? "),
+              _c("strong", [_vm._v("Click here to login")])
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "facebook-login" }, [
+            _c("button", { staticClass: "btn btn-sm facebook" }, [
+              _c("i", { staticClass: "fa fa-facebook-square fa-2x" }),
+              _vm._v(" LOGIN WITH FACEBOOK ")
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "google-login" }, [
+            _c("button", { staticClass: "btn btn-sm google" }, [
+              _c("i", { staticClass: "fa fa-google fa-2x" }),
+              _vm._v("LOGIN WITH GOOGLE")
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

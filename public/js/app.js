@@ -43,7 +43,7 @@
 /******/
 /******/ 	// script path function
 /******/ 	function jsonpScriptSrc(chunkId) {
-/******/ 		return __webpack_require__.p + "chunks/" + ({"Loan":"Loan","LoanDetails":"LoanDetails","SupplierAmount":"SupplierAmount","about_seller":"about_seller","about_us":"about_us","account_purpose":"account_purpose","admin":"admin","admin_dashboard":"admin_dashboard","attribute":"attribute","category":"category","company_sale_details":"company_sale_details","managefabricsPurchase":"managefabricsPurchase","officesale":"officesale","variant":"variant","applied_user":"applied_user","banner":"banner","bill_statement":"bill_statement","bill_statement_details":"bill_statement_details","blog":"blog","category_new_arrival_products":"category_new_arrival_products","category_offer_products":"category_offer_products","category_slider":"category_slider","checkout_success":"checkout_success","city":"city","color":"color","comment":"comment","company":"company","company_assets":"company_assets","company_payment_details":"company_payment_details","contact_messgae":"contact_messgae","contact_us":"contact_us","coupon":"coupon","courier":"courier","credit":"credit","creditDue":"creditDue","debit":"debit","fabricsSupplier":"fabricsSupplier","factory_list":"factory_list","fondtransfer":"fondtransfer","home_carrier":"home_carrier","how_to_buy":"how_to_buy","investment":"investment","investor_details":"investor_details","merchant":"merchant","merchant_dashboard":"merchant_dashboard","newOrder":"newOrder","new_arrival_products":"new_arrival_products","offer":"offer","offer_products":"offer_products","order":"order","order_details":"order_details","order_history":"order_history","outlet_dashboard":"outlet_dashboard","paidPayment":"paidPayment","paymentInvoice":"paymentInvoice","paymnetDetails":"paymnetDetails","print_details":"print_details","print_house":"print_house","print_house_details":"print_house_details","productStock":"productStock","product_return":"product_return","product_transfer":"product_transfer","product_transfer_details":"product_transfer_details","publicCarreir":"publicCarreir","public_category~public_sub_category~public_sub_sub_category":"public_category~public_sub_category~public_sub_sub_category","public_category":"public_category","public_sub_category":"public_sub_category","public_sub_sub_category":"public_sub_sub_category","public_product_search":"public_product_search","public_team":"public_team","purchase":"purchase","receive_print_details":"receive_print_details","resellerHome":"resellerHome","return_policy":"return_policy","role":"role","salaryDetails":"salaryDetails","selling_offer":"selling_offer","shipment":"shipment","showroom":"showroom","showroom_credit":"showroom_credit","showroom_debit":"showroom_debit","showroom_due":"showroom_due","showroom_manager":"showroom_manager","showroom_sale":"showroom_sale","slider":"slider","sub_city":"sub_city","subscriber_list":"subscriber_list","supplier":"supplier","team_member":"team_member","teamsalary":"teamsalary","transfer_money":"transfer_money","unpaidPayment":"unpaidPayment","user_dashboard":"user_dashboard","user_profile":"user_profile","vendors~AccountReport~AddSaleExchange~DeliveredOrder~OrderProfite~ReturnOrder~SaleProfite~about_and_~bed3c215":"vendors~AccountReport~AddSaleExchange~DeliveredOrder~OrderProfite~ReturnOrder~SaleProfite~about_and_~bed3c215","AddSaleExchange":"AddSaleExchange","accoun_purpose_edit":"accoun_purpose_edit","account_purpose_add":"account_purpose_add","addCompany":"addCompany","addCompanySale":"addCompanySale","addFabricsSupplier":"addFabricsSupplier","addLoan":"addLoan","addOrder":"addOrder","addPurchase":"addPurchase","addPurchasefabrics":"addPurchasefabrics","addSale":"addSale","add_factory":"add_factory","add_merchant":"add_merchant","add_sale_campaign":"add_sale_campaign","add_selling_offer":"add_selling_offer","add_team_member":"add_team_member","addwholesale":"addwholesale","adminAdd":"adminAdd","adminProfile":"adminProfile","AccountReport":"AccountReport","DeliveredOrder":"DeliveredOrder","OrderProfite":"OrderProfite","ReturnOrder":"ReturnOrder","SaleProfite":"SaleProfite","approvedOrder":"approvedOrder","cancelOrder":"cancelOrder","officesaleReport":"officesaleReport","orderReport":"orderReport","pendingOrder":"pendingOrder","profiteReport":"profiteReport","purchaseReport":"purchaseReport","shipmentOrder":"shipmentOrder","sub_category":"sub_category","sub_sub_category":"sub_sub_category","supplier_Report":"supplier_Report","wholesaleOrder":"wholesaleOrder","admin_login":"admin_login","assign_admin_permission":"assign_admin_permission","assingRoleAdmin":"assingRoleAdmin","attributeAdd":"attributeAdd","banner_add":"banner_add","banner_edit":"banner_edit","bill_statement_add":"bill_statement_add","bulk_product_print_preview":"bulk_product_print_preview","buy_one_get_one":"buy_one_get_one","carier_detail":"carier_detail","categoryAdd":"categoryAdd","category_slider_add":"category_slider_add","category_slider_edit":"category_slider_edit","categoryedit":"categoryedit","checkout":"checkout","cityAdd":"cityAdd","cityEdit":"cityEdit","code_verified":"code_verified","colorAdd":"colorAdd","commentAdd":"commentAdd","companysale":"companysale","contact_messgae_reply":"contact_messgae_reply","coupon_add":"coupon_add","coupon_edit":"coupon_edit","courierAdd":"courierAdd","creditAdd":"creditAdd","creditEdit":"creditEdit","customer":"customer","debitEdit":"debitEdit","editAdmin":"editAdmin","editComment":"editComment","editCompany":"editCompany","editCourier":"editCourier","editPermission":"editPermission","edit_factory":"edit_factory","edit_merchant":"edit_merchant","edit_offer":"edit_offer","edit_sale_campaign":"edit_sale_campaign","edit_selling_offer":"edit_selling_offer","edit_sub_city":"edit_sub_city","edit_team_member":"edit_team_member","fondtransferAdd":"fondtransferAdd","investment_add":"investment_add","investment_edit":"investment_edit","merchant_order_view":"merchant_order_view","merchant_password_edit":"merchant_password_edit","merchant_profile":"merchant_profile","merchant_profile_edit":"merchant_profile_edit","new_password_user":"new_password_user","occasional_campaign":"occasional_campaign","offerAdd":"offerAdd","orderEdit":"orderEdit","otp_login":"otp_login","outlet_login":"outlet_login","outlet_password_edit":"outlet_password_edit","outlet_password_reset":"outlet_password_reset","outlet_profile":"outlet_profile","outlet_profile_edit":"outlet_profile_edit","passwordChange":"passwordChange","password_reset":"password_reset","print_house_add":"print_house_add","print_product_add":"print_product_add","product":"product","product_child":"product_child","product_child_add":"product_child_add","product_transaction":"product_transaction","product_transaction_details":"product_transaction_details","product_transfer_add":"product_transfer_add","purchaseEdit":"purchaseEdit","purchaseView":"purchaseView","receieve_printed_product":"receieve_printed_product","resellerAdd":"resellerAdd","resellerEdit":"resellerEdit","return_showroom_product":"return_showroom_product","roleAdd":"roleAdd","sale_campaign":"sale_campaign","seasonal campaign":"seasonal campaign","showroom_add":"showroom_add","showroom_balance_transfer":"showroom_balance_transfer","showroom_credit_add":"showroom_credit_add","showroom_credit_edit":"showroom_credit_edit","showroom_debit_add":"showroom_debit_add","showroom_debit_edit":"showroom_debit_edit","showroom_edit":"showroom_edit","showroom_manager_add":"showroom_manager_add","showroom_manager_edit":"showroom_manager_edit","showroom_retail_sale":"showroom_retail_sale","showroom_sale_add":"showroom_sale_add","showroom_sale_view":"showroom_sale_view","showroom_whole_sale":"showroom_whole_sale","slider_add":"slider_add","slider_edit":"slider_edit","sms_campaign":"sms_campaign","sub_category_add":"sub_category_add","sub_category_edit":"sub_category_edit","sub_city_add":"sub_city_add","sub_sub_category_add":"sub_sub_category_add","sub_sub_category_edit":"sub_sub_category_edit","supplierAdd":"supplierAdd","supplierEdit":"supplierEdit","transfer_money_add":"transfer_money_add","user":"user","userLogin":"userLogin","merchant_password_reset":"merchant_password_reset","merchant_register":"merchant_register","merchnat_code_verified":"merchnat_code_verified","merchnat_login":"merchnat_login","new_password_merchant":"new_password_merchant","new_password_outlet":"new_password_outlet","outlet_code_verified":"outlet_code_verified","user_password":"user_password","user_password_reset":"user_password_reset","user_profile_edit":"user_profile_edit","user_register":"user_register","variaantAdd":"variaantAdd","vendors~about_and_contact~add_carrier~company_assets_add~company_assets_edit~edit_carrier~footer_set~465cd59b":"vendors~about_and_contact~add_carrier~company_assets_add~company_assets_edit~edit_carrier~footer_set~465cd59b","about_and_contact":"about_and_contact","add_carrier":"add_carrier","company_assets_add":"company_assets_add","company_assets_edit":"company_assets_edit","edit_carrier":"edit_carrier","footer_setting":"footer_setting","generl_setting":"generl_setting","merchant_product_add":"merchant_product_add","merchant_product_edit":"merchant_product_edit","order_shipment_return":"order_shipment_return","productAdd":"productAdd","productEdit":"productEdit","product_child_edit":"product_child_edit","show_carrier":"show_carrier","theme_setting":"theme_setting","vendors~debitAdd":"vendors~debitAdd","debitAdd":"debitAdd","vendors~merchant_order~merchnat_product_manage~showroom_products":"vendors~merchant_order~merchnat_product_manage~showroom_products","merchant_order":"merchant_order","merchnat_product_manage":"merchnat_product_manage","showroom_products":"showroom_products","viewOrder":"viewOrder","viewSale":"viewSale","vendors~single_product":"vendors~single_product","single_product":"single_product","vendors~welcome":"vendors~welcome","welcome":"welcome","wishlist":"wishlist"}[chunkId]||chunkId) + ".bundle.js"
+/******/ 		return __webpack_require__.p + "chunks/" + ({"Loan":"Loan","LoanDetails":"LoanDetails","SupplierAmount":"SupplierAmount","about_seller":"about_seller","about_us":"about_us","account_purpose":"account_purpose","admin":"admin","admin_dashboard":"admin_dashboard","attribute":"attribute","category":"category","company_sale_details":"company_sale_details","managefabricsPurchase":"managefabricsPurchase","officesale":"officesale","variant":"variant","applied_user":"applied_user","banner":"banner","bill_statement":"bill_statement","bill_statement_details":"bill_statement_details","blog":"blog","category_new_arrival_products":"category_new_arrival_products","category_offer_products":"category_offer_products","category_slider":"category_slider","checkout_success":"checkout_success","city":"city","color":"color","comment":"comment","company":"company","company_assets":"company_assets","company_payment_details":"company_payment_details","contact_messgae":"contact_messgae","contact_us":"contact_us","coupon":"coupon","courier":"courier","credit":"credit","creditDue":"creditDue","debit":"debit","fabricsSupplier":"fabricsSupplier","factory_list":"factory_list","fondtransfer":"fondtransfer","home_carrier":"home_carrier","how_to_buy":"how_to_buy","investment":"investment","investor_details":"investor_details","merchant":"merchant","merchant_dashboard":"merchant_dashboard","newOrder":"newOrder","new_arrival_products":"new_arrival_products","offer":"offer","offer_products":"offer_products","order":"order","order_details":"order_details","order_history":"order_history","outlet_dashboard":"outlet_dashboard","paidPayment":"paidPayment","paymentInvoice":"paymentInvoice","paymnetDetails":"paymnetDetails","print_details":"print_details","print_house":"print_house","print_house_details":"print_house_details","productStock":"productStock","product_return":"product_return","product_transfer":"product_transfer","product_transfer_details":"product_transfer_details","publicCarreir":"publicCarreir","public_category~public_sub_category~public_sub_sub_category":"public_category~public_sub_category~public_sub_sub_category","public_category":"public_category","public_sub_category":"public_sub_category","public_sub_sub_category":"public_sub_sub_category","public_product_search":"public_product_search","public_team":"public_team","purchase":"purchase","receive_print_details":"receive_print_details","resellerHome":"resellerHome","return_policy":"return_policy","role":"role","salaryDetails":"salaryDetails","selling_offer":"selling_offer","shipment":"shipment","showroom":"showroom","showroom_credit":"showroom_credit","showroom_debit":"showroom_debit","showroom_due":"showroom_due","showroom_manager":"showroom_manager","showroom_sale":"showroom_sale","slider":"slider","sub_city":"sub_city","subscriber_list":"subscriber_list","supplier":"supplier","team_member":"team_member","teamsalary":"teamsalary","transfer_money":"transfer_money","unpaidPayment":"unpaidPayment","user_dashboard":"user_dashboard","user_profile":"user_profile","vendors~AccountReport~AddSaleExchange~DeliveredOrder~OrderProfite~ReturnOrder~SaleProfite~about_and_~bed3c215":"vendors~AccountReport~AddSaleExchange~DeliveredOrder~OrderProfite~ReturnOrder~SaleProfite~about_and_~bed3c215","AddSaleExchange":"AddSaleExchange","accoun_purpose_edit":"accoun_purpose_edit","account_purpose_add":"account_purpose_add","addCompany":"addCompany","addCompanySale":"addCompanySale","addFabricsSupplier":"addFabricsSupplier","addLoan":"addLoan","addOrder":"addOrder","addPurchase":"addPurchase","addPurchasefabrics":"addPurchasefabrics","addSale":"addSale","add_factory":"add_factory","add_merchant":"add_merchant","add_sale_campaign":"add_sale_campaign","add_selling_offer":"add_selling_offer","add_team_member":"add_team_member","addwholesale":"addwholesale","adminAdd":"adminAdd","adminProfile":"adminProfile","AccountReport":"AccountReport","DeliveredOrder":"DeliveredOrder","OrderProfite":"OrderProfite","ReturnOrder":"ReturnOrder","SaleProfite":"SaleProfite","approvedOrder":"approvedOrder","cancelOrder":"cancelOrder","officesaleReport":"officesaleReport","orderReport":"orderReport","pendingOrder":"pendingOrder","profiteReport":"profiteReport","purchaseReport":"purchaseReport","shipmentOrder":"shipmentOrder","sub_category":"sub_category","sub_sub_category":"sub_sub_category","supplier_Report":"supplier_Report","wholesaleOrder":"wholesaleOrder","admin_login":"admin_login","assign_admin_permission":"assign_admin_permission","assingRoleAdmin":"assingRoleAdmin","attributeAdd":"attributeAdd","banner_add":"banner_add","banner_edit":"banner_edit","bill_statement_add":"bill_statement_add","bulk_product_print_preview":"bulk_product_print_preview","buy_one_get_one":"buy_one_get_one","carier_detail":"carier_detail","categoryAdd":"categoryAdd","category_slider_add":"category_slider_add","category_slider_edit":"category_slider_edit","categoryedit":"categoryedit","checkout":"checkout","cityAdd":"cityAdd","cityEdit":"cityEdit","code_verified":"code_verified","colorAdd":"colorAdd","commentAdd":"commentAdd","companysale":"companysale","contact_messgae_reply":"contact_messgae_reply","coupon_add":"coupon_add","coupon_edit":"coupon_edit","courierAdd":"courierAdd","creditAdd":"creditAdd","creditEdit":"creditEdit","customer":"customer","debitEdit":"debitEdit","editAdmin":"editAdmin","editComment":"editComment","editCompany":"editCompany","editCourier":"editCourier","editPermission":"editPermission","edit_factory":"edit_factory","edit_merchant":"edit_merchant","edit_offer":"edit_offer","edit_sale_campaign":"edit_sale_campaign","edit_selling_offer":"edit_selling_offer","edit_sub_city":"edit_sub_city","edit_team_member":"edit_team_member","fondtransferAdd":"fondtransferAdd","investment_add":"investment_add","investment_edit":"investment_edit","merchant_order_view":"merchant_order_view","merchant_password_edit":"merchant_password_edit","merchant_profile":"merchant_profile","merchant_profile_edit":"merchant_profile_edit","new_password_user":"new_password_user","occasional_campaign":"occasional_campaign","offerAdd":"offerAdd","orderEdit":"orderEdit","otp_login":"otp_login","outlet_login":"outlet_login","outlet_password_edit":"outlet_password_edit","outlet_password_reset":"outlet_password_reset","outlet_profile":"outlet_profile","outlet_profile_edit":"outlet_profile_edit","passwordChange":"passwordChange","password_reset":"password_reset","print_house_add":"print_house_add","print_product_add":"print_product_add","product":"product","product_child":"product_child","product_child_add":"product_child_add","product_transaction":"product_transaction","product_transaction_details":"product_transaction_details","product_transfer_add":"product_transfer_add","purchaseEdit":"purchaseEdit","purchaseView":"purchaseView","receieve_printed_product":"receieve_printed_product","resellerAdd":"resellerAdd","resellerEdit":"resellerEdit","return_showroom_product":"return_showroom_product","roleAdd":"roleAdd","sale_campaign":"sale_campaign","seasonal campaign":"seasonal campaign","showroom_add":"showroom_add","showroom_balance_transfer":"showroom_balance_transfer","showroom_credit_add":"showroom_credit_add","showroom_credit_edit":"showroom_credit_edit","showroom_debit_add":"showroom_debit_add","showroom_debit_edit":"showroom_debit_edit","showroom_edit":"showroom_edit","showroom_manager_add":"showroom_manager_add","showroom_manager_edit":"showroom_manager_edit","showroom_retail_sale":"showroom_retail_sale","showroom_sale_add":"showroom_sale_add","showroom_sale_view":"showroom_sale_view","showroom_whole_sale":"showroom_whole_sale","slider_add":"slider_add","slider_edit":"slider_edit","sms_campaign":"sms_campaign","sub_category_add":"sub_category_add","sub_category_edit":"sub_category_edit","sub_city_add":"sub_city_add","sub_sub_category_add":"sub_sub_category_add","sub_sub_category_edit":"sub_sub_category_edit","supplierAdd":"supplierAdd","supplierEdit":"supplierEdit","transfer_money_add":"transfer_money_add","user":"user","userLogin":"userLogin","merchant_password_reset":"merchant_password_reset","merchant_register":"merchant_register","merchnat_code_verified":"merchnat_code_verified","merchnat_login":"merchnat_login","new_password_merchant":"new_password_merchant","new_password_outlet":"new_password_outlet","outlet_code_verified":"outlet_code_verified","user_password":"user_password","user_password_reset":"user_password_reset","user_profile_edit":"user_profile_edit","user_register":"user_register","variaantAdd":"variaantAdd","vendors~about_and_contact~add_carrier~company_assets_add~company_assets_edit~edit_carrier~footer_set~465cd59b":"vendors~about_and_contact~add_carrier~company_assets_add~company_assets_edit~edit_carrier~footer_set~465cd59b","about_and_contact":"about_and_contact","add_carrier":"add_carrier","company_assets_add":"company_assets_add","company_assets_edit":"company_assets_edit","edit_carrier":"edit_carrier","footer_setting":"footer_setting","generl_setting":"generl_setting","merchant_product_add":"merchant_product_add","merchant_product_edit":"merchant_product_edit","order_shipment_return":"order_shipment_return","productAdd":"productAdd","productEdit":"productEdit","product_child_edit":"product_child_edit","show_carrier":"show_carrier","theme_setting":"theme_setting","vendors~debitAdd":"vendors~debitAdd","debitAdd":"debitAdd","vendors~merchant_order~merchnat_product_manage~showroom_products":"vendors~merchant_order~merchnat_product_manage~showroom_products","merchant_order":"merchant_order","merchnat_product_manage":"merchnat_product_manage","showroom_products":"showroom_products","viewOrder":"viewOrder","viewSale":"viewSale","vendors~single_product~welcome":"vendors~single_product~welcome","vendors~single_product":"vendors~single_product","single_product":"single_product","vendors~welcome":"vendors~welcome","welcome":"welcome","wishlist":"wishlist"}[chunkId]||chunkId) + ".bundle.js"
 /******/ 	}
 /******/
 /******/ 	// The require function
@@ -3439,6 +3439,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(vue_loading_overlay_dist_vue_loading_css__WEBPACK_IMPORTED_MODULE_2__);
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -8305,7 +8325,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 300px !important;\r\n  height: 350px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 50px !important;\r\n  margin-top: -52px !important;\r\n  color: #45341E !important;\r\n  margin-right: 10px;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\n.__preview_image_box[data-v-68ee6900]{\r\n  margin-left: 103px;\n}\r\n", ""]);
+exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 300px !important;\r\n  height: 350px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 50px !important;\r\n  margin-top: -52px !important;\r\n  color: #45341E !important;\r\n  margin-right: 10px;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\n.__preview_image_box[data-v-68ee6900]{\r\n  margin-left: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -71048,13 +71068,13 @@ var render = function() {
                                                     .thumbnail_img,
                                                 alt: ""
                                               }
-                                            }),
-                                            _vm._v(" "),
-                                            _vm._m(1)
+                                            })
                                           ]
                                         )
                                       ]
-                                    )
+                                    ),
+                                    _vm._v(" "),
+                                    _vm._m(1)
                                   ]
                                 ),
                                 _vm._v(" "),
@@ -71457,9 +71477,9 @@ var render = function() {
                                                         }
                                                       },
                                                       [
-                                                        _c("span", [
-                                                          _vm._v("ADD TO CART")
-                                                        ])
+                                                        _vm._v(
+                                                          "\n                                ADD TO CART\n                              "
+                                                        )
                                                       ]
                                                     )
                                                   ]
@@ -71551,9 +71571,9 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "preview_img_box_container" }, [
-      _c("div", { staticClass: "__preview_image_box" }, [
+      _c("div", { staticClass: "__preview_image_box __active_border" }, [
         _c("img", {
-          staticClass: "img-fluid",
+          staticClass: "__preview_img",
           attrs: {
             src:
               "/storage/images/products/1qhNboF9Lwq4CESKKSsxzULeW4aVWtyMOzFZv94n.jpg",
@@ -71602,14 +71622,15 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
       _c("div", { staticClass: "call-us" }, [
-        _c("img", {
-          staticClass: "img-fluid",
-          attrs: {
-            src: "/storage/images/call_us/call_us.png",
-            width: "100%",
-            height: "50px;"
-          }
-        })
+        _c("div", { staticClass: "call-background" }, [
+          _c("div", { staticClass: "phone_icon" }, [
+            _c("i", { staticClass: "fa fa-phone" })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "phn_num" }, [
+            _c("h4", [_vm._v("01768821248")])
+          ])
+        ])
       ])
     ])
   },
@@ -71619,7 +71640,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
       _c("div", { staticClass: "share_to" }, [
-        _c("h4", { staticStyle: { float: "left" } }, [_vm._v("Share to:")]),
+        _c("h4", [_vm._v("Share to:")]),
         _vm._v(" "),
         _c("div", { staticClass: "share_to_icon" }, [
           _c("i", {
@@ -71647,15 +71668,20 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
-      _c(
-        "button",
-        { staticClass: "btn btn-warning", attrs: { type: "submit" } },
-        [
-          _vm._v(
-            "\n                            View Full Product Details >>\n                          "
-          )
-        ]
-      )
+      _c("div", { staticClass: "view_full_product" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-warning detail_btn",
+            attrs: { type: "submit" }
+          },
+          [
+            _vm._v(
+              "\n                              View Full Product Details >>\n                            "
+            )
+          ]
+        )
+      ])
     ])
   }
 ]
@@ -89163,7 +89189,7 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.use(vue_router__WEBPACK_IMPORTED_MODU
 var routes = [{
   path: '/',
   component: function component() {
-    return Promise.all(/*! import() | welcome */[__webpack_require__.e("vendors~welcome"), __webpack_require__.e("welcome")]).then(__webpack_require__.bind(null, /*! ./components/public/Index.vue */ "./resources/js/components/public/Index.vue"));
+    return Promise.all(/*! import() | welcome */[__webpack_require__.e("vendors~single_product~welcome"), __webpack_require__.e("vendors~welcome"), __webpack_require__.e("welcome")]).then(__webpack_require__.bind(null, /*! ./components/public/Index.vue */ "./resources/js/components/public/Index.vue"));
   },
   name: 'welcome',
   props: true,
@@ -89191,7 +89217,7 @@ var routes = [{
 }, {
   path: '/product/view/:slug',
   component: function component() {
-    return Promise.all(/*! import() | single_product */[__webpack_require__.e("vendors~single_product"), __webpack_require__.e("single_product")]).then(__webpack_require__.bind(null, /*! ./components/public/SingleProduct */ "./resources/js/components/public/SingleProduct.vue"));
+    return Promise.all(/*! import() | single_product */[__webpack_require__.e("vendors~single_product~welcome"), __webpack_require__.e("vendors~single_product"), __webpack_require__.e("single_product")]).then(__webpack_require__.bind(null, /*! ./components/public/SingleProduct */ "./resources/js/components/public/SingleProduct.vue"));
   },
   name: 'single',
   props: true,
