@@ -3074,6 +3074,24 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -70286,9 +70304,22 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "cart", attrs: { id: "s-cart" } }, [
       _c("div", { staticClass: "cart-header", on: { click: _vm.cartClosed } }, [
-        _c("h4", { staticClass: "exitC", attrs: { id: "exitcart" } }, [
-          _vm._v("CLOSED")
-        ])
+        _vm._m(1),
+        _vm._v(" "),
+        _c(
+          "p",
+          {
+            staticStyle: {
+              color: "#747273",
+              "margin-top": "-36px",
+              border: "3px solid #616060",
+              padding: "5px",
+              "margin-left": "248px",
+              cursor: "pointer"
+            }
+          },
+          [_vm._v("Close")]
+        )
       ]),
       _vm._v(" "),
       _c(
@@ -70300,55 +70331,13 @@ var render = function() {
             {
               key: index,
               staticClass: "row cart_row",
-              staticStyle: { "border-bottom": "1px solid #ddd" }
+              staticStyle: {
+                "border-bottom": "1px solid #ddd",
+                "margin-top": "5px",
+                "margin-bottom": "5px"
+              }
             },
             [
-              _c(
-                "div",
-                {
-                  staticClass: "col-lg-5 col-sm-5 flex",
-                  staticStyle: { "align-items": "center" }
-                },
-                [
-                  _c(
-                    "ul",
-                    {
-                      staticClass: "p-image-name",
-                      staticStyle: {
-                        display: "flex",
-                        margin: "0",
-                        padding: "0px 0px"
-                      }
-                    },
-                    [
-                      _c("li", [
-                        _c("img", {
-                          staticStyle: {
-                            "max-width": "35px",
-                            "max-height": "35px"
-                          },
-                          attrs: {
-                            src:
-                              _vm.thumbnail_base_url +
-                              cart_content.options.image,
-                            alt: ""
-                          }
-                        })
-                      ]),
-                      _vm._v(" "),
-                      _c("li", [
-                        _vm._v(
-                          _vm._s(cart_content.name.substring(0, 20)) + " "
-                        ),
-                        cart_content.name.length > 20
-                          ? _c("span", [_vm._v("...")])
-                          : _vm._e()
-                      ])
-                    ]
-                  )
-                ]
-              ),
-              _vm._v(" "),
               _c(
                 "div",
                 { staticClass: "col-lg-2 col-sm-2 cart_responsive_item flex" },
@@ -70367,7 +70356,9 @@ var render = function() {
                       [_c("i", { staticClass: "fa fa-angle-up" })]
                     ),
                     _vm._v(" "),
-                    _c("li", [_vm._v(_vm._s(cart_content.qty))]),
+                    _c("li", { staticClass: "cart_content_sty" }, [
+                      _vm._v(_vm._s(cart_content.qty))
+                    ]),
                     _vm._v(" "),
                     _c(
                       "li",
@@ -70387,16 +70378,60 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "div",
-                { staticClass: "col-lg-2 col-sm-2 cart_responsive_price" },
-                [_c("h6", [_vm._v(_vm._s(cart_content.price))])]
-              ),
-              _vm._v(" "),
-              _c(
-                "div",
-                { staticClass: "col-lg-2 col-sm-2 cart_responsive_total" },
+                {
+                  staticClass: "col-lg-8 col-sm-8 flex",
+                  staticStyle: { "align-items": "center" }
+                },
                 [
-                  _c("h6", [
-                    _vm._v(_vm._s(cart_content.price * cart_content.qty))
+                  _c("div", { staticClass: "p-image-name" }, [
+                    _c("img", {
+                      staticStyle: {
+                        "max-width": "70px",
+                        height: "75px",
+                        padding: "0 5px",
+                        "margin-left": "-32px",
+                        "margin-top": "5px",
+                        "margin-bottom": "7px"
+                      },
+                      attrs: {
+                        src:
+                          _vm.thumbnail_base_url + cart_content.options.image,
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "cart_content_name" }, [
+                    _c("p", [
+                      _vm._v(_vm._s(cart_content.name.substring(0, 30)) + " "),
+                      cart_content.name.length > 30
+                        ? _c("span", [_vm._v("...")])
+                        : _vm._e()
+                    ]),
+                    _vm._v(" "),
+                    _c(
+                      "p",
+                      {
+                        staticClass: "price",
+                        staticStyle: {
+                          "margin-top": "-10px",
+                          "margin-left": "-2px"
+                        }
+                      },
+                      [
+                        _c("span", { staticClass: "price-old" }, [
+                          _vm._v(
+                            "\n                  ৳ " +
+                              _vm._s(cart_content.sale_price) +
+                              " 200"
+                          )
+                        ]),
+                        _vm._v(" "),
+                        _c("span", { staticClass: "price-new" }, [
+                          _vm._v(" ৳ " + _vm._s(cart_content.price))
+                        ])
+                      ]
+                    )
                   ])
                 ]
               ),
@@ -70408,8 +70443,7 @@ var render = function() {
                   _c(
                     "h6",
                     {
-                      staticClass: "text-danger",
-                      staticStyle: { cursor: "pointer" },
+                      staticStyle: { cursor: "pointer", "margin-top": "17px" },
                       on: {
                         click: function($event) {
                           return _vm.cartRemove(cart_content)
@@ -70436,24 +70470,28 @@ var render = function() {
           ])
         : _vm._e(),
       _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "cart-footer" },
-        [
-          _c(
-            "router-link",
-            {
-              staticClass: "btn btn-block placebtn",
-              attrs: { to: { name: "checkout" } }
-            },
-            [
-              _vm._v("Place Order | "),
-              _c("span", [_vm._v(" " + _vm._s(_vm.cart.total))])
-            ]
-          )
-        ],
-        1
-      )
+      _c("div", { staticClass: "cart_place d-flex" }, [
+        _c(
+          "div",
+          { staticClass: "cart-footer" },
+          [
+            _c(
+              "router-link",
+              {
+                staticClass: "btn btn-block",
+                staticStyle: { color: "#fff", "font-weight": "bold" },
+                attrs: { to: { name: "checkout" } }
+              },
+              [_vm._v("Place Order ")]
+            )
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _c("div", { staticClass: "___place" }, [
+          _c("p", [_vm._v("৳" + _vm._s(Math.floor(_vm.cart.total)))])
+        ])
+      ])
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "cart-open", on: { click: _vm.cartOpen } }, [
@@ -70472,7 +70510,7 @@ var render = function() {
     _vm._v(" "),
     _c("div", { staticClass: "__footer_nav" }, [
       _c("ul", [
-        _vm._m(1),
+        _vm._m(2),
         _vm._v(" "),
         _c("li", [
           _c(
@@ -70606,7 +70644,7 @@ var render = function() {
           "div",
           { staticClass: "row shop_by_category_row" },
           [
-            _vm._m(2),
+            _vm._m(3),
             _vm._v(" "),
             _vm.banners["new_arrival"]
               ? _c(
@@ -70779,6 +70817,15 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("a", { staticClass: "search-icon" }, [
       _c("i", { staticClass: "fa fa-search" })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("h4", { staticClass: "exitC", attrs: { id: "exitcart" } }, [
+      _c("i", { staticClass: "fa fa-shopping-bag" }),
+      _vm._v(" 3 ITEMS")
     ])
   },
   function() {

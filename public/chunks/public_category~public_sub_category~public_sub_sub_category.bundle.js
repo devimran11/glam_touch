@@ -182,6 +182,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -367,7 +371,7 @@ var render = function() {
                   _c("div", { staticClass: "content_card" }, [
                     _c(
                       "div",
-                      { staticClass: "content_card_body text-center" },
+                      { staticClass: "content_card_body" },
                       [
                         _c(
                           "router-link",
@@ -413,73 +417,23 @@ var render = function() {
                         ),
                         _vm._v(" "),
                         _c("p", { staticClass: "price" }, [
-                          _c("span", { staticClass: "price-new" }, [
-                            _vm._v(" BDT " + _vm._s(product.price))
-                          ]),
-                          _vm._v(" "),
                           product.discount
                             ? _c("span", { staticClass: "price-old" }, [
                                 _vm._v(
-                                  "\n              BDT " +
+                                  "\n            ৳ " +
                                     _vm._s(product.sale_price)
                                 )
                               ])
                             : _vm._e(),
                           _vm._v(" "),
-                          product.discount > 0
-                            ? _c("span", { staticClass: "discount" }, [
-                                _vm._m(2, true),
-                                _vm._v(" "),
-                                _c(
-                                  "div",
-                                  {
-                                    staticClass: "discount-item",
-                                    staticStyle: { "margin-top": "6px" }
-                                  },
-                                  [
-                                    _vm._v(
-                                      "\n                " +
-                                        _vm._s(
-                                          (
-                                            (product.discount /
-                                              product.sale_price) *
-                                            100
-                                          ).toFixed(0)
-                                        ) +
-                                        "%\n                "
-                                    ),
-                                    _c(
-                                      "span",
-                                      { staticClass: "d_off_category" },
-                                      [_vm._v("off")]
-                                    )
-                                  ]
-                                )
-                              ])
-                            : _vm._e()
-                        ])
+                          _c("span", { staticClass: "price-new" }, [
+                            _vm._v(" ৳ " + _vm._s(product.price))
+                          ])
+                        ]),
+                        _vm._v(" "),
+                        _vm._m(2, true)
                       ],
                       1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "div",
-                      { staticClass: "content_card_footer text-center" },
-                      [
-                        _c(
-                          "button",
-                          {
-                            staticClass: "btn btn-primary btnQuick",
-                            staticStyle: { cursor: "pointer" },
-                            on: {
-                              click: function($event) {
-                                _vm.quick_v_product_id = product.id
-                              }
-                            }
-                          },
-                          [_vm._v("\n            view\n          ")]
-                        )
-                      ]
                     )
                   ])
                 ]
@@ -526,22 +480,21 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      {
-        staticClass: "star-icon",
-        staticStyle: { "margin-top": "-7px", "margin-bottom": "-32px" }
-      },
+      { staticClass: "add-to-cart d-flex justify-content-center" },
       [
-        _c("i", {
-          staticClass: "fa fa-star",
-          attrs: { "aria-hidden": "true" }
-        }),
+        _c("button", { staticClass: "btn btn-warning btn-sm carts" }, [
+          _c("i", { staticClass: "fa fa-solid fa fa-cart-arrow-down fa-lg" }),
+          _vm._v(" "),
+          _c("span", { staticStyle: { "margin-top": "2px" } }, [
+            _vm._v("ADD TO CART")
+          ])
+        ]),
         _vm._v(" "),
-        _c("span", { staticStyle: { "margin-left": "-3px" } }, [
-          _c("i", {
-            staticClass: "fa fa-star",
-            attrs: { "aria-hidden": "true" }
-          })
-        ])
+        _c("i", {
+          staticClass: "fa fa-heart fa-2x",
+          staticStyle: { color: "#CC8E46", "margin-left": "10px" }
+        }),
+        _c("sup", [_c("i", { staticClass: "fa fa-plus fa-sm" })])
       ]
     )
   }

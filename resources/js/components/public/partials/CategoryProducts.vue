@@ -54,7 +54,7 @@
         :key="product.id"
       >
         <div class="content_card">
-          <div class="content_card_body text-center">
+          <div class="content_card_body">
             <router-link
               :to="{ name: 'single', params: { slug: product.slug } }"
             >
@@ -71,13 +71,12 @@
                 >{{ product.name }}</router-link
               >
             </p>
-            <p class="price">
+            <!-- <p class="price">
               <span class="price-new"> BDT {{ product.price }}</span>
               <span class="price-old" v-if="product.discount">
                 BDT {{ product.sale_price }}</span
               >
               <span v-if="product.discount > 0" class="discount">
-                <!-- <p><i class="fa fa-star best_s_star"> </i></p> -->
                 <div class="star-icon" style="margin-top:-7px; margin-bottom: -32px">
                   <i class="fa fa-star" aria-hidden="true"></i>
                   <span style="margin-left:-3px">
@@ -89,15 +88,20 @@
                   <span class="d_off_category">off</span>
                 </div>
               </span>
-            </p>
-            <!-- <p class="price">
-              <span class="price-new"> BDT {{ product.price }}</span>
-              <span class="price-old" v-if="product.discount">
-                BDT {{ product.sale_price }}</span
-              >
             </p> -->
+            <p class="price">
+                  
+            <span class="price-old" v-if="product.discount">
+              &#2547; {{ product.sale_price }}</span >
+              <span class="price-new"> &#2547; {{ product.price }}</span>
+          </p>
+          <div class="add-to-cart d-flex justify-content-center">
+              <button class="btn btn-warning btn-sm carts"> <i class="fa fa-solid fa fa-cart-arrow-down fa-lg"></i> <span style="margin-top: 2px;">ADD TO CART</span></button>
+              <i class="fa fa-heart fa-2x" style="color: #CC8E46; margin-left: 10px"></i><sup><i class="fa fa-plus fa-sm"></i></sup>
+            </div>
           </div>
-          <div class="content_card_footer text-center">
+
+          <!-- <div class="content_card_footer text-center">
             <button
               class="btn btn-primary btnQuick"
               style="cursor: pointer"
@@ -105,7 +109,7 @@
             >
               view
             </button>
-          </div>
+          </div> -->
         </div>
       </div>
 

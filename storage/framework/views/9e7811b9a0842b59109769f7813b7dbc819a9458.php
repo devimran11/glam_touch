@@ -583,7 +583,8 @@ ul.side-nav li:hover>.left-sub-menu {
     margin-bottom: 3.5%;
 }
 .colapse-cart{
-    width: 400px;
+    width: 350px;
+    height: 84%;
 }
 .cart-header {
     padding: 15px 15px;
@@ -610,15 +611,18 @@ ul.side-nav li:hover>.left-sub-menu {
     position:absolute;
     left: 0;
     bottom: 0;
-    width: 100%;
-    background-color: #000000;
+    width: 60%;
+    background-color: #AA8153;
+    color: #fff;
 }
 .cart-fiiter{
     padding: 15px 15px ;
 }
  #exitcart {
-
+    color: #7B7B7B;
+    font-weight: bold;
     cursor: pointer;
+    margin-top: 20px;
 }
 
 .cart-open {
@@ -947,6 +951,8 @@ li {
 
 .flex {
     display: flex;
+    padding-right: 0px;
+    margin-right: 0px;
 }
 
 .header-top-right {
@@ -1398,14 +1404,14 @@ span.price-old {
     background: var(--primary-color) !important;
 }
 .cart-header {
-    padding: 15px 15px;
-   background: var(--primary-color);
-   color: #fff;
+    padding: 1px 15px;
+       color: #fff;
+    background: #E4E0E1;
 }
 .cart-footer {
    color: #fff;
 
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
 }
 .placebtn{
     color: #fff;
@@ -1723,6 +1729,7 @@ span.price-old {
     }
 
     .content_card_container {
+        margin-top: 20px;
         margin-bottom: 10px !important;
     }
 
@@ -3349,7 +3356,7 @@ span.price-old {
       .colapse-cart {
             width: 95%;
             margin-bottom: 20%;
-            height: 70%;
+            height: 94%;
         }
 
         ul.p-image-name li {
@@ -3976,7 +3983,7 @@ span.price-old {
 
             cursor: pointer;
             margin-left: 350px;
-            margin-top: -24px;
+            margin-top: 10px;
         }
 
 
@@ -5076,12 +5083,15 @@ input[data-v-c157765e] {
 }
 .product-title{
     color: #A6A6A6;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 13px;
 }
 .product-size{
     font-weight: bold;
 }
 .input_quantity {
-    padding: 12px 3% !important;
+    padding: 12px 4% !important;
     margin-left: 1%;
     font-size: 16px;
     font-weight: bold;
@@ -5260,15 +5270,105 @@ input[data-v-c157765e] {
 .facebook{
     background: #0F549A;
     color: white;
-    padding: 0px 10px;
+    padding: 3px 10px;
     font-family: 'Montserrat';
     font-weight: bold;
 }
 .google{
     background: #E43E2B;
     color: white;
-    padding: 0px 10px;
+    padding: 3px 10px;
     font-family: 'Montserrat';
     font-weight: bold;
+}
+.payment-title{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+}
+.payment-line{
+    border: 1px solid #B7B7B7;
+}
+
+.cart-items{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #484848;
+    font-size: 14px;
+}
+.price_old{
+    text-decoration: line-through;
+    
+}
+.qty_container p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.product-title i{
+    float: right;
+    margin-right: 12px;
+    font-size: 18px;
+    margin-top: 5px;
+}
+.cart_total_calculation{
+    width: 100%;
+    padding: 0px;
+    font-size: 15px;
+    color: #070707;
+}
+
+.coupon h4{
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #202021;
+}
+.place-order{
+    margin-top: 20px;
+    text-align: center;
+    
+}
+.place_btn{
+    background: #AA8153;
+    color: white;
+    font-family: 'Montserrat';
+    font-weight: bold;
+}
+.cash_radio{
+    margin-top: 18px;
+    margin-left: 10px;
+}
+/* .cash_input{
+    margin-top: 20px;
+    margin-left: 18px;
+} */
+
+.cart_content_sty{
+    padding: 9px 0px;
+
+}
+.cart_content_name{
+    font-size: 12px;
+    color: #ACACAC;
+    margin-top: -12px;
+}
+.cart_content_name p{
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+.___place{
+    float: right;
+    margin-top: 205px;
+    background: #463420;
+    width: 40%;
+    padding-bottom: 4px;
+    text-align: center;
+    color: #fff;
+}
+.___place p{
+    margin-top: 7px;
+    margin-bottom: 3px;
 }
 </style><?php /**PATH D:\project\glam_touch_web_app\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

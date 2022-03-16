@@ -353,36 +353,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1154,7 +1124,9 @@ var render = function() {
                             _vm._v("ORDER OVERVIEW")
                           ]),
                           _vm._v(" "),
-                          _c("h4", [_vm._v("YOUR CART: 3 ITEMS")]),
+                          _c("p", { staticClass: "cart-items" }, [
+                            _vm._v("YOUR CART: 3 ITEMS")
+                          ]),
                           _vm._v(" "),
                           _c("br"),
                           _vm._v(" "),
@@ -1162,7 +1134,7 @@ var render = function() {
                           _vm._v(" "),
                           _vm._m(10),
                           _vm._v(" "),
-                          _c("div", { staticClass: "cart-total" }, [
+                          _c("div", { staticClass: "cart_total_calculation" }, [
                             _c("table", { staticClass: "table" }, [
                               _c("tbody", [
                                 _c("tr", [
@@ -1316,14 +1288,14 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "facebook-login" }, [
             _c("button", { staticClass: "btn btn-sm facebook" }, [
-              _c("i", { staticClass: "fa fa-facebook-square fa-2x" }),
+              _c("i", { staticClass: "fa fa-facebook-square fa-lg" }),
               _vm._v(" LOGIN WITH FACEBOOK ")
             ])
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "google-login" }, [
             _c("button", { staticClass: "btn btn-sm google" }, [
-              _c("i", { staticClass: "fa fa-google fa-2x" }),
+              _c("i", { staticClass: "fa fa-google fa-lg" }),
               _vm._v("LOGIN WITH GOOGLE")
             ])
           ])
@@ -1430,73 +1402,87 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "payment" }, [
-      _c("h4", [_vm._v("PAYMENT METHOD")]),
+      _c("h4", { staticClass: "payment-title" }, [_vm._v("PAYMENT METHOD")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "payment-line" }),
       _vm._v(" "),
       _c("div", { staticClass: "payment-method" }, [
-        _c("form", { attrs: { action: "" } }, [
-          _c("div", { staticClass: "col-md-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                staticClass: "form-check-input cash",
-                attrs: {
-                  type: "radio",
-                  name: "inlineRadioOptions",
-                  id: "inlineRadio1",
-                  value: "option1",
-                  height: "0"
-                }
-              }),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c(
+            "div",
+            { staticClass: "form-check", staticStyle: { display: "flex" } },
+            [
+              _c("div", { staticClass: "cash_input" }, [
+                _c("input", {
+                  staticClass: "form-check-input",
+                  attrs: {
+                    type: "radio",
+                    name: "flexRadioDefault",
+                    id: "flexRadioDefault1"
+                  }
+                })
+              ]),
               _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "form-check-label",
-                  attrs: { for: "inlineRadio1" }
-                },
-                [_vm._v(" Cash On Delivery")]
-              ),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: {
-                  src: "/storage/images/payment/cash_on_delivery.png",
-                  height: "50px",
-                  width: "100%"
-                }
-              })
-            ])
-          ]),
+              _c("div", { staticClass: "cash_radio" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "form-check-label",
+                    attrs: { for: "flexRadioDefault1" }
+                  },
+                  [_vm._v(" Cash On Delivery ")]
+                )
+              ])
+            ]
+          ),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-6" }, [
-            _c("div", { staticClass: "form-group" }, [
-              _c("input", {
-                staticClass: "form-check-input pay",
-                attrs: {
-                  type: "radio",
-                  name: "inlineRadioOptions",
-                  id: "inlineRadio1",
-                  value: "option1"
-                }
-              }),
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: {
+              src: "/storage/images/payment/cash_on_delivery.png",
+              width: "100%",
+              height: "50px;"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c(
+            "div",
+            { staticClass: "form-check", staticStyle: { display: "flex" } },
+            [
+              _c("div", { staticClass: "cash_input" }, [
+                _c("input", {
+                  staticClass: "form-check-input pay",
+                  attrs: {
+                    type: "radio",
+                    name: "inlineRadioOptions",
+                    id: "inlineRadio1",
+                    value: "option1"
+                  }
+                })
+              ]),
               _vm._v(" "),
-              _c(
-                "label",
-                {
-                  staticClass: "form-check-label pay",
-                  attrs: { for: "inlineRadio1" }
-                },
-                [_vm._v(" Pay Online")]
-              ),
-              _vm._v(" "),
-              _c("img", {
-                staticClass: "img-fluid",
-                attrs: {
-                  src: "/storage/images/payment/online_payment.png",
-                  width: "100%"
-                }
-              })
-            ])
-          ])
+              _c("div", { staticClass: "cash_radio" }, [
+                _c(
+                  "label",
+                  {
+                    staticClass: "form-check-label pay",
+                    attrs: { for: "inlineRadio1" }
+                  },
+                  [_vm._v(" Pay Online")]
+                )
+              ])
+            ]
+          ),
+          _vm._v(" "),
+          _c("img", {
+            staticClass: "img-fluid",
+            attrs: {
+              src: "/storage/images/payment/online_payment.png",
+              width: "100%"
+            }
+          })
         ])
       ])
     ])
@@ -1519,7 +1505,11 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "product-content" }, [
           _c("span", { staticClass: "product-title" }, [
-            _vm._v("Hijab Gown Purple Color")
+            _vm._v("Hijab Gown Purple Color "),
+            _c("i", {
+              staticClass: "fa fa-times",
+              attrs: { "aria-hidden": "true" }
+            })
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "product_price" }, [
@@ -1565,7 +1555,11 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "product-content" }, [
           _c("span", { staticClass: "product-title" }, [
-            _vm._v("Hijab Gown Purple Color")
+            _vm._v("Hijab Gown Purple Color "),
+            _c("i", {
+              staticClass: "fa fa-times",
+              attrs: { "aria-hidden": "true" }
+            })
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "product_price" }, [
@@ -1611,7 +1605,11 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("div", { staticClass: "product-content" }, [
           _c("span", { staticClass: "product-title" }, [
-            _vm._v("Hijab Gown Purple Color")
+            _vm._v("Hijab Gown Purple Color "),
+            _c("i", {
+              staticClass: "fa fa-times",
+              attrs: { "aria-hidden": "true" }
+            })
           ]),
           _vm._v(" "),
           _c("p", { staticClass: "product_price" }, [
@@ -1671,6 +1669,17 @@ var staticRenderFns = [
             attrs: { type: "submit" }
           },
           [_vm._v("APPLY")]
+        )
+      ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "place-order" }, [
+        _c(
+          "button",
+          {
+            staticClass: "btn btn-secondary place_btn",
+            attrs: { type: "submit" }
+          },
+          [_vm._v("PLACE ORDER")]
         )
       ])
     ])

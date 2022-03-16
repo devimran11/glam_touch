@@ -205,42 +205,55 @@
 
     <div class="cart" id="s-cart">
       <div class="cart-header" @click="cartClosed">
-        <h4 id="exitcart" class="exitC">CLOSED</h4>
+        <h4 id="exitcart" class="exitC"><i class="fa fa-shopping-bag"></i> 3 ITEMS</h4>
+        <p style="color: #747273; margin-top: -36px; border: 3px solid #616060; padding: 5px; margin-left: 248px; cursor: pointer;">Close</p>
       </div>
       <div class="cart-body">
         <div
           class="row cart_row"
           v-for="(cart_content, index) in cart.content"
           :key="index"
-          style="border-bottom: 1px solid #ddd"
+          style="border-bottom: 1px solid #ddd; margin-top: 5px; margin-bottom: 5px;"
         >
-          <div class="col-lg-5 col-sm-5 flex" style="align-items: center">
-            <ul
-              class="p-image-name"
-              style="display: flex; margin: 0; padding: 0px 0px"
-            >
-              <li>
-                <img
-                  :src="thumbnail_base_url+cart_content.options.image"
-                  style="max-width: 35px; max-height: 35px"
-                  alt=""
-                />
-              </li>
-              <li>{{ cart_content.name.substring(0,20) }} <span v-if="cart_content.name.length > 20" >...</span></li>
-            </ul>
-          </div>
           <div class="col-lg-2 col-sm-2 cart_responsive_item flex">
             <u style="text-decoration: none">
               <li class="q-i-d" @click="increamentQuantity(cart_content)">
                 <i class="fa fa-angle-up"></i>
               </li>
-              <li>{{ cart_content.qty }}</li>
+              <li class="cart_content_sty">{{ cart_content.qty }}</li>
               <li class="q-i-d" @click="decreamentQuantity(cart_content)">
                 <i class="fa fa-angle-down"></i>
               </li>
             </u>
           </div>
-          <div class="col-lg-2 col-sm-2 cart_responsive_price">
+          <div class="col-lg-8 col-sm-8 flex" style="align-items: center">
+            <div class="p-image-name">
+                <img
+                  :src="thumbnail_base_url+cart_content.options.image"
+                  style="max-width: 70px; height: 75px; padding: 0 5px;margin-left: -32px; margin-top: 5px; margin-bottom: 7px;"
+                  alt=""
+                />
+            </div>
+            <div class="cart_content_name">
+              <p>{{ cart_content.name.substring(0,30) }} <span v-if="cart_content.name.length > 30" >...</span></p>
+              <p class="price" style=" margin-top: -10px; margin-left: -2px;">
+                  <span class="price-old">
+                    &#2547; {{ cart_content.sale_price }} 200</span >
+                  <span class="price-new"> &#2547; {{ cart_content.price }}</span>
+                </p>
+            </div>
+
+          </div>
+          <div class="col-lg-1 col-sm-1 cart_responsive_remove">
+            <h6
+              class=""
+              style="cursor: pointer; margin-top: 17px;"
+              @click="cartRemove(cart_content)"
+            >
+              X
+            </h6>
+          </div>
+          <!-- <div class="col-lg-2 col-sm-2 cart_responsive_price">
             <h6>{{ cart_content.price }}</h6>
           </div>
           <div class="col-lg-2 col-sm-2 cart_responsive_total">
@@ -254,19 +267,24 @@
             >
               X
             </h6>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="cart-empy" v-if="cart.itemCount <= 0">
         <img :src="base_url + 'images/static/cartEmpty.jpg'" />
         <p>Your cart is empty</p>
       </div>
-      <div class="cart-footer">
-        <!-- <router-link v-if="Object.keys(user).length" :to="{name:'checkout'}" class="btn btn-block placebtn"
-          >Place Order | <span> {{ cart.total }}</span></router-link> -->
-           <router-link :to="{name:'checkout'}" class="btn btn-block placebtn"
-          >Place Order | <span> {{ cart.total }}</span></router-link>
+      <div class="cart_place d-flex">
+        <div class="cart-footer">
+            <router-link :to="{name:'checkout'}" class="btn btn-block" style="color: #fff; font-weight:bold;"
+            >Place Order </router-link>
+        </div>
+        <div class="___place">
+            <p>&#2547;{{ Math.floor(cart.total) }}</p> 
+        </div>
       </div>
+      
+      
     </div>
 
     <div class="cart-open" @click="cartOpen">

@@ -24,10 +24,10 @@
                         <p>Returning customer? <strong>Click here to login</strong></p>
                     </div>
                     <div class="facebook-login">
-                        <button class="btn btn-sm facebook"> <i class="fa fa-facebook-square fa-2x"></i> LOGIN WITH FACEBOOK </button>
+                        <button class="btn btn-sm facebook"> <i class="fa fa-facebook-square fa-lg"></i> LOGIN WITH FACEBOOK </button>
                     </div>
                     <div class="google-login">
-                        <button class="btn btn-sm google"> <i class="fa fa-google fa-2x"></i>LOGIN WITH GOOGLE</button>
+                        <button class="btn btn-sm google"> <i class="fa fa-google fa-lg"></i>LOGIN WITH GOOGLE</button>
                     </div>
                   </div>
                 </div>
@@ -139,25 +139,32 @@
                     </button> -->
                   </form>
                   <div class="payment">
-                    <h4>PAYMENT METHOD</h4>
+                    <h4 class="payment-title">PAYMENT METHOD</h4>
+                    <div class="payment-line"></div>
                     <div class="payment-method">
-                      <form action="">
-                        <div class="col-md-6">
-                          <div class="form-group">
-                            <input class="form-check-input cash" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" height="0">
-                            <label class="form-check-label" for="inlineRadio1"> Cash On Delivery</label>
-                            <img class="img-fluid" src="/storage/images/payment/cash_on_delivery.png" height="50px" width="100%">
+                      <div class="col-md-6">
+                        <div class="form-check" style="display:flex;">
+                          <div class="cash_input">
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                          </div>
+                          <div class="cash_radio">
+                            <label class="form-check-label" for="flexRadioDefault1"> Cash On Delivery </label>
                           </div>
                         </div>
+                        <img class="img-fluid" src="/storage/images/payment/cash_on_delivery.png" width="100%" height="50px;">
+                      </div>
 
-                        <div class="col-md-6">
-                          <div class="form-group">
+                    <div class="col-md-6">
+                        <div class="form-check" style="display:flex;">
+                          <div class="cash_input">
                             <input class="form-check-input pay" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                          </div>
+                          <div class="cash_radio">
                             <label class="form-check-label pay" for="inlineRadio1"> Pay Online</label>
-                            <img class="img-fluid" src="/storage/images/payment/online_payment.png" width="100%">
                           </div>
                         </div>
-                      </form>
+                      <img class="img-fluid" src="/storage/images/payment/online_payment.png" width="100%">
+                    </div>
                     </div>
                   </div>
                 </div>
@@ -166,7 +173,7 @@
               <div class="col-lg-5 col-md-5 col-xs-12 col-sm-12">
                 <div class="custom-box">
                   <h3 class="title">ORDER OVERVIEW</h3>
-                  <h4>YOUR CART: 3 ITEMS</h4>
+                  <p class="cart-items">YOUR CART: 3 ITEMS</p>
                   <br>
                   <hr>
                   <div class="total_carts_products">
@@ -177,7 +184,7 @@
                       <img class="img-fluid" src="/storage/images/product_view/product-1.png" width="100%">
                     </div>
                     <div class="product-content">
-                        <span class="product-title">Hijab Gown Purple Color</span>
+                        <span class="product-title">Hijab Gown Purple Color <i class="fa fa-times" aria-hidden="true"></i></span>
                         <p class="product_price">
                           <span class="price_old">
                             &#2547; 2525</span >
@@ -204,7 +211,7 @@
                       <img class="img-fluid" src="/storage/images/product_view/product-2.png" width="100%">
                     </div>
                     <div class="product-content">
-                        <span class="product-title">Hijab Gown Purple Color</span>
+                        <span class="product-title">Hijab Gown Purple Color <i class="fa fa-times" aria-hidden="true"></i></span>
                         <p class="product_price">
                           <span class="price_old">
                             &#2547; 2525</span >
@@ -231,7 +238,7 @@
                       <img class="img-fluid" src="/storage/images/product_view/product-1.png" width="100%">
                     </div>
                     <div class="product-content">
-                        <span class="product-title">Hijab Gown Purple Color</span>
+                        <span class="product-title">Hijab Gown Purple Color <i class="fa fa-times" aria-hidden="true"></i></span>
                         <p class="product_price">
                           <span class="price_old">
                             &#2547; 2525</span >
@@ -253,7 +260,7 @@
                     </div>
                   </div>
                   </div>
-                  <div class="cart-total">
+                  <div class="cart_total_calculation">
                     <table class="table">
                       <tbody>
                         <tr>
@@ -308,48 +315,11 @@
                     <input class="form-control coupon_code" type="text" placeholder="Coupon Code Here">
                     <button class="btn btn-secondary code_btn" type="submit">APPLY</button>
                   </div>
-                   <!-- <ul class="list-group">
-                      <li v-show="member_type.length" class="list-group-item">
-                        <h5  class="extra_d " > you are now {{ member_type }} member
-                         <a @click="applyMemberDiscount" class="btn btn-primary p_a_btn">apply {{ member_discount }} % discount </a>
-                       </h5>
-                      </li>
-                     <li class="list-group-item">  <h5  class=" extra_d coupon-apply" @click.prevent="coupon = !coupon">Have a Coupon or Promo Code? <i class="fa fa-angle-down"></i> </h5>  </li>
-                   </ul>
-
-                  <div v-if="coupon" class="coupon">
-                    <label for="">
-                      <strong>Apply Coupon Here</strong>
-                    </label>
-                   <div style="display:flex">
-                      <input id="coupon_code" style="width:60%" v-model="coupon_code" type="text" class="form-control">
-                    <button :disabled="coupon_code.length <=0 " class="btn btn-primary" @click.prevent="applyCoupon" style="border-radius:0px;">Apply</button>
-                   </div>
-                  </div> -->
-                </div>
-              </div>
-               <!-- <div class="col-lg-5 col-md-5 col-xs-12 col-sm-12">
-                <div class="" >
-                   <ul class="list-group">
-                      <li v-show="member_type.length" class="list-group-item">
-                        <h5  class="extra_d " > you are now {{ member_type }} member
-                         <a @click="applyMemberDiscount" class="btn btn-primary p_a_btn">apply {{ member_discount }} % discount </a>
-                       </h5>
-                      </li>
-                     <li class="list-group-item">  <h5  class=" extra_d coupon-apply" @click.prevent="coupon = !coupon">Have you any cupon? <i class="fa fa-angle-down"></i> </h5>  </li>
-                   </ul>
-
-                  <div v-if="coupon" class="coupon">
-                    <label for="">
-                      <strong>Apply Coupon Here</strong>
-                    </label>
-                   <div style="display:flex">
-                      <input id="coupon_code" style="width:60%" v-model="coupon_code" type="text" class="form-control">
-                    <button :disabled="coupon_code.length <=0 " class="btn btn-primary" @click.prevent="applyCoupon" style="border-radius:0px;">Apply</button>
-                   </div>
+                  <div class="place-order">
+                    <button class="btn btn-secondary place_btn" type="submit">PLACE ORDER</button>
                   </div>
                 </div>
-              </div> -->
+              </div>
             </div>
           </div>
         </div>
