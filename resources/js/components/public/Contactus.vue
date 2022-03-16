@@ -10,8 +10,111 @@
     <div id="container">
       <div class="container">
         <div class="row">
+          <div class="contact-page">
+            <div class="col-md-4">
+              <div class="address-area">
+                <div class="address-icon">
+                  <i class="fa fa-map-marker" style="font-size:36px"></i>
+                </div>
+                <div class="address-title">
+                  <p>
+                    98/2, Vista Garden (3rd Floor), Shenpara, Parbata,
+                    Mirpur-10, Dhaka-1216
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="address-area">
+                <div class="address-icon">
+                  <i
+                    class="fa fa-volume-control-phone"
+                    style="font-size:36px"
+                  ></i>
+                </div>
+                <div class="address-title">
+                  <p>
+                    09639148048 <br />
+                    01828-348048 | 01315-897884 <br />
+                    01324-827121 | 01917-618628
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="address-area">
+                <div class="address-icon">
+                  <i class="fa fa-envelope" style="font-size:36px"></i>
+                </div>
+                <div class="address-title">
+                  <p>
+                    info@gmail.com
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="map">
+            <div class="col-md-12">
+              <div class="full-map">
+                <main class="app">
+                  <aside class="sidebar">
+                    <header class="sidebar-header">
+                      <h1>PopularTO</h1>
+                      <nav class="options">
+                        <ul class="item-list">
+                          <li class="item">
+                            <a class="link">Fries</a>
+                          </li>
+                          <li class="item active">
+                            <a class="link">Burgers</a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </header>
+                  </aside>
+
+                  <section class="map-area">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5164.845853240233!2d90.37104199665416!3d23.743901361370174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf95edb05433%3A0x1da68b6f2e2e82a8!2sGlamTouch!5e0!3m2!1sen!2sbd!4v1647454372232!5m2!1sen!2sbd"
+                      width="100%"
+                      height="420"
+                      style="border:0;"
+                      allowfullscreen=""
+                      loading="lazy"
+                    ></iframe>
+                  </section>
+                </main>
+              </div>
+            </div>
+          </div>
+
+          <div class="get-in-touch">
+            <h3>GET IN TOUCH</h3>
+            <div class="col-md-8 offset-md-2">
+              <form>
+                <div class="form-group row">
+                  <label for="subject" class="col-sm-2 col-form-label"
+                    >Subject</label
+                  >
+                  <div class="col-sm-10">
+                    <input
+                      type="text"
+                      readonly
+                      class="form-control-plaintext"
+                      id="subject"
+                      value="Customer Service"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
           <!--Middle Part Start-->
-          <div id="content" class="col-sm-12">
+          <!-- <div id="content" class="col-sm-12">
             <div class="row">
               <div class="col lg-12 col-md-12 col-sm-12 text-center">
                 <h2 class="heading"><span>CONTACT US</span></h2>
@@ -72,7 +175,7 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!--Middle Part End -->
         </div>
       </div>
@@ -95,20 +198,19 @@ export default {
       name: "",
       email: "",
       message: "",
-      contact_info:"",
+      contact_info: "",
     };
   },
   methods: {
-    getContactInfo(){
-         axios.get('/_public/api/get/info/abou/contact')
-         .then(resp=>{
-           console.log(resp);
-           if (resp.data.status=="OK") {
-             this.contact_info=resp.data.setting.contact_info ;
-             this.isLoading=false;
-           }
-         })
-     },
+    getContactInfo() {
+      axios.get("/_public/api/get/info/abou/contact").then((resp) => {
+        console.log(resp);
+        if (resp.data.status == "OK") {
+          this.contact_info = resp.data.setting.contact_info;
+          this.isLoading = false;
+        }
+      });
+    },
     sendMessage() {
       axios
         .post("/_public/customer/contact", {
@@ -120,7 +222,8 @@ export default {
           if (resp.data.success == "OK") {
             Swal.fire({
               type: "success",
-              text: "Thanks for your message, we will reply as soon as possible",
+              text:
+                "Thanks for your message, we will reply as soon as possible",
               confirm: true,
               duration: 4000,
               position: "top-center",
@@ -177,7 +280,10 @@ export default {
   }
 }
 .address_container {
-    padding: 10px;
+  padding: 10px;
 }
-.address_container i {padding-right: 15px;color: #ff4d03;}
+.address_container i {
+  padding-right: 15px;
+  color: #ff4d03;
+}
 </style>
