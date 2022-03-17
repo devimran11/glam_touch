@@ -199,6 +199,25 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -467,31 +486,113 @@ var staticRenderFns = [
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "get-in-touch" }, [
-            _c("h3", [_vm._v("GET IN TOUCH")]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-8 offset-md-2" }, [
-              _c("form", [
-                _c("div", { staticClass: "form-group row" }, [
+          _c("div", { staticClass: "col-md-12" }, [
+            _c("div", { staticClass: "get_in_touch" }, [
+              _c("h3", { staticClass: "get_title" }, [_vm._v("GET IN TOUCH")]),
+              _vm._v(" "),
+              _c("div", { staticClass: "get_line" }),
+              _vm._v(" "),
+              _c("form", { staticClass: "form-horizontal" }, [
+                _c("div", { staticClass: "form-group" }, [
                   _c(
                     "label",
                     {
-                      staticClass: "col-sm-2 col-form-label",
-                      attrs: { for: "subject" }
+                      staticClass: "control-label col-sm-2",
+                      attrs: { for: "sub" }
                     },
-                    [_vm._v("Subject")]
+                    [_vm._v("Subject:")]
                   ),
                   _vm._v(" "),
                   _c("div", { staticClass: "col-sm-10" }, [
                     _c("input", {
-                      staticClass: "form-control-plaintext",
+                      staticClass: "form-control",
                       attrs: {
                         type: "text",
-                        readonly: "",
-                        id: "subject",
-                        value: "Customer Service"
+                        id: "sub",
+                        placeholder: "Customer Service"
                       }
                     })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label col-sm-2",
+                      attrs: { for: "subject" }
+                    },
+                    [_vm._v("Email Address:")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-10" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "email",
+                        id: "subject",
+                        placeholder: "Your@email.com"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label col-sm-2",
+                      attrs: { for: "subject" }
+                    },
+                    [_vm._v("Attachment:")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-10" }, [
+                    _c("input", {
+                      staticClass: "form-control",
+                      attrs: {
+                        type: "file",
+                        id: "subject",
+                        placeholder: "CHOOSE FILE"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c(
+                    "label",
+                    {
+                      staticClass: "control-label col-sm-2",
+                      attrs: { for: "message" }
+                    },
+                    [_vm._v("Message:")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "col-sm-10" }, [
+                    _c("textarea", {
+                      staticClass: "form-control",
+                      attrs: {
+                        name: "message",
+                        id: "message",
+                        cols: "",
+                        rows: "5",
+                        placeholder: "How can we help?"
+                      }
+                    })
+                  ])
+                ]),
+                _vm._v(" "),
+                _c("div", { staticClass: "form-group" }, [
+                  _c("div", { staticClass: "col-sm-offset-2 col-sm-10" }, [
+                    _c(
+                      "button",
+                      {
+                        staticClass: "btn btn-default contact_btn",
+                        attrs: { type: "submit" }
+                      },
+                      [_vm._v("SEND")]
+                    )
                   ])
                 ])
               ])

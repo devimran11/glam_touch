@@ -4907,8 +4907,29 @@ span.price-old {
 
 input[type='text']::placeholder
 {   
-    text-align: right;     
+    /* text-align: right;      */
     margin-right: 25px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    height: 50px;
+}
+
+input::placeholder
+{   
+    margin-right: 25px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    height: 50px;
+    color: #929292;
+}
+label
+{   
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    color: #929292;
 }
 .search-icon {
     height: 42px;
@@ -5419,5 +5440,33 @@ input[data-v-c157765e] {
 .full-map{
     width: 86%;
     margin: 30px auto;
+}
+.get_in_touch{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+.form-control{
+    height: 45px;
+}
+.contact_btn{
+    float: right;
+    background: #292929;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 10px 18px;
+}
+.get_title{
+    color: #a98153;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    
+}
+.get_line{
+    border-bottom: 3px solid #BFBFBF;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 40px;
 }
 </style>

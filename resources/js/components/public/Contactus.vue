@@ -91,22 +91,41 @@
             </div>
           </div>
 
-          <div class="get-in-touch">
-            <h3>GET IN TOUCH</h3>
-            <div class="col-md-8 offset-md-2">
-              <form>
-                <div class="form-group row">
-                  <label for="subject" class="col-sm-2 col-form-label"
-                    >Subject</label
-                  >
+          <div class="col-md-12">
+            <div class="get_in_touch">
+              <h3 class="get_title">GET IN TOUCH</h3>
+              <div class="get_line"></div>
+              <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="sub">Subject:</label>
                   <div class="col-sm-10">
-                    <input
-                      type="text"
-                      readonly
-                      class="form-control-plaintext"
-                      id="subject"
-                      value="Customer Service"
-                    />
+                    <input type="text" class="form-control" id="sub" placeholder="Customer Service">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="subject">Email Address:</label>
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" id="subject" placeholder="Your@email.com">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="subject">Attachment:</label>
+                  <div class="col-sm-10">
+                    <input type="file" class="form-control" id="subject" placeholder="CHOOSE FILE">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="control-label col-sm-2" for="message">Message:</label>
+                  <div class="col-sm-10">
+                    <textarea name="message" id="message" cols="" rows="5" class="form-control" placeholder="How can we help?"></textarea>                   
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-default contact_btn">SEND</button>
                   </div>
                 </div>
               </form>
