@@ -1,44 +1,58 @@
 <template>
-  <div >
+  <div>
     <div class="header" id="__header_main">
-    <div class="main-header">
-      <div class="container flex">
-        <div class="col-md-2">
-          <div class="main-header-left">
-            <li>
-              <a href="/">
-              <img :src="base_url+general_setting.logo" class="site-logo" />
-              </a>
-            </li>
+      <div class="main-header">
+        <div class="container flex">
+          <div class="col-md-2">
+            <div class="main-header-left">
+              <li>
+                <a href="/">
+                  <img
+                    :src="base_url + general_setting.logo"
+                    class="site-logo"
+                  />
+                </a>
+              </li>
+            </div>
           </div>
-        </div>
 
-        <div class="col-md-10">
-          <div class="col-md-12">
-            
-            <div class="main-header-right">
-                <li class="mobile_menubar_header" >
-                  <i @click.prevent="menuShow" class="fa fa-bars" id="__icon_fa_menu" ></i>
+          <div class="col-md-10">
+            <div class="col-md-12">
+              <div class="main-header-right">
+                <li class="mobile_menubar_header">
+                  <i
+                    @click.prevent="menuShow"
+                    class="fa fa-bars"
+                    id="__icon_fa_menu"
+                  ></i>
                 </li>
-                <li  class="mobile_menubar_search">
+                <li class="mobile_menubar_search">
                   <a @click="searchToggle"><i class="fa fa-search"></i></a>
-                  <a :href="'tel:+'+general_setting.phone"><i class="fa fa-phone"></i></a>
+                  <a :href="'tel:+' + general_setting.phone"
+                    ><i class="fa fa-phone"></i
+                  ></a>
                 </li>
-                
+
                 <li>
-                  
-                  <form id="search_form" class="header_search_form"  @submit.prevent="subMitAutoComppleteForm">
-                    
+                  <form
+                    id="search_form"
+                    class="header_search_form"
+                    @submit.prevent="subMitAutoComppleteForm"
+                  >
                     <input
                       type="text"
                       class="search-input"
                       @keyup="autocomplteSearch"
                       @mouseover="hideAutoWriting"
                       @mouseout="displayAutoWriting"
-                      v-model="search" placeholder="Search for product..."
+                      v-model="search"
+                      placeholder="Search for product..."
                     />
                     <a class="search-icon"><i class="fa fa-search"></i></a>
-                    <div class="search-content" v-if="search_products.length >= 1">
+                    <div
+                      class="search-content"
+                      v-if="search_products.length >= 1"
+                    >
                       <ul class="list-group">
                         <li
                           class="list-group-item"
@@ -46,29 +60,42 @@
                           :key="index"
                         >
                           <router-link
-                            :to="{ name: 'single', params: { slug: product.slug } }"
+                            :to="{
+                              name: 'single',
+                              params: { slug: product.slug },
+                            }"
                             class="search-router-link"
-                            >
-                              <div class="__search_porducts_details">
-                              <img :src="thumbnail_base_url+product.thumbnail_img" class="search_result_img">
-                                <div class="search_name_price">
-                                  <p> {{ product.name }} </p>
+                          >
+                            <div class="__search_porducts_details">
+                              <img
+                                :src="
+                                  thumbnail_base_url + product.thumbnail_img
+                                "
+                                class="search_result_img"
+                              />
+                              <div class="search_name_price">
+                                <p>{{ product.name }}</p>
                                 <p>
                                   BDT {{ product.price }}
-                                  <small><del>BDT {{ product.sale_price }} </del></small></p>
-                                </div>
+                                  <small
+                                    ><del
+                                      >BDT {{ product.sale_price }}
+                                    </del></small
+                                  >
+                                </p>
                               </div>
-
-                            </router-link >
-
+                            </div>
+                          </router-link>
                         </li>
                       </ul>
                     </div>
                   </form>
                 </li>
-              
 
-              <div class="vl" style="border-left: 1px solid rgb(215, 215, 215); height: 40px; margin-top: 6px;"></div>
+                <div
+                  class="vl"
+                  style="border-left: 1px solid rgb(215, 215, 215); height: 40px; margin-top: 6px;"
+                ></div>
                 <li v-if="Object.keys(user).length">
                   <div class="dropdown">
                     <a
@@ -78,11 +105,8 @@
                       data-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
-
                     >
-                      {{
-
-                        user.name ? userFirstName(user.name) : 'Customer' }}
+                      {{ user.name ? userFirstName(user.name) : "Customer" }}
                     </a>
                     <div
                       class="dropdown-menu"
@@ -108,105 +132,132 @@
                         >Set New Password</router-link
                       ><br /><br />
 
-                      <a class="dropdown-item" href="#" @click="Logout">Logout</a>
+                      <a class="dropdown-item" href="#" @click="Logout"
+                        >Logout</a
+                      >
                     </div>
                   </div>
                 </li>
                 <li v-else>
-                    <router-link  class="user_login"  :to="{name:'otpLogin'}">
-                      <i class="fa fa-phone"></i>
-                    </router-link>
+                  <router-link class="user_login" :to="{ name: 'otpLogin' }">
+                    <i class="fa fa-phone"></i>
+                  </router-link>
                 </li>
-                
+
                 <li>
-                  <router-link :to="{name:'wishlist'}" class="header_wishlist" > <img :src="base_url+'images/basic_img/heart.png'" /><sub> {{ wishlistContent.item_count}} </sub> </router-link>
+                  <router-link
+                    :to="{ name: 'wishlist' }"
+                    class="header_wishlist"
+                  >
+                    <img :src="base_url + 'images/basic_img/heart.png'" /><sub>
+                      {{ wishlistContent.item_count }}
+                    </sub>
+                  </router-link>
                 </li>
                 <!-- <li>
                   <a @click="cartOpen" class="header_cart"> <img :src="base_url+'images/basic_img/shopping-bag.png'" > <sub>{{ cart.itemCount }}</sub></a>
                 </li> -->
                 <li>
-                  <router-link class="merchant_login"   target="_blank" :to="{name : 'merchant_login' }" > <i class="fa fa-user" style="color: #fff; text-shadow: 0 0 1px #494A4A;"></i> Login / Join</router-link>
-                </li>
-            </div>
-            
-          </div>
-          
-          <div class="col-md-12">
-            
-            <div class="menu" id="navbar">
-              <div class="header-line"></div>
-              <ul class="menu-list" id="menu_list">
-                <li v-for="(category,category_index) in categories" :key="category_index" class="menu-item">
                   <router-link
-                    :to="{ name: 'PublcaCategory', params: { slug: category.slug } }"
-                    class="menu-item-link"
+                    class="merchant_login"
+                    target="_blank"
+                    :to="{ name: 'merchant_login' }"
                   >
-                    {{ category.name }}
-                  </router-link>
-                  <i
-                    class="fa fa-angle-down menu-icon"
-                    @click="shownextElement"
-                    v-if="category.sub_category.length > 0"
-                  ></i>
-                  <ul class="sub-item-list" v-if="category.sub_category.length > 0">
-                    <li
-                      class="sub-item"
-                      v-for="sub_category in category.sub_category"
-                      :key="sub_category.id"
-                    >
-                      <router-link
-                        :to="{
-                          name: 'PublicSubCategory',
-                          params: { slug: sub_category.slug },
-                        }"
-                        class="sub-item-link"
-                        >{{ sub_category.name }}</router-link
-                      >
-                      <i
-                        class="fa fa-angle-down sub-menu-icon"
-                        v-if="sub_category.sub_sub_category.length"
-                        @click="shownextElement"
-                      ></i>
-                      <ul
-                        class="sub-sub-item-list"
-                        v-if="sub_category.sub_sub_category.length"
-                      >
-                        <li
-                          class="sub-sub-item"
-                          v-for="sub_sub_category in sub_category.sub_sub_category"
-                          :key="sub_sub_category.id"
-                        >
-                          <router-link
-                            :to="{
-                              name: 'PublicSubSUbCategory',
-                              params: { slug: sub_sub_category.slug },
-                            }"
-                            class="sub-sub-item-link"
-                            >{{ sub_sub_category.name }}</router-link
-                          >
-                        </li>
-                      </ul>
-                    </li>
-                  </ul>
+                    <i
+                      class="fa fa-user"
+                      style="color: #fff; text-shadow: 0 0 1px #494A4A;"
+                    ></i>
+                    Login / Join</router-link
+                  >
                 </li>
-                  
-              </ul>
+              </div>
             </div>
 
+            <div class="col-md-12">
+              <div class="menu" id="navbar">
+                <div class="header-line"></div>
+                <ul class="menu-list" id="menu_list">
+                  <li
+                    v-for="(category, category_index) in categories"
+                    :key="category_index"
+                    class="menu-item"
+                  >
+                    <router-link
+                      :to="{
+                        name: 'PublcaCategory',
+                        params: { slug: category.slug },
+                      }"
+                      class="menu-item-link"
+                    >
+                      {{ category.name }}
+                    </router-link>
+                    <i
+                      class="fa fa-angle-down menu-icon"
+                      @click="shownextElement"
+                      v-if="category.sub_category.length > 0"
+                    ></i>
+                    <ul
+                      class="sub-item-list"
+                      v-if="category.sub_category.length > 0"
+                    >
+                      <li
+                        class="sub-item"
+                        v-for="sub_category in category.sub_category"
+                        :key="sub_category.id"
+                      >
+                        <router-link
+                          :to="{
+                            name: 'PublicSubCategory',
+                            params: { slug: sub_category.slug },
+                          }"
+                          class="sub-item-link"
+                          >{{ sub_category.name }}</router-link
+                        >
+                        <i
+                          class="fa fa-angle-down sub-menu-icon"
+                          v-if="sub_category.sub_sub_category.length"
+                          @click="shownextElement"
+                        ></i>
+                        <ul
+                          class="sub-sub-item-list"
+                          v-if="sub_category.sub_sub_category.length"
+                        >
+                          <li
+                            class="sub-sub-item"
+                            v-for="sub_sub_category in sub_category.sub_sub_category"
+                            :key="sub_sub_category.id"
+                          >
+                            <router-link
+                              :to="{
+                                name: 'PublicSubSUbCategory',
+                                params: { slug: sub_sub_category.slug },
+                              }"
+                              class="sub-sub-item-link"
+                              >{{ sub_sub_category.name }}</router-link
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-      
       </div>
     </div>
-    
-
-
-  </div>
 
     <div class="cart" id="s-cart">
       <div class="cart-header" @click="cartClosed">
-        <h4 id="exitcart" class="exitC"><i class="fa fa-shopping-bag"></i> 3 ITEMS</h4>
-        <p style="color: #747273; margin-top: -36px; border: 3px solid #616060; padding: 5px; margin-left: 248px; cursor: pointer;">Close</p>
+        <h4 id="exitcart" class="exitC">
+          <i class="fa fa-shopping-bag"></i> 3 ITEMS
+        </h4>
+        <p
+          style="color: #747273; margin-top: -36px; border: 3px solid #616060; padding: 5px; margin-left: 248px; cursor: pointer;"
+        >
+          Close
+        </p>
       </div>
       <div class="cart-body">
         <div
@@ -228,21 +279,24 @@
           </div>
           <div class="col-lg-8 col-sm-8 flex" style="align-items: center">
             <div class="p-image-name">
-                <img
-                  :src="thumbnail_base_url+cart_content.options.image"
-                  style="max-width: 70px; height: 75px; padding: 0 5px;margin-left: -32px; margin-top: 5px; margin-bottom: 7px;"
-                  alt=""
-                />
+              <img
+                :src="thumbnail_base_url + cart_content.options.image"
+                style="max-width: 70px; height: 75px; padding: 0 5px;margin-left: -32px; margin-top: 5px; margin-bottom: 7px;"
+                alt=""
+              />
             </div>
             <div class="cart_content_name">
-              <p>{{ cart_content.name.substring(0,30) }} <span v-if="cart_content.name.length > 30" >...</span></p>
+              <p>
+                {{ cart_content.name.substring(0, 30) }}
+                <span v-if="cart_content.name.length > 30">...</span>
+              </p>
               <p class="price" style=" margin-top: -10px; margin-left: -2px;">
-                  <span class="price-old">
-                    &#2547; {{ cart_content.sale_price }} 200</span >
-                  <span class="price-new"> &#2547; {{ cart_content.price }}</span>
-                </p>
+                <span class="price-old">
+                  &#2547; {{ cart_content.sale_price }} 200</span
+                >
+                <span class="price-new"> &#2547; {{ cart_content.price }}</span>
+              </p>
             </div>
-
           </div>
           <div class="col-lg-1 col-sm-1 cart_responsive_remove">
             <h6
@@ -253,38 +307,34 @@
               X
             </h6>
           </div>
-          <!-- <div class="col-lg-2 col-sm-2 cart_responsive_price">
-            <h6>{{ cart_content.price }}</h6>
-          </div>
-          <div class="col-lg-2 col-sm-2 cart_responsive_total">
-            <h6>{{ cart_content.price * cart_content.qty }}</h6>
-          </div>
-          <div class="col-lg-1 col-sm-1 cart_responsive_remove">
-            <h6
-              class="text-danger"
-              style="cursor: pointer"
-              @click="cartRemove(cart_content)"
-            >
-              X
-            </h6>
-          </div> -->
         </div>
       </div>
       <div class="cart-empy" v-if="cart.itemCount <= 0">
         <img :src="base_url + 'images/static/cartEmpty.jpg'" />
         <p>Your cart is empty</p>
       </div>
-      <div class="cart_place d-flex">
+      <div class="cart_amount_cal">
         <div class="cart-footer">
-            <router-link :to="{name:'checkout'}" class="btn btn-block" style="color: #fff; font-weight:bold;"
-            >Place Order </router-link>
+          <router-link
+            :to="{ name: 'checkout' }"
+            class="btn btn-block"
+            style="color: #fff; font-weight:bold;"
+            >Place Order
+          </router-link>
         </div>
         <div class="___place">
-            <p>&#2547;{{ Math.floor(cart.total) }}</p> 
+          <p>&#2547;{{ Math.floor(cart.total) }}</p>
         </div>
       </div>
-      
-      
+
+      <!-- <div class="cart_amount_cal">
+        <div class="cart-footer">
+          <p>Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="___place">
+          <p>Lorem, ipsum.</p>
+        </div>
+      </div> -->
     </div>
 
     <div class="cart-open" @click="cartOpen">
@@ -295,40 +345,52 @@
       <div class="cart_amount">
         <h5>&#2547; {{ Math.floor(cart.total) }}</h5>
       </div>
-      
     </div>
 
+    <div class="__footer_nav">
+      <ul>
+        <li>
+          <a href="/"
+            ><i class="fa fa-home footer_icon"></i>
 
-  <div class="__footer_nav">
-    <ul>
-      <li>
-        <a  href="/"><i class="fa fa-home footer_icon"></i>
-
-          <p>  HOME </p>
-      </a> </li>
-      <li> <a  @click.prevent="categoryFilteringToggle" href="/"><i class="fa fa-th-large footer_icon"></i>
-           <p>  CATEGORY </p>
-      </a> </li>
-        <li> <router-link :to="{name:'wishlist'}" > <sup class="customize_c_item">{{ wishlistContent.item_count}}</sup> <i class="fa fa-heart footer_icon"></i>
-           <p>  WISHLIST </p>
-         </router-link> </li>
-      <li> <a @click="cartOpen" > <sup class="customize_c_item">{{cart.itemCount}}</sup> <i class="fa fa-shopping-cart footer_icon"></i>
-          <p>  BAG </p>
-      </a> </li>
-      <li>
-            <router-link v-if="Object.keys(user).length"  :to="{name:'UserDashboard'}"> <i class="fa fa-user-circle footer_icon"></i>
-             <p> ME </p>
-            </router-link>
-            <router-link v-else  :to="{name:'otpLogin'}"> <i class="fa fa-user-circle footer_icon"></i>
-            <p> ME  </p>
-             </router-link>
-      </li>
-
-    </ul>
-  </div>
-
-
-
+            <p>HOME</p>
+          </a>
+        </li>
+        <li>
+          <a @click.prevent="categoryFilteringToggle" href="/"
+            ><i class="fa fa-th-large footer_icon"></i>
+            <p>CATEGORY</p>
+          </a>
+        </li>
+        <li>
+          <router-link :to="{ name: 'wishlist' }">
+            <sup class="customize_c_item">{{ wishlistContent.item_count }}</sup>
+            <i class="fa fa-heart footer_icon"></i>
+            <p>WISHLIST</p>
+          </router-link>
+        </li>
+        <li>
+          <a @click="cartOpen">
+            <sup class="customize_c_item">{{ cart.itemCount }}</sup>
+            <i class="fa fa-shopping-cart footer_icon"></i>
+            <p>BAG</p>
+          </a>
+        </li>
+        <li>
+          <router-link
+            v-if="Object.keys(user).length"
+            :to="{ name: 'UserDashboard' }"
+          >
+            <i class="fa fa-user-circle footer_icon"></i>
+            <p>ME</p>
+          </router-link>
+          <router-link v-else :to="{ name: 'otpLogin' }">
+            <i class="fa fa-user-circle footer_icon"></i>
+            <p>ME</p>
+          </router-link>
+        </li>
+      </ul>
+    </div>
 
     <div id="category_filtering_section" class="category_filtering_on_mobile">
       <!-- mobile category filtering and it's products start.when click on footer nav item on Category then it will toggle  -->
@@ -337,7 +399,7 @@
         <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <ul class="mobile_category_filtering_list text-center">
             <li
-              v-for="(category,f_c_index) in categories"
+              v-for="(category, f_c_index) in categories"
               :key="f_c_index"
               @click="filterCategory(category.slug)"
               :class="{
@@ -345,11 +407,10 @@
               }"
             >
               <a
-                >{{ category.name.substring(0,18)
+                >{{ category.name.substring(0, 18)
                 }}<span v-if="category.name.length > 18">..</span>
               </a>
             </li>
-
           </ul>
         </div>
       </div>
@@ -358,7 +419,10 @@
         <i class="fa fa-spin fa-spinner"></i>
       </h1>
 
-      <CategorySlider v-if="category_sliders !=null" :sliders="category_sliders" />
+      <CategorySlider
+        v-if="category_sliders != null"
+        :sliders="category_sliders"
+      />
 
       <div class="row shop_by_category_row">
         <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
@@ -387,14 +451,17 @@
             ></router-link>
           </div>
         </div>
-        <div v-for="(filtering_category,filtering_c_index) in categories"
-             v-if="category_slug == filtering_category.slug"
-             :key="filtering_c_index" >
+        <div
+          v-for="(filtering_category, filtering_c_index) in categories"
+          v-if="category_slug == filtering_category.slug"
+          :key="filtering_c_index"
+        >
           <div
-             v-for="(sub_c, sub_c_index) in filtering_category.sub_category"
+            v-for="(sub_c, sub_c_index) in filtering_category.sub_category"
             :key="sub_c_index"
-             v-if="sub_c.show_home_page==1"
-             class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6  shop_by_category_container ">
+            v-if="sub_c.show_home_page == 1"
+            class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-6  shop_by_category_container "
+          >
             <div class="content">
               <router-link
                 :to="{
@@ -426,22 +493,14 @@
         </div>
       </div>
 
-      <Products
-        v-if="products.length > 0"
-        :products="products"
-      />
+      <Products v-if="products.length > 0" :products="products" />
       <!-- mobile category filtering and it's products start.when click on footer nav item on Category then it will toggle  -->
-
     </div>
-
-
-
-
   </div>
 </template>
 
 <script>
-import { VueTyper } from 'vue-typer' ;
+import { VueTyper } from "vue-typer";
 import Products from "./Products.vue";
 import CategorySlider from "./CategorySlider.vue";
 export default {
@@ -457,7 +516,7 @@ export default {
       search_products: [],
       search: "",
       products: [],
-      category_slug:"1000-Fashion",
+      category_slug: "1000-Fashion",
       category_sliders: null,
       loading: false,
     };
@@ -465,26 +524,24 @@ export default {
   components: {
     Products,
     CategorySlider,
-    'vue-typer': VueTyper
+    "vue-typer": VueTyper,
   },
   methods: {
-
-    userFirstName(name){
-        let full_name= name.split(' ');
-        return full_name[0] ;
+    userFirstName(name) {
+      let full_name = name.split(" ");
+      return full_name[0];
     },
 
-    searchToggle(){
-       document.getElementById("search_form").classList.toggle("search_toggle");
+    searchToggle() {
+      document.getElementById("search_form").classList.toggle("search_toggle");
     },
 
+    hideAutoWriting() {
+      document.getElementById("type_writer").style.display = "none";
+    },
 
-   hideAutoWriting(){
-       document.getElementById("type_writer").style.display="none";
-   },
-
-   displayAutoWriting(){
-        document.getElementById("type_writer").style.display="block";
+    displayAutoWriting() {
+      document.getElementById("type_writer").style.display = "block";
     },
 
     increamentQuantity(cartContent) {
@@ -542,8 +599,7 @@ export default {
             if (resp.data.status == "SUCCESS") {
               this.$store.dispatch("getCartContent");
             }
-          })
-
+          });
       }
     },
     changeDisplay() {
@@ -567,11 +623,11 @@ export default {
     },
 
     autocomplteSearch() {
-      if (this.search.length > 2 ) {
+      if (this.search.length > 2) {
         axios
           .get("/_public/search/products/" + this.search)
           .then((resp) => {
-            if (resp.data.length > 1 ) {
+            if (resp.data.length > 1) {
               this.search_products = [];
               this.search_products.push(...resp.data);
             } else {
@@ -611,33 +667,32 @@ export default {
       document.getElementById("s-cart").classList.remove("colapse-cart");
     },
     shownextElement(e) {
-
       e.target.nextSibling.nextElementSibling.classList.toggle("show");
-
     },
-    handleScrol(){
-        let header=document.getElementById('__header_main');
+    handleScrol() {
+      let header = document.getElementById("__header_main");
 
-            // if (window.pageYOffset > 1500 ) {
-            //   header.classList.add("__sticky");
-            // } else {
-            //   header.classList.remove("__sticky");
-            // }
+      // if (window.pageYOffset > 1500 ) {
+      //   header.classList.add("__sticky");
+      // } else {
+      //   header.classList.remove("__sticky");
+      // }
     },
 
-
-  //  category filetering on mobile
-    categoryFilteringToggle(){
-       let category_filtering = document.getElementById("category_filtering_section");
-        category_filtering.classList.toggle("collapse_category_filtering");
-        this.filterCategory(this.category_slug);
+    //  category filetering on mobile
+    categoryFilteringToggle() {
+      let category_filtering = document.getElementById(
+        "category_filtering_section"
+      );
+      category_filtering.classList.toggle("collapse_category_filtering");
+      this.filterCategory(this.category_slug);
     },
 
     filterCategory(c_slug) {
       this.category_slug = c_slug;
-      this.category_sliders= null;
+      this.category_sliders = null;
       setTimeout(() => {
-       this.categorySlider(c_slug);
+        this.categorySlider(c_slug);
       }, 500);
       this.$store.dispatch("banners");
       this.categoryWiseProduct(c_slug);
@@ -665,8 +720,7 @@ export default {
         });
     },
 
-  //  category filetering on mobile
-
+    //  category filetering on mobile
   },
 
   created() {
@@ -676,7 +730,6 @@ export default {
     this.$store.dispatch("categories");
     this.$store.dispatch("general_setting");
     window.addEventListener("scroll", this.handleScrol);
-
   },
 
   computed: {
@@ -687,24 +740,23 @@ export default {
       return this.$store.getters.categories;
     },
 
-   cart() {
+    cart() {
       return this.$store.getters.cartContent;
     },
 
-   wishlistContent() {
+    wishlistContent() {
       return this.$store.getters.wishlistContent;
     },
 
-    general_setting(){
-       return this.$store.getters.general_setting;
+    general_setting() {
+      return this.$store.getters.general_setting;
     },
     banners() {
       return this.$store.getters.banners;
     },
-
   },
   watch: {
-    category_sliders: function () {
+    category_sliders: function() {
       if (!this.category_sliders) {
         this.loading = true;
       } else {
@@ -714,7 +766,6 @@ export default {
   },
 };
 </script>
-
 
 <style>
 .nav-active {
@@ -733,13 +784,4 @@ ul.p-image-name li {
   padding: 0px 2px;
   font-size: 12px;
 }
-
-
-
-
-
-
-
-
-
 </style>

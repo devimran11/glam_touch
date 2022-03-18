@@ -616,8 +616,7 @@ ul.side-nav li:hover>.left-sub-menu {
     color: #000;
 }
 .cart-footer{
-    position:absolute;
-    left: 0;
+    float: left;
     bottom: 0;
     width: 60%;
     background-color: #AA8153;
@@ -5388,17 +5387,15 @@ input[data-v-c157765e] {
     font-weight: 400;
 }
 .___place{
-    float: right;
-    margin-top: 205px;
     background: #463420;
-    width: 40%;
-    padding-bottom: 4px;
     text-align: center;
     color: #fff;
+    float: right;
+    width: 40%;
 }
 .___place p{
-    margin-top: 7px;
-    margin-bottom: 3px;
+    padding: 7px 0px;
+    margin: 0;
 }
 .contact-page{
     max-width: 90%;
@@ -5469,4 +5466,5 @@ input[data-v-c157765e] {
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
 </style>

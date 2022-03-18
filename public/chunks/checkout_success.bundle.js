@@ -20,11 +20,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     var _this = this;
@@ -36,14 +31,14 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     showAlert: function showAlert() {
       Swal.fire({
-        position: 'top-center',
+        position: "top-center",
         type: "success",
-        title: '<strong><h2>Your order has been confirmed, Thanks</h2></strong>',
-        html: '<h4> We will call you to inform about order details(at 9:00 AM to 9:00 PM)</h4>',
+        title: "<strong><h2>Your order has been confirmed, Thanks</h2></strong>",
+        html: "<h4> We will call you to inform about order details(at 9:00 AM to 9:00 PM)</h4>",
         confirmButtonText: "<h6><a style=\"color:#fff;padding:20px 0px;\" href=\"/\">View More</a></h6>",
         showCancelButton: true,
         cancelButtonText: "<h6><a style=\"color:#fff;padding:20px 0px;\" href=\"/\">Close</a></h6>",
-        cancelButtonColor: 'red',
+        cancelButtonColor: "red",
         duration: 5000
       });
     }
@@ -64,7 +59,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.swal2-popup {\r\n    display: none;\r\n    position: relative;\r\n    box-sizing: border-box;\r\n    grid-template-columns: minmax(0,100%);\r\n    width: 50em !important;\r\n    max-width: 100%;\r\n    padding: 0 0 1.25em;\r\n    border: none;\r\n    border-radius: 5px;\r\n    color: #545454;\r\n    font-family: inherit;\r\n    font-size: 1rem;\n}\r\n\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\n.swal2-popup {\r\n  display: none;\r\n  position: relative;\r\n  box-sizing: border-box;\r\n  grid-template-columns: minmax(0, 100%);\r\n  width: 50em !important;\r\n  max-width: 100%;\r\n  padding: 0 0 1.25em;\r\n  border: none;\r\n  border-radius: 5px;\r\n  color: #545454;\r\n  font-family: inherit;\r\n  font-size: 1rem;\n}\r\n", ""]);
 
 // exports
 

@@ -3092,6 +3092,65 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -3116,11 +3175,11 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   components: {
     Products: _Products_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
     CategorySlider: _CategorySlider_vue__WEBPACK_IMPORTED_MODULE_3__["default"],
-    'vue-typer': vue_typer__WEBPACK_IMPORTED_MODULE_1__["VueTyper"]
+    "vue-typer": vue_typer__WEBPACK_IMPORTED_MODULE_1__["VueTyper"]
   },
   methods: {
     userFirstName: function userFirstName(name) {
-      var full_name = name.split(' ');
+      var full_name = name.split(" ");
       return full_name[0];
     },
     searchToggle: function searchToggle() {
@@ -3260,7 +3319,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
       e.target.nextSibling.nextElementSibling.classList.toggle("show");
     },
     handleScrol: function handleScrol() {
-      var header = document.getElementById('__header_main'); // if (window.pageYOffset > 1500 ) {
+      var header = document.getElementById("__header_main"); // if (window.pageYOffset > 1500 ) {
       //   header.classList.add("__sticky");
       // } else {
       //   header.classList.remove("__sticky");
@@ -8305,7 +8364,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".vld-shown {\n  overflow: hidden;\n}\n\n.vld-overlay {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  align-items: center;\n  display: none;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 9999;\n}\n\n.vld-overlay.is-active {\n  display: flex;\n}\n\n.vld-overlay.is-full-page {\n  z-index: 9999;\n  position: fixed;\n}\n\n.vld-overlay .vld-background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  background: #fff;\n  opacity: 0.5;\n}\n\n.vld-overlay .vld-icon, .vld-parent {\n  position: relative;\n}\n\n", ""]);
+exports.push([module.i, ".vld-shown {\r\n  overflow: hidden;\r\n}\r\n\r\n.vld-overlay {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  align-items: center;\r\n  display: none;\r\n  justify-content: center;\r\n  overflow: hidden;\r\n  z-index: 9999;\r\n}\r\n\r\n.vld-overlay.is-active {\r\n  display: flex;\r\n}\r\n\r\n.vld-overlay.is-full-page {\r\n  z-index: 9999;\r\n  position: fixed;\r\n}\r\n\r\n.vld-overlay .vld-background {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  background: #fff;\r\n  opacity: 0.5;\r\n}\r\n\r\n.vld-overlay .vld-icon, .vld-parent {\r\n  position: relative;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -8324,7 +8383,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.nav-active {\r\n  display: block !important;\n}\n.sticky {\r\n  position: fixed;\r\n  top: 0;\r\n  width: 100%;\r\n  z-index: 9999999999999;\n}\n.q-i-d {\r\n  cursor: pointer;\n}\nul.p-image-name li {\r\n  padding: 0px 2px;\r\n  font-size: 12px;\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n", ""]);
+exports.push([module.i, "\n.nav-active {\r\n  display: block !important;\n}\n.sticky {\r\n  position: fixed;\r\n  top: 0;\r\n  width: 100%;\r\n  z-index: 9999999999999;\n}\n.q-i-d {\r\n  cursor: pointer;\n}\nul.p-image-name li {\r\n  padding: 0px 2px;\r\n  font-size: 12px;\n}\r\n", ""]);
 
 // exports
 
@@ -69946,11 +70005,7 @@ var render = function() {
                                               },
                                               [
                                                 _c("p", [
-                                                  _vm._v(
-                                                    " " +
-                                                      _vm._s(product.name) +
-                                                      " "
-                                                  )
+                                                  _vm._v(_vm._s(product.name))
                                                 ]),
                                                 _vm._v(" "),
                                                 _c("p", [
@@ -69966,7 +70021,7 @@ var render = function() {
                                                           _vm._s(
                                                             product.sale_price
                                                           ) +
-                                                          " "
+                                                          "\n                                  "
                                                       )
                                                     ])
                                                   ])
@@ -70123,7 +70178,9 @@ var render = function() {
                         }),
                         _c("sub", [
                           _vm._v(
-                            " " + _vm._s(_vm.wishlistContent.item_count) + " "
+                            "\n                    " +
+                              _vm._s(_vm.wishlistContent.item_count) +
+                              "\n                  "
                           )
                         ])
                       ]
@@ -70152,7 +70209,7 @@ var render = function() {
                             "text-shadow": "0 0 1px #494A4A"
                           }
                         }),
-                        _vm._v(" Login / Join")
+                        _vm._v("\n                  Login / Join")
                       ]
                     )
                   ],
@@ -70186,9 +70243,9 @@ var render = function() {
                           },
                           [
                             _vm._v(
-                              "\n                  " +
+                              "\n                    " +
                                 _vm._s(category.name) +
-                                "\n                "
+                                "\n                  "
                             )
                           ]
                         ),
@@ -70318,7 +70375,7 @@ var render = function() {
               cursor: "pointer"
             }
           },
-          [_vm._v("Close")]
+          [_vm._v("\n        Close\n      ")]
         )
       ]),
       _vm._v(" "),
@@ -70403,7 +70460,11 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "cart_content_name" }, [
                     _c("p", [
-                      _vm._v(_vm._s(cart_content.name.substring(0, 30)) + " "),
+                      _vm._v(
+                        "\n              " +
+                          _vm._s(cart_content.name.substring(0, 30)) +
+                          "\n              "
+                      ),
                       cart_content.name.length > 30
                         ? _c("span", [_vm._v("...")])
                         : _vm._e()
@@ -70421,7 +70482,7 @@ var render = function() {
                       [
                         _c("span", { staticClass: "price-old" }, [
                           _vm._v(
-                            "\n                  ৳ " +
+                            "\n                ৳ " +
                               _vm._s(cart_content.sale_price) +
                               " 200"
                           )
@@ -70470,7 +70531,7 @@ var render = function() {
           ])
         : _vm._e(),
       _vm._v(" "),
-      _c("div", { staticClass: "cart_place d-flex" }, [
+      _c("div", { staticClass: "cart_amount_cal" }, [
         _c(
           "div",
           { staticClass: "cart-footer" },
@@ -70482,7 +70543,7 @@ var render = function() {
                 staticStyle: { color: "#fff", "font-weight": "bold" },
                 attrs: { to: { name: "checkout" } }
               },
-              [_vm._v("Place Order ")]
+              [_vm._v("Place Order\n        ")]
             )
           ],
           1
@@ -70527,7 +70588,7 @@ var render = function() {
             [
               _c("i", { staticClass: "fa fa-th-large footer_icon" }),
               _vm._v(" "),
-              _c("p", [_vm._v("  CATEGORY ")])
+              _c("p", [_vm._v("CATEGORY")])
             ]
           )
         ]),
@@ -70542,7 +70603,7 @@ var render = function() {
               _vm._v(" "),
               _c("i", { staticClass: "fa fa-heart footer_icon" }),
               _vm._v(" "),
-              _c("p", [_vm._v("  WISHLIST ")])
+              _c("p", [_vm._v("WISHLIST")])
             ])
           ],
           1
@@ -70556,7 +70617,7 @@ var render = function() {
             _vm._v(" "),
             _c("i", { staticClass: "fa fa-shopping-cart footer_icon" }),
             _vm._v(" "),
-            _c("p", [_vm._v("  BAG ")])
+            _c("p", [_vm._v("BAG")])
           ])
         ]),
         _vm._v(" "),
@@ -70570,13 +70631,13 @@ var render = function() {
                   [
                     _c("i", { staticClass: "fa fa-user-circle footer_icon" }),
                     _vm._v(" "),
-                    _c("p", [_vm._v(" ME ")])
+                    _c("p", [_vm._v("ME")])
                   ]
                 )
               : _c("router-link", { attrs: { to: { name: "otpLogin" } } }, [
                   _c("i", { staticClass: "fa fa-user-circle footer_icon" }),
                   _vm._v(" "),
-                  _c("p", [_vm._v(" ME  ")])
+                  _c("p", [_vm._v("ME")])
                 ])
           ],
           1
@@ -70825,7 +70886,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("h4", { staticClass: "exitC", attrs: { id: "exitcart" } }, [
       _c("i", { staticClass: "fa fa-shopping-bag" }),
-      _vm._v(" 3 ITEMS")
+      _vm._v(" 3 ITEMS\n      ")
     ])
   },
   function() {
@@ -70836,7 +70897,7 @@ var staticRenderFns = [
       _c("a", { attrs: { href: "/" } }, [
         _c("i", { staticClass: "fa fa-home footer_icon" }),
         _vm._v(" "),
-        _c("p", [_vm._v("  HOME ")])
+        _c("p", [_vm._v("HOME")])
       ])
     ])
   },
@@ -92329,8 +92390,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -608,8 +608,7 @@ ul.side-nav li:hover>.left-sub-menu {
     color: #000;
 }
 .cart-footer{
-    position:absolute;
-    left: 0;
+    float: left;
     bottom: 0;
     width: 60%;
     background-color: #AA8153;
@@ -4899,8 +4898,29 @@ span.price-old {
 
 input[type='text']::placeholder
 {   
-    text-align: right;     
+    /* text-align: right;      */
     margin-right: 25px;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 400;
+    height: 50px;
+}
+
+input::placeholder
+{   
+    margin-right: 25px;
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    height: 50px;
+    color: #929292;
+}
+label
+{   
+    font-family: 'Montserrat';
+    font-size: 16px;
+    font-weight: 400;
+    color: #929292;
 }
 .search-icon {
     height: 42px;
@@ -5359,17 +5379,15 @@ input[data-v-c157765e] {
     font-weight: 400;
 }
 .___place{
-    float: right;
-    margin-top: 205px;
     background: #463420;
-    width: 40%;
-    padding-bottom: 4px;
     text-align: center;
     color: #fff;
+    float: right;
+    width: 40%;
 }
 .___place p{
-    margin-top: 7px;
-    margin-bottom: 3px;
+    padding: 7px 0px;
+    margin: 0;
 }
 .contact-page{
     max-width: 90%;
@@ -5412,4 +5430,33 @@ input[data-v-c157765e] {
     width: 86%;
     margin: 30px auto;
 }
+.get_in_touch{
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+}
+.form-control{
+    height: 45px;
+}
+.contact_btn{
+    float: right;
+    background: #292929;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    padding: 10px 18px;
+}
+.get_title{
+    color: #a98153;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    
+}
+.get_line{
+    border-bottom: 3px solid #BFBFBF;
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
 </style><?php /**PATH D:\xampp\htdocs\Project\glam_touch\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>
