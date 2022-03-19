@@ -24,53 +24,56 @@
               </ul>
             </div>
 
-            <div class="column col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="column col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <div class="quick_link">
                 <h5 class="footer-color">INFORMATION</h5>
                 <!-- <div class="line"></div> -->
                 <ul class="link_line">
-                  <li>
-                    <router-link :to="{ name: 'AboutUs' }"
-                      >About Us</router-link
-                    >
-                  </li>
-                  <li>
-                  <router-link :to="{ name: 'return_policy' }"
-                    >Privacy Policy</router-link
-                  >
-                  </li>
-                  <li>
-                  <router-link :to="{ name: 'shipment' }"
-                    >Shipping Information
-                  </router-link>
-                </li>
+                  <div class="info_left">
+                    <li>
+                        <router-link :to="{ name: 'AboutUs' }"
+                          >About Us</router-link
+                        >
+                      </li>
+                      <li>
+                      <router-link :to="{ name: 'return_policy' }"
+                        >Privacy Policy</router-link
+                      >
+                      </li>
+                      <li>
+                      <router-link :to="{ name: 'shipment' }"
+                        >Shipping Information
+                      </router-link>
+                    </li>
+                  </div>
+                  <div class="info_right">
+                      <li>
+                      <router-link :to="{ name: 'return_policy' }"
+                        >Return & Exchange Policy</router-link
+                      >
+                    </li>
+                      
+                      <li>
+                        <router-link :to="{ name: 'ContactUs' }"
+                          >Contact Us</router-link
+                        >
+                      </li>
 
-                <li>
-                  <router-link :to="{ name: 'return_policy' }"
-                    >Return & Exchange Policy</router-link
-                  >
-                </li>
-                  
-                  <li>
-                    <router-link :to="{ name: 'ContactUs' }"
-                      >Contact Us</router-link
-                    >
-                  </li>
 
-
-                  <li>
-                    <router-link :to="{ name: 'ContactUs' }"
-                      >FAQ</router-link
-                    >
-                  </li>
+                      <li>
+                        <router-link :to="{ name: 'ContactUs' }"
+                          >FAQ</router-link
+                        >
+                      </li>
+                  </div>
                 </ul>
               </div>
             </div>
 
-            <div class="column col-lg-3 col-md-3 col-sm-6 col-xs-6">
+            <div class="column col-lg-3 col-md-3 col-sm-12 col-xs-12">
               <h5 class="footer-color">CONTACT INFO</h5>
               <!-- <div class="line"></div> -->
-              <ul class="link_line">
+              <ul class="link_line" id="link_line_contact">
                 <li>
                   <i class="fa fa-map-marker fa-2x" aria-hidden="true"></i> Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam numquam repellat corrupti quis delectus!
                 </li>

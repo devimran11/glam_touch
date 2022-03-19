@@ -35,10 +35,21 @@
                   :to="{
                     name: 'PublicSubCategory',
                     params: { slug: sub_category.slug },
-                  }"
+                  }" class="home_icon_desktop"
                 >
                   Home
                   /
+                  {{ sub_category.name }}
+                </router-link>
+
+                <router-link
+                  :to="{
+                    name: 'PublicSubCategory',
+                    params: { slug: sub_category.slug },
+                  }" style="display:none" class="home_icon"
+                >
+                  <i class="fa fa-home footer_icon"></i>
+                  >
                   {{ sub_category.name }}
                 </router-link>
               </li>

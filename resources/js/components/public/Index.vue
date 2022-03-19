@@ -19,7 +19,7 @@
 
 
     <div class="container">
-      <div class="row">
+      <div class="row policy_section">
           <div class="col-md-12">
             <div class="col-md-3 col-sm-6 col-xs-6">
               <div class="policy">
@@ -97,7 +97,9 @@
             </div>
           </div>
         </div>
-
+        <div class="loved_categories_carousel" style="display: none">
+          <TopSellingProducts />
+        </div>
          
       </div>
 
@@ -106,7 +108,7 @@
 
       <div class="new_arrival_section">
         <div class="row new_product_row">
-          <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+          <div class="col-lg-12 col-md-12 col-xs-12 best_product text-center">
             <h4 class="section_title">BEST SELLING PRODUCTS</h4>
             <br>
             <hr>
@@ -128,7 +130,7 @@
 
 
       <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center">
+        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center ">
           <h4 class="section_title">NEW ARRIVAL PRODUCTS</h4>
           <br>
           <hr>
@@ -147,25 +149,25 @@
             <hr>
           <div class="line"></div>
           <div class="col-md-12 coupon_top">
-            <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-1.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-2.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-3.png" width="100%">
               </div>
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
                 <img class="img-fluid" src="/storage/images/cupon/cupon-4.png" width="100%">
               </div>

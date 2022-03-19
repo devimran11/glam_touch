@@ -183,9 +183,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -201,6 +198,7 @@ __webpack_require__.r(__webpack_exports__);
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
       quick_v_product_id: "",
+      quick_v_product_attribute: "",
       grid_view: true,
       filter_by: 'Default'
     };
@@ -223,6 +221,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     closedModal: function closedModal(close) {
       this.quick_v_product_id = "";
+      this.quick_v_product_attribute = "";
     }
   }
 });
@@ -296,14 +295,38 @@ var render = function() {
   return _c(
     "div",
     [
+      _c("div", { staticClass: "filter_line_top" }),
+      _vm._v(" "),
       _c("div", { staticClass: "row filter_row" }, [
-        _vm._m(0),
+        _c(
+          "div",
+          { staticClass: "col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" },
+          [
+            _c("div", { staticClass: "filter_button_container" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn filter_customize_button",
+                  staticStyle: { cursor: "pointer" },
+                  on: { click: _vm.quick_v_product_attribute }
+                },
+                [
+                  _vm._v("\n          Filter: "),
+                  _c("i", {
+                    staticClass: "fa fa-filter",
+                    staticStyle: { "font-size": "25px" }
+                  })
+                ]
+              )
+            ])
+          ]
+        ),
         _vm._v(" "),
         _c(
           "div",
           { staticClass: "col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" },
           [
-            _vm._m(1),
+            _vm._m(0),
             _vm._v(" "),
             _c("div", { staticClass: "filter_list_container" }, [
               _c(
@@ -354,6 +377,8 @@ var render = function() {
           ]
         )
       ]),
+      _vm._v(" "),
+      _c("div", { staticClass: "filter_line_bottom" }),
       _vm._v(" "),
       _vm.grid_view == true
         ? _c(
@@ -431,9 +456,29 @@ var render = function() {
                           ])
                         ]),
                         _vm._v(" "),
-                        _vm._m(2, true)
+                        _vm._m(1, true)
                       ],
                       1
+                    ),
+                    _vm._v(" "),
+                    _c(
+                      "div",
+                      { staticClass: "content_card_footer text-center" },
+                      [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-primary btnQuick",
+                            staticStyle: { cursor: "pointer" },
+                            on: {
+                              click: function($event) {
+                                _vm.quick_v_product_id = product.id
+                              }
+                            }
+                          },
+                          [_vm._v("\n            view\n          ")]
+                        )
+                      ]
                     )
                   ])
                 ]
@@ -458,16 +503,6 @@ var render = function() {
   )
 }
 var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" },
-      [_c("div", { staticClass: "filter_button_container" })]
-    )
-  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

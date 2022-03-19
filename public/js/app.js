@@ -2573,6 +2573,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.$store.dispatch("footer_setting");
@@ -2650,6 +2653,8 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
+//
+//
 //
 //
 //
@@ -8364,7 +8369,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".vld-shown {\r\n  overflow: hidden;\r\n}\r\n\r\n.vld-overlay {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  align-items: center;\r\n  display: none;\r\n  justify-content: center;\r\n  overflow: hidden;\r\n  z-index: 9999;\r\n}\r\n\r\n.vld-overlay.is-active {\r\n  display: flex;\r\n}\r\n\r\n.vld-overlay.is-full-page {\r\n  z-index: 9999;\r\n  position: fixed;\r\n}\r\n\r\n.vld-overlay .vld-background {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  background: #fff;\r\n  opacity: 0.5;\r\n}\r\n\r\n.vld-overlay .vld-icon, .vld-parent {\r\n  position: relative;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".vld-shown {\n  overflow: hidden;\n}\n\n.vld-overlay {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  align-items: center;\n  display: none;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 9999;\n}\n\n.vld-overlay.is-active {\n  display: flex;\n}\n\n.vld-overlay.is-full-page {\n  z-index: 9999;\n  position: fixed;\n}\n\n.vld-overlay .vld-background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  background: #fff;\n  opacity: 0.5;\n}\n\n.vld-overlay .vld-icon, .vld-parent {\n  position: relative;\n}\n\n", ""]);
 
 // exports
 
@@ -69639,7 +69644,7 @@ var render = function() {
             _vm._v(" "),
             _c(
               "div",
-              { staticClass: "column col-lg-3 col-md-3 col-sm-6 col-xs-6" },
+              { staticClass: "column col-lg-3 col-md-3 col-sm-12 col-xs-12" },
               [
                 _c("div", { staticClass: "quick_link" }, [
                   _c("h5", { staticClass: "footer-color" }, [
@@ -69647,77 +69652,85 @@ var render = function() {
                   ]),
                   _vm._v(" "),
                   _c("ul", { staticClass: "link_line" }, [
-                    _c(
-                      "li",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: { name: "AboutUs" } } },
-                          [_vm._v("About Us")]
-                        )
-                      ],
-                      1
-                    ),
+                    _c("div", { staticClass: "info_left" }, [
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: { name: "AboutUs" } } },
+                            [_vm._v("About Us")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: { name: "return_policy" } } },
+                            [_vm._v("Privacy Policy")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: { name: "shipment" } } },
+                            [
+                              _vm._v(
+                                "Shipping Information\n                    "
+                              )
+                            ]
+                          )
+                        ],
+                        1
+                      )
+                    ]),
                     _vm._v(" "),
-                    _c(
-                      "li",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: { name: "return_policy" } } },
-                          [_vm._v("Privacy Policy")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: { name: "shipment" } } },
-                          [_vm._v("Shipping Information\n                ")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: { name: "return_policy" } } },
-                          [_vm._v("Return & Exchange Policy")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: { name: "ContactUs" } } },
-                          [_vm._v("Contact Us")]
-                        )
-                      ],
-                      1
-                    ),
-                    _vm._v(" "),
-                    _c(
-                      "li",
-                      [
-                        _c(
-                          "router-link",
-                          { attrs: { to: { name: "ContactUs" } } },
-                          [_vm._v("FAQ")]
-                        )
-                      ],
-                      1
-                    )
+                    _c("div", { staticClass: "info_right" }, [
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: { name: "return_policy" } } },
+                            [_vm._v("Return & Exchange Policy")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: { name: "ContactUs" } } },
+                            [_vm._v("Contact Us")]
+                          )
+                        ],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "li",
+                        [
+                          _c(
+                            "router-link",
+                            { attrs: { to: { name: "ContactUs" } } },
+                            [_vm._v("FAQ")]
+                          )
+                        ],
+                        1
+                      )
+                    ])
                   ])
                 ])
               ]
@@ -69792,37 +69805,41 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "column col-lg-3 col-md-3 col-sm-6 col-xs-6" },
+      { staticClass: "column col-lg-3 col-md-3 col-sm-12 col-xs-12" },
       [
         _c("h5", { staticClass: "footer-color" }, [_vm._v("CONTACT INFO")]),
         _vm._v(" "),
-        _c("ul", { staticClass: "link_line" }, [
-          _c("li", [
-            _c("i", {
-              staticClass: "fa fa-map-marker fa-2x",
-              attrs: { "aria-hidden": "true" }
-            }),
-            _vm._v(
-              " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam numquam repellat corrupti quis delectus!\n              "
-            )
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-envelope" }),
-            _vm._v(" info@glamtouchbd.com\n              ")
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("li", [
-            _c("i", { staticClass: "fa fa-phone" }),
-            _vm._v(" 01516161616 | 01516161616 \n              ")
-          ]),
-          _vm._v(" "),
-          _c("li")
-        ])
+        _c(
+          "ul",
+          { staticClass: "link_line", attrs: { id: "link_line_contact" } },
+          [
+            _c("li", [
+              _c("i", {
+                staticClass: "fa fa-map-marker fa-2x",
+                attrs: { "aria-hidden": "true" }
+              }),
+              _vm._v(
+                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam numquam repellat corrupti quis delectus!\n              "
+              )
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa fa-envelope" }),
+              _vm._v(" info@glamtouchbd.com\n              ")
+            ]),
+            _vm._v(" "),
+            _c("br"),
+            _vm._v(" "),
+            _c("li", [
+              _c("i", { staticClass: "fa fa-phone" }),
+              _vm._v(" 01516161616 | 01516161616 \n              ")
+            ]),
+            _vm._v(" "),
+            _c("li")
+          ]
+        )
       ]
     )
   },
@@ -70586,12 +70603,34 @@ var render = function() {
               }
             },
             [
-              _c("i", { staticClass: "fa fa-th-large footer_icon" }),
+              _c("i", { staticClass: "fa fa-search footer_icon" }),
               _vm._v(" "),
-              _c("p", [_vm._v("CATEGORY")])
+              _c("p", [_vm._v("Search")])
             ]
           )
         ]),
+        _vm._v(" "),
+        _c(
+          "li",
+          [
+            Object.keys(_vm.user).length
+              ? _c(
+                  "router-link",
+                  { attrs: { to: { name: "UserDashboard" } } },
+                  [
+                    _c("i", { staticClass: "fa fa-user-circle footer_icon" }),
+                    _vm._v(" "),
+                    _c("p", [_vm._v("Account")])
+                  ]
+                )
+              : _c("router-link", { attrs: { to: { name: "otpLogin" } } }, [
+                  _c("i", { staticClass: "fa fa-user-circle footer_icon" }),
+                  _vm._v(" "),
+                  _c("p", [_vm._v("Account")])
+                ])
+          ],
+          1
+        ),
         _vm._v(" "),
         _c(
           "li",
@@ -70617,31 +70656,9 @@ var render = function() {
             _vm._v(" "),
             _c("i", { staticClass: "fa fa-shopping-cart footer_icon" }),
             _vm._v(" "),
-            _c("p", [_vm._v("BAG")])
+            _c("p", [_vm._v("Cart")])
           ])
-        ]),
-        _vm._v(" "),
-        _c(
-          "li",
-          [
-            Object.keys(_vm.user).length
-              ? _c(
-                  "router-link",
-                  { attrs: { to: { name: "UserDashboard" } } },
-                  [
-                    _c("i", { staticClass: "fa fa-user-circle footer_icon" }),
-                    _vm._v(" "),
-                    _c("p", [_vm._v("ME")])
-                  ]
-                )
-              : _c("router-link", { attrs: { to: { name: "otpLogin" } } }, [
-                  _c("i", { staticClass: "fa fa-user-circle footer_icon" }),
-                  _vm._v(" "),
-                  _c("p", [_vm._v("ME")])
-                ])
-          ],
-          1
-        )
+        ])
       ])
     ]),
     _vm._v(" "),
@@ -71264,7 +71281,7 @@ var render = function() {
                                             "div",
                                             {
                                               staticClass:
-                                                "col-lg-12 col-md-12 col-xs-12"
+                                                "col-lg-12 col-md-12 col-sm-12 col-xs-12"
                                             },
                                             [
                                               _c(
@@ -71485,7 +71502,7 @@ var render = function() {
                                           "div",
                                           {
                                             staticClass:
-                                              "col-lg-12 col-md-12 col-xs-12"
+                                              "col-lg-12 col-md-12 col-sm-12 col-xs-12"
                                           },
                                           [
                                             _c(
@@ -71706,91 +71723,107 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
-      _c("div", { staticClass: "add_wishlist" }, [
-        _c("a", [
-          _c("i", {
-            staticClass: "fa fa-heart fa-2x",
-            staticStyle: { color: "#CC8E46" }
-          }),
-          _c("sup", [_c("i", { staticClass: "fa fa-plus fa-sm" })]),
-          _vm._v(" "),
-          _c(
-            "span",
-            { staticStyle: { "margin-left": "10px", color: "#C9C9C9" } },
-            [_vm._v("ADD TO WISHLIST")]
-          )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
-      _c("div", { staticClass: "call-us" }, [
-        _c("div", { staticClass: "call-background" }, [
-          _c("div", { staticClass: "phone_icon" }, [
-            _c("i", { staticClass: "fa fa-phone" })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "phn_num" }, [
-            _c("h4", [_vm._v("01768821248")])
+    return _c(
+      "div",
+      { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
+      [
+        _c("div", { staticClass: "add_wishlist" }, [
+          _c("a", [
+            _c("i", {
+              staticClass: "fa fa-heart fa-2x",
+              staticStyle: { color: "#CC8E46" }
+            }),
+            _c("sup", [_c("i", { staticClass: "fa fa-plus fa-sm" })]),
+            _vm._v(" "),
+            _c(
+              "span",
+              { staticStyle: { "margin-left": "10px", color: "#C9C9C9" } },
+              [_vm._v("ADD TO WISHLIST")]
+            )
           ])
         ])
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
-      _c("div", { staticClass: "share_to" }, [
-        _c("h4", [_vm._v("Share to:")]),
-        _vm._v(" "),
-        _c("div", { staticClass: "share_to_icon" }, [
-          _c("i", {
-            staticClass: "fa fa-facebook-square",
-            attrs: { "aria-hidden": "true" }
-          }),
-          _vm._v(" "),
-          _c("i", {
-            staticClass: "fa fa-pinterest-square",
-            attrs: { "aria-hidden": "true" }
-          }),
-          _vm._v(" "),
-          _c("i", {
-            staticClass: "fa fa-whatsapp",
-            attrs: { "aria-hidden": "true" }
-          }),
-          _vm._v(" "),
-          _c("i", { staticClass: "fa-facebook-messenger" })
+    return _c(
+      "div",
+      { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
+      [
+        _c("div", { staticClass: "call-us" }, [
+          _c("div", { staticClass: "call-background" }, [
+            _c("div", { staticClass: "phone_icon" }, [
+              _c("i", { staticClass: "fa fa-phone" })
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "phn_num" }, [
+              _c("h4", [_vm._v("01768821248")])
+            ])
+          ])
         ])
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
-      _c("div", { staticClass: "view_full_product" }, [
-        _c(
-          "button",
-          {
-            staticClass: "btn btn-warning detail_btn",
-            attrs: { type: "submit" }
-          },
-          [
-            _vm._v(
-              "\n                              View Full Product Details >>\n                            "
-            )
-          ]
-        )
-      ])
-    ])
+    return _c(
+      "div",
+      { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
+      [
+        _c("div", { staticClass: "share_to" }, [
+          _c("h4", [_vm._v("Share to:")]),
+          _vm._v(" "),
+          _c("div", { staticClass: "share_to_icon" }, [
+            _c("i", {
+              staticClass: "fa fa-facebook-square",
+              attrs: { "aria-hidden": "true" }
+            }),
+            _vm._v(" "),
+            _c("i", {
+              staticClass: "fa fa-pinterest-square",
+              attrs: { "aria-hidden": "true" }
+            }),
+            _vm._v(" "),
+            _c("i", {
+              staticClass: "fa fa-whatsapp",
+              attrs: { "aria-hidden": "true" }
+            }),
+            _vm._v(" "),
+            _c("i", { staticClass: "fa-facebook-messenger" })
+          ])
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
+      [
+        _c("div", { staticClass: "view_full_product" }, [
+          _c(
+            "button",
+            {
+              staticClass: "btn btn-warning detail_btn",
+              attrs: { type: "submit" }
+            },
+            [
+              _vm._v(
+                "\n                              View Full Product Details >>\n                            "
+              )
+            ]
+          )
+        ])
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -92390,8 +92423,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

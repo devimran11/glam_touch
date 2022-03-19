@@ -93,7 +93,7 @@
                       </ul>
                       <div id="product">
                         <div
-                          class="col-lg-12 col-md-12 col-xs-12"
+                          class="col-lg-12 col-md-12 col-sm-12 col-xs-12"
                           v-if="
                             quick_view_product.product_variant.length > 0 &&
                               quick_view_product.product_attribute
@@ -166,7 +166,7 @@
                           </div>
                         </div>
                         <div class="row">
-                          <div class="col-lg-12 col-md-12 col-xs-12">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="qty_container">
                               <div @click="decrementQty" class="">
                                 <i class="fa fa-minus"></i>
@@ -207,7 +207,7 @@
                               <div class="col-lg-5 col-md-5"></div>
                             </div>
                           </div>
-                          <div class="col-lg-12 col-md-12 col-xs-12">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="add_wishlist">
                               <a
                                 ><i
@@ -222,7 +222,7 @@
                             </div>
                           </div>
 
-                          <div class="col-lg-12 col-md-12 col-xs-12">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                              
                             <div class="call-us">
                               <div class="call-background">
@@ -236,7 +236,7 @@
                             </div>
                           </div>
 
-                          <div class="col-lg-12 col-md-12 col-xs-12">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="share_to">
                               <h4>Share to:</h4>
                               <div class="share_to_icon">
@@ -256,7 +256,7 @@
                               </div>
                             </div>
                           </div>
-                          <div class="col-lg-12 col-md-12 col-xs-12">
+                          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="view_full_product">
                               <button class="btn btn-warning detail_btn" type="submit">
                                 View Full Product Details >>

@@ -209,6 +209,17 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -415,6 +426,7 @@ var render = function() {
                           _c(
                             "router-link",
                             {
+                              staticClass: "home_icon_desktop",
                               attrs: {
                                 to: {
                                   name: "PublicSubCategory",
@@ -425,6 +437,30 @@ var render = function() {
                             [
                               _vm._v(
                                 "\n                Home\n                /\n                " +
+                                  _vm._s(sub_category.name) +
+                                  "\n              "
+                              )
+                            ]
+                          ),
+                          _vm._v(" "),
+                          _c(
+                            "router-link",
+                            {
+                              staticClass: "home_icon",
+                              staticStyle: { display: "none" },
+                              attrs: {
+                                to: {
+                                  name: "PublicSubCategory",
+                                  params: { slug: sub_category.slug }
+                                }
+                              }
+                            },
+                            [
+                              _c("i", {
+                                staticClass: "fa fa-home footer_icon"
+                              }),
+                              _vm._v(
+                                "\n                >\n                " +
                                   _vm._s(sub_category.name) +
                                   "\n              "
                               )

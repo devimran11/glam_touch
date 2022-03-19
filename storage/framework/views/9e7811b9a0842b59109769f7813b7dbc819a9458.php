@@ -608,8 +608,7 @@ ul.side-nav li:hover>.left-sub-menu {
     color: #000;
 }
 .cart-footer{
-    position:absolute;
-    left: 0;
+    float: left;
     bottom: 0;
     width: 60%;
     background-color: #AA8153;
@@ -3054,6 +3053,141 @@ span.price-old {
 
 @media  screen and (max-width: 768px) {
 
+
+    .policy_section{
+        display: none;
+    }
+    .loved-category{
+        display: none;
+    }
+    .loved_categories_carousel{
+        display: block !important;
+    }
+    .address{
+        text-align: center;
+    }
+
+    .footer-color{
+        text-align: center;
+    }
+    .info_left{
+        float: left;
+        width: 50%;
+    }
+
+     .info_left{
+        float: right;
+        width: 50%;
+    }
+
+    #link_line_contact{
+        text-align: center;
+        width: 50%;
+        margin: 10px auto;
+    }
+
+    .facebook_page{
+        display: none;
+    }
+
+    .quick_link{
+        margin-left: 0px;
+    }
+
+    .payment-card{
+        margin-bottom: 40px;
+    }
+
+    .best_product{
+        text-align: left !important;
+    }
+
+    .section_title{
+        margin-left: 0px;
+        margin-bottom: 0px;
+    }
+
+    .line{
+        margin-left: 0 !important;
+        margin-bottom: 10px !important;
+        width: 110px !important;
+    }
+
+    .service_row {
+        width: 100%;
+        height: 40px;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+
+    .breadcrumb{
+        margin-top: 31px;
+        text-align: center;
+        margin-bottom: 0px;
+    }
+
+    .home_icon{
+        display: block !important;
+    }
+
+    .home_icon_desktop{
+        display: none;
+    }
+
+    .margin_container{
+        text-align: left !important;
+    }
+    .coupon_top{
+        margin-top: 0px;
+    }
+
+    .sort {
+        float: left;
+        margin-left: -65px !important;
+        margin-top: 15px !important;
+    }
+    .filter_line_top{
+        border: 1px solid #E1E1E1;
+    }
+
+     .filter_line_bottom{
+        border: 1px solid #E1E1E1;
+        margin-top: 5px;
+    }
+
+    .filter_list_container{
+        margin-top: 8px;
+    }
+    .form-control{
+        height: 35px !important;
+    }
+
+    .modal-title{
+        font-size: 20px;
+    }
+    .close_sign{
+        margin-top: 42px;
+    }
+
+    .modal-dialog{
+        margin-left: 3% !important;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     .custom-box {
         padding: 20px 10px ;
         margin-top: 20px !important;
@@ -3151,6 +3285,8 @@ span.price-old {
 
         .filter_customize_button{
            display: block;
+           margin-left: -18px;
+           margin-top: 0px;
          }
 
         .main-header-left {
@@ -3503,8 +3639,8 @@ span.price-old {
 
 
         span.price-new {
-          font-size:13px ;
-          margin-left:-5% ;
+          /* font-size:13px ;
+          margin-left:-5% ; */
         }
 
         .single_p_price {
@@ -3522,7 +3658,8 @@ span.price-old {
 
        .new_arrival_section{
         margin-top: 0px;
-        margin-bottom:20px;
+        padding: 30px 0;
+        margin-bottom:0px;
         }
 
         .new_arrival_container{
@@ -4045,7 +4182,7 @@ span.price-old {
 
         /* footer responsive code is start from  here */
         .quick_link{
-            margin-left:25px;
+            margin-left:0px;
         }
 
         .news_letter{
@@ -4104,6 +4241,7 @@ span.price-old {
             margin-top: 10px;
         }
 
+        
 
     }
 
@@ -4998,8 +5136,8 @@ sup {
 
 .sort{
     float: left;
-    margin-left: 45px;
-    margin-top: 5px;
+    margin-left: 25px;
+    margin-top: 15px;
 }
 .filter_list_container{
     float: right;
@@ -5380,17 +5518,15 @@ input[data-v-c157765e] {
     font-weight: 400;
 }
 .___place{
-    float: right;
-    margin-top: 205px;
     background: #463420;
-    width: 40%;
-    padding-bottom: 4px;
     text-align: center;
     color: #fff;
+    float: right;
+    width: 40%;
 }
 .___place p{
-    margin-top: 7px;
-    margin-bottom: 3px;
+    padding: 7px 0px;
+    margin: 0;
 }
 .contact-page{
     max-width: 90%;
@@ -5461,4 +5597,5 @@ input[data-v-c157765e] {
     margin: 0 auto;
     margin-bottom: 40px;
 }
+
 </style><?php /**PATH D:\project\glam_touch_web_app\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

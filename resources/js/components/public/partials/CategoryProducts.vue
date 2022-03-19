@@ -1,31 +1,15 @@
 <template>
   <div>
+    <div class="filter_line_top"></div>
     <div class="row filter_row">
+      
       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
         <div class="filter_button_container">
-          <!-- <button class="btn filter_product_count">
-            <b> {{ products.length }}</b> Products Found
-          </button> -->
-          <!-- <button class="btn filter_customize_button">
-            <i class="fa fa-sliders"> </i> <br />
-            Customize
+          <button class="btn filter_customize_button" style="cursor: pointer"
+              @click="quick_v_product_attribute">
+            Filter: <i class="fa fa-filter" style="font-size:25px"></i>
           </button>
-          <button
-            @click="grid_view = true"
-            :class="{ __view_type_active: grid_view == true }"
-            class="btn"
-          >
-            <i class="fa fa-th"></i> <br />
-            view as
-          </button> -->
-          <!-- <button
-            @click="grid_view = false"
-            :class="{ __view_type_active: grid_view == false }"
-            class="btn"
-          >
-            <i class="fa fa-list"> </i> <br />
-            view as
-          </button> -->
+
         </div>
       </div>
 
@@ -43,6 +27,7 @@
         </div>
       </div>
     </div>
+    <div class="filter_line_bottom"></div>
 
     <div v-if="grid_view == true" class="row">
       <div
@@ -101,7 +86,10 @@
             </div>
           </div>
 
-          <!-- <div class="content_card_footer text-center">
+
+
+        <!-- Quick View Section -->
+          <div class="content_card_footer text-center">
             <button
               class="btn btn-primary btnQuick"
               style="cursor: pointer"
@@ -109,7 +97,7 @@
             >
               view
             </button>
-          </div> -->
+          </div>
         </div>
       </div>
 
@@ -170,6 +158,15 @@
         :quick_v_p_id="quick_v_product_id"
       >
       </quick-view>
+      
+
+
+      <!-- <quick-view
+        v-if="quick_v_product_attribute"
+        v-on:clicked="closedModal($event)"
+        :quick_v_p_id="quick_v_product_attribute"
+      >
+      </quick-view> -->
   </div>
 </template>
 
@@ -189,6 +186,7 @@ export default {
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
       quick_v_product_id: "",
+      quick_v_product_attribute: "",
       grid_view: true,
       filter_by:'Default',
     };
@@ -211,6 +209,7 @@ export default {
 
     closedModal(close) {
       this.quick_v_product_id = "";
+      this.quick_v_product_attribute = "";
     },
   },
 };

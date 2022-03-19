@@ -358,9 +358,23 @@
         </li>
         <li>
           <a @click.prevent="categoryFilteringToggle" href="/"
-            ><i class="fa fa-th-large footer_icon"></i>
-            <p>CATEGORY</p>
+            >
+            <i class="fa fa-search footer_icon"></i>
+            <p>Search</p>
           </a>
+        </li>
+        <li>
+          <router-link
+            v-if="Object.keys(user).length"
+            :to="{ name: 'UserDashboard' }"
+          >
+            <i class="fa fa-user-circle footer_icon"></i>
+            <p>Account</p>
+          </router-link>
+          <router-link v-else :to="{ name: 'otpLogin' }">
+            <i class="fa fa-user-circle footer_icon"></i>
+            <p>Account</p>
+          </router-link>
         </li>
         <li>
           <router-link :to="{ name: 'wishlist' }">
@@ -373,22 +387,10 @@
           <a @click="cartOpen">
             <sup class="customize_c_item">{{ cart.itemCount }}</sup>
             <i class="fa fa-shopping-cart footer_icon"></i>
-            <p>BAG</p>
+            <p>Cart</p>
           </a>
         </li>
-        <li>
-          <router-link
-            v-if="Object.keys(user).length"
-            :to="{ name: 'UserDashboard' }"
-          >
-            <i class="fa fa-user-circle footer_icon"></i>
-            <p>ME</p>
-          </router-link>
-          <router-link v-else :to="{ name: 'otpLogin' }">
-            <i class="fa fa-user-circle footer_icon"></i>
-            <p>ME</p>
-          </router-link>
-        </li>
+        
       </ul>
     </div>
 

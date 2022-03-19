@@ -252,6 +252,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -961,13 +963,27 @@ var render = function() {
       _c("div", { staticClass: "container" }, [
         _vm._m(0),
         _vm._v(" "),
-        _vm._m(1),
+        _c("div", { staticClass: "row" }, [
+          _vm._m(1),
+          _vm._v(" "),
+          _vm._m(2),
+          _vm._v(" "),
+          _c(
+            "div",
+            {
+              staticClass: "loved_categories_carousel",
+              staticStyle: { display: "none" }
+            },
+            [_c("TopSellingProducts")],
+            1
+          )
+        ]),
         _vm._v(" "),
         _c("div", { staticClass: "new_arrival_section" }, [
           _c(
             "div",
             { staticClass: "row new_product_row" },
-            [_vm._m(2), _vm._v(" "), _c("TopSellingProducts")],
+            [_vm._m(3), _vm._v(" "), _c("TopSellingProducts")],
             1
           )
         ]),
@@ -977,18 +993,11 @@ var render = function() {
         _c(
           "div",
           { staticClass: "row suggetion_product_row" },
-          [_vm._m(3), _vm._v(" "), _c("TopSellingProducts")],
+          [_vm._m(4), _vm._v(" "), _c("TopSellingProducts")],
           1
         ),
         _vm._v(" "),
-        _vm._m(4),
-        _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "new_arrival_section" },
-          [_vm._m(5), _vm._v(" "), _c("TopSellingProducts")],
-          1
-        ),
+        _vm._m(5),
         _vm._v(" "),
         _c(
           "div",
@@ -997,7 +1006,14 @@ var render = function() {
           1
         ),
         _vm._v(" "),
-        _vm._m(7)
+        _c(
+          "div",
+          { staticClass: "new_arrival_section" },
+          [_vm._m(7), _vm._v(" "), _c("TopSellingProducts")],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(8)
       ]),
       _vm._v(" "),
       _c("frontend-footer"),
@@ -1021,7 +1037,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
+    return _c("div", { staticClass: "row policy_section" }, [
       _c("div", { staticClass: "col-md-12" }, [
         _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
           _c("div", { staticClass: "policy" }, [
@@ -1077,27 +1093,33 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "row" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center"
-        },
-        [
-          _c("h4", { staticClass: "section_title" }, [
-            _vm._v("DON'T MISS OUR MOST LOVED CATEGORIES")
-          ]),
-          _vm._v(" "),
-          _c("br"),
-          _vm._v(" "),
-          _c("hr"),
-          _vm._v(" "),
-          _c("div", { staticClass: "line" })
-        ]
-      ),
-      _vm._v(" "),
-      _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" }, [
+    return _c(
+      "div",
+      {
+        staticClass:
+          "col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center"
+      },
+      [
+        _c("h4", { staticClass: "section_title" }, [
+          _vm._v("DON'T MISS OUR MOST LOVED CATEGORIES")
+        ]),
+        _vm._v(" "),
+        _c("br"),
+        _vm._v(" "),
+        _c("hr"),
+        _vm._v(" "),
+        _c("div", { staticClass: "line" })
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
+      [
         _c("div", { staticClass: "col-md-3 loved-category" }, [
           _c("img", {
             staticClass: "img-fluid",
@@ -1213,8 +1235,8 @@ var staticRenderFns = [
             ]
           )
         ])
-      ])
-    ])
+      ]
+    )
   },
   function() {
     var _vm = this
@@ -1222,7 +1244,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      { staticClass: "col-lg-12 col-md-12 col-xs-12 text-center" },
+      { staticClass: "col-lg-12 col-md-12 col-xs-12 best_product text-center" },
       [
         _c("h4", { staticClass: "section_title" }, [
           _vm._v("BEST SELLING PRODUCTS")
@@ -1244,7 +1266,7 @@ var staticRenderFns = [
       "div",
       {
         staticClass:
-          "col-lg-12 col-md-12 col-xs-12 margin_container text-center"
+          "col-lg-12 col-md-12 col-xs-12 margin_container text-center "
       },
       [
         _c("h4", { staticClass: "section_title" }, [
@@ -1280,7 +1302,7 @@ var staticRenderFns = [
           _c("div", { staticClass: "line" }),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-12 coupon_top" }, [
-            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-3 col-xs-3" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",
@@ -1292,7 +1314,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-3 col-xs-3" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",
@@ -1304,7 +1326,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-3 col-xs-3" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",
@@ -1316,7 +1338,7 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+            _c("div", { staticClass: "col-md-3 col-sm-3 col-xs-3" }, [
               _c("div", { staticClass: "cupon" }, [
                 _c("img", {
                   staticClass: "img-fluid",
