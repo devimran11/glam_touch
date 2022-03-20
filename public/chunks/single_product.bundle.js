@@ -1158,7 +1158,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c(
                                   "div",
-                                  { staticClass: "col-lg-5 col-md-5 col-xs-6" },
+                                  { staticClass: "col-lg-5 col-md-5 col-sm-5" },
                                   [
                                     _c(
                                       "button",
@@ -1180,7 +1180,7 @@ var render = function() {
                                 _vm._v(" "),
                                 _c(
                                   "div",
-                                  { staticClass: "col-lg-5 col-md-5 col-xs-6" },
+                                  { staticClass: "col-lg-5 col-md-5 col-sm-5" },
                                   [
                                     _c(
                                       "button",

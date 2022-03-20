@@ -61,6 +61,7 @@
           <aside style="margin-bottom: 50px" class="col-xl-3 col-md-3 col-sm-3">
             <div class="categories hidden-xs bg-white shadow c-box">
               <h3 class="subtitle">FILTER BY</h3>
+              <div class="filter_by_line"></div>
               <div class="box-category">
                 <p class="filter-color">COLOR</p>
                 <ul id="cat_accordion">
@@ -72,6 +73,7 @@
                   >{{ sub_category.name }}</router-link>
                 </li>
                 </ul>
+                <div class="filter_footer_line"></div>
               </div>
 
               <div class="box-category">
@@ -84,6 +86,7 @@
                   >{{ sub_category.name }}</router-link>
                 </li>
                 </ul>
+                <div class="filter_footer_line"></div>
               </div>
 
               <div class="box-category">
@@ -98,90 +101,11 @@
                 </ul>
               </div>
             </div>
-
-            <!-- <div class="search-box hidden-xs bg-white shadow c-box">
-              <h3 style="margin-left: 20px" class="subtitle">
-                filter by price
-              </h3>
-              <form @submit.prevent="priceFilter">
-                <div class="row">
-                  <div class="col-md-6 col-sm-6">
-                    <label for="min-price">min-price</label>
-                    <input
-                      class="form-control"
-                      v-model="price_filter.min_price"
-                      placeholder="00.00"
-                      type="number"
-                      name=""
-                    />
-                  </div>
-                  <div class="col-md-6 col-sm-6">
-                    <label for="max-price">max-price</label>
-                    <input
-                      class="form-control"
-                      v-model="price_filter.max_price"
-                      placeholder="max-price"
-                      type="number"
-                      name=""
-                    />
-                  </div>
-                </div>
-                <br />
-                <button type="submit" class="btn btn-block btn_search">
-                  Filter <i class="fa fa-lg fa-filter"></i>
-                </button>
-              </form>
-
-              <div style="margin-top: 20px" class="sort-box">
-                <select
-                  v-model="sort_by_price"
-                  @change="price_sorting_asec_desc"
-                  class="form-control"
-                >
-                  <option value="select_by" disabled>Select Best Match</option>
-                  <option value="1">price less to high</option>
-                  <option value="2">price high to less</option>
-                </select>
-              </div>
-            </div> -->
           </aside>
 
           <div class="col-xl-9 col-lg-9 col-sm-9 col-xs-12">
             <div class="row">
-              <!-- <div v-if="banners['new_arrival']" class="col-xl-6 col-md-6 col-sm-6 col-xs-6 c_new_arrival_offer_container">
-                <div class="c_content">
-                   <router-link v-if="banners['new_arrival'].status==1" :to="{ name: 'new_arrival_products',params:{slug:$route.params.slug} }">
-                    <img  :src="this.base_url + banners['new_arrival'].banner" />
-                   </router-link>
-                </div>
-                <div class="c_content_footer text-center">
-                  <router-link v-if="banners['new_arrival'].status==1" :to="{ name: 'new_arrival_products',params:{slug:$route.params.slug} }">
-                    New Arrival
-                    <span
-                      ><i
-                        aria-hidden="true"
-                        class="fa fa-lg fa-angle-double-right"
-                      ></i></span
-                  ></router-link>
-                </div>
-              </div>
-              <div  v-if="banners['offer']" class="col-xl-6 col-md-6 col-sm-6 col-xs-6 c_new_arrival_offer_container">
-                <div class="c_content">
-                   <router-link v-if="banners['new_arrival'].status==1" :to="{ name: 'offer_products',params:{slug:$route.params.slug} }">
-                    <img  :src="this.base_url + banners['offer'].banner" />
-                   </router-link>
-                </div>
-                <div class="c_content_footer text-center">
-                   <router-link v-if="banners['new_arrival'].status==1" :to="{ name: 'offer_products',params:{slug:$route.params.slug} }">
-                    Offers
-                    <span
-                      ><i
-                        aria-hidden="true"
-                        class="fa fa-lg fa-angle-double-right"
-                      ></i></span
-                  ></router-link>
-                </div>
-              </div> -->
+             
             </div>
             <CategoryProducts v-if="products.length > 0" :products="products" />
             <infinite-loading @infinite="subCategoryWiseProduct">

@@ -144,82 +144,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -493,6 +417,8 @@ var render = function() {
                         _vm._v("FILTER BY")
                       ]),
                       _vm._v(" "),
+                      _c("div", { staticClass: "filter_by_line" }),
+                      _vm._v(" "),
                       _c("div", { staticClass: "box-category" }, [
                         _c("p", { staticClass: "filter-color" }, [
                           _vm._v("COLOR")
@@ -545,7 +471,9 @@ var render = function() {
                               : _vm._e()
                           }),
                           0
-                        )
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "filter_footer_line" })
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "box-category" }, [
@@ -588,7 +516,9 @@ var render = function() {
                               : _vm._e()
                           }),
                           0
-                        )
+                        ),
+                        _vm._v(" "),
+                        _c("div", { staticClass: "filter_footer_line" })
                       ]),
                       _vm._v(" "),
                       _c("div", { staticClass: "box-category" }, [

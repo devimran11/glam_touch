@@ -166,7 +166,7 @@
                         <i class="fa fa-plus"></i>
                       </div>
 
-                      <div class="col-lg-5 col-md-5 col-xs-6">
+                      <div class="col-lg-5 col-md-5 col-sm-5">
                         <button
                           @click.prevent="CartToAdd"
                           type="button"
@@ -176,7 +176,7 @@
                         </button>
                       </div>
 
-                      <div class="col-lg-5 col-md-5 col-xs-6">
+                      <div class="col-lg-5 col-md-5 col-sm-5">
                         <button
                           @click.prevent="buyNow"
                           type="button"

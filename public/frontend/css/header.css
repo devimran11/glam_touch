@@ -191,7 +191,7 @@ img.site-logo {
 
         width: 100%;
         position: absolute;
-        z-index: 999999999;
+        /* z-index: 999999999; */
         background: #F7F8FA;
         justify-content: center;
         position: absolute;

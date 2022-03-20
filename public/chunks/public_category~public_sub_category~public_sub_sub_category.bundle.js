@@ -183,6 +183,33 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -198,7 +225,6 @@ __webpack_require__.r(__webpack_exports__);
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
       quick_v_product_id: "",
-      quick_v_product_attribute: "",
       grid_view: true,
       filter_by: 'Default'
     };
@@ -219,9 +245,11 @@ __webpack_require__.r(__webpack_exports__);
         }
       });
     },
+    filterModalOpen: function filterModalOpen() {
+      this.$modal.show('categoryFilteringModal');
+    },
     closedModal: function closedModal(close) {
       this.quick_v_product_id = "";
-      this.quick_v_product_attribute = "";
     }
   }
 });
@@ -308,7 +336,7 @@ var render = function() {
                 {
                   staticClass: "btn filter_customize_button",
                   staticStyle: { cursor: "pointer" },
-                  on: { click: _vm.quick_v_product_attribute }
+                  on: { click: _vm.filterModalOpen }
                 },
                 [
                   _vm._v("\n          Filter: "),
@@ -497,7 +525,251 @@ var render = function() {
               }
             }
           })
-        : _vm._e()
+        : _vm._e(),
+      _vm._v(" "),
+      _c(
+        "modal",
+        {
+          staticClass: "categoryFilterModal",
+          attrs: { name: "categoryFilteringModal", width: 400, height: 550 }
+        },
+        [
+          _c("div", { staticClass: "card" }, [
+            _c("div", { staticClass: "modal-header" }, [
+              _c("h4", { staticClass: "modal-filter" }, [_vm._v("Filters: ")]),
+              _vm._v(" "),
+              _c(
+                "h4",
+                {
+                  staticStyle: { "margin-top": "-27px", "margin-left": "292px" }
+                },
+                [_vm._v("Clear all")]
+              ),
+              _vm._v(" "),
+              _c(
+                "button",
+                {
+                  staticClass: "close close_sign",
+                  attrs: {
+                    type: "button ",
+                    "data-dismiss": "modal",
+                    "aria-label": "Close"
+                  },
+                  on: { click: _vm.closeModal }
+                },
+                [
+                  _c("span", { attrs: { "aria-hidden": "true" } }, [
+                    _vm._v("×")
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", { staticClass: "card-body" }, [
+              _c(
+                "div",
+                { staticClass: "categories bg-white shadow filter-box" },
+                [
+                  _c("h4", { staticClass: "filter-color" }, [
+                    _vm._v("COLOR "),
+                    _c(
+                      "span",
+                      { staticStyle: { float: "right", "font-weight": "400" } },
+                      [_vm._v("Clear")]
+                    )
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "box-category-filter" }, [
+                    _c("ul", { attrs: { id: "cat_accordion_responsive" } }, [
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-check-input filter-radio",
+                          attrs: {
+                            type: "radio",
+                            name: "exampleRadios",
+                            id: "exampleRadios1",
+                            value: "option1",
+                            checked: ""
+                          }
+                        }),
+                        _vm._v("\n                  Red(55)\n                ")
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-check-input filter-radio",
+                          attrs: {
+                            type: "radio",
+                            name: "exampleRadios",
+                            id: "exampleRadios1",
+                            value: "option1",
+                            checked: ""
+                          }
+                        }),
+                        _vm._v(
+                          "\n                  Black(55)\n                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(" "),
+                        _c("input", {
+                          staticClass: "form-check-input filter-radio",
+                          attrs: {
+                            type: "radio",
+                            name: "exampleRadios",
+                            id: "exampleRadios1",
+                            value: "option1",
+                            checked: ""
+                          }
+                        }),
+                        _vm._v(
+                          "\n                  Yellow(55)\n                "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "box_category_cat" }, [
+                    _c("h4", { staticClass: "filter-color" }, [
+                      _vm._v("CATEGORY "),
+                      _c(
+                        "span",
+                        {
+                          staticStyle: { float: "right", "font-weight": "400" }
+                        },
+                        [_vm._v("Clear")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("ul", { attrs: { id: "cat_accordion_category" } }, [
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(
+                          "\n                  Long Gown(20)\n                "
+                        )
+                      ])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "box_category_cat" }, [
+                    _c("h4", { staticClass: "filter-color" }, [
+                      _vm._v("PRICE "),
+                      _c(
+                        "span",
+                        {
+                          staticStyle: { float: "right", "font-weight": "400" }
+                        },
+                        [_vm._v("Clear")]
+                      )
+                    ]),
+                    _vm._v(" "),
+                    _c("ul", { attrs: { id: "cat_accordion_category" } }, [
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(
+                          "\n                  Long Gown(20)\n                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(
+                          "\n                  Long Gown(20)\n                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(
+                          "\n                  Long Gown(20)\n                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(
+                          "\n                  Long Gown(20)\n                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(
+                          "\n                  Long Gown(20)\n                "
+                        )
+                      ]),
+                      _vm._v(" "),
+                      _c("li", [
+                        _c("input", {
+                          staticClass: "form-check-input filter-checkbox",
+                          attrs: { type: "checkbox", id: "exampleCheck1" }
+                        }),
+                        _vm._v(
+                          "\n                  Long Gown(20)\n                "
+                        )
+                      ])
+                    ])
+                  ])
+                ]
+              )
+            ]),
+            _vm._v(" "),
+            _c("div", {}, [
+              _c(
+                "div",
+                { staticClass: "clear_all" },
+                [
+                  _c(
+                    "router-link",
+                    {
+                      staticClass: "btn btn-block",
+                      staticStyle: { color: "#fff", "font-weight": "bold" },
+                      attrs: { to: { name: "checkout" } }
+                    },
+                    [_vm._v("Clear All\n          ")]
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "done" }, [_c("p", [_vm._v("Done")])])
+            ])
+          ])
+        ]
+      )
     ],
     1
   )

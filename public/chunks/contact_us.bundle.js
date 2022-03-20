@@ -218,6 +218,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -381,63 +383,67 @@ var staticRenderFns = [
     return _c("div", { attrs: { id: "container" } }, [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "contact-page" }, [
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "address-area" }, [
-                _c("div", { staticClass: "address-icon" }, [
-                  _c("i", {
-                    staticClass: "fa fa-map-marker",
-                    staticStyle: { "font-size": "36px" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "address-title" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n                  98/2, Vista Garden (3rd Floor), Shenpara, Parbata,\n                  Mirpur-10, Dhaka-1216\n                "
-                    )
+          _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
+            _c("div", { staticClass: "contact-page" }, [
+              _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-4" }, [
+                _c("div", { staticClass: "address-area" }, [
+                  _c("div", { staticClass: "address-icon" }, [
+                    _c("i", {
+                      staticClass: "fa fa-map-marker",
+                      staticStyle: { "font-size": "36px" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "address-title" }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n                  98/2, Vista Garden (3rd Floor), Shenpara, Parbata,\n                  Mirpur-10, Dhaka-1216\n                "
+                      )
+                    ])
                   ])
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "address-area" }, [
-                _c("div", { staticClass: "address-icon" }, [
-                  _c("i", {
-                    staticClass: "fa fa-volume-control-phone",
-                    staticStyle: { "font-size": "36px" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "address-title" }, [
-                  _c("p", [
-                    _vm._v("\n                  09639148048 "),
-                    _c("br"),
-                    _vm._v("\n                  01828-348048 | 01315-897884 "),
-                    _c("br"),
-                    _vm._v(
-                      "\n                  01324-827121 | 01917-618628\n                "
-                    )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-4" }, [
+                _c("div", { staticClass: "address-area" }, [
+                  _c("div", { staticClass: "address-icon" }, [
+                    _c("i", {
+                      staticClass: "fa fa-volume-control-phone",
+                      staticStyle: { "font-size": "36px" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "address-title" }, [
+                    _c("p", [
+                      _vm._v("\n                  09639148048 "),
+                      _c("br"),
+                      _vm._v(
+                        "\n                  01828-348048 | 01315-897884 "
+                      ),
+                      _c("br"),
+                      _vm._v(
+                        "\n                  01324-827121 | 01917-618628\n                "
+                      )
+                    ])
                   ])
                 ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4" }, [
-              _c("div", { staticClass: "address-area" }, [
-                _c("div", { staticClass: "address-icon" }, [
-                  _c("i", {
-                    staticClass: "fa fa-envelope",
-                    staticStyle: { "font-size": "36px" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "address-title" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n                  info@gmail.com\n                "
-                    )
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-4" }, [
+                _c("div", { staticClass: "address-area" }, [
+                  _c("div", { staticClass: "address-icon" }, [
+                    _c("i", {
+                      staticClass: "fa fa-envelope",
+                      staticStyle: { "font-size": "36px" }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "address-title" }, [
+                    _c("p", [
+                      _vm._v(
+                        "\n                  info@gmail.com\n                "
+                      )
+                    ])
                   ])
                 ])
               ])

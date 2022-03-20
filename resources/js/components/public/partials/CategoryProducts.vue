@@ -6,7 +6,7 @@
       <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
         <div class="filter_button_container">
           <button class="btn filter_customize_button" style="cursor: pointer"
-              @click="quick_v_product_attribute">
+              @click="filterModalOpen">
             Filter: <i class="fa fa-filter" style="font-size:25px"></i>
           </button>
 
@@ -56,24 +56,6 @@
                 >{{ product.name }}</router-link
               >
             </p>
-            <!-- <p class="price">
-              <span class="price-new"> BDT {{ product.price }}</span>
-              <span class="price-old" v-if="product.discount">
-                BDT {{ product.sale_price }}</span
-              >
-              <span v-if="product.discount > 0" class="discount">
-                <div class="star-icon" style="margin-top:-7px; margin-bottom: -32px">
-                  <i class="fa fa-star" aria-hidden="true"></i>
-                  <span style="margin-left:-3px">
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                  </span>
-                </div>
-                <div class="discount-item" style="margin-top: 6px;">
-                  {{ ((product.discount / product.sale_price) * 100).toFixed(0) }}%
-                  <span class="d_off_category">off</span>
-                </div>
-              </span>
-            </p> -->
             <p class="price">
                   
             <span class="price-old" v-if="product.discount">
@@ -102,56 +84,6 @@
       </div>
 
     </div>
-
-    <!-- <div v-if="grid_view == false" class="row">
-      <div
-        class="col-lg-12 col-sm-12 col-md-12 col-xs-12 " style="margin-bottom:20px;"
-        v-for="product in products"
-        :key="product.id"
-      >
-        <div class="row">
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-6 list_content_container">
-            <div class="list_content_card">
-              <div class="list_content_card_body text-center">
-                <router-link
-                  :to="{ name: 'single', params: { slug: product.slug } }"
-                >
-                  <v-lazy-image
-                    :src="base_url + product.thumbnail_img"
-                    :src-placeholder="base_url + 'images/preview.png'"
-                  />
-                </router-link>
-
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-6 list_content_container">
-             <h4 class="list_content_p_heading"> {{ product.name }} </h4>
-             <p class="list_content_details" v-html="product.details" >  </p>
-          </div>
-          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-12">
-             <div class="list_content_right_section text-center">
-                 <div class="list_content_price">
-                  <h4 class="s_price"> BDT {{ product.price }}</h4>
-                  <h4 class="d_price" v-if="product.discount">
-                    BDT {{ product.sale_price }}</h4
-                  >
-                </div>
-
-               <router-link class="btn list_content_btn_1"
-                  :to="{ name: 'single', params: { slug: product.slug } }">
-                   Buy Now
-                 </router-link>
-                 <br>
-                <a @click="addToWishList(product.id)" class="btn list_content_btn_2"><i class="fa fa-heart wishlist_icon"></i>Wishlist</a>
-             </div>
-
-          </div>
-        </div>
-
-      </div>
-
-    </div> -->
      <quick-view
         v-if="quick_v_product_id"
         v-on:clicked="closedModal($event)"
@@ -160,13 +92,108 @@
       </quick-view>
       
 
+     <modal class="categoryFilterModal" name="categoryFilteringModal" :width="400" :height="550">
+      <div class="card">
+         <div class="modal-header">
+            <h4 class="modal-filter">Filters: </h4>
+            <h4 style="margin-top: -27px; margin-left: 292px;">Clear all</h4>
+            <button
+              type="button "
+              class="close close_sign"
+              data-dismiss="modal"
+              @click="closeModal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        <div class="card-body">
+            <div class="categories bg-white shadow filter-box">
+              <h4 class="filter-color">COLOR <span style="float: right; font-weight: 400">Clear</span></h4>
+              <div class="box-category-filter">
+                <ul id="cat_accordion_responsive">
+                    <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    Red(55)
+                  </li>
 
-      <!-- <quick-view
-        v-if="quick_v_product_attribute"
-        v-on:clicked="closedModal($event)"
-        :quick_v_p_id="quick_v_product_attribute"
-      >
-      </quick-view> -->
+                   <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    Black(55)
+                  </li>
+
+                   <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                    Yellow(55)
+                  </li>
+                </ul>
+              </div>
+
+              <div class="box_category_cat">
+                <h4 class="filter-color">CATEGORY <span style="float: right; font-weight: 400">Clear</span></h4>
+                <ul id="cat_accordion_category">
+                    <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    Long Gown(20)
+                  </li>
+                </ul>
+              </div>
+
+              <div class="box_category_cat">
+                <h4 class="filter-color">PRICE <span style="float: right; font-weight: 400">Clear</span></h4>
+                <ul id="cat_accordion_category">
+                  <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    Long Gown(20)
+                  </li>
+                  <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    Long Gown(20)
+                  </li>
+                  <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    Long Gown(20)
+                  </li>
+                  <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    Long Gown(20)
+                  </li>
+                  <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    Long Gown(20)
+                  </li>
+                  <li>
+                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    Long Gown(20)
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            
+        </div>
+        <div class="">
+          <!-- <div class="cart_amount_cal"> -->
+          <div class="clear_all">
+            <router-link
+              :to="{ name: 'checkout' }"
+              class="btn btn-block"
+              style="color: #fff; font-weight:bold;"
+              >Clear All
+            </router-link>
+          </div>
+          <div class="done">
+            <p>Done</p>
+          </div>
+        </div>
+      </div>
+    </modal>
+
+
+   
   </div>
 </template>
 
@@ -186,7 +213,6 @@ export default {
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
       quick_v_product_id: "",
-      quick_v_product_attribute: "",
       grid_view: true,
       filter_by:'Default',
     };
@@ -207,9 +233,13 @@ export default {
     })
   },
 
-    closedModal(close) {
+  filterModalOpen(){
+     this.$modal.show('categoryFilteringModal');
+  }, 
+
+
+  closedModal(close) {
       this.quick_v_product_id = "";
-      this.quick_v_product_attribute = "";
     },
   },
 };
