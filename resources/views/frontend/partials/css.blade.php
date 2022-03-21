@@ -2672,9 +2672,7 @@ span.price-old {
     }
 
      .btn_buy_cart:hover {
-       padding: 8px;
        color: white;
-       background: #A06A2E;
      }
 
         .single_p_right_section{
@@ -5477,7 +5475,6 @@ input[data-v-c157765e] {
     background: #CC8E46;
     width: 210px;
     border-radius: 20px;
-    height: 48px;
 }
 .call-background{
 
@@ -5722,5 +5719,25 @@ input[data-v-c157765e] {
 .filter_by_line{
     border: 1px solid #AEAEAE;
     width: 80px;
+}
+.modal_header_login{
+    height: 45px;
+    padding: 10px;
+    background: #E8E8E8;
+}
+.facebook-login-user{
+    float: left;
+    margin-left: 38px;
+}
+.login_form{
+    width: 45%;
+    margin-left: 20px;
+    padding: 10px 0px;
+}
+
+.register_form{
+    width: 45%;
+    margin-left: 20px;
+    padding: 10px 0px;
 }
 </style>

@@ -158,17 +158,28 @@
                   <a @click="cartOpen" class="header_cart"> <img :src="base_url+'images/basic_img/shopping-bag.png'" > <sub>{{ cart.itemCount }}</sub></a>
                 </li> -->
                 <li>
-                  <router-link
+                  <button
                     class="merchant_login"
-                    target="_blank"
-                    :to="{ name: 'merchant_login' }"
+                    style="cursor: pointer"
+                    @click="UserLoginModal"
                   >
                     <i
                       class="fa fa-user"
                       style="color: #fff; text-shadow: 0 0 1px #494A4A;"
                     ></i>
-                    Login / Join</router-link
+                    Login / Join
+                  </button>
+                  <!-- <a
+                    class="merchant_login"
+                    target="_blank"
+                    v-on:click="UserLoginModal"
                   >
+                    <i
+                      class="fa fa-user"
+                      style="color: #fff; text-shadow: 0 0 1px #494A4A;"
+                    ></i>
+                    Login / Join</a
+                  > -->
                 </li>
               </div>
             </div>
@@ -357,8 +368,7 @@
           </a>
         </li>
         <li>
-          <a @click.prevent="categoryFilteringToggle" href="/"
-            >
+          <a @click.prevent="categoryFilteringToggle" href="/">
             <i class="fa fa-search footer_icon"></i>
             <p>Search</p>
           </a>
@@ -390,7 +400,6 @@
             <p>Cart</p>
           </a>
         </li>
-        
       </ul>
     </div>
 
@@ -498,6 +507,58 @@
       <Products v-if="products.length > 0" :products="products" />
       <!-- mobile category filtering and it's products start.when click on footer nav item on Category then it will toggle  -->
     </div>
+    <modal class="" name="UserLoginModalOpen" :width="500" :height="300">
+      <div class="card">
+        <div class="modal_header_login">
+          <div class="facebook-login-user">
+            <button class="btn btn-sm facebook">
+              <i class="fa fa-facebook-square fa-lg"></i> LOGIN WITH FACEBOOK
+            </button>
+          </div>
+          <div class="google-login">
+            <button class="btn btn-sm google">
+              <i class="fa fa-google fa-lg"></i>LOGIN WITH GOOGLE
+            </button>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="login_form">
+            <form action="/action_page.php">
+              <h3>Login</h3>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" />
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" /> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+          <div class="register_form">
+            <form action="/action_page.php">
+              <h3>Login</h3>
+              <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" id="email" />
+              </div>
+              <div class="form-group">
+                <label for="pwd">Password:</label>
+                <input type="password" class="form-control" id="pwd" />
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox" /> Remember me</label>
+              </div>
+              <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </modal>
   </div>
 </template>
 
@@ -534,6 +595,9 @@ export default {
       return full_name[0];
     },
 
+    UserLoginModal() {
+      this.$modal.show("UserLoginModalOpen");
+    },
     searchToggle() {
       document.getElementById("search_form").classList.toggle("search_toggle");
     },
