@@ -13,8 +13,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="<?php echo e(asset('frontend/fonts/Montserrat-Bold.ttf')); ?>"  type='text/css'>
-<link rel="stylesheet" href="<?php echo e(asset('frontend/fonts/Montserrat-Regular.ttf')); ?>"  type='text/css'>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
 
 
 <?php
@@ -587,12 +586,17 @@ ul.side-nav li:hover>.left-sub-menu {
     height: 84%;
 }
 .cart-header {
-    padding: 15px 15px;
-    background: #000;
+    padding: 12px 15px;
+    background: #E4E0E1;
    text-transform: uppercase;
     font-weight: bold;
     color: var(--primary-color);
 }
+/* .cart-header {
+    padding: 1px 15px;
+       color: #fff;
+    
+} */
 .cart-body {
     padding: 15px 15px;
     max-height: 500px;
@@ -621,7 +625,8 @@ ul.side-nav li:hover>.left-sub-menu {
     color: #7B7B7B;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 5px;
+    width: 50%;
 }
 
 .cart-open {
@@ -1402,11 +1407,7 @@ span.price-old {
 .btn-primary{
     background: var(--primary-color) !important;
 }
-.cart-header {
-    padding: 1px 15px;
-       color: #fff;
-    background: #E4E0E1;
-}
+
 .cart-footer {
    color: #fff;
 
@@ -1714,7 +1715,7 @@ span.price-old {
         text-transform: uppercase;
         margin-top: 10px;
         margin-left: 10px;
-        font-family: 'Montserrat-Bold';
+        font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         font-size: 22px;
     }
@@ -2734,6 +2735,8 @@ span.price-old {
         font-family: 'Montserrat';
         font-weight: Regular;
         margin-right: 20px;
+        background: none;
+        border: none;
     }
 
     .merchant_login>i{
@@ -2900,9 +2903,7 @@ span.price-old {
         margin-top: 10px;
     }
 
-    .cart_amount_cal{
-        margin-top: 50% !important;
-    }
+    
     
 }
 @media  only screen and (max-width: 1024px) {
@@ -2910,9 +2911,7 @@ span.price-old {
 }
 @media  only screen and (max-width: 900px) {
 
-    .cart_amount_cal{
-        margin-top: 50%;
-    }
+    
     .header-top {
         display: none;
     }
@@ -3114,6 +3113,9 @@ span.price-old {
     .section_title{
         margin-left: 0px;
         margin-bottom: 0px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 19px;
     }
 
     .line{
@@ -3257,6 +3259,50 @@ span.price-old {
         /* position: absolute; */
     }
     
+    #footer .link_line li {
+        font-weight: 400;
+    }
+    #footer .column a{
+        font-size: 18px;
+    }
+
+    .checkout-title{
+        margin-left: 0px !important;
+    }
+
+    .checkout-login{
+        margin-left: 0px !important;
+    }
+
+    .return-customer{
+        float: none !important;
+        
+    }
+    .return-customer p{
+        text-align: center !important;
+    }
+    .promo_code{
+        margin-left: 0 !important;
+    }
+    .custom-box .title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .cart-items{
+        text-align: center;
+    }
+    .payment-title{
+        text-align: center;
+    }
+
+    .google-login{
+        float: right !important;
+        margin-left: 0px !important;
+    }
+    .address-area{
+        margin-bottom: 10px !important;
+    }
 
 
 
@@ -3577,11 +3623,10 @@ span.price-old {
             display: none;
       }
 
-      .colapse-cart {
+      /* .colapse-cart {
             width: 43%;
-            margin-bottom: 20%;
             height: 94%;
-        }
+        } */
 
         ul.p-image-name li {
             padding: 0px 5px !important;
@@ -4184,12 +4229,6 @@ span.price-old {
             padding-bottom: 25px;
         }
 
-        .cart_responsive_item {
-
-                margin-left: 260px;
-                margin-top: -54px;
-
-        }
 
         .cart_responsive_price{
             margin-left: 270px;
@@ -4205,10 +4244,7 @@ span.price-old {
         }
 
         .cart_responsive_remove{
-
             cursor: pointer;
-            margin-left: 350px;
-            margin-top: 10px;
         }
 
 
@@ -4524,8 +4560,8 @@ span.price-old {
 
 
 @media  screen and (max-width:530px) {
-        .cart_amount_cal {
-            margin-top: 50%;
+        #footer .column a{
+            font-size: 12px;
         }
 
         .header_search_form {
@@ -5129,7 +5165,7 @@ input[type='text']::placeholder
 {   
     /* text-align: right;      */
     margin-right: 25px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     font-weight: 400;
     height: 50px;
@@ -5138,7 +5174,7 @@ input[type='text']::placeholder
 input::placeholder
 {   
     margin-right: 25px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     height: 50px;
@@ -5146,7 +5182,7 @@ input::placeholder
 }
 label
 {   
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 400;
     color: #929292;
@@ -5186,7 +5222,8 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -5207,16 +5244,14 @@ sup {
 }
 .footer-img{
     background-image: url('storage/images/footer/Footer-Background.jpg');
-    /* background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: cover; */
     background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 .footer-number{
     color: #cc8e46;
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 30px;
     font-weight: 600;
 }
@@ -5239,7 +5274,7 @@ sup {
 .filter-color{
     font-weight: bold;
     font-size: 18px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
 }
 .filter-checkbox{
     margin-right: 5px !important;
@@ -5287,13 +5322,13 @@ sup {
 }
 .content_link a {
     color: #939494;
-    font-weight: Regular;
-    font-family: Montserrat;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
 
 .section_title_left{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 22px;
 }
@@ -5335,7 +5370,7 @@ input[data-v-c157765e] {
 }
 .product-title{
     color: #A6A6A6;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 13px;
 }
@@ -5384,7 +5419,7 @@ input[data-v-c157765e] {
 .modal-title{
     text-align: center;
     color: #463420 !important;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-size: 30px;
     font-weight: bold;
 }
@@ -5396,13 +5431,15 @@ input[data-v-c157765e] {
     margin-top: 28px;
 }
 .work_time{
-     font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
      font-size: 14px;
      color: #d0d0d0;
 }
 .link_line li{
     color: #848383;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     font-size: 17px;
 }
 
@@ -5442,20 +5479,20 @@ input[data-v-c157765e] {
     margin-top: -12px;
 }
 .carts{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 12px;
     font-weight: bold;
 }
 .cart_amount h5{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
 }
 .footer-color{
     color: #cc8e46;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
@@ -5465,17 +5502,20 @@ input[data-v-c157765e] {
 
 .call-us{
     background: #CC8E46;
-    width: 210px;
-    border-radius: 20px;
+    width: 220px;
+    border-radius: 55px;
+    margin-top: 20px;
 }
 .call-background{
 
 }
 .call-background h4{
-    padding: 10px;
-    font-family: 'Montserrat';
+    padding: 2px;
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     margin-left: 70px;
+    /* background: #fff; */
+    border-radius: 20%;
 }
 .phone_icon{
     float: left;
@@ -5486,7 +5526,7 @@ input[data-v-c157765e] {
     color: #914E22;
 }
 .detail_btn {
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 
@@ -5495,7 +5535,7 @@ input[data-v-c157765e] {
     padding: 8px 0px;
 }
 .checkout-title h3{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #040404;
 }
@@ -5512,11 +5552,11 @@ input[data-v-c157765e] {
 }
 .facebook-login{
     float: left;
-    margin-left: 15px;
+    margin-left: 0px;
 }
 .google-login{
     float: left;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .login{
     padding: 15px;
@@ -5525,18 +5565,18 @@ input[data-v-c157765e] {
     background: #0F549A;
     color: white;
     padding: 3px 10px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .google{
     background: #E43E2B;
     color: white;
     padding: 3px 10px;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .payment-title{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: black;
     font-size: 15px;
@@ -5546,7 +5586,7 @@ input[data-v-c157765e] {
 }
 
 .cart-items{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #484848;
     font-size: 14px;
@@ -5556,7 +5596,7 @@ input[data-v-c157765e] {
     
 }
 .qty_container p{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     font-size: 12px;
 }
@@ -5575,8 +5615,8 @@ input[data-v-c157765e] {
 }
 
 .coupon h4{
-    font-family: 'Montserrat';
-    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
     color: #202021;
 }
 .place-order{
@@ -5587,7 +5627,7 @@ input[data-v-c157765e] {
 .place_btn{
     background: #AA8153;
     color: white;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
 }
 .cash_radio{
@@ -5609,7 +5649,7 @@ input[data-v-c157765e] {
     margin-top: -12px;
 }
 .cart_content_name p{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
 .___place{
@@ -5676,13 +5716,13 @@ input[data-v-c157765e] {
     float: right;
     background: #292929;
     color: #fff;
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     padding: 10px 18px;
 }
 .get_title{
     color: #a98153;
-    font-family: 'Montserrat-Regular';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     
 }
@@ -5692,12 +5732,9 @@ input[data-v-c157765e] {
     margin: 0 auto;
     margin-bottom: 40px;
 }
-.cart_amount_cal{
-    margin-top: 86%;
-}
 
 .subtitle{
-    font-family: 'Montserrat';
+    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
 }
@@ -5719,17 +5756,65 @@ input[data-v-c157765e] {
 }
 .facebook-login-user{
     float: left;
-    margin-left: 38px;
+    margin-left: 100px;
 }
 .login_form{
     width: 45%;
-    margin-left: 20px;
-    padding: 10px 0px;
+    margin-left: 10px;
+    padding: 10px 10px;
+    float: left;
 }
 
 .register_form{
     width: 45%;
-    margin-left: 20px;
-    padding: 10px 0px;
+    margin-right: 10px;
+    padding: 10px 10px;
+    float: right;
+}
+
+.login_form .form-control{
+    height: 34px;
+}
+.register_form label{
+    font-size: 14px;
+}
+.register_form .form-control{
+    height: 34px;
+}
+
+.login_form label{
+    font-size: 14px;
+}
+.user_register{
+    background: #AA8153;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+
+.user_logins{
+    background: #AA8153;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #fff;
+}
+.cart_amount_cal{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.cart_close{
+    color: #747273; 
+    margin-top: -34px; 
+    border: 3px solid #616060;
+    padding: 5px; 
+    cursor: pointer;
+    width: 20%;
+    float: right;
+}
+
+.phn_num{
+    padding: 1px;
 }
 </style><?php /**PATH D:\xampp\htdocs\Project\glam_touch\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

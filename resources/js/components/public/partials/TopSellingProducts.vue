@@ -4,36 +4,34 @@
       :items="best_selling_produtcs"
       :options="best_selling_options"
     >
-    <template v-slot:default="{ item }">
-          <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
-            <div class="content_card content_card_on_slider">
-              <div class="content_card_body">
+      <template v-slot:default="{ item }">
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6 item">
+          <div class="content_card content_card_on_slider">
+            <div class="content_card_body">
+              <router-link
+                :to="{
+                  name: 'single',
+                  params: { slug: item.slug },
+                }"
+              >
+                <img :src="base_url + item.thumbnail_img" />
+              </router-link>
+              <p class="content_link">
                 <router-link
                   :to="{
                     name: 'single',
                     params: { slug: item.slug },
                   }"
+                  >{{ item.name }}</router-link
                 >
-                  <img
-                  :src="base_url + item.thumbnail_img"
-                  />
-                </router-link>
-                <p class="content_link">
-                  <router-link
-                    :to="{
-                      name: 'single',
-                      params: { slug: item.slug },
-                    }"
-                    >{{ item.name }}</router-link
-                  >
-                </p>
+              </p>
 
-                <p class="price">
-                  
-                  <span class="price-old" v-if="item.discount">
-                    &#2547; {{ item.sale_price }}</span >
-                    <span class="price-new"> &#2547; {{ item.price }}</span>
-                  <!-- <span v-if="item.discount > 0" class="discount">
+              <p class="price">
+                <span class="price-old" v-if="item.discount">
+                  &#2547; {{ item.sale_price }}</span
+                >
+                <span class="price-new"> &#2547; {{ item.price }}</span>
+                <!-- <span v-if="item.discount > 0" class="discount">
                     <div class="star-icon" style="margin-top:-7px; margin-bottom: -32px">
                       <i class="fa fa-star" aria-hidden="true"></i>
                       <span style="margin-left:-3px">
@@ -46,16 +44,26 @@
                     </div>
 
                   </span> -->
-                </p>
-                <div class="add-to-cart d-flex justify-content-center">
-                  <!-- <button class="btn btn-warning btn-sm carts"> <i class="fa fa-solid fa fa-cart-arrow-down fa-lg"></i> <span style="margin-top: 2px;">ADD TO CART</span></button> -->
-                  <button class="btn btn-warning btn-sm carts"> <img src="storage/images/icons/add_cart.png" alt=""> <span style="margin-top: 2px;">ADD TO CART</span></button>
-                  <i class="fa fa-heart fa-2x" style="color: #CC8E46; margin-left: 10px"></i><sup><i class="fa fa-plus fa-sm"></i></sup>
-                </div>
+              </p>
+              <div class="add-to-cart d-flex justify-content-center">
+                <button class="btn btn-warning btn-sm carts">
+                  <i class="fa fa-solid fa fa-cart-arrow-down fa-lg"></i>
+                  <span style="margin-top: 2px;">ADD TO CART</span>
+                </button>
+                <!-- <button class="btn btn-warning btn-sm carts">
+                  <img src="storage/images/icons/add_cart.png" alt="" />
+                  <span style="margin-top: 2px;">ADD TO CART</span>
+                </button> -->
+                <i
+                  class="fa fa-heart fa-2x"
+                  style="color: #CC8E46; margin-left: 10px"
+                ></i
+                ><sup><i class="fa fa-plus fa-sm"></i></sup>
               </div>
             </div>
           </div>
-        </template>
+        </div>
+      </template>
     </vue-horizontal-list>
   </div>
 </template>
@@ -88,7 +96,7 @@ export default {
         position: {
           start: 0,
         },
-         autoplay: { play: true, repeat: true, speed: 5000 },
+        autoplay: { play: true, repeat: true, speed: 5000 },
       },
     };
   },

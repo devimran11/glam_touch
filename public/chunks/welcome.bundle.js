@@ -854,6 +854,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
@@ -2189,7 +2197,7 @@ var render = function() {
                               item.discount
                                 ? _c("span", { staticClass: "price-old" }, [
                                     _vm._v(
-                                      "\n                  ৳ " +
+                                      "\n                ৳ " +
                                         _vm._s(item.sale_price)
                                     )
                                   ])
@@ -2213,12 +2221,9 @@ var render = function() {
                                     staticClass: "btn btn-warning btn-sm carts"
                                   },
                                   [
-                                    _c("img", {
-                                      attrs: {
-                                        src:
-                                          "storage/images/icons/add_cart.png",
-                                        alt: ""
-                                      }
+                                    _c("i", {
+                                      staticClass:
+                                        "fa fa-solid fa fa-cart-arrow-down fa-lg"
                                     }),
                                     _vm._v(" "),
                                     _c(

@@ -8,7 +8,6 @@
     >
       <div class="modal-dialog modal-xl">
         <div class="row">
-          
           <div class="col-md-10 col-sm-12">
             <div class="modal-content">
               <div v-if="quick_loading" class="animator  text-center">
@@ -34,7 +33,10 @@
                     <div class="col-md-6 col-sm-12">
                       <div class="single_img_view">
                         <div class="zoom_btn">
-                          <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
+                          <i
+                            class="fa fa-search-plus fa-2x"
+                            aria-hidden="true"
+                          ></i>
                         </div>
                         <div class="quick_preview_img">
                           <img
@@ -56,7 +58,6 @@
                               />
                             </div>
                           </div> -->
-                          
                         </div>
                       </div>
                       <div class="preview_img_box_container">
@@ -223,15 +224,14 @@
                           </div>
 
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                             
                             <div class="call-us">
                               <div class="call-background">
                                 <div class="phone_icon">
                                   <i class="fa fa-phone"></i>
                                 </div>
-                                  <div class="phn_num">
-                                    <h4>01768821248</h4>
-                                  </div>
+                                <div class="phn_num">
+                                  <h4>01768821248</h4>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -258,7 +258,10 @@
                           </div>
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="view_full_product">
-                              <button class="btn btn-warning detail_btn" type="submit">
+                              <button
+                                class="btn btn-warning detail_btn"
+                                type="submit"
+                              >
                                 View Full Product Details >>
                               </button>
                             </div>
@@ -431,7 +434,7 @@ export default {
 .close_sign {
   font-size: 50px !important;
   margin-top: -52px !important;
-  color: #45341E !important;
+  color: #45341e !important;
   margin-right: 10px;
 }
 
@@ -584,8 +587,7 @@ export default {
 .col-md-2 {
   margin-bottom: 25px;
 }
-.__preview_image_box{
+.__preview_image_box {
   margin-left: 20px;
-
 }
 </style>

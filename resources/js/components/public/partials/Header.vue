@@ -275,7 +275,9 @@
           :key="index"
           style="border-bottom: 1px solid #ddd; margin-top: 5px; margin-bottom: 5px;"
         >
-          <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cart_responsive_item flex">
+          <div
+            class="col-lg-2 col-md-2 col-sm-2 col-xs-2 cart_responsive_item flex"
+          >
             <u style="text-decoration: none">
               <li class="q-i-d" @click="increamentQuantity(cart_content)">
                 <i class="fa fa-angle-up"></i>
@@ -286,7 +288,10 @@
               </li>
             </u>
           </div>
-          <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8 flex" style="align-items: center">
+          <div
+            class="col-lg-8 col-md-8 col-sm-8 col-xs-8 flex"
+            style="align-items: center"
+          >
             <div class="p-image-name">
               <img
                 :src="thumbnail_base_url + cart_content.options.image"
@@ -307,7 +312,9 @@
               </p>
             </div>
           </div>
-          <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 cart_responsive_remove">
+          <div
+            class="col-lg-1 col-md-1 col-sm-1 col-xs-1 cart_responsive_remove"
+          >
             <h6
               class=""
               style="cursor: pointer; margin-top: 17px;"
@@ -534,7 +541,9 @@
               <div class="checkbox">
                 <label><input type="checkbox" /> Remember me</label>
               </div>
-              <button type="submit" class="btn btn-default user_logins">LOGIN</button>
+              <button type="submit" class="btn btn-default user_logins">
+                LOGIN
+              </button>
               <div class="checkbox">
                 <a> Forgot Password?</a>
               </div>
@@ -551,7 +560,9 @@
                 <label for="pwd">Password:</label>
                 <input type="password" class="form-control" id="pwd" />
               </div>
-              <button type="submit" class="btn btn-default user_register">REGISTER</button>
+              <button type="submit" class="btn btn-default user_register">
+                REGISTER
+              </button>
             </form>
           </div>
         </div>
