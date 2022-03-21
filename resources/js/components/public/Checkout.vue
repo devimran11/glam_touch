@@ -10,13 +10,13 @@
           <!--Middle Part Start-->
           <div id="content">
             <div class="row">
-              <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="checkout-title">
                   <h3>CHECKOUT</h3>
                 </div>
               </div>
 
-              <div class="col-md-12">
+              <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="checkout-login">
                   <div class="checkout-line"></div>
                   <div class="login">
@@ -129,14 +129,6 @@
                           <input type="email" class="form-control" placeholder="Additional Information(Anything you want to add)">
                         </div>
                       </div>
-                    <!-- <button
-
-                      class="btn btn-block btn-primary"
-                      type="submit"
-                      :disabled="form.busy || disabled"
-                    >
-                      <i class="fa fa-spinner fa-spin" v-if="form.busy"></i>PLACE ORDER
-                    </button> -->
                   </form>
                   <div class="payment">
                     <h4 class="payment-title">PAYMENT METHOD</h4>

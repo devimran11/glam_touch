@@ -345,14 +345,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1264,7 +1256,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12" }, [
+    return _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
       _c("div", { staticClass: "checkout-title" }, [
         _c("h3", [_vm._v("CHECKOUT")])
       ])
@@ -1274,7 +1266,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12" }, [
+    return _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
       _c("div", { staticClass: "checkout-login" }, [
         _c("div", { staticClass: "checkout-line" }),
         _vm._v(" "),

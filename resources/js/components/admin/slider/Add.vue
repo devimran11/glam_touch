@@ -121,10 +121,10 @@ export default {
       loading: true,
       image: "",
       disabled: true,
-      image_width: 1360,
-      image_height: 730,
+      image_width: 1300,
+      image_height: 464,
       imagae_size:2048,
-      image_size_text: "Image size must be 1360*730px",
+      image_size_text: "Image size must be 1300*464px",
     };
   },
 

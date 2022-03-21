@@ -587,12 +587,17 @@ ul.side-nav li:hover>.left-sub-menu {
     height: 84%;
 }
 .cart-header {
-    padding: 15px 15px;
-    background: #000;
+    padding: 12px 15px;
+    background: #E4E0E1;
    text-transform: uppercase;
     font-weight: bold;
     color: var(--primary-color);
 }
+/* .cart-header {
+    padding: 1px 15px;
+       color: #fff;
+    
+} */
 .cart-body {
     padding: 15px 15px;
     max-height: 500px;
@@ -621,7 +626,8 @@ ul.side-nav li:hover>.left-sub-menu {
     color: #7B7B7B;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 5px;
+    width: 50%;
 }
 
 .cart-open {
@@ -1402,11 +1408,7 @@ span.price-old {
 .btn-primary{
     background: var(--primary-color) !important;
 }
-.cart-header {
-    padding: 1px 15px;
-       color: #fff;
-    background: #E4E0E1;
-}
+
 .cart-footer {
    color: #fff;
 
@@ -2664,9 +2666,7 @@ span.price-old {
     }
 
      .btn_buy_cart:hover {
-       padding: 8px;
        color: white;
-       background: #A06A2E;
      }
 
         .single_p_right_section{
@@ -2736,6 +2736,8 @@ span.price-old {
         font-family: 'Montserrat';
         font-weight: Regular;
         margin-right: 20px;
+        background: none;
+        border: none;
     }
 
     .merchant_login>i{
@@ -2902,9 +2904,7 @@ span.price-old {
         margin-top: 10px;
     }
 
-    .cart_amount_cal{
-        margin-top: 50% !important;
-    }
+    
     
 }
 @media  only screen and (max-width: 1024px) {
@@ -2912,9 +2912,7 @@ span.price-old {
 }
 @media  only screen and (max-width: 900px) {
 
-    .cart_amount_cal{
-        margin-top: 50%;
-    }
+    
     .header-top {
         display: none;
     }
@@ -3116,6 +3114,9 @@ span.price-old {
     .section_title{
         margin-left: 0px;
         margin-bottom: 0px;
+        font-family: 'Montserrat';
+        font-weight: bold;
+        font-size: 19px;
     }
 
     .line{
@@ -3259,6 +3260,50 @@ span.price-old {
         /* position: absolute; */
     }
     
+    #footer .link_line li {
+        font-weight: 400;
+    }
+    #footer .column a{
+        font-size: 18px;
+    }
+
+    .checkout-title{
+        margin-left: 0px !important;
+    }
+
+    .checkout-login{
+        margin-left: 0px !important;
+    }
+
+    .return-customer{
+        float: none !important;
+        
+    }
+    .return-customer p{
+        text-align: center !important;
+    }
+    .promo_code{
+        margin-left: 0 !important;
+    }
+    .custom-box .title{
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .cart-items{
+        text-align: center;
+    }
+    .payment-title{
+        text-align: center;
+    }
+
+    .google-login{
+        float: right !important;
+        margin-left: 0px !important;
+    }
+    .address-area{
+        margin-bottom: 10px !important;
+    }
 
 
 
@@ -3579,11 +3624,10 @@ span.price-old {
             display: none;
       }
 
-      .colapse-cart {
+      /* .colapse-cart {
             width: 43%;
-            margin-bottom: 20%;
             height: 94%;
-        }
+        } */
 
         ul.p-image-name li {
             padding: 0px 5px !important;
@@ -4186,12 +4230,6 @@ span.price-old {
             padding-bottom: 25px;
         }
 
-        .cart_responsive_item {
-
-                margin-left: 260px;
-                margin-top: -54px;
-
-        }
 
         .cart_responsive_price{
             margin-left: 270px;
@@ -4207,10 +4245,7 @@ span.price-old {
         }
 
         .cart_responsive_remove{
-
             cursor: pointer;
-            margin-left: 350px;
-            margin-top: 10px;
         }
 
 
@@ -4526,8 +4561,8 @@ span.price-old {
 
 
 @media  screen and (max-width:530px) {
-        .cart_amount_cal {
-            margin-top: 50%;
+        #footer .column a{
+            font-size: 12px;
         }
 
         .header_search_form {
@@ -5295,7 +5330,7 @@ sup {
 }
 
 .section_title_left{
-    font-family: 'Montserrat-Bold';
+    font-family: 'Montserrat';
     font-weight: bold;
     font-size: 22px;
 }
@@ -5467,18 +5502,20 @@ input[data-v-c157765e] {
 
 .call-us{
     background: #CC8E46;
-    width: 210px;
-    border-radius: 20px;
-    height: 48px;
+    width: 220px;
+    border-radius: 55px;
+    margin-top: 20px;
 }
 .call-background{
 
 }
 .call-background h4{
-    padding: 10px;
+    padding: 2px;
     font-family: 'Montserrat';
     font-weight: bold;
     margin-left: 70px;
+    /* background: #fff; */
+    border-radius: 20%;
 }
 .phone_icon{
     float: left;
@@ -5515,11 +5552,11 @@ input[data-v-c157765e] {
 }
 .facebook-login{
     float: left;
-    margin-left: 15px;
+    margin-left: 0px;
 }
 .google-login{
     float: left;
-    margin-left: 30px;
+    margin-left: 15px;
 }
 .login{
     padding: 15px;
@@ -5579,7 +5616,7 @@ input[data-v-c157765e] {
 
 .coupon h4{
     font-family: 'Montserrat';
-    font-weight: bold;
+    font-weight: 400;
     color: #202021;
 }
 .place-order{
@@ -5695,9 +5732,6 @@ input[data-v-c157765e] {
     margin: 0 auto;
     margin-bottom: 40px;
 }
-.cart_amount_cal{
-    margin-top: 86%;
-}
 
 .subtitle{
     font-family: 'Montserrat';
@@ -5714,5 +5748,74 @@ input[data-v-c157765e] {
 .filter_by_line{
     border: 1px solid #AEAEAE;
     width: 80px;
+}
+.modal_header_login{
+    height: 45px;
+    padding: 10px;
+    background: #E8E8E8;
+}
+.facebook-login-user{
+    float: left;
+    margin-left: 100px;
+}
+.login_form{
+    width: 45%;
+    margin-left: 10px;
+    padding: 10px 10px;
+    float: left;
+}
+
+.register_form{
+    width: 45%;
+    margin-right: 10px;
+    padding: 10px 10px;
+    float: right;
+}
+
+.login_form .form-control{
+    height: 34px;
+}
+.register_form label{
+    font-size: 14px;
+}
+.register_form .form-control{
+    height: 34px;
+}
+
+.login_form label{
+    font-size: 14px;
+}
+.user_register{
+    background: #AA8153;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #fff;
+}
+
+.user_logins{
+    background: #AA8153;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    color: #fff;
+}
+.cart_amount_cal{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.cart_close{
+    color: #747273; 
+    margin-top: -34px; 
+    border: 3px solid #616060;
+    padding: 5px; 
+    /* margin-left: 248px;  */
+    cursor: pointer;
+    width: 20%;
+    float: right;
+}
+
+.phn_num{
+    padding: 1px;
 }
 </style><?php /**PATH D:\project\glam_touch_web_app\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

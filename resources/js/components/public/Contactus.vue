@@ -10,9 +10,8 @@
     <div id="container">
       <div class="container">
         <div class="row">
-            <div class="col-md-12 col-sm-12 col-xs-12">
           <div class="contact-page">
-            <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="address-area">
                 <div class="address-icon">
                   <i class="fa fa-map-marker" style="font-size:36px"></i>
@@ -26,7 +25,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="address-area">
                 <div class="address-icon">
                   <i
@@ -44,7 +43,7 @@
               </div>
             </div>
 
-            <div class="col-md-4 col-sm-4 col-xs-4">
+            <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="address-area">
                 <div class="address-icon">
                   <i class="fa fa-envelope" style="font-size:36px"></i>
@@ -57,9 +56,8 @@
               </div>
             </div>
           </div>
-            </div>
           <div class="map">
-            <div class="col-md-12">
+            <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="full-map">
                 <main class="app">
                   <aside class="sidebar">
@@ -93,7 +91,7 @@
             </div>
           </div>
 
-          <div class="col-md-12">
+          <div class="col-md-12 col-sm-12 col-xs-12">
             <div class="get_in_touch">
               <h3 class="get_title">GET IN TOUCH</h3>
               <div class="get_line"></div>

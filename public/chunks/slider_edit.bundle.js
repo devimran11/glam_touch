@@ -138,9 +138,9 @@ vue__WEBPACK_IMPORTED_MODULE_0___default.a.component(vform__WEBPACK_IMPORTED_MOD
       loading: true,
       image: "",
       disabled: false,
-      image_width: 1360,
-      image_height: 730,
-      image_size_text: "Image size must be 1360*730px",
+      image_width: 1300,
+      image_height: 464,
+      image_size_text: "Image size must be 1300*464px",
       imagae_size: 2048
     };
   },

@@ -3215,8 +3215,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-//
-//
 
 
 
@@ -8433,7 +8431,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".vld-shown {\r\n  overflow: hidden;\r\n}\r\n\r\n.vld-overlay {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  align-items: center;\r\n  display: none;\r\n  justify-content: center;\r\n  overflow: hidden;\r\n  z-index: 9999;\r\n}\r\n\r\n.vld-overlay.is-active {\r\n  display: flex;\r\n}\r\n\r\n.vld-overlay.is-full-page {\r\n  z-index: 9999;\r\n  position: fixed;\r\n}\r\n\r\n.vld-overlay .vld-background {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  background: #fff;\r\n  opacity: 0.5;\r\n}\r\n\r\n.vld-overlay .vld-icon, .vld-parent {\r\n  position: relative;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".vld-shown {\n  overflow: hidden;\n}\n\n.vld-overlay {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  align-items: center;\n  display: none;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 9999;\n}\n\n.vld-overlay.is-active {\n  display: flex;\n}\n\n.vld-overlay.is-full-page {\n  z-index: 9999;\n  position: fixed;\n}\n\n.vld-overlay .vld-background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  background: #fff;\n  opacity: 0.5;\n}\n\n.vld-overlay .vld-icon, .vld-parent {\n  position: relative;\n}\n\n", ""]);
 
 // exports
 
@@ -70451,20 +70449,9 @@ var render = function() {
           [
             _vm._m(1),
             _vm._v(" "),
-            _c(
-              "p",
-              {
-                staticStyle: {
-                  color: "#747273",
-                  "margin-top": "-36px",
-                  border: "3px solid #616060",
-                  padding: "5px",
-                  "margin-left": "248px",
-                  cursor: "pointer"
-                }
-              },
-              [_vm._v("\n        Close\n      ")]
-            )
+            _c("p", { staticClass: "cart_close" }, [
+              _vm._v("\n        Close\n      ")
+            ])
           ]
         ),
         _vm._v(" "),
@@ -70487,7 +70474,8 @@ var render = function() {
                 _c(
                   "div",
                   {
-                    staticClass: "col-lg-2 col-sm-2 cart_responsive_item flex"
+                    staticClass:
+                      "col-lg-2 col-md-2 col-sm-2 col-xs-2 cart_responsive_item flex"
                   },
                   [
                     _c("u", { staticStyle: { "text-decoration": "none" } }, [
@@ -70527,7 +70515,7 @@ var render = function() {
                 _c(
                   "div",
                   {
-                    staticClass: "col-lg-8 col-sm-8 flex",
+                    staticClass: "col-lg-8 col-md-8 col-sm-8 col-xs-8 flex",
                     staticStyle: { "align-items": "center" }
                   },
                   [
@@ -70590,7 +70578,10 @@ var render = function() {
                 _vm._v(" "),
                 _c(
                   "div",
-                  { staticClass: "col-lg-1 col-sm-1 cart_responsive_remove" },
+                  {
+                    staticClass:
+                      "col-lg-1 col-md-1 col-sm-1 col-xs-1 cart_responsive_remove"
+                  },
                   [
                     _c(
                       "h6",
@@ -70971,7 +70962,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "modal",
-        { attrs: { name: "UserLoginModalOpen", width: 500, height: 300 } },
+        { attrs: { name: "UserLoginModalOpen", width: 650, height: 400 } },
         [
           _c("div", { staticClass: "card" }, [
             _c("div", { staticClass: "modal_header_login" }, [
@@ -70997,7 +70988,7 @@ var render = function() {
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "email" } }, [
-                      _vm._v("Email address:")
+                      _vm._v("Mobile number or Email address:")
                     ]),
                     _vm._v(" "),
                     _c("input", {
@@ -71027,21 +71018,25 @@ var render = function() {
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-default",
+                      staticClass: "btn btn-default user_logins",
                       attrs: { type: "submit" }
                     },
-                    [_vm._v("Submit")]
-                  )
+                    [_vm._v("LOGIN")]
+                  ),
+                  _vm._v(" "),
+                  _c("div", { staticClass: "checkbox" }, [
+                    _c("a", [_vm._v(" Forgot Password?")])
+                  ])
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "register_form" }, [
                 _c("form", { attrs: { action: "/action_page.php" } }, [
-                  _c("h3", [_vm._v("Login")]),
+                  _c("h3", [_vm._v("Register")]),
                   _vm._v(" "),
                   _c("div", { staticClass: "form-group" }, [
                     _c("label", { attrs: { for: "email" } }, [
-                      _vm._v("Email address:")
+                      _vm._v("Mobile number or Email address:")
                     ]),
                     _vm._v(" "),
                     _c("input", {
@@ -71061,20 +71056,13 @@ var render = function() {
                     })
                   ]),
                   _vm._v(" "),
-                  _c("div", { staticClass: "checkbox" }, [
-                    _c("label", [
-                      _c("input", { attrs: { type: "checkbox" } }),
-                      _vm._v(" Remember me")
-                    ])
-                  ]),
-                  _vm._v(" "),
                   _c(
                     "button",
                     {
-                      staticClass: "btn btn-default",
+                      staticClass: "btn btn-default user_register",
                       attrs: { type: "submit" }
                     },
-                    [_vm._v("Submit")]
+                    [_vm._v("REGISTER")]
                   )
                 ])
               ])
@@ -92621,8 +92609,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
