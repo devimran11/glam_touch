@@ -22,7 +22,7 @@
                     name: 'single',
                     params: { slug: item.slug },
                   }"
-                  >{{ item.name }}</router-link
+                  >{{ item.name.substring(0,20)+".." }}</router-link
                 >
               </p>
 
@@ -56,7 +56,7 @@
                 </button> -->
                 <i
                   class="fa fa-heart fa-2x"
-                  style="color: #CC8E46; margin-left: 10px"
+                  style="color: #cd8f46; margin-left: 10px"
                 ></i
                 ><sup><i class="fa fa-plus fa-sm"></i></sup>
               </div>

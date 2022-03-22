@@ -1273,10 +1273,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "div",
-      {
-        staticClass:
-          "col-lg-12 col-md-12 col-xs-12 margin_container text-center "
-      },
+      { staticClass: "col-lg-12 col-md-12 col-xs-12 text-center " },
       [
         _c("h4", { staticClass: "section_title" }, [
           _vm._v("NEW ARRIVAL PRODUCTS")
@@ -2187,7 +2184,11 @@ var render = function() {
                                       }
                                     }
                                   },
-                                  [_vm._v(_vm._s(item.name))]
+                                  [
+                                    _vm._v(
+                                      _vm._s(item.name.substring(0, 20) + "..")
+                                    )
+                                  ]
                                 )
                               ],
                               1
@@ -2237,7 +2238,7 @@ var render = function() {
                                 _c("i", {
                                   staticClass: "fa fa-heart fa-2x",
                                   staticStyle: {
-                                    color: "#CC8E46",
+                                    color: "#cd8f46",
                                     "margin-left": "10px"
                                   }
                                 }),

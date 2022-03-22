@@ -130,7 +130,7 @@
 
 
       <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 margin_container text-center ">
+        <div class="col-lg-12 col-md-12 col-xs-12 text-center ">
           <h4 class="section_title">NEW ARRIVAL PRODUCTS</h4>
           <br>
           <hr>

@@ -1560,7 +1560,11 @@ var render = function() {
                                       }
                                     }
                                   },
-                                  [_vm._v(_vm._s(item.name))]
+                                  [
+                                    _vm._v(
+                                      _vm._s(item.name.substring(0, 20) + "..")
+                                    )
+                                  ]
                                 )
                               ],
                               1
@@ -1610,7 +1614,7 @@ var render = function() {
                                 _c("i", {
                                   staticClass: "fa fa-heart fa-2x",
                                   staticStyle: {
-                                    color: "#CC8E46",
+                                    color: "#cd8f46",
                                     "margin-left": "10px"
                                   }
                                 }),
