@@ -1743,7 +1743,7 @@ span.price-old {
 
     .content_card {
         width: 290px;
-        height: 523px;
+        height: 540px;
         transition: .1s ;
     }
 
@@ -5826,4 +5826,6 @@ input[data-v-c157765e] {
 hr{
     border: 1px solid#d9d9d9;
 }
+
+
 </style>

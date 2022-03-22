@@ -1166,17 +1166,16 @@ span.price-new {
     /* color: var(--primary-text-color); */
     color: #202021;
     font-weight: bold;
-    font-family: Montserrat;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 19px;
     margin-left: 10px;
 }
 
 span.price-old {
-    font-size: 15px;
+    font-size: 19px;
     text-decoration: line-through;
     font-weight: bold;
-    font-family: Montserrat;
-    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
     color: #202021;
 }
 
@@ -1713,11 +1712,12 @@ span.price-old {
 
     .section_title {
         text-transform: uppercase;
-        margin-top: 10px;
+        margin-top: 34px;
         margin-left: 10px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-        font-size: 22px;
+        font-size: 28px;
+        color: #191919;
     }
 
     .random_heading{
@@ -1734,11 +1734,8 @@ span.price-old {
     }
 
     .content_card {
-        width: 280px;
-        height: 355px;
-        /* background: #F4F1F0;
-        box-shadow: 2px 2px 2px #ddd;
-        border-radius: 6px; */
+        width: 290px;
+        height: 540px;
         transition: .1s ;
     }
 
@@ -1747,8 +1744,8 @@ span.price-old {
     }
 
     .content_card_body img {
-        width: 95%;
-        height: 270px;
+        width: 290px;
+        height: 434px;
         margin: 5px;
     }
 
@@ -2085,7 +2082,7 @@ span.price-old {
     }
 
     .margin_container{
-        margin-bottom: 20px;
+        margin-bottom: 24px;
     }
 
 
@@ -3816,7 +3813,7 @@ span.price-old {
 
         .vhl-item[data-v-8b923bbc] {
             box-sizing: content-box;
-            padding-top: 0px !important;
+            padding-top: 20px !important;
             padding-bottom: 20px !important;
             z-index: 1;
             min-height: 1px;
@@ -5215,7 +5212,7 @@ hr {
     height: 211px;
 }
 .suggetion_product_row{
-    margin-top: 40px;
+    margin-top: 9px;
 }
 
 .add-to-cart {
@@ -5233,12 +5230,12 @@ hr {
 sup {
     padding: 2px 3px;
     background: #fff;
-    color: #D6A74E;
+    color: #cd8f46;
     border-radius: 50%;
     font-size: 9px;
-    font-weight: bold;
-    font-family: serif;
-    border: 1px solid #D6A74E;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: 1px solid #cd8f46;
     margin-top: -9px;
     margin-left: -7px;
 }
@@ -5302,9 +5299,9 @@ sup {
 }
 
  .line {
-    width: 220px;
+    width: 309px;
     height: 2px;
-    background: #AA8153;
+    background: #a98153;
     margin-top: -22px !important;
     margin: auto;
 }
@@ -5324,7 +5321,7 @@ sup {
     color: #939494;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .section_title_left{
@@ -5481,8 +5478,9 @@ input[data-v-c157765e] {
 .carts{
     font-family: 'Montserrat', sans-serif;
     color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
+    background: #cc8e46;
 }
 .cart_amount h5{
     font-family: 'Montserrat', sans-serif;
@@ -5817,4 +5815,9 @@ input[data-v-c157765e] {
 .phn_num{
     padding: 1px;
 }
+hr{
+    border: 1px solid#d9d9d9;
+}
+
+
 </style><?php /**PATH D:\xampp\htdocs\Project\glam_touch\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

@@ -22,7 +22,7 @@
                     name: 'single',
                     params: { slug: item.slug },
                   }"
-                  >{{ item.name.substring(0,20)+".." }}</router-link
+                  >{{ item.name.substring(0, 20) + ".." }}</router-link
                 >
               </p>
 
@@ -47,18 +47,22 @@
               </p>
               <div class="add-to-cart d-flex justify-content-center">
                 <button class="btn btn-warning btn-sm carts">
-                  <i class="fa fa-solid fa fa-cart-arrow-down fa-lg"></i>
+                  <img
+                    class="cart_bag"
+                    src="storage/images/icons/Untitled-2.png"
+                    alt=""
+                  />
                   <span style="margin-top: 2px;">ADD TO CART</span>
                 </button>
                 <!-- <button class="btn btn-warning btn-sm carts">
                   <img src="storage/images/icons/add_cart.png" alt="" />
                   <span style="margin-top: 2px;">ADD TO CART</span>
                 </button> -->
-                <i
-                  class="fa fa-heart fa-2x"
-                  style="color: #cd8f46; margin-left: 10px"
-                ></i
-                ><sup><i class="fa fa-plus fa-sm"></i></sup>
+                <img
+                  class="cart_love"
+                  src="storage/images/icons/love.png"
+                  alt=""
+                />
               </div>
             </div>
           </div>
@@ -96,7 +100,7 @@ export default {
         position: {
           start: 0,
         },
-        autoplay: { play: true, repeat: true, speed: 5000 },
+        autoplay: { play: false, repeat: true, speed: 5000 },
       },
     };
   },
@@ -105,3 +109,16 @@ export default {
   },
 };
 </script>
+<style scoped>
+.cart_bag {
+  width: 35px;
+  height: 30px;
+  margin-top: 0px;
+  filter: invert(100%);
+}
+.cart_love {
+  width: 50px;
+  height: 50px;
+  margin-top: 0px;
+}
+</style>
