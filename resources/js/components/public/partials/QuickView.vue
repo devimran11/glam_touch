@@ -156,7 +156,7 @@
                                     <input
                                       type="radio"
                                       name="gender"
-                                      class="color_att"
+                                      id="color_att_quick"
                                       value="male"
                                     />
                                   </div>
@@ -210,12 +210,13 @@
                           </div>
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="add_wishlist">
-                              <a
-                                ><i
-                                  class="fa fa-heart fa-2x"
-                                  style="color: #CC8E46"
-                                ></i
-                                ><sup><i class="fa fa-plus fa-sm"></i></sup>
+                              <a>
+                                <img
+                                  :src="
+                                    base_url_link +
+                                      'images/icons/Quick_Heart.png'
+                                  "
+                                />
                                 <span style="margin-left:10px; color: #C9C9C9"
                                   >ADD TO WISHLIST</span
                                 ></a
@@ -224,15 +225,12 @@
                           </div>
 
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="call-us">
-                              <div class="call-background">
-                                <div class="phone_icon">
-                                  <i class="fa fa-phone"></i>
-                                </div>
-                                <div class="phn_num">
-                                  <h4>01768821248</h4>
-                                </div>
-                              </div>
+                            <div class="call">
+                              <img
+                                :src="
+                                  base_url_link + 'images/icons/call_now.png'
+                                "
+                              />
                             </div>
                           </div>
 
@@ -299,6 +297,7 @@ export default {
       disabled: true,
       variant_index: "",
       base_url: this.$store.state.thumbnail_img_base_link,
+      base_url_link: this.$store.state.image_base_link,
       cart: {
         product_id: "",
         variant_id: "",
@@ -590,7 +589,7 @@ export default {
 .__preview_image_box {
   margin-left: 20px;
 }
-.modal-body{
+.modal-body {
   margin-top: 20px;
 }
 </style>

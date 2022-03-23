@@ -11,35 +11,35 @@
         <div class="single-product-box">
           <div class="row">
             <div class="col-lg-6 col-md-6 col-xs-12">
-               <div class="single_img_view">
-                  <div class="zoom_btn">
-                    <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
-                  </div>
-                  <div class="quick_preview_img">
-                      <div class="single_product_img_container">
-                        <image-zoom
-                          v-if="zooming_img.length"
-                          :regular="zooming_img"
-                          img-class="single_product_image"
-                        >
-                        </image-zoom>
-                      </div>
-                    </div>
+              <div class="single_img_view">
+                <div class="zoom_btn">
+                  <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
                 </div>
-                 <div class="preview_img_box_container">
-                  <div
-                    v-for="(image, index) in product_images"
-                    :key="index"
-                    :class="{ __active_border: index == 0 }"
-                    class="__preview_image_box"
-                  >
-                    <img
-                      @click="displayeImageFromBox"
-                      class="__preview_img"
-                      :src="base_url + image.product_image"
-                    />
+                <div class="quick_preview_img">
+                  <div class="single_product_img_container">
+                    <image-zoom
+                      v-if="zooming_img.length"
+                      :regular="zooming_img"
+                      img-class="single_product_image"
+                    >
+                    </image-zoom>
                   </div>
                 </div>
+              </div>
+              <div class="preview_img_box_container">
+                <div
+                  v-for="(image, index) in product_images"
+                  :key="index"
+                  :class="{ __active_border: index == 0 }"
+                  class="__preview_image_box"
+                >
+                  <img
+                    @click="displayeImageFromBox"
+                    class="__preview_img"
+                    :src="base_url + image.product_image"
+                  />
+                </div>
+              </div>
             </div>
 
             <div class="col-lg-6 col-md-6 col-xs-12">
@@ -190,9 +190,8 @@
                   </div>
                   <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="add_wishlist">
-                      <a
-                        ><i class="fa fa-heart fa-2x" style="color: #CC8E46"></i
-                        ><sup><i class="fa fa-plus fa-sm"></i></sup>
+                      <a>
+                        <img :src="base_url + 'images/icons/Quick_Heart.png'" />
                         <span style="margin-left:10px; color: #C9C9C9"
                           >ADD TO WISHLIST</span
                         ></a
@@ -201,15 +200,8 @@
                   </div>
 
                   <div class="col-lg-12 col-md-12 col-xs-12">
-                    <div class="call-us">
-                      <div class="call-background">
-                        <div class="phone_icon">
-                          <i class="fa fa-phone"></i>
-                        </div>
-                          <div class="phn_num">
-                            <h4>01768821248</h4>
-                          </div>
-                      </div>
+                    <div class="call">
+                      <img :src="base_url + 'images/icons/call_now.png'" />
                     </div>
                   </div>
 

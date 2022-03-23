@@ -3869,8 +3869,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
-//
-//
 
 
 
@@ -3890,6 +3888,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       disabled: true,
       variant_index: "",
       base_url: this.$store.state.thumbnail_img_base_link,
+      base_url_link: this.$store.state.image_base_link,
       cart: {
         product_id: "",
         variant_id: "",
@@ -8440,7 +8439,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".vld-shown {\n  overflow: hidden;\n}\n\n.vld-overlay {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  align-items: center;\n  display: none;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 9999;\n}\n\n.vld-overlay.is-active {\n  display: flex;\n}\n\n.vld-overlay.is-full-page {\n  z-index: 9999;\n  position: fixed;\n}\n\n.vld-overlay .vld-background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  background: #fff;\n  opacity: 0.5;\n}\n\n.vld-overlay .vld-icon, .vld-parent {\n  position: relative;\n}\n\n", ""]);
+exports.push([module.i, ".vld-shown {\r\n  overflow: hidden;\r\n}\r\n\r\n.vld-overlay {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  align-items: center;\r\n  display: none;\r\n  justify-content: center;\r\n  overflow: hidden;\r\n  z-index: 9999;\r\n}\r\n\r\n.vld-overlay.is-active {\r\n  display: flex;\r\n}\r\n\r\n.vld-overlay.is-full-page {\r\n  z-index: 9999;\r\n  position: fixed;\r\n}\r\n\r\n.vld-overlay .vld-background {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  background: #fff;\r\n  opacity: 0.5;\r\n}\r\n\r\n.vld-overlay .vld-icon, .vld-parent {\r\n  position: relative;\r\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -8478,7 +8477,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 350px !important;\r\n  height: 442px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 50px !important;\r\n  margin-top: -52px !important;\r\n  color: #45341e !important;\r\n  margin-right: 10px;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\n.__preview_image_box[data-v-68ee6900] {\r\n  margin-left: 20px;\n}\n.modal-body[data-v-68ee6900]{\r\n  margin-top: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 350px !important;\r\n  height: 442px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 50px !important;\r\n  margin-top: -52px !important;\r\n  color: #45341e !important;\r\n  margin-right: 10px;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\n.__preview_image_box[data-v-68ee6900] {\r\n  margin-left: 20px;\n}\n.modal-body[data-v-68ee6900] {\r\n  margin-top: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -71877,13 +71876,64 @@ var render = function() {
                                           ]
                                         ),
                                         _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                          },
+                                          [
+                                            _c(
+                                              "div",
+                                              { staticClass: "add_wishlist" },
+                                              [
+                                                _c("a", [
+                                                  _c("img", {
+                                                    attrs: {
+                                                      src:
+                                                        _vm.base_url_link +
+                                                        "images/icons/Quick_Heart.png"
+                                                    }
+                                                  }),
+                                                  _vm._v(" "),
+                                                  _c(
+                                                    "span",
+                                                    {
+                                                      staticStyle: {
+                                                        "margin-left": "10px",
+                                                        color: "#C9C9C9"
+                                                      }
+                                                    },
+                                                    [_vm._v("ADD TO WISHLIST")]
+                                                  )
+                                                ])
+                                              ]
+                                            )
+                                          ]
+                                        ),
+                                        _vm._v(" "),
+                                        _c(
+                                          "div",
+                                          {
+                                            staticClass:
+                                              "col-lg-12 col-md-12 col-sm-12 col-xs-12"
+                                          },
+                                          [
+                                            _c("div", { staticClass: "call" }, [
+                                              _c("img", {
+                                                attrs: {
+                                                  src:
+                                                    _vm.base_url_link +
+                                                    "images/icons/call_now.png"
+                                                }
+                                              })
+                                            ])
+                                          ]
+                                        ),
+                                        _vm._v(" "),
                                         _vm._m(3),
                                         _vm._v(" "),
-                                        _vm._m(4),
-                                        _vm._v(" "),
-                                        _vm._m(5),
-                                        _vm._v(" "),
-                                        _vm._m(6)
+                                        _vm._m(4)
                                       ])
                                     ])
                                   ]
@@ -71937,58 +71987,14 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "attribute-values" }, [
       _c("input", {
-        staticClass: "color_att",
-        attrs: { type: "radio", name: "gender", value: "male" }
+        attrs: {
+          type: "radio",
+          name: "gender",
+          id: "color_att_quick",
+          value: "male"
+        }
       })
     ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
-      [
-        _c("div", { staticClass: "add_wishlist" }, [
-          _c("a", [
-            _c("i", {
-              staticClass: "fa fa-heart fa-2x",
-              staticStyle: { color: "#CC8E46" }
-            }),
-            _c("sup", [_c("i", { staticClass: "fa fa-plus fa-sm" })]),
-            _vm._v(" "),
-            _c(
-              "span",
-              { staticStyle: { "margin-left": "10px", color: "#C9C9C9" } },
-              [_vm._v("ADD TO WISHLIST")]
-            )
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "col-lg-12 col-md-12 col-sm-12 col-xs-12" },
-      [
-        _c("div", { staticClass: "call-us" }, [
-          _c("div", { staticClass: "call-background" }, [
-            _c("div", { staticClass: "phone_icon" }, [
-              _c("i", { staticClass: "fa fa-phone" })
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "phn_num" }, [
-              _c("h4", [_vm._v("01768821248")])
-            ])
-          ])
-        ])
-      ]
-    )
   },
   function() {
     var _vm = this
@@ -92646,8 +92652,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -392,14 +392,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -1087,11 +1079,51 @@ var render = function() {
                             ]
                           ),
                           _vm._v(" "),
-                          _vm._m(2),
+                          _c(
+                            "div",
+                            { staticClass: "col-lg-12 col-md-12 col-xs-12" },
+                            [
+                              _c("div", { staticClass: "add_wishlist" }, [
+                                _c("a", [
+                                  _c("img", {
+                                    attrs: {
+                                      src:
+                                        _vm.base_url +
+                                        "images/icons/Quick_Heart.png"
+                                    }
+                                  }),
+                                  _vm._v(" "),
+                                  _c(
+                                    "span",
+                                    {
+                                      staticStyle: {
+                                        "margin-left": "10px",
+                                        color: "#C9C9C9"
+                                      }
+                                    },
+                                    [_vm._v("ADD TO WISHLIST")]
+                                  )
+                                ])
+                              ])
+                            ]
+                          ),
                           _vm._v(" "),
-                          _vm._m(3),
+                          _c(
+                            "div",
+                            { staticClass: "col-lg-12 col-md-12 col-xs-12" },
+                            [
+                              _c("div", { staticClass: "call" }, [
+                                _c("img", {
+                                  attrs: {
+                                    src:
+                                      _vm.base_url + "images/icons/call_now.png"
+                                  }
+                                })
+                              ])
+                            ]
+                          ),
                           _vm._v(" "),
-                          _vm._m(4)
+                          _vm._m(2)
                         ])
                       ])
                     ])
@@ -1156,7 +1188,7 @@ var render = function() {
                         staticClass: "how-to-buy",
                         class: { block: _vm.tab_content == 2 }
                       },
-                      [_vm._m(5)]
+                      [_vm._m(3)]
                     ),
                     _vm._v(" "),
                     _c(
@@ -1165,12 +1197,12 @@ var render = function() {
                         staticClass: "how-to-buy",
                         class: { block: _vm.tab_content == 3 }
                       },
-                      [_vm._m(6)]
+                      [_vm._m(4)]
                     )
                   ])
                 ]),
                 _vm._v(" "),
-                _vm._m(7),
+                _vm._m(5),
                 _vm._v(" "),
                 _c("TopSellingProducts"),
                 _vm._v(" "),
@@ -1211,46 +1243,6 @@ var staticRenderFns = [
         staticClass: "color_att",
         attrs: { type: "radio", name: "gender", value: "male" }
       })
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
-      _c("div", { staticClass: "add_wishlist" }, [
-        _c("a", [
-          _c("i", {
-            staticClass: "fa fa-heart fa-2x",
-            staticStyle: { color: "#CC8E46" }
-          }),
-          _c("sup", [_c("i", { staticClass: "fa fa-plus fa-sm" })]),
-          _vm._v(" "),
-          _c(
-            "span",
-            { staticStyle: { "margin-left": "10px", color: "#C9C9C9" } },
-            [_vm._v("ADD TO WISHLIST")]
-          )
-        ])
-      ])
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-lg-12 col-md-12 col-xs-12" }, [
-      _c("div", { staticClass: "call-us" }, [
-        _c("div", { staticClass: "call-background" }, [
-          _c("div", { staticClass: "phone_icon" }, [
-            _c("i", { staticClass: "fa fa-phone" })
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "phn_num" }, [
-            _c("h4", [_vm._v("01768821248")])
-          ])
-        ])
-      ])
     ])
   },
   function() {

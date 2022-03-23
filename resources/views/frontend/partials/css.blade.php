@@ -1936,7 +1936,7 @@ span.price-old {
 
     .single_product_img_container .single_product_image{
         width: 80%;
-        height: 100% ;
+        height: 443px ;
     }
 
     .discount {
@@ -2336,6 +2336,7 @@ span.price-old {
     /* preview images of products  */
     .preview_img_box_container{
         display: flex;
+        margin: 15px;
     }
     .__preview_image_box {
         width: 100px;
@@ -2347,7 +2348,7 @@ span.price-old {
         cursor: pointer;
         width: 70px;
         height: 96px;
-        margin: 0 15px;
+        margin: 0px 14px;
         text-align: center;
     }
 
@@ -2450,7 +2451,7 @@ span.price-old {
         }
         .product__color .color-swatch li {
         display: inline-block;
-        margin-right: 5px;
+        margin-right: 10px;
         vertical-align: top;
         }
 
@@ -2667,8 +2668,8 @@ span.price-old {
     .btn_buy_cart {
         color: #fff;
         transition: .1s ease;
-        height: 30px;
-        font-size: 13px;
+        height: 35px;
+        font-size: 14px;
         font-family: 'Montserrat';
         background: #CC8D46;
         font-weight: bold;
@@ -5549,6 +5550,10 @@ input[data-v-c157765e] {
 .detail_btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px;
+    background: #9F6A2D;
 }
 
 .checkout-title{
@@ -5859,13 +5864,15 @@ input[type="checkbox"]{
     width: 15px;
     height: 15px;
 }
-input[type="radio"]{
-    width: 15px;
-    height: 15px;
-}
-input .shop_checkbox{
+input[type="radio"] .shop_checkbox{
     border-radius: none !important;
 }
-
-
+.list-unstyled description{
+    margin-left: 13px;
+}
+input[type="radio"]{
+    width: 25px !important;
+    height: 25px !important;
+    margin: -5px 0 0 !important;
+}
 </style>
