@@ -14,7 +14,10 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="address-area">
                 <div class="address-icon">
-                  <i class="fa fa-map-marker" style="font-size:36px"></i>
+                  <img
+                  :src="base_url + 'images/icons/map.png'"
+                  alt=""
+                /> 
                 </div>
                 <div class="address-title">
                   <p>
@@ -28,10 +31,10 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="address-area">
                 <div class="address-icon">
-                  <i
-                    class="fa fa-volume-control-phone"
-                    style="font-size:36px"
-                  ></i>
+                  <img
+                  :src="base_url + 'images/icons/contact_phn.png'"
+                  alt=""
+                /> 
                 </div>
                 <div class="address-title">
                   <p>
@@ -46,7 +49,10 @@
             <div class="col-md-4 col-sm-4 col-xs-12">
               <div class="address-area">
                 <div class="address-icon">
-                  <i class="fa fa-envelope" style="font-size:36px"></i>
+                  <img
+                  :src="base_url + 'images/icons/contact_email.png'"
+                  alt=""
+                /> 
                 </div>
                 <div class="address-title">
                   <p>
@@ -218,6 +224,7 @@ export default {
       email: "",
       message: "",
       contact_info: "",
+      base_url: this.$store.state.image_base_link,
     };
   },
   methods: {

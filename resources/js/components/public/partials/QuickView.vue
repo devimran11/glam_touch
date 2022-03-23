@@ -8,7 +8,7 @@
     >
       <div class="modal-dialog modal-xl">
         <div class="row">
-          <div class="col-md-10 col-sm-12">
+          <div class="col-md-11 col-sm-11">
             <div class="modal-content">
               <div v-if="quick_loading" class="animator  text-center">
                 <i class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
@@ -427,8 +427,8 @@ export default {
   background: #00000073;
 }
 .quick_view_image {
-  width: 300px !important;
-  height: 350px !important;
+  width: 350px !important;
+  height: 442px !important;
 }
 
 .close_sign {
@@ -589,5 +589,8 @@ export default {
 }
 .__preview_image_box {
   margin-left: 20px;
+}
+.modal-body{
+  margin-top: 20px;
 }
 </style>

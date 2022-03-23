@@ -12,13 +12,14 @@
                     v-html="footer_setting.footer_description"
                     class="short_desc_footer"
                   ></p> -->
-                  <img src="storage/images/footer/logo.png" alt="">
+                  <img :src="base_url + 'images/footer/footer_logo.png'" alt="">
                   <div class="footer-info">
                     <p class="footer-number">+880 9639148048</p>
                     <p class="work_time">Worktime: SAT - FRI, 10AM - 11PM</p>
-                    <i class="fa fa-facebook-square fa-2x"></i> 
+                    <!-- <i class="fa fa-facebook-square fa-2x"></i> 
                     <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-                    <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i>
+                    <i class="fa fa-whatsapp fa-2x" aria-hidden="true"></i> -->
+                    <img :src="base_url + 'images/footer/footer_social.png'" alt="">
                   </div>
                 </li>
               </ul>
@@ -79,11 +80,11 @@
                 </li>
                 <br>
                 <li>
-                  <i class="fa fa-envelope"></i> info@glamtouchbd.com
+                  <img :src="base_url + 'images/footer/email.png'" alt=""> info@glamtouchbd.com
                 </li>
                 <br>
                 <li>
-                  <i class="fa fa-phone"></i> 01516161616 | 01516161616 
+                  <img :src="base_url + 'images/footer/call.png'" alt=""> 01516161616 | 01516161616 
                 </li>
                 <li>
                   
@@ -93,7 +94,7 @@
 
             <div class="column col-lg-3 col-md-3 col-sm-6 col-xs-6">
               <div class="facebook_page">
-                <img src="storage/images/footer/facebook_page.png" class="img-fluid" alt="">
+                <img :src="base_url + 'images/footer/facebook_page.png'" class="img-fluid" alt="">
               </div>
             </div>
 

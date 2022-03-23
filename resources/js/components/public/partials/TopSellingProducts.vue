@@ -49,18 +49,14 @@
                 <button class="btn btn-warning btn-sm carts">
                   <img
                     class="cart_bag"
-                    src="storage/images/icons/Untitled-2.png"
+                    src="storage/images/icons/cart.png"
                     alt=""
                   />
-                  <span style="margin-top: 2px;">ADD TO CART</span>
+                  <span>ADD TO CART</span>
                 </button>
-                <!-- <button class="btn btn-warning btn-sm carts">
-                  <img src="storage/images/icons/add_cart.png" alt="" />
-                  <span style="margin-top: 2px;">ADD TO CART</span>
-                </button> -->
                 <img
                   class="cart_love"
-                  src="storage/images/icons/love.png"
+                  src="storage/images/icons/heart.png"
                   alt=""
                 />
               </div>
@@ -111,14 +107,14 @@ export default {
 </script>
 <style scoped>
 .cart_bag {
-  width: 35px;
-  height: 30px;
+  max-width: 30px;
+  max-height: 22px;
   margin-top: 0px;
-  filter: invert(100%);
 }
 .cart_love {
-  width: 50px;
-  height: 50px;
+  width: 36px;
+  height: 32px;
   margin-top: 0px;
+  margin-left: 14px;
 }
 </style>

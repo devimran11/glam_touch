@@ -2576,6 +2576,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
     this.$store.dispatch("footer_setting");
@@ -2653,12 +2654,6 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToAr
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-//
-//
-//
-//
-//
-//
 //
 //
 //
@@ -8445,7 +8440,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".vld-shown {\r\n  overflow: hidden;\r\n}\r\n\r\n.vld-overlay {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  align-items: center;\r\n  display: none;\r\n  justify-content: center;\r\n  overflow: hidden;\r\n  z-index: 9999;\r\n}\r\n\r\n.vld-overlay.is-active {\r\n  display: flex;\r\n}\r\n\r\n.vld-overlay.is-full-page {\r\n  z-index: 9999;\r\n  position: fixed;\r\n}\r\n\r\n.vld-overlay .vld-background {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  background: #fff;\r\n  opacity: 0.5;\r\n}\r\n\r\n.vld-overlay .vld-icon, .vld-parent {\r\n  position: relative;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".vld-shown {\n  overflow: hidden;\n}\n\n.vld-overlay {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  align-items: center;\n  display: none;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 9999;\n}\n\n.vld-overlay.is-active {\n  display: flex;\n}\n\n.vld-overlay.is-full-page {\n  z-index: 9999;\n  position: fixed;\n}\n\n.vld-overlay .vld-background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  background: #fff;\n  opacity: 0.5;\n}\n\n.vld-overlay .vld-icon, .vld-parent {\n  position: relative;\n}\n\n", ""]);
 
 // exports
 
@@ -8464,7 +8459,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.nav-active {\r\n  display: block !important;\n}\n.sticky {\r\n  position: fixed;\r\n  top: 0;\r\n  width: 100%;\r\n  z-index: 9999999999999;\n}\n.q-i-d {\r\n  cursor: pointer;\n}\nul.p-image-name li {\r\n  padding: 0px 2px;\r\n  font-size: 12px;\n}\r\n", ""]);
+exports.push([module.i, "\n.nav-active {\r\n  display: block !important;\n}\n.sticky {\r\n  position: fixed;\r\n  top: 0;\r\n  width: 100%;\r\n  z-index: 9999999999999;\n}\n.q-i-d {\r\n  cursor: pointer;\n}\nul.p-image-name li {\r\n  padding: 0px 2px;\r\n  font-size: 12px;\n}\n.login_img{\r\n  height: 30px;\r\n  width: 30px;\n}\r\n", ""]);
 
 // exports
 
@@ -8483,7 +8478,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 300px !important;\r\n  height: 350px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 50px !important;\r\n  margin-top: -52px !important;\r\n  color: #45341e !important;\r\n  margin-right: 10px;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\n.__preview_image_box[data-v-68ee6900] {\r\n  margin-left: 20px;\n}\r\n", ""]);
+exports.push([module.i, "\n.modal_overlay[data-v-68ee6900] {\r\n  background: #00000073;\n}\n.quick_view_image[data-v-68ee6900] {\r\n  width: 350px !important;\r\n  height: 442px !important;\n}\n.close_sign[data-v-68ee6900] {\r\n  font-size: 50px !important;\r\n  margin-top: -52px !important;\r\n  color: #45341e !important;\r\n  margin-right: 10px;\n}\n.animator[data-v-68ee6900] {\r\n  margin-top: 100px;\r\n  padding: 100px;\n}\n.animator i[data-v-68ee6900] {\r\n  font-size: 70px;\n}\n.modal-body h4 p[data-v-68ee6900] {\r\n  margin-left: 20px !important;\n}\n.modal-dialog[data-v-68ee6900] {\r\n  width: 90% !important;\r\n  position: absolute;\r\n  left: 10%;\r\n  transition: 0.3s;\n}\n.quick_content[data-v-68ee6900] {\r\n  background: #fff;\n}\n.quick_description[data-v-68ee6900] {\r\n  font-size: 14px;\r\n  height: 250px;\r\n  overflow-y: auto;\n}\n.r_p_title[data-v-68ee6900] {\r\n  font-size: 12px;\n}\n.r_p_image[data-v-68ee6900] {\r\n  width: 110px;\r\n  height: 100px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900] {\r\n  margin-left: 35px;\r\n  border-radius: 5px;\n}\n.r_p_button[data-v-68ee6900]:hover {\r\n  border-radius: 50px;\r\n  background: #db3700;\n}\n.related_quick_row[data-v-587a0637][data-v-68ee6900] {\r\n  margin: 5px;\r\n  max-height: 180px;\r\n  overflow-y: scroll;\n}\n.r_quick_body[data-v-68ee6900] {\r\n  padding: 15px 10px;\n}\n@media screen and (max-width: 350px) {\n.related_quick_row[data-v-68ee6900] {\r\n    display: none;\n}\n.modal-dialog[data-v-68ee6900] {\r\n    margin-top: 10px !important;\r\n    width: 400px !important;\r\n    height: 512px;\n}\n.close_sign[data-v-68ee6900] {\r\n    margin-right: 145px !important;\r\n    font-size: 40px !important;\r\n    margin-top: -19px !important;\r\n    color: red !important;\n}\n.quick_view_image[data-v-68ee6900] {\r\n    width: 120px !important;\r\n    height: 110px !important;\r\n    margin-bottom: 26px !important;\r\n    margin-left: 50px;\n}\n.title[data-v-68ee6900] {\r\n    margin: 0px !important;\n}\n.modal-body .form-group[data-v-68ee6900] {\r\n    margin-bottom: 5px !important;\n}\n.modal-body ul[data-v-68ee6900] {\r\n    margin-top: -26px;\n}\n.modal-body b[data-v-68ee6900] {\r\n    font-weight: normal;\n}\n.modal-body .btn-lg[data-v-68ee6900] {\r\n    width: 35%;\r\n    margin-top: 5px !important;\r\n    margin-bottom: 5px !important;\r\n    margin-left: 56px !important;\r\n    padding: 5px 0px;\r\n    font-size: 14px;\r\n    border-radius: 5px;\n}\n.quick_description[data-v-68ee6900] {\r\n    font-size: 14px;\r\n    line-height: 15px;\r\n    margin-left: -30px;\n}\n.animator[data-v-68ee6900] {\r\n    margin-top: 10px;\r\n    padding: 10px;\n}\n.animator i[data-v-68ee6900] {\r\n    font-size: 20px;\n}\n.modal-body h4[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 14px !important;\n}\n.modal-body p span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    line-height: 10px;\n}\n.modal-body span[data-v-68ee6900] {\r\n    margin-left: 5px !important;\r\n    font-size: 10px !important;\r\n    margin-top: -10px;\n}\n.modal-body select[data-v-68ee6900],\r\n  input[data-v-68ee6900] {\r\n    width: 130px !important;\r\n    height: 30px !important;\r\n    margin-top: -30px;\r\n    margin-left: 56px;\n}\n}\n.col-md-2[data-v-68ee6900] {\r\n  margin-bottom: 25px;\n}\n.__preview_image_box[data-v-68ee6900] {\r\n  margin-left: 20px;\n}\n.modal-body[data-v-68ee6900]{\r\n  margin-top: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -69716,7 +69711,39 @@ var render = function() {
       _c("div", { staticClass: "fpart-first" }, [
         _c("div", { staticClass: "container" }, [
           _c("div", { staticClass: "row" }, [
-            _vm._m(0),
+            _c(
+              "div",
+              { staticClass: "contact col-lg-3 col-md-3 col-sm-12 col-xs-12" },
+              [
+                _c("ul", [
+                  _c("li", { staticClass: "address" }, [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.base_url + "images/footer/footer_logo.png",
+                        alt: ""
+                      }
+                    }),
+                    _vm._v(" "),
+                    _c("div", { staticClass: "footer-info" }, [
+                      _c("p", { staticClass: "footer-number" }, [
+                        _vm._v("+880 9639148048")
+                      ]),
+                      _vm._v(" "),
+                      _c("p", { staticClass: "work_time" }, [
+                        _vm._v("Worktime: SAT - FRI, 10AM - 11PM")
+                      ]),
+                      _vm._v(" "),
+                      _c("img", {
+                        attrs: {
+                          src: _vm.base_url + "images/footer/footer_social.png",
+                          alt: ""
+                        }
+                      })
+                    ])
+                  ])
+                ])
+              ]
+            ),
             _vm._v(" "),
             _c(
               "div",
@@ -69812,9 +69839,68 @@ var render = function() {
               ]
             ),
             _vm._v(" "),
-            _vm._m(1),
+            _c(
+              "div",
+              { staticClass: "column col-lg-3 col-md-3 col-sm-12 col-xs-12" },
+              [
+                _c("h5", { staticClass: "footer-color" }, [
+                  _vm._v("CONTACT INFO")
+                ]),
+                _vm._v(" "),
+                _c(
+                  "ul",
+                  {
+                    staticClass: "link_line",
+                    attrs: { id: "link_line_contact" }
+                  },
+                  [
+                    _vm._m(0),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("img", {
+                        attrs: {
+                          src: _vm.base_url + "images/footer/email.png",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" info@glamtouchbd.com\n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("br"),
+                    _vm._v(" "),
+                    _c("li", [
+                      _c("img", {
+                        attrs: {
+                          src: _vm.base_url + "images/footer/call.png",
+                          alt: ""
+                        }
+                      }),
+                      _vm._v(" 01516161616 | 01516161616 \n              ")
+                    ]),
+                    _vm._v(" "),
+                    _c("li")
+                  ]
+                )
+              ]
+            ),
             _vm._v(" "),
-            _vm._m(2),
+            _c(
+              "div",
+              { staticClass: "column col-lg-3 col-md-3 col-sm-6 col-xs-6" },
+              [
+                _c("div", { staticClass: "facebook_page" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: {
+                      src: _vm.base_url + "images/footer/facebook_page.png",
+                      alt: ""
+                    }
+                  })
+                ])
+              ]
+            ),
             _vm._v(" "),
             _c("div", { staticClass: "col-lg-12 col-md-12 col-sm-12" }, [
               _c("div", { staticClass: "payment-card" }, [
@@ -69839,102 +69925,15 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "contact col-lg-3 col-md-3 col-sm-12 col-xs-12" },
-      [
-        _c("ul", [
-          _c("li", { staticClass: "address" }, [
-            _c("img", {
-              attrs: { src: "storage/images/footer/logo.png", alt: "" }
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "footer-info" }, [
-              _c("p", { staticClass: "footer-number" }, [
-                _vm._v("+880 9639148048")
-              ]),
-              _vm._v(" "),
-              _c("p", { staticClass: "work_time" }, [
-                _vm._v("Worktime: SAT - FRI, 10AM - 11PM")
-              ]),
-              _vm._v(" "),
-              _c("i", { staticClass: "fa fa-facebook-square fa-2x" }),
-              _vm._v(" "),
-              _c("i", {
-                staticClass: "fa fa-instagram fa-2x",
-                attrs: { "aria-hidden": "true" }
-              }),
-              _vm._v(" "),
-              _c("i", {
-                staticClass: "fa fa-whatsapp fa-2x",
-                attrs: { "aria-hidden": "true" }
-              })
-            ])
-          ])
-        ])
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column col-lg-3 col-md-3 col-sm-12 col-xs-12" },
-      [
-        _c("h5", { staticClass: "footer-color" }, [_vm._v("CONTACT INFO")]),
-        _vm._v(" "),
-        _c(
-          "ul",
-          { staticClass: "link_line", attrs: { id: "link_line_contact" } },
-          [
-            _c("li", [
-              _c("i", {
-                staticClass: "fa fa-map-marker fa-2x",
-                attrs: { "aria-hidden": "true" }
-              }),
-              _vm._v(
-                " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam numquam repellat corrupti quis delectus!\n              "
-              )
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa fa-envelope" }),
-              _vm._v(" info@glamtouchbd.com\n              ")
-            ]),
-            _vm._v(" "),
-            _c("br"),
-            _vm._v(" "),
-            _c("li", [
-              _c("i", { staticClass: "fa fa-phone" }),
-              _vm._v(" 01516161616 | 01516161616 \n              ")
-            ]),
-            _vm._v(" "),
-            _c("li")
-          ]
-        )
-      ]
-    )
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "column col-lg-3 col-md-3 col-sm-6 col-xs-6" },
-      [
-        _c("div", { staticClass: "facebook_page" }, [
-          _c("img", {
-            staticClass: "img-fluid",
-            attrs: { src: "storage/images/footer/facebook_page.png", alt: "" }
-          })
-        ])
-      ]
-    )
+    return _c("li", [
+      _c("i", {
+        staticClass: "fa fa-map-marker fa-2x",
+        attrs: { "aria-hidden": "true" }
+      }),
+      _vm._v(
+        " Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed aliquam numquam repellat corrupti quis delectus!\n              "
+      )
+    ])
   }
 ]
 render._withStripped = true
@@ -69980,18 +69979,7 @@ var render = function() {
             _c("div", { staticClass: "col-md-10" }, [
               _c("div", { staticClass: "col-md-12" }, [
                 _c("div", { staticClass: "main-header-right" }, [
-                  _c("li", { staticClass: "mobile_menubar_header" }, [
-                    _c("i", {
-                      staticClass: "fa fa-bars",
-                      attrs: { id: "__icon_fa_menu" },
-                      on: {
-                        click: function($event) {
-                          $event.preventDefault()
-                          return _vm.menuShow($event)
-                        }
-                      }
-                    })
-                  ]),
+                  _vm._m(0),
                   _vm._v(" "),
                   _c("li", { staticClass: "mobile_menubar_search" }, [
                     _c("a", { on: { click: _vm.searchToggle } }, [
@@ -70001,7 +69989,14 @@ var render = function() {
                     _c(
                       "a",
                       { attrs: { href: "tel:+" + _vm.general_setting.phone } },
-                      [_c("i", { staticClass: "fa fa-phone" })]
+                      [
+                        _c("img", {
+                          attrs: {
+                            src: "storage/images/icons/call.png",
+                            alt: ""
+                          }
+                        })
+                      ]
                     )
                   ]),
                   _vm._v(" "),
@@ -70047,7 +70042,13 @@ var render = function() {
                           }
                         }),
                         _vm._v(" "),
-                        _vm._m(0),
+                        _c("a", { staticClass: "search-icon" }, [
+                          _c("img", {
+                            attrs: {
+                              src: _vm.base_url + "images/icons/search.png"
+                            }
+                          })
+                        ]),
                         _vm._v(" "),
                         _vm.search_products.length >= 1
                           ? _c("div", { staticClass: "search-content" }, [
@@ -70252,7 +70253,14 @@ var render = function() {
                               staticClass: "user_login",
                               attrs: { to: { name: "otpLogin" } }
                             },
-                            [_c("i", { staticClass: "fa fa-phone" })]
+                            [
+                              _c("img", {
+                                attrs: {
+                                  src: "storage/images/icons/header_call.png",
+                                  alt: ""
+                                }
+                              })
+                            ]
                           )
                         ],
                         1
@@ -70295,11 +70303,9 @@ var render = function() {
                         on: { click: _vm.UserLoginModal }
                       },
                       [
-                        _c("i", {
-                          staticClass: "fa fa-user",
-                          staticStyle: {
-                            color: "#fff",
-                            "text-shadow": "0 0 1px #494A4A"
+                        _c("img", {
+                          attrs: {
+                            src: _vm.base_url + "images/icons/login_join.png"
                           }
                         }),
                         _vm._v(
@@ -70656,7 +70662,10 @@ var render = function() {
       _vm._v(" "),
       _c("div", { staticClass: "cart-open", on: { click: _vm.cartOpen } }, [
         _c("div", { staticClass: "cart-total" }, [
-          _c("i", { staticClass: "fa fa-shopping-bag" }),
+          _c("img", {
+            staticClass: "cart_bag",
+            attrs: { src: _vm.base_url + "images/icons/cart_bag.png", alt: "" }
+          }),
           _vm._v(" "),
           _c("div", { staticClass: "cart-item-total" }, [
             _vm._v(_vm._s(_vm.cart.itemCount) + " items")
@@ -70982,14 +70991,26 @@ var render = function() {
             _c("div", { staticClass: "modal_header_login" }, [
               _c("div", { staticClass: "facebook-login-user" }, [
                 _c("button", { staticClass: "btn btn-sm facebook" }, [
-                  _c("i", { staticClass: "fa fa-facebook-square fa-lg" }),
+                  _c("img", {
+                    staticClass: "login_img",
+                    attrs: {
+                      src: _vm.base_url + "images/icons/fadsd.png",
+                      alt: ""
+                    }
+                  }),
                   _vm._v(" LOGIN WITH FACEBOOK\n          ")
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "google-login" }, [
                 _c("button", { staticClass: "btn btn-sm google" }, [
-                  _c("i", { staticClass: "fa fa-google fa-lg" }),
+                  _c("img", {
+                    staticClass: "login_img",
+                    attrs: {
+                      src: _vm.base_url + "images/icons/google_login.png",
+                      alt: ""
+                    }
+                  }),
                   _vm._v("LOGIN WITH GOOGLE\n          ")
                 ])
               ])
@@ -71093,8 +71114,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("a", { staticClass: "search-icon" }, [
-      _c("i", { staticClass: "fa fa-search" })
+    return _c("li", { staticClass: "mobile_menubar_header" }, [
+      _c("img", {
+        attrs: { src: "storage/images/icons/wishlist.png", alt: "" }
+      })
     ])
   },
   function() {
@@ -71329,7 +71352,7 @@ var render = function() {
             [
               _c("div", { staticClass: "modal-dialog modal-xl" }, [
                 _c("div", { staticClass: "row" }, [
-                  _c("div", { staticClass: "col-md-10 col-sm-12" }, [
+                  _c("div", { staticClass: "col-md-11 col-sm-11" }, [
                     _c("div", { staticClass: "modal-content" }, [
                       _vm.quick_loading
                         ? _c("div", { staticClass: "animator  text-center" }, [
@@ -92623,8 +92646,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

@@ -58,7 +58,7 @@
 
         <div class="row">
           <!--Left Part Start -->
-          <aside style="margin-bottom: 50px" class="col-xl-3 col-md-3 col-sm-3">
+          <aside style="margin-bottom: 50px;" class="col-xl-3 col-md-3 col-sm-3">
             <div class="categories hidden-xs bg-white shadow c-box">
               <h3 class="subtitle">FILTER BY</h3>
               <div class="filter_by_line"></div>
@@ -66,7 +66,7 @@
                 <p class="filter-color">COLOR</p>
                 <ul id="cat_accordion">
                   <li v-for="sub_category in sub_categories" v-if="sub_category.slug != $route.params.slug">
-                  <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                  <input type="checkbox" class="form-check-input shop_checkbox" id="exampleCheck1">
                   <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                   <router-link
                     :to="{name:'PublicSubCategory', params: { slug: sub_category.slug }}"

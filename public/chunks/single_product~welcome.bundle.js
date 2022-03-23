@@ -80,10 +80,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
@@ -146,7 +142,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.cart_bag[data-v-ad969a3e] {\r\n  width: 35px;\r\n  height: 30px;\r\n  margin-top: 0px;\r\n  filter: invert(100%);\n}\n.cart_love[data-v-ad969a3e] {\r\n  width: 50px;\r\n  height: 50px;\r\n  margin-top: 0px;\n}\r\n", ""]);
+exports.push([module.i, "\n.cart_bag[data-v-ad969a3e] {\r\n  max-width: 30px;\r\n  max-height: 22px;\r\n  margin-top: 0px;\n}\n.cart_love[data-v-ad969a3e] {\r\n  width: 36px;\r\n  height: 32px;\r\n  margin-top: 0px;\r\n  margin-left: 14px;\n}\r\n", ""]);
 
 // exports
 
@@ -299,24 +295,19 @@ var render = function() {
                                     _c("img", {
                                       staticClass: "cart_bag",
                                       attrs: {
-                                        src:
-                                          "storage/images/icons/Untitled-2.png",
+                                        src: "storage/images/icons/cart.png",
                                         alt: ""
                                       }
                                     }),
                                     _vm._v(" "),
-                                    _c(
-                                      "span",
-                                      { staticStyle: { "margin-top": "2px" } },
-                                      [_vm._v("ADD TO CART")]
-                                    )
+                                    _c("span", [_vm._v("ADD TO CART")])
                                   ]
                                 ),
                                 _vm._v(" "),
                                 _c("img", {
                                   staticClass: "cart_love",
                                   attrs: {
-                                    src: "storage/images/icons/love.png",
+                                    src: "storage/images/icons/heart.png",
                                     alt: ""
                                   }
                                 })

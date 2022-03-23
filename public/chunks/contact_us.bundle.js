@@ -218,6 +218,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -231,7 +237,8 @@ __webpack_require__.r(__webpack_exports__);
       name: "",
       email: "",
       message: "",
-      contact_info: ""
+      contact_info: "",
+      base_url: this.$store.state.image_base_link
     };
   },
   methods: {
@@ -366,7 +373,62 @@ var render = function() {
       _vm._v(" "),
       _c("frontend-header"),
       _vm._v(" "),
-      _vm._m(0),
+      _c("div", { attrs: { id: "container" } }, [
+        _c("div", { staticClass: "container" }, [
+          _c("div", { staticClass: "row" }, [
+            _c("div", { staticClass: "contact-page" }, [
+              _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-12" }, [
+                _c("div", { staticClass: "address-area" }, [
+                  _c("div", { staticClass: "address-icon" }, [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.base_url + "images/icons/map.png",
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(0)
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-12" }, [
+                _c("div", { staticClass: "address-area" }, [
+                  _c("div", { staticClass: "address-icon" }, [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.base_url + "images/icons/contact_phn.png",
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(1)
+                ])
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-12" }, [
+                _c("div", { staticClass: "address-area" }, [
+                  _c("div", { staticClass: "address-icon" }, [
+                    _c("img", {
+                      attrs: {
+                        src: _vm.base_url + "images/icons/contact_email.png",
+                        alt: ""
+                      }
+                    })
+                  ]),
+                  _vm._v(" "),
+                  _vm._m(2)
+                ])
+              ])
+            ]),
+            _vm._v(" "),
+            _vm._m(3),
+            _vm._v(" "),
+            _vm._m(4)
+          ])
+        ])
+      ]),
       _vm._v(" "),
       _c("frontend-footer")
     ],
@@ -378,224 +440,190 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { attrs: { id: "container" } }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "contact-page" }, [
-            _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-12" }, [
-              _c("div", { staticClass: "address-area" }, [
-                _c("div", { staticClass: "address-icon" }, [
-                  _c("i", {
-                    staticClass: "fa fa-map-marker",
-                    staticStyle: { "font-size": "36px" }
-                  })
-                ]),
+    return _c("div", { staticClass: "address-title" }, [
+      _c("p", [
+        _vm._v(
+          "\n                  98/2, Vista Garden (3rd Floor), Shenpara, Parbata,\n                  Mirpur-10, Dhaka-1216\n                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "address-title" }, [
+      _c("p", [
+        _vm._v("\n                  09639148048 "),
+        _c("br"),
+        _vm._v("\n                  01828-348048 | 01315-897884 "),
+        _c("br"),
+        _vm._v(
+          "\n                  01324-827121 | 01917-618628\n                "
+        )
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "address-title" }, [
+      _c("p", [_vm._v("\n                  info@gmail.com\n                ")])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "map" }, [
+      _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
+        _c("div", { staticClass: "full-map" }, [
+          _c("main", { staticClass: "app" }, [
+            _c("aside", { staticClass: "sidebar" }, [
+              _c("header", { staticClass: "sidebar-header" }, [
+                _c("h1", [_vm._v("PopularTO")]),
                 _vm._v(" "),
-                _c("div", { staticClass: "address-title" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n                  98/2, Vista Garden (3rd Floor), Shenpara, Parbata,\n                  Mirpur-10, Dhaka-1216\n                "
-                    )
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-12" }, [
-              _c("div", { staticClass: "address-area" }, [
-                _c("div", { staticClass: "address-icon" }, [
-                  _c("i", {
-                    staticClass: "fa fa-volume-control-phone",
-                    staticStyle: { "font-size": "36px" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "address-title" }, [
-                  _c("p", [
-                    _vm._v("\n                  09639148048 "),
-                    _c("br"),
-                    _vm._v("\n                  01828-348048 | 01315-897884 "),
-                    _c("br"),
-                    _vm._v(
-                      "\n                  01324-827121 | 01917-618628\n                "
-                    )
-                  ])
-                ])
-              ])
-            ]),
-            _vm._v(" "),
-            _c("div", { staticClass: "col-md-4 col-sm-4 col-xs-12" }, [
-              _c("div", { staticClass: "address-area" }, [
-                _c("div", { staticClass: "address-icon" }, [
-                  _c("i", {
-                    staticClass: "fa fa-envelope",
-                    staticStyle: { "font-size": "36px" }
-                  })
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "address-title" }, [
-                  _c("p", [
-                    _vm._v(
-                      "\n                  info@gmail.com\n                "
-                    )
-                  ])
-                ])
-              ])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "map" }, [
-            _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
-              _c("div", { staticClass: "full-map" }, [
-                _c("main", { staticClass: "app" }, [
-                  _c("aside", { staticClass: "sidebar" }, [
-                    _c("header", { staticClass: "sidebar-header" }, [
-                      _c("h1", [_vm._v("PopularTO")]),
-                      _vm._v(" "),
-                      _c("nav", { staticClass: "options" }, [
-                        _c("ul", { staticClass: "item-list" }, [
-                          _c("li", { staticClass: "item" }, [
-                            _c("a", { staticClass: "link" }, [_vm._v("Fries")])
-                          ]),
-                          _vm._v(" "),
-                          _c("li", { staticClass: "item active" }, [
-                            _c("a", { staticClass: "link" }, [
-                              _vm._v("Burgers")
-                            ])
-                          ])
-                        ])
-                      ])
+                _c("nav", { staticClass: "options" }, [
+                  _c("ul", { staticClass: "item-list" }, [
+                    _c("li", { staticClass: "item" }, [
+                      _c("a", { staticClass: "link" }, [_vm._v("Fries")])
+                    ]),
+                    _vm._v(" "),
+                    _c("li", { staticClass: "item active" }, [
+                      _c("a", { staticClass: "link" }, [_vm._v("Burgers")])
                     ])
-                  ]),
-                  _vm._v(" "),
-                  _c("section", { staticClass: "map-area" }, [
-                    _c("iframe", {
-                      staticStyle: { border: "0" },
-                      attrs: {
-                        src:
-                          "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5164.845853240233!2d90.37104199665416!3d23.743901361370174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf95edb05433%3A0x1da68b6f2e2e82a8!2sGlamTouch!5e0!3m2!1sen!2sbd!4v1647454372232!5m2!1sen!2sbd",
-                        width: "100%",
-                        height: "420",
-                        allowfullscreen: "",
-                        loading: "lazy"
-                      }
-                    })
                   ])
                 ])
               ])
+            ]),
+            _vm._v(" "),
+            _c("section", { staticClass: "map-area" }, [
+              _c("iframe", {
+                staticStyle: { border: "0" },
+                attrs: {
+                  src:
+                    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5164.845853240233!2d90.37104199665416!3d23.743901361370174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755bf95edb05433%3A0x1da68b6f2e2e82a8!2sGlamTouch!5e0!3m2!1sen!2sbd!4v1647454372232!5m2!1sen!2sbd",
+                  width: "100%",
+                  height: "420",
+                  allowfullscreen: "",
+                  loading: "lazy"
+                }
+              })
+            ])
+          ])
+        ])
+      ])
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
+      _c("div", { staticClass: "get_in_touch" }, [
+        _c("h3", { staticClass: "get_title" }, [_vm._v("GET IN TOUCH")]),
+        _vm._v(" "),
+        _c("div", { staticClass: "get_line" }),
+        _vm._v(" "),
+        _c("form", { staticClass: "form-horizontal" }, [
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              { staticClass: "control-label col-sm-2", attrs: { for: "sub" } },
+              [_vm._v("Subject:")]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-10" }, [
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "text",
+                  id: "sub",
+                  placeholder: "Customer Service"
+                }
+              })
             ])
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
-            _c("div", { staticClass: "get_in_touch" }, [
-              _c("h3", { staticClass: "get_title" }, [_vm._v("GET IN TOUCH")]),
-              _vm._v(" "),
-              _c("div", { staticClass: "get_line" }),
-              _vm._v(" "),
-              _c("form", { staticClass: "form-horizontal" }, [
-                _c("div", { staticClass: "form-group" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label col-sm-2",
-                      attrs: { for: "sub" }
-                    },
-                    [_vm._v("Subject:")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-10" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "text",
-                        id: "sub",
-                        placeholder: "Customer Service"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label col-sm-2",
-                      attrs: { for: "subject" }
-                    },
-                    [_vm._v("Email Address:")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-10" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "email",
-                        id: "subject",
-                        placeholder: "Your@email.com"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label col-sm-2",
-                      attrs: { for: "subject" }
-                    },
-                    [_vm._v("Attachment:")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-10" }, [
-                    _c("input", {
-                      staticClass: "form-control",
-                      attrs: {
-                        type: "file",
-                        id: "subject",
-                        placeholder: "CHOOSE FILE"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c(
-                    "label",
-                    {
-                      staticClass: "control-label col-sm-2",
-                      attrs: { for: "message" }
-                    },
-                    [_vm._v("Message:")]
-                  ),
-                  _vm._v(" "),
-                  _c("div", { staticClass: "col-sm-10" }, [
-                    _c("textarea", {
-                      staticClass: "form-control",
-                      attrs: {
-                        name: "message",
-                        id: "message",
-                        cols: "",
-                        rows: "5",
-                        placeholder: "How can we help?"
-                      }
-                    })
-                  ])
-                ]),
-                _vm._v(" "),
-                _c("div", { staticClass: "form-group" }, [
-                  _c("div", { staticClass: "col-sm-offset-2 col-sm-10" }, [
-                    _c(
-                      "button",
-                      {
-                        staticClass: "btn btn-default contact_btn",
-                        attrs: { type: "submit" }
-                      },
-                      [_vm._v("SEND")]
-                    )
-                  ])
-                ])
-              ])
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              {
+                staticClass: "control-label col-sm-2",
+                attrs: { for: "subject" }
+              },
+              [_vm._v("Email Address:")]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-10" }, [
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "email",
+                  id: "subject",
+                  placeholder: "Your@email.com"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              {
+                staticClass: "control-label col-sm-2",
+                attrs: { for: "subject" }
+              },
+              [_vm._v("Attachment:")]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-10" }, [
+              _c("input", {
+                staticClass: "form-control",
+                attrs: {
+                  type: "file",
+                  id: "subject",
+                  placeholder: "CHOOSE FILE"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c(
+              "label",
+              {
+                staticClass: "control-label col-sm-2",
+                attrs: { for: "message" }
+              },
+              [_vm._v("Message:")]
+            ),
+            _vm._v(" "),
+            _c("div", { staticClass: "col-sm-10" }, [
+              _c("textarea", {
+                staticClass: "form-control",
+                attrs: {
+                  name: "message",
+                  id: "message",
+                  cols: "",
+                  rows: "5",
+                  placeholder: "How can we help?"
+                }
+              })
+            ])
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "form-group" }, [
+            _c("div", { staticClass: "col-sm-offset-2 col-sm-10" }, [
+              _c(
+                "button",
+                {
+                  staticClass: "btn btn-default contact_btn",
+                  attrs: { type: "submit" }
+                },
+                [_vm._v("SEND")]
+              )
             ])
           ])
         ])

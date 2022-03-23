@@ -44,7 +44,10 @@ $color=App\Models\BackgroundAndColor::first();
 
     a{
         color: var(--primary-text-color) ;
-        font-family: 'Poppins', sans-serif;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 14px;
+        color: #191919;
     }
     a:hover{
         text-decoration: none;
@@ -175,7 +178,7 @@ $color=App\Models\BackgroundAndColor::first();
     .cart-total {
         background: #21180F;
         width: 100%;
-        padding: 0px;
+        padding: 5px;
         font-size: 15px;
         color: #F9AF5F;
     }
@@ -589,16 +592,19 @@ ul.side-nav li:hover>.left-sub-menu {
     transition: .5s;
     margin-bottom: 3.5%;
 }
-.colapse-cart{
+.colapse-cart {
     width: 350px;
-    height: 84%;
+    height: 100%;
+    margin-bottom: 0px;
+    margin-top: 0px !important;
 }
 .cart-header {
     padding: 12px 15px;
     background: #E4E0E1;
-   text-transform: uppercase;
+    text-transform: uppercase;
     font-weight: bold;
     color: var(--primary-color);
+    margin-bottom: 49px;
 }
 /* .cart-header {
     padding: 1px 15px;
@@ -648,7 +654,7 @@ ul.side-nav li:hover>.left-sub-menu {
    /* background: var(--primary-color); */
    background: #AA8153;
     text-align: center;
-    height: 95px;
+    height: 102px;
     cursor: pointer;
 }
 .cart-open i {
@@ -1188,7 +1194,7 @@ span.price-old {
 }
 
     #footer{
-        margin-top: 30px;
+        margin-top: 0px;
     }
     #footer .fpart-first {
         padding-bottom: 10px !important;
@@ -1216,10 +1222,10 @@ span.price-old {
     }
 
     #footer .link_line li {
-        color: #d0d0d0;
-        font-family: 'Montserrat' !important;
-        font-weight: Regular;
-        font-size: 14px;
+        color: #848383;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 17px;
         margin-left: -40px; 
     }
 
@@ -1743,7 +1749,7 @@ span.price-old {
 
     .content_card {
         width: 290px;
-        height: 540px;
+        height: 516px;
         transition: .1s ;
     }
 
@@ -1766,7 +1772,8 @@ span.price-old {
     }
 
     .price{
-        margin-left: 5px;
+        margin-left: 4px;
+        margin-bottom: 2px;
     }
 
     /* .content_link:hover{
@@ -2711,7 +2718,7 @@ span.price-old {
         }
 
       .single_p_name {
-            margin-top: 2px;
+            margin-top: 0px;
             font-size: 20px;
             font-weight: 400;
             font-family: 'Montserrat', sans-serif;
@@ -2834,9 +2841,10 @@ span.price-old {
 
     .box-category ul li a {
         font-family: 'Montserrat';
-        font-size: 14px;
+        font-size: 17px;
         font-weight: 400;
         margin-left: 5px;
+        color: #191919;
     }
 
     .box-category ul li:hover {
@@ -5256,9 +5264,8 @@ sup {
 .footer-number{
     color: #cc8e46;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
-    font-size: 30px;
-    font-weight: 600;
+    font-size: 26px;
+    font-weight: bold;
 }
 .gown_kurtis{
     margin-top: 10px;
@@ -5273,8 +5280,9 @@ sup {
     float: right;
 }
 .breadcrumb{
-    margin-left: 30px;
+    margin-left: 85px;
     background-color: white;
+    margin-top: 27px;
 }
 .filter-color{
     font-weight: bold;
@@ -5431,6 +5439,7 @@ input[data-v-c157765e] {
 .modal-body{
     height: 520px;
     overflow-y: auto;
+    margi
 }
 .coupon_top{
     margin-top: 28px;
@@ -5464,10 +5473,12 @@ input[data-v-c157765e] {
     color: #B3B5B8;
     margin-top: 15px;
     float: left;
-    margin-left: 20px;
+    width: 80px;
 }
 .single_img_view{
     border: 1px solid #B3B5B8;
+    width: 525px;
+    height: 445px;
 }
 .quick_preview_img{
     margin-left: 85px;
@@ -5489,6 +5500,9 @@ input[data-v-c157765e] {
     font-size: 14px;
     font-weight: bold;
     background: #cc8e46;
+    /* height: 34px; */
+    padding: 2px 7px;
+    padding-bottom: 0px !important;
 }
 .cart_amount h5{
     font-family: 'Montserrat', sans-serif;
@@ -5501,6 +5515,7 @@ input[data-v-c157765e] {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 18px;
+    margin-bottom: 25px;
 }
 .attribute-values{
     margin-left: 5px;
@@ -5558,11 +5573,14 @@ input[data-v-c157765e] {
 }
 .facebook-login{
     float: left;
-    margin-left: 0px;
+    margin-left: 77px;
+    margin-top: 3px;
 }
 .google-login{
     float: left;
-    margin-left: 15px;
+    margin-left: 56px;
+    margin-top: 5px;
+
 }
 .login{
     padding: 15px;
@@ -5670,11 +5688,11 @@ input[data-v-c157765e] {
     margin: 0;
 }
 .contact-page{
-    max-width: 90%;
+    max-width: 100%;
     margin: 15px auto;
 }
 .address-area{
-    border: 2px solid #9B9B9B;
+    border: 3px solid #959595;
     padding: 25px 20px;
     max-width: 85%;
     border-radius: 5px;
@@ -5684,9 +5702,14 @@ input[data-v-c157765e] {
 .address-icon{
     text-align: center;
     margin-bottom: 11px;
+    margin-top: 10px;
 }
-.address-title{
+.address-title p{
     text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: #505050;
 }
 
 .app {
@@ -5707,11 +5730,11 @@ input[data-v-c157765e] {
   flex-basis: 100%;
 }
 .full-map{
-    width: 86%;
-    margin: 30px auto;
+    width: 95%;
+    margin: 35px auto;
 }
 .get_in_touch{
-    width: 60%;
+    width: 80%;
     margin: 20px auto;
     text-align: center;
 }
@@ -5756,13 +5779,14 @@ input[data-v-c157765e] {
     width: 80px;
 }
 .modal_header_login{
-    height: 45px;
+    height: 65px;
     padding: 10px;
     background: #E8E8E8;
 }
 .facebook-login-user{
     float: left;
-    margin-left: 100px;
+    margin-left: 80px;
+    margin-top: 5px;
 }
 .login_form{
     width: 45%;
@@ -5825,6 +5849,22 @@ input[data-v-c157765e] {
 }
 hr{
     border: 1px solid#d9d9d9;
+}
+
+.contact ul{
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+}
+input[type="checkbox"]{
+    width: 15px;
+    height: 15px;
+}
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+}
+input .shop_checkbox{
+    border-radius: none !important;
 }
 
 

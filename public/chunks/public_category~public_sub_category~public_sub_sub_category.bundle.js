@@ -210,6 +210,15 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -224,6 +233,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
+      base_url_link: this.$store.state.image_base_link,
       quick_v_product_id: "",
       grid_view: true,
       filter_by: 'Default'
@@ -268,7 +278,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.v-lazy-image[data-v-22485cb8] {\r\n  filter: blur(1px);\r\n  transition: filter 0.3s;\n}\n.v-lazy-image-loaded[data-v-22485cb8] {\r\n  filter: blur(0);\n}\r\n", ""]);
+exports.push([module.i, "\n.v-lazy-image[data-v-22485cb8] {\r\n  filter: blur(1px);\r\n  transition: filter 0.3s;\n}\n.v-lazy-image-loaded[data-v-22485cb8] {\r\n  filter: blur(0);\n}\n.cart_bag[data-v-22485cb8] {\r\n  max-width: 30px;\r\n  max-height: 22px;\r\n  margin-top: 0px;\n}\n.cart_love[data-v-22485cb8] {\r\n  width: 36px;\r\n  height: 32px;\r\n  margin-top: 0px;\r\n  margin-left: 14px;\n}\r\n", ""]);
 
 // exports
 
@@ -484,7 +494,45 @@ var render = function() {
                           ])
                         ]),
                         _vm._v(" "),
-                        _vm._m(1, true)
+                        _c(
+                          "div",
+                          {
+                            staticClass:
+                              "add-to-cart d-flex justify-content-center"
+                          },
+                          [
+                            _c(
+                              "button",
+                              { staticClass: "btn btn-warning btn-sm carts" },
+                              [
+                                _c("img", {
+                                  staticClass: "cart_bag",
+                                  attrs: {
+                                    src:
+                                      _vm.base_url_link +
+                                      "images/icons/cart.png",
+                                    alt: ""
+                                  }
+                                }),
+                                _vm._v(" "),
+                                _c(
+                                  "span",
+                                  { staticStyle: { "margin-top": "2px" } },
+                                  [_vm._v("ADD TO CART")]
+                                )
+                              ]
+                            ),
+                            _vm._v(" "),
+                            _c("img", {
+                              staticClass: "cart_love",
+                              attrs: {
+                                src:
+                                  _vm.base_url_link + "images/icons/heart.png",
+                                alt: ""
+                              }
+                            })
+                          ]
+                        )
                       ],
                       1
                     ),
@@ -583,7 +631,7 @@ var render = function() {
                     _c("ul", { attrs: { id: "cat_accordion_responsive" } }, [
                       _c("li", [
                         _c("input", {
-                          staticClass: "form-check-input filter-checkbox",
+                          staticClass: "form-check-input shop_checkbox",
                           attrs: { type: "checkbox", id: "exampleCheck1" }
                         }),
                         _vm._v(" "),
@@ -602,7 +650,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("li", [
                         _c("input", {
-                          staticClass: "form-check-input filter-checkbox",
+                          staticClass: "form-check-input shop_checkbox",
                           attrs: { type: "checkbox", id: "exampleCheck1" }
                         }),
                         _vm._v(" "),
@@ -623,7 +671,7 @@ var render = function() {
                       _vm._v(" "),
                       _c("li", [
                         _c("input", {
-                          staticClass: "form-check-input filter-checkbox",
+                          staticClass: "form-check-input shop_checkbox",
                           attrs: { type: "checkbox", id: "exampleCheck1" }
                         }),
                         _vm._v(" "),
@@ -659,7 +707,7 @@ var render = function() {
                     _c("ul", { attrs: { id: "cat_accordion_category" } }, [
                       _c("li", [
                         _c("input", {
-                          staticClass: "form-check-input filter-checkbox",
+                          staticClass: "form-check-input shop_checkbox",
                           attrs: { type: "checkbox", id: "exampleCheck1" }
                         }),
                         _vm._v(
@@ -780,30 +828,6 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "sort" }, [_c("p", [_vm._v("Sort by: ")])])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "add-to-cart d-flex justify-content-center" },
-      [
-        _c("button", { staticClass: "btn btn-warning btn-sm carts" }, [
-          _c("i", { staticClass: "fa fa-solid fa fa-cart-arrow-down fa-lg" }),
-          _vm._v(" "),
-          _c("span", { staticStyle: { "margin-top": "2px" } }, [
-            _vm._v("ADD TO CART")
-          ])
-        ]),
-        _vm._v(" "),
-        _c("i", {
-          staticClass: "fa fa-heart fa-2x",
-          staticStyle: { color: "#CC8E46", "margin-left": "10px" }
-        }),
-        _c("sup", [_c("i", { staticClass: "fa fa-plus fa-sm" })])
-      ]
-    )
   }
 ]
 render._withStripped = true

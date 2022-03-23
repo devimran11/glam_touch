@@ -254,6 +254,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -869,12 +871,14 @@ var render = function() {
         _vm._v(" "),
         _c("div", [_c("SessionalAndOccationalCampaign")], 1),
         _vm._v(" "),
-        _c(
-          "div",
-          { staticClass: "row suggetion_product_row" },
-          [_vm._m(4), _vm._v(" "), _c("TopSellingProducts")],
-          1
-        ),
+        _c("div", { staticClass: "new_arrival_section" }, [
+          _c(
+            "div",
+            { staticClass: "row new_product_row" },
+            [_vm._m(4), _vm._v(" "), _c("TopSellingProducts")],
+            1
+          )
+        ]),
         _vm._v(" "),
         _vm._m(5),
         _vm._v(" "),

@@ -20,17 +20,14 @@
             <div class="col-md-12">
               <div class="main-header-right">
                 <li class="mobile_menubar_header">
-                  <i
-                    @click.prevent="menuShow"
-                    class="fa fa-bars"
-                    id="__icon_fa_menu"
-                  ></i>
+                  <img src="storage/images/icons/wishlist.png" alt="">
                 </li>
                 <li class="mobile_menubar_search">
                   <a @click="searchToggle"><i class="fa fa-search"></i></a>
                   <a :href="'tel:+' + general_setting.phone"
-                    ><i class="fa fa-phone"></i
-                  ></a>
+                    >
+                    <img src="storage/images/icons/call.png" alt="">
+                  </a>
                 </li>
 
                 <li>
@@ -48,7 +45,7 @@
                       v-model="search"
                       placeholder="Search for product..."
                     />
-                    <a class="search-icon"><i class="fa fa-search"></i></a>
+                    <a class="search-icon"> <img :src="base_url + 'images/icons/search.png'" /></a>
                     <div
                       class="search-content"
                       v-if="search_products.length >= 1"
@@ -140,7 +137,7 @@
                 </li>
                 <li v-else>
                   <router-link class="user_login" :to="{ name: 'otpLogin' }">
-                    <i class="fa fa-phone"></i>
+                    <img src="storage/images/icons/header_call.png" alt="">
                   </router-link>
                 </li>
 
@@ -163,23 +160,9 @@
                     style="cursor: pointer"
                     @click="UserLoginModal"
                   >
-                    <i
-                      class="fa fa-user"
-                      style="color: #fff; text-shadow: 0 0 1px #494A4A;"
-                    ></i>
+                     <img :src="base_url + 'images/icons/login_join.png'" />
                     Login / Join
                   </button>
-                  <!-- <a
-                    class="merchant_login"
-                    target="_blank"
-                    v-on:click="UserLoginModal"
-                  >
-                    <i
-                      class="fa fa-user"
-                      style="color: #fff; text-shadow: 0 0 1px #494A4A;"
-                    ></i>
-                    Login / Join</a
-                  > -->
                 </li>
               </div>
             </div>
@@ -355,7 +338,12 @@
 
     <div class="cart-open" @click="cartOpen">
       <div class="cart-total">
-        <i class="fa fa-shopping-bag"></i>
+        <!-- <i class="fa fa-shopping-bag"></i> -->
+        <img
+          class="cart_bag"
+          :src="base_url + 'images/icons/cart_bag.png'"
+          alt=""
+        />
         <div class="cart-item-total">{{ cart.itemCount }} items</div>
       </div>
       <div class="cart_amount">
@@ -517,12 +505,18 @@
         <div class="modal_header_login">
           <div class="facebook-login-user">
             <button class="btn btn-sm facebook">
-              <i class="fa fa-facebook-square fa-lg"></i> LOGIN WITH FACEBOOK
+               <img class="login_img"
+                  :src="base_url + 'images/icons/fadsd.png'"
+                  alt=""
+                /> LOGIN WITH FACEBOOK
             </button>
           </div>
           <div class="google-login">
             <button class="btn btn-sm google">
-              <i class="fa fa-google fa-lg"></i>LOGIN WITH GOOGLE
+               <img class="login_img"
+                  :src="base_url + 'images/icons/google_login.png'"
+                  alt=""
+                />LOGIN WITH GOOGLE
             </button>
           </div>
         </div>
@@ -858,5 +852,9 @@ export default {
 ul.p-image-name li {
   padding: 0px 2px;
   font-size: 12px;
+}
+.login_img{
+  height: 30px;
+  width: 30px;
 }
 </style>

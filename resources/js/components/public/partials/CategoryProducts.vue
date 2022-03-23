@@ -63,8 +63,17 @@
               <span class="price-new"> &#2547; {{ product.price }}</span>
           </p>
           <div class="add-to-cart d-flex justify-content-center">
-              <button class="btn btn-warning btn-sm carts"> <i class="fa fa-solid fa fa-cart-arrow-down fa-lg"></i> <span style="margin-top: 2px;">ADD TO CART</span></button>
-              <i class="fa fa-heart fa-2x" style="color: #CC8E46; margin-left: 10px"></i><sup><i class="fa fa-plus fa-sm"></i></sup>
+              <button class="btn btn-warning btn-sm carts"> 
+                <img
+                    class="cart_bag"
+                    :src="base_url_link + 'images/icons/cart.png'"
+                    alt=""
+                  /> <span style="margin-top: 2px;">ADD TO CART</span></button>
+              <img
+                  class="cart_love"
+                  :src="base_url_link + 'images/icons/heart.png'"
+                  alt=""
+                />
             </div>
           </div>
 
@@ -113,19 +122,19 @@
               <div class="box-category-filter">
                 <ul id="cat_accordion_responsive">
                     <li>
-                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input shop_checkbox" id="exampleCheck1">
                     <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     Red(55)
                   </li>
 
                    <li>
-                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input shop_checkbox" id="exampleCheck1">
                     <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     Black(55)
                   </li>
 
                    <li>
-                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input shop_checkbox" id="exampleCheck1">
                     <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                     Yellow(55)
                   </li>
@@ -136,7 +145,7 @@
                 <h4 class="filter-color">CATEGORY <span style="float: right; font-weight: 400">Clear</span></h4>
                 <ul id="cat_accordion_category">
                     <li>
-                    <input type="checkbox" class="form-check-input filter-checkbox" id="exampleCheck1">
+                    <input type="checkbox" class="form-check-input shop_checkbox" id="exampleCheck1">
                     Long Gown(20)
                   </li>
                 </ul>
@@ -212,6 +221,7 @@ export default {
   data() {
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
+      base_url_link: this.$store.state.image_base_link,
       quick_v_product_id: "",
       grid_view: true,
       filter_by:'Default',
@@ -253,5 +263,16 @@ export default {
 
 .v-lazy-image-loaded {
   filter: blur(0);
+}
+.cart_bag {
+  max-width: 30px;
+  max-height: 22px;
+  margin-top: 0px;
+}
+.cart_love {
+  width: 36px;
+  height: 32px;
+  margin-top: 0px;
+  margin-left: 14px;
 }
 </style>

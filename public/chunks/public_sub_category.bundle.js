@@ -434,7 +434,7 @@ var render = function() {
                                   [
                                     _c("input", {
                                       staticClass:
-                                        "form-check-input filter-checkbox",
+                                        "form-check-input shop_checkbox",
                                       attrs: {
                                         type: "checkbox",
                                         id: "exampleCheck1"

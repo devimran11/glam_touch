@@ -129,16 +129,18 @@
 
 
 
-      <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-xs-12 text-center ">
-          <h4 class="section_title">NEW ARRIVAL PRODUCTS</h4>
-          <br>
-          <hr>
-          <div class="line"></div>
-        </div>
+      <div class="new_arrival_section">
+        <div class="row new_product_row">
+          <div class="col-lg-12 col-md-12 col-xs-12 text-center ">
+            <h4 class="section_title">NEW ARRIVAL PRODUCTS</h4>
+            <br>
+            <hr>
+            <div class="line"></div>
+          </div>
 
-        <!-- <SuggestProducts /> -->
-        <TopSellingProducts />
+          <!-- <SuggestProducts /> -->
+          <TopSellingProducts />
+        </div>
       </div>
 
 
