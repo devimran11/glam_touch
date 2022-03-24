@@ -122,28 +122,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -275,7 +253,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.search-box{\n\n    margin-top: 20px;\n}\n.btn_search{\n\n     background: #FF4D03;\n     color:#fff;\n     border:1px dashed ;\n}\n.product-card-footer {\n  padding:0px;\n}\n.btnQuick:hover{\n\n   background: #ff4d03;\n}\n\n\n", ""]);
+exports.push([module.i, "\n.search-box{\n\n    margin-top: 20px;\n}\n.btn_search{\n\n     background: #FF4D03;\n     color:#fff;\n     border:1px dashed ;\n}\n.product-card-footer {\n  padding:0px;\n}\n.btnQuick:hover{\n\n   background: #ff4d03;\n}\ninput[type=\"radio\"]{\n    width: 16px !important;\n    height: 16px !important;\n    margin: 4px 8px 0 !important;\n}\ninput[id=\"exampleCheck1\"] + label {\n  display: inline-block;\n  width: 14px;\n  height: 14px;\n  border: 2px solid #bcbcbc;\n  border-radius: 0px;\n  cursor: pointer;\n}\ninput[id=\"exampleCheck1\"]:checked + label:after {\n  position: relative;\n  top: -4px;\n  left: 2px;\n  content: '\\2714';\n  font-size: 14px;\n}\ninput[id=\"exampleCheck1\"] {\n  display: block;\n}\n\n", ""]);
 
 // exports
 
@@ -433,8 +411,7 @@ var render = function() {
                                   "li",
                                   [
                                     _c("input", {
-                                      staticClass:
-                                        "form-check-input shop_checkbox",
+                                      staticClass: "form-check-input",
                                       attrs: {
                                         type: "checkbox",
                                         id: "exampleCheck1"
@@ -442,8 +419,7 @@ var render = function() {
                                     }),
                                     _vm._v(" "),
                                     _c("input", {
-                                      staticClass:
-                                        "form-check-input filter-radio",
+                                      staticClass: "form-check-input",
                                       attrs: {
                                         type: "radio",
                                         name: "exampleRadios",

@@ -24,10 +24,17 @@
                         <p>Returning customer? <strong>Click here to login</strong></p>
                     </div>
                     <div class="facebook-login">
-                        <button class="btn btn-sm facebook"> <i class="fa fa-facebook-square fa-lg"></i> LOGIN WITH FACEBOOK </button>
+                        <button class="btn btn-sm facebook"> 
+                          <img class="login_img"
+                          :src="base_url + 'images/icons/Checkout-Page_FB.png'"
+                          alt=""
+                        /> LOGIN WITH FACEBOOK </button>
                     </div>
                     <div class="google-login">
-                        <button class="btn btn-sm google"> <i class="fa fa-google fa-lg"></i>LOGIN WITH GOOGLE</button>
+                        <button class="btn btn-sm google"> <img class="login_img"
+                          :src="base_url + 'images/icons/Checkout-Page_Google.png'"
+                          alt=""
+                        /> LOGIN WITH GOOGLE</button>
                     </div>
                   </div>
                 </div>
@@ -37,10 +44,16 @@
               <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
                 <div class="custom-box">
                   <h3 class="title">DELIVERY AND & BILLING INFO</h3>
+                  <!-- <form action="/action_page.php">
+                    <div class="form-group custom_input">
+                      <label for="email" class="custom_label">Email address*</label>
+                      <input type="email" class="form-control" id="email">
+                    </div>
+                  </form> -->
                   <form @submit.prevent="submitOrder">
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label class="control-label" for="name">Name<b class="text-danger">*</b></label>
+                        <label class="control-label custom_label" for="name">Name<b class="text-danger">*</b></label>
                         <input
                           name="name"
                           required
@@ -52,10 +65,10 @@
                         />
                         <has-error :form="form" field="name"></has-error>
                       </div>
-                     </div>
+                    </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label class="control-label" for="mobile_no">Phone Number <b class="text-danger">*</b></label>
+                        <label class="control-label custom_label" for="mobile_no">Phone Number <b class="text-danger">*</b></label>
                         <input
                           
                           name="mobile_no"
@@ -72,7 +85,7 @@
                      </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label class="control-label" for="input-password">Address <b class="text-danger">*</b></label>
+                        <label class="control-label custom_label" for="input-password">Address <b class="text-danger">*</b></label>
                         <input
                           name="address"
                           placeholder="Detail Address"
@@ -86,7 +99,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label class="control-label" for="input-email">District <b class="text-danger">*</b></label>
+                        <label class="control-label custom_label" for="input-email">District <b class="text-danger">*</b></label>
                         <select
                           name="city"
                         :class="{ 'is-invalid': form.errors.has('city') }"
@@ -107,7 +120,7 @@
                     </div>
                     <div class="col-md-6">
                       <div class="form-group">
-                        <label>Thana <b class="text-danger">*</b></label>
+                        <label class="custom_label">Thana <b class="text-danger">*</b></label>
                         <select @change="validation" class="form-control" name="sub_city"  :class="{ 'is-invalid': form.errors.has('sub_city') }" v-model="form.sub_city">
                           <option disabled value="">Select Thana</option>
                           <option v-if="sub_cities.length > 0 " v-for="sub_city in sub_cities" :key="sub_city.id" :value="sub_city.id">{{sub_city.name}}</option>
@@ -118,14 +131,14 @@
 
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label>Email <b class="text-danger">*</b></label>
+                          <label class="custom_label">Email <b class="text-danger">*</b></label>
                           <input type="email" class="form-control" placeholder="Email Address">
                         </div>
                       </div>
 
                       <div class="col-md-12">
                         <div class="form-group">
-                          <label>ORDER NOTE(OPTIONAL)</label>
+                          <label class="custom_label">ORDER NOTE(OPTIONAL)</label>
                           <input type="email" class="form-control" placeholder="Additional Information(Anything you want to add)">
                         </div>
                       </div>
@@ -361,6 +374,7 @@ export default {
         coupon_type: "",
         coupon_id: "",
       }),
+      base_url: this.$store.state.image_base_link,
       isLoading: true,
       fullPage: true,
       cities: "",
@@ -685,5 +699,19 @@ select {
 }
 
 
+}
+.custom_label{
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: #070707;
+  display: block;
+  font-size: 16px;
+  background: #fff;
+}
+.form-group{
+  margin-bottom: 40px;
 }
 </style>

@@ -47,16 +47,16 @@
               </p>
               <div class="add-to-cart d-flex justify-content-center">
                 <button class="btn btn-warning btn-sm carts">
-                  <img
+                   <img
                     class="cart_bag"
-                    src="storage/images/icons/cart.png"
+                    :src="base_url_link + 'images/icons/cart.png'"
                     alt=""
                   />
                   <span>ADD TO CART</span>
                 </button>
                 <img
                   class="cart_love"
-                  src="storage/images/icons/heart.png"
+                  :src="base_url_link + 'images/icons/heart.png'"
                   alt=""
                 />
               </div>
@@ -82,6 +82,7 @@ export default {
   data() {
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
+      base_url_link: this.$store.state.image_base_link,
       best_selling_options: {
         responsive: [
           { end: 576, size: 2 },

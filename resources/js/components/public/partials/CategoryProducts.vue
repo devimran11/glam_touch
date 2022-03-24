@@ -275,4 +275,9 @@ export default {
   margin-top: 0px;
   margin-left: 14px;
 }
+
+.form-control{
+  height: 38px;
+}
+
 </style>

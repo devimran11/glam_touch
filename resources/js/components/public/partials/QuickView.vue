@@ -169,7 +169,7 @@
                         <div class="row">
                           <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="qty_container">
-                              <div @click="decrementQty" class="">
+                              <div @click="decrementQty" class="__minus">
                                 <i class="fa fa-minus"></i>
                               </div>
 
@@ -182,7 +182,7 @@
                                 @change="validation"
                                 @keyup="validation"
                               />
-                              <div @click="incrementQty" class="">
+                              <div @click="incrementQty" class="__plus">
                                 <i class="fa fa-plus"></i>
                               </div>
 
@@ -238,19 +238,30 @@
                             <div class="share_to">
                               <h4>Share to:</h4>
                               <div class="share_to_icon">
-                                <i
-                                  class="fa fa-facebook-square"
-                                  aria-hidden="true"
-                                ></i>
-                                <i
-                                  class="fa fa-pinterest-square"
-                                  aria-hidden="true"
-                                ></i>
-                                <i
-                                  class="fa fa-whatsapp"
-                                  aria-hidden="true"
-                                ></i>
-                                <i class="fa-facebook-messenger"></i>
+                                <img
+                                  :src="
+                                    base_url_link +
+                                      'images/icons/fb.png'
+                                  "
+                                />
+                                <img
+                                  :src="
+                                    base_url_link +
+                                      'images/icons/insta.png'
+                                  "
+                                />
+                                <img
+                                  :src="
+                                    base_url_link +
+                                      'images/icons/whatsApp.png'
+                                  "
+                                />
+                                <img
+                                  :src="
+                                    base_url_link +
+                                      'images/icons/messanger.png'
+                                  "
+                                />
                               </div>
                             </div>
                           </div>
@@ -591,5 +602,10 @@ export default {
 }
 .modal-body {
   margin-top: 20px;
+}
+input[type="radio"]{
+    width: 25px !important;
+    height: 25px !important;
+    margin: -5px 0 0 !important;
 }
 </style>

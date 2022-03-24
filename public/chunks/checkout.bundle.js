@@ -345,6 +345,19 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -379,6 +392,7 @@ __webpack_require__.r(__webpack_exports__);
         coupon_type: "",
         coupon_id: ""
       }),
+      base_url: this.$store.state.image_base_link,
       isLoading: true,
       fullPage: true,
       cities: "",
@@ -649,7 +663,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\ninput[data-v-c157765e]{\r\n  height: 44px;\n}\nselect[data-v-c157765e] {\r\n  height: 44px;\n}\n.extra_d[data-v-c157765e] {\r\n  cursor: pointer;\r\n  font-size: 16px;\n}\n.extra_d a[data-v-c157765e] {\r\n \theight: 31px;\r\n\tposition: absolute;\r\n\tmargin: -8px 10px;\r\n\tborder-radius: 5px;\r\n\twidth: 34%;\n}\n.extra_d i[data-v-c157765e] {\r\n    font-size: 25px;\r\n    position: absolute;\r\n    margin: -3px 10px;\n}\n.empty-cart[data-v-c157765e] {\r\n    width: 50%;\r\n    background: #fff;\r\n    text-align: center;\r\n    margin-left: 25%;\r\n    padding: 50px 50px;\r\n    box-shadow: 3px 3px 3px #ddd;\n}\n.home_btn[data-v-c157765e]{\r\n    background: #ff4d03;\r\n    color: #fff;\r\n    padding: 12px 15px;\r\n    border-radius: 5px;\n}\n.empty_cart_icon[data-v-c157765e]{\r\n    margin-bottom: 50px;\r\n    margin-top: 50px;\n}\n@media screen and (max-width:768px) {\n.empty-cart[data-v-c157765e] {\r\n      width: 100%;\r\n      height: 430px;\r\n      background: #fff;\r\n      text-align: center;\r\n      margin-left: 1%;\r\n      padding: 10px 10px;\r\n      box-shadow: 3px 3px 3px #ddd;\n}\n.empty_cart_icon[data-v-c157765e]{\r\n      margin-bottom:30px;\r\n      margin-top: 5px;\n}\n.extra_d a[data-v-c157765e] {\r\n    height: 32px;\r\n    position: relative;\r\n    margin: 10px 0px;\r\n    border-radius: 5px;\r\n    width: 72%;\n}\n}\r\n", ""]);
+exports.push([module.i, "\ninput[data-v-c157765e]{\r\n  height: 44px;\n}\nselect[data-v-c157765e] {\r\n  height: 44px;\n}\n.extra_d[data-v-c157765e] {\r\n  cursor: pointer;\r\n  font-size: 16px;\n}\n.extra_d a[data-v-c157765e] {\r\n \theight: 31px;\r\n\tposition: absolute;\r\n\tmargin: -8px 10px;\r\n\tborder-radius: 5px;\r\n\twidth: 34%;\n}\n.extra_d i[data-v-c157765e] {\r\n    font-size: 25px;\r\n    position: absolute;\r\n    margin: -3px 10px;\n}\n.empty-cart[data-v-c157765e] {\r\n    width: 50%;\r\n    background: #fff;\r\n    text-align: center;\r\n    margin-left: 25%;\r\n    padding: 50px 50px;\r\n    box-shadow: 3px 3px 3px #ddd;\n}\n.home_btn[data-v-c157765e]{\r\n    background: #ff4d03;\r\n    color: #fff;\r\n    padding: 12px 15px;\r\n    border-radius: 5px;\n}\n.empty_cart_icon[data-v-c157765e]{\r\n    margin-bottom: 50px;\r\n    margin-top: 50px;\n}\n@media screen and (max-width:768px) {\n.empty-cart[data-v-c157765e] {\r\n      width: 100%;\r\n      height: 430px;\r\n      background: #fff;\r\n      text-align: center;\r\n      margin-left: 1%;\r\n      padding: 10px 10px;\r\n      box-shadow: 3px 3px 3px #ddd;\n}\n.empty_cart_icon[data-v-c157765e]{\r\n      margin-bottom:30px;\r\n      margin-top: 5px;\n}\n.extra_d a[data-v-c157765e] {\r\n    height: 32px;\r\n    position: relative;\r\n    margin: 10px 0px;\r\n    border-radius: 5px;\r\n    width: 72%;\n}\n}\n.custom_label[data-v-c157765e]{\r\n  position: absolute;\r\n  margin-top: -10px;\r\n  margin-left: 30px;\r\n  font-family: 'Montserrat', sans-serif;\r\n  font-weight: 400;\r\n  color: #070707;\r\n  display: block;\r\n  font-size: 16px;\r\n  background: #fff;\n}\n.form-group[data-v-c157765e]{\r\n  margin-bottom: 40px;\n}\r\n", ""]);
 
 // exports
 
@@ -728,7 +742,57 @@ var render = function() {
                   _c("div", { staticClass: "row" }, [
                     _vm._m(0),
                     _vm._v(" "),
-                    _vm._m(1),
+                    _c(
+                      "div",
+                      { staticClass: "col-md-12 col-sm-12 col-xs-12" },
+                      [
+                        _c("div", { staticClass: "checkout-login" }, [
+                          _c("div", { staticClass: "checkout-line" }),
+                          _vm._v(" "),
+                          _c("div", { staticClass: "login" }, [
+                            _vm._m(1),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "facebook-login" }, [
+                              _c(
+                                "button",
+                                { staticClass: "btn btn-sm facebook" },
+                                [
+                                  _c("img", {
+                                    staticClass: "login_img",
+                                    attrs: {
+                                      src:
+                                        _vm.base_url +
+                                        "images/icons/Checkout-Page_FB.png",
+                                      alt: ""
+                                    }
+                                  }),
+                                  _vm._v(" LOGIN WITH FACEBOOK ")
+                                ]
+                              )
+                            ]),
+                            _vm._v(" "),
+                            _c("div", { staticClass: "google-login" }, [
+                              _c(
+                                "button",
+                                { staticClass: "btn btn-sm google" },
+                                [
+                                  _c("img", {
+                                    staticClass: "login_img",
+                                    attrs: {
+                                      src:
+                                        _vm.base_url +
+                                        "images/icons/Checkout-Page_Google.png",
+                                      alt: ""
+                                    }
+                                  }),
+                                  _vm._v(" LOGIN WITH GOOGLE")
+                                ]
+                              )
+                            ])
+                          ])
+                        ])
+                      ]
+                    ),
                     _vm._v(" "),
                     _c(
                       "div",
@@ -1266,32 +1330,10 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-md-12 col-sm-12 col-xs-12" }, [
-      _c("div", { staticClass: "checkout-login" }, [
-        _c("div", { staticClass: "checkout-line" }),
-        _vm._v(" "),
-        _c("div", { staticClass: "login" }, [
-          _c("div", { staticClass: "return-customer" }, [
-            _c("p", [
-              _vm._v("Returning customer? "),
-              _c("strong", [_vm._v("Click here to login")])
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "facebook-login" }, [
-            _c("button", { staticClass: "btn btn-sm facebook" }, [
-              _c("i", { staticClass: "fa fa-facebook-square fa-lg" }),
-              _vm._v(" LOGIN WITH FACEBOOK ")
-            ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "google-login" }, [
-            _c("button", { staticClass: "btn btn-sm google" }, [
-              _c("i", { staticClass: "fa fa-google fa-lg" }),
-              _vm._v("LOGIN WITH GOOGLE")
-            ])
-          ])
-        ])
+    return _c("div", { staticClass: "return-customer" }, [
+      _c("p", [
+        _vm._v("Returning customer? "),
+        _c("strong", [_vm._v("Click here to login")])
       ])
     ])
   },
@@ -1301,7 +1343,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "control-label", attrs: { for: "name" } },
+      { staticClass: "control-label custom_label", attrs: { for: "name" } },
       [_vm._v("Name"), _c("b", { staticClass: "text-danger" }, [_vm._v("*")])]
     )
   },
@@ -1311,7 +1353,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "control-label", attrs: { for: "mobile_no" } },
+      {
+        staticClass: "control-label custom_label",
+        attrs: { for: "mobile_no" }
+      },
       [
         _vm._v("Phone Number "),
         _c("b", { staticClass: "text-danger" }, [_vm._v("*")])
@@ -1324,7 +1369,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "control-label", attrs: { for: "input-password" } },
+      {
+        staticClass: "control-label custom_label",
+        attrs: { for: "input-password" }
+      },
       [
         _vm._v("Address "),
         _c("b", { staticClass: "text-danger" }, [_vm._v("*")])
@@ -1337,7 +1385,10 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c(
       "label",
-      { staticClass: "control-label", attrs: { for: "input-email" } },
+      {
+        staticClass: "control-label custom_label",
+        attrs: { for: "input-email" }
+      },
       [
         _vm._v("District "),
         _c("b", { staticClass: "text-danger" }, [_vm._v("*")])
@@ -1348,7 +1399,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("label", [
+    return _c("label", { staticClass: "custom_label" }, [
       _vm._v("Thana "),
       _c("b", { staticClass: "text-danger" }, [_vm._v("*")])
     ])
@@ -1359,7 +1410,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-6" }, [
       _c("div", { staticClass: "form-group" }, [
-        _c("label", [
+        _c("label", { staticClass: "custom_label" }, [
           _vm._v("Email "),
           _c("b", { staticClass: "text-danger" }, [_vm._v("*")])
         ]),
@@ -1377,7 +1428,9 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-md-12" }, [
       _c("div", { staticClass: "form-group" }, [
-        _c("label", [_vm._v("ORDER NOTE(OPTIONAL)")]),
+        _c("label", { staticClass: "custom_label" }, [
+          _vm._v("ORDER NOTE(OPTIONAL)")
+        ]),
         _vm._v(" "),
         _c("input", {
           staticClass: "form-control",

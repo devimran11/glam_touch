@@ -3,28 +3,6 @@
     <frontend-header></frontend-header>
     <div id="container">
       <div class="container">
-        <!-- <div class="row">
-          <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
-            <ul v-if="sub_category.sub_sub_category.length > 0"
-              class="suggest_category_list text-center"
-            >
-              <li
-                v-for="(suggest_c, s_index) in sub_category.sub_sub_category"
-                :key="s_index"
-              >
-                <router-link :to="{name:'PublicSubSUbCategory',params:{slug:suggest_c.slug}}"
-                  >{{ suggest_c.name.substring(0, 12)
-                  }}<span v-if="suggest_c.name.length > 12">..</span>
-                </router-link>
-              </li>
-            </ul>
-          </div>
-        </div> -->
-        <!-- <CategorySlider
-          v-if="sub_category_sliders.length > 0"
-          :sliders="sub_category_sliders"
-        /> -->
-        <!-- Breadcrumb Start-->
         <div class="row">
           <ul class="breadcrumb">
               <li
@@ -66,8 +44,8 @@
                 <p class="filter-color">COLOR</p>
                 <ul id="cat_accordion">
                   <li v-for="sub_category in sub_categories" v-if="sub_category.slug != $route.params.slug">
-                  <input type="checkbox" class="form-check-input shop_checkbox" id="exampleCheck1">
-                  <input class="form-check-input filter-radio" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
                   <router-link
                     :to="{name:'PublicSubCategory', params: { slug: sub_category.slug }}"
                   >{{ sub_category.name }}</router-link>
@@ -266,6 +244,28 @@ export default {
    background: #ff4d03;
 
 }
-
+input[type="radio"]{
+    width: 16px !important;
+    height: 16px !important;
+    margin: 4px 8px 0 !important;
+}
+input[id="exampleCheck1"] + label {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #bcbcbc;
+  border-radius: 0px;
+  cursor: pointer;
+}
+input[id="exampleCheck1"]:checked + label:after {
+  position: relative;
+  top: -4px;
+  left: 2px;
+  content: '\2714';
+  font-size: 14px;
+}
+input[id="exampleCheck1"] {
+  display: block;
+}
 
 </style>

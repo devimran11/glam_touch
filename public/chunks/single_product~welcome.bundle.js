@@ -93,6 +93,7 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {
       base_url: this.$store.state.thumbnail_img_base_link,
+      base_url_link: this.$store.state.image_base_link,
       best_selling_options: {
         responsive: [{
           end: 576,
@@ -295,7 +296,9 @@ var render = function() {
                                     _c("img", {
                                       staticClass: "cart_bag",
                                       attrs: {
-                                        src: "storage/images/icons/cart.png",
+                                        src:
+                                          _vm.base_url_link +
+                                          "images/icons/cart.png",
                                         alt: ""
                                       }
                                     }),
@@ -307,7 +310,9 @@ var render = function() {
                                 _c("img", {
                                   staticClass: "cart_love",
                                   attrs: {
-                                    src: "storage/images/icons/heart.png",
+                                    src:
+                                      _vm.base_url_link +
+                                      "images/icons/heart.png",
                                     alt: ""
                                   }
                                 })

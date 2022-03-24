@@ -563,7 +563,8 @@ ul.side-nav li:hover>.left-sub-menu {
      /* box-shadow: 3px 3px 3px #ddd; */
 }
 .c-box{
-    padding: 20px 25px;
+    padding: 20px 5px;
+    padding-left: 60px;
 }
 .cart-dropdown {
     position: absolute;
@@ -1928,7 +1929,7 @@ span.price-old {
 
     .single_product_img_container .single_product_image{
         width: 80%;
-        height: 100% ;
+        height: 443px ;
     }
 
     .discount {
@@ -2328,6 +2329,7 @@ span.price-old {
     /* preview images of products  */
     .preview_img_box_container{
         display: flex;
+        margin: 15px;
     }
     .__preview_image_box {
         width: 100px;
@@ -2339,7 +2341,7 @@ span.price-old {
         cursor: pointer;
         width: 70px;
         height: 96px;
-        margin: 0 15px;
+        margin: 0px 14px;
         text-align: center;
     }
 
@@ -2442,7 +2444,7 @@ span.price-old {
         }
         .product__color .color-swatch li {
         display: inline-block;
-        margin-right: 5px;
+        margin-right: 10px;
         vertical-align: top;
         }
 
@@ -2633,9 +2635,10 @@ span.price-old {
     font-weight: bold;
     height: 27px !important;
     width: 30px !important;
-    margin-top: -8px;
+    margin-top: 0px;
     margin-right: 10px;
     text-align: center;
+    border: none;
 }
 
     .incrementor_plus {
@@ -2659,13 +2662,13 @@ span.price-old {
     .btn_buy_cart {
         color: #fff;
         transition: .1s ease;
-        height: 30px;
-        font-size: 13px;
+        height: 35px;
+        font-size: 14px;
         font-family: 'Montserrat';
         background: #CC8D46;
         font-weight: bold;
         width: auto;
-        margin-top: -7px;
+        margin-top: 0px;
     }
 
      .btn_buy_cart:hover {
@@ -2798,10 +2801,11 @@ span.price-old {
         width: 100%;
     }
     .related_p_heading {
-        font-size: 22px;
-        font-family: 'Montserrat';
+        font-size: 32px;
         text-align: center;
-        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        color: #191919;
     }
 
     .mobile_menubar_header{
@@ -2825,7 +2829,7 @@ span.price-old {
     .box-category ul li {
         padding: 6px 0;
         margin-left: -22%;
-        width: 100%;
+        /* width: 100%; */
         display: flex;
         /* border-bottom: 1px solid rgba(0,0,0,.08); */
         transition: all .2s ease;
@@ -3004,6 +3008,7 @@ span.price-old {
         height:75px;
         width: 80%;
         margin: 0 auto;
+        margin-left: 110px;
     }
 
     .sub-item {
@@ -3066,7 +3071,11 @@ span.price-old {
 
 @media  screen and (max-width: 768px) {
 
-
+    .facebook-login{
+        float: left;
+        margin-left: 0px;
+        margin-top: 3px;
+    }
     .policy_section{
         display: none;
     }
@@ -3285,6 +3294,9 @@ span.price-old {
     }
     .return-customer p{
         text-align: center !important;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
     }
     .promo_code{
         margin-left: 0 !important;
@@ -5265,14 +5277,16 @@ sup {
 
 .sort{
     float: left;
-    margin-left: 25px;
+    margin-left: 35px;
     margin-top: 15px;
 }
 .filter_list_container{
     float: right;
+    margin-top: 6px;
+    margin-right: -21px;
 }
 .breadcrumb{
-    margin-left: 85px;
+    margin-left: 60px;
     background-color: white;
     margin-top: 27px;
 }
@@ -5292,6 +5306,7 @@ sup {
     height: 250px;
    overflow-x: auto;
    width: 100%;
+   margin-left: -7px;
 }
 ::-webkit-scrollbar{
     width: 8px;
@@ -5343,17 +5358,18 @@ sup {
     padding:  0px !important;
 }
 .add_wishlist{
-    margin-top: 15px;
+    padding: 16px 0;
 }
 
 .share_to{
-    margin-top: 10px;
-    font-weight: 400;
-    color: #858585;
+    margin-top: 17px;
 }
 .share_to h4{
     float: left;
-    
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #858585;
 }
 .share_to_icon i{
     padding: 0px 5px;
@@ -5511,6 +5527,7 @@ input[data-v-c157765e] {
 }
 .attribute-values{
     margin-left: 5px;
+    margin-bottom: 7px;
 }
 
 .call-us{
@@ -5541,6 +5558,10 @@ input[data-v-c157765e] {
 .detail_btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    padding: 8px;
+    background: #9F6A2D;
 }
 
 .checkout-title{
@@ -5583,6 +5604,7 @@ input[data-v-c157765e] {
     padding: 3px 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    font-weight: 14px;
 }
 .google{
     background: #E43E2B;
@@ -5851,13 +5873,38 @@ input[type="checkbox"]{
     width: 15px;
     height: 15px;
 }
-input[type="radio"]{
-    width: 15px;
-    height: 15px;
-}
-input .shop_checkbox{
+input[type="radio"] .shop_checkbox{
     border-radius: none !important;
 }
+.list-unstyled description{
+    /* margin-left: 13px; */
+}
 
+.ps-product__variations{
+    margin-left: -13px;
+}
+.view_full_product{
+    margin-top: 55px;
+    margin-left: 20px;
+}
+.__minus{
+    background: #F0F0F0;
+    padding: 6px 9px;
+}
+.__plus{
+    background: #F0F0F0;
+    padding: 6px 9px;
+}
+.share_to_icon{
+    padding: 6px;
+}
 
+.share_to_icon img{
+    padding: 0px 8px;
+}
+.block ul li{
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
 </style><?php /**PATH D:\project\glam_touch_web_app\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>
