@@ -17,82 +17,132 @@
       </div>
     </div>
 
-
     <div class="container">
       <div class="row policy_section">
-          <div class="col-md-12">
-            <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="policy">
-                <img class="img-fluid" src="/storage/images/policy/first_shipping.png" width="100%">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="policy">
-                <img class="img-fluid" src="/storage/images/policy/Easy-return.png" width="100%">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="policy">
-                <img class="img-fluid" src="/storage/images/policy/online_support.png" width="100%">
-              </div>
-            </div>
-
-            <div class="col-md-3 col-sm-6 col-xs-6">
-              <div class="policy">
-                <img class="img-fluid" src="/storage/images/policy/new_design.png" width="100%">
-              </div>
+        <div class="col-md-12">
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="policy">
+              <img
+                class="img-fluid"
+                src="/storage/images/policy/first_shipping.png"
+                width="100%"
+              />
             </div>
           </div>
-      </div>
-      
 
-    
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="policy">
+              <img
+                class="img-fluid"
+                src="/storage/images/policy/Easy-return.png"
+                width="100%"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="policy">
+              <img
+                class="img-fluid"
+                src="/storage/images/policy/online_support.png"
+                width="100%"
+              />
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6 col-xs-6">
+            <div class="policy">
+              <img
+                class="img-fluid"
+                src="/storage/images/policy/new_design.png"
+                width="100%"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div class="row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center">
+        <div
+          class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center"
+        >
           <h4 class="section_title">DON'T MISS OUR MOST LOVED CATEGORIES</h4>
-          <br>
-          <hr>
+          <br />
+          <hr />
           <div class="line"></div>
         </div>
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
           <div class="col-md-3 loved-category">
-            <img src="/storage/images/don't_miss/best-sealing-1.png" alt="" class="img-fluid" height="434px" width="100%">
+            <img
+              src="/storage/images/don't_miss/best-sealing-1.png"
+              alt=""
+              class="img-fluid"
+              height="434px"
+              width="100%"
+            />
           </div>
           <div class="col-md-9 loved-category">
             <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
-                <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid"  width="100%">
+                <img
+                  src="/storage/images/don't_miss/Gown-and-kurtis.png"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
               </div>
             </div>
             <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
-                <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
-              </div>
-            </div>
-
-            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
-              <div class="miss-img">
-                <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
-              </div>
-            </div>
-
-
-            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
-              <div class="miss-img">
-                <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
-              </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
-              <div class="miss-img">
-                <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
+                <img
+                  src="/storage/images/don't_miss/Gown-and-kurtis.png"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
               </div>
             </div>
 
             <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
               <div class="miss-img">
-                <img src="/storage/images/don't_miss/Gown-and-kurtis.png" alt="" class="img-fluid" width="100%">
+                <img
+                  src="/storage/images/don't_miss/Gown-and-kurtis.png"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
+              <div class="miss-img">
+                <img
+                  src="/storage/images/don't_miss/Gown-and-kurtis.png"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
+              <div class="miss-img">
+                <img
+                  src="/storage/images/don't_miss/Gown-and-kurtis.png"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-6 col-xs-6 loved-category">
+              <div class="miss-img">
+                <img
+                  src="/storage/images/don't_miss/Gown-and-kurtis.png"
+                  alt=""
+                  class="img-fluid"
+                  width="100%"
+                />
               </div>
             </div>
           </div>
@@ -100,18 +150,14 @@
         <div class="loved_categories_carousel" style="display: none">
           <TopSellingProducts />
         </div>
-         
       </div>
-
-
-
 
       <div class="new_arrival_section">
         <div class="row new_product_row">
           <div class="col-lg-12 col-md-12 col-xs-12 best_product text-center">
             <h4 class="section_title">BEST SELLING PRODUCTS</h4>
-            <br>
-            <hr>
+            <br />
+            <hr />
             <div class="line"></div>
           </div>
 
@@ -126,15 +172,12 @@
         <SessionalAndOccationalCampaign />
       </div>
 
-
-
-
       <div class="new_arrival_section">
         <div class="row new_product_row">
           <div class="col-lg-12 col-md-12 col-xs-12 text-center ">
             <h4 class="section_title">NEW ARRIVAL PRODUCTS</h4>
-            <br>
-            <hr>
+            <br />
+            <hr />
             <div class="line"></div>
           </div>
 
@@ -143,51 +186,64 @@
         </div>
       </div>
 
-
       <div class="row suggetion_product_row">
-        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center">
-           <h4 class="section_title">COUPON</h4>
-            <br>
-            <hr>
+        <div
+          class="col-lg-12 col-md-12 col-sm-12 col-xs-12 margin_container text-center"
+        >
+          <h4 class="section_title">COUPON</h4>
+          <br />
+          <hr />
           <div class="line"></div>
           <div class="col-md-12 coupon_top">
             <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
-                <img class="img-fluid" src="/storage/images/cupon/cupon-1.png" width="100%">
+                <img
+                  class="img-fluid"
+                  src="/storage/images/cupon/cupon-1.png"
+                  width="100%"
+                />
               </div>
             </div>
 
             <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
-                <img class="img-fluid" src="/storage/images/cupon/cupon-2.png" width="100%">
+                <img
+                  class="img-fluid"
+                  src="/storage/images/cupon/cupon-2.png"
+                  width="100%"
+                />
               </div>
             </div>
 
             <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
-                <img class="img-fluid" src="/storage/images/cupon/cupon-3.png" width="100%">
+                <img
+                  class="img-fluid"
+                  src="/storage/images/cupon/cupon-3.png"
+                  width="100%"
+                />
               </div>
             </div>
 
             <div class="col-md-3 col-sm-3 col-xs-3">
               <div class="cupon">
-                <img class="img-fluid" src="/storage/images/cupon/cupon-4.png" width="100%">
+                <img
+                  class="img-fluid"
+                  src="/storage/images/cupon/cupon-4.png"
+                  width="100%"
+                />
               </div>
             </div>
           </div>
         </div>
-
       </div>
 
-
-     
-
-    <div class="new_arrival_section">
+      <div class="new_arrival_section">
         <div class="row gown_kurtis">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <h4 class="section_title_left">GOWN & KURTIS</h4>
-            <br>
-            <hr>
+            <br />
+            <hr />
             <div class="line-left"></div>
           </div>
 
@@ -201,8 +257,8 @@
         <div class="row gown_kurtis">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <h4 class="section_title_left">MODEST FASHION</h4>
-            <br>
-            <hr>
+            <br />
+            <hr />
             <div class="line-left"></div>
           </div>
 
@@ -212,11 +268,10 @@
         <TopSellingProducts />
       </div>
 
-
       <div class="row service_row">
-          <div class="col-md-12">
-            <img src="storage/images/footer/why-us.png" width="100%" alt="">
-          </div>
+        <div class="col-md-12">
+          <img src="storage/images/footer/why-us.png" width="100%" alt="" />
+        </div>
       </div>
     </div>
 
@@ -318,9 +373,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     for (let i = 0; i < sub_menu.length; i++) {
       //set a click event
-      sub_menu[i].addEventListener("click", function () {
-        let show_sub_menu =
-          sub_menu[i].parentElement.querySelector(".left-sub-menu");
+      sub_menu[i].addEventListener("click", function() {
+        let show_sub_menu = sub_menu[i].parentElement.querySelector(
+          ".left-sub-menu"
+        );
         //set active class
         show_sub_menu.classList.toggle("nav-active");
         sub_menu[i].classList.toggle("fa-minus");
@@ -329,5 +385,3 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 2000);
 });
 </script>
-
-
