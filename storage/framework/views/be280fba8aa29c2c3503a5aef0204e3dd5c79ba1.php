@@ -5913,4 +5913,18 @@ input[type="radio"] .shop_checkbox{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
 }
+.first_policy{
+    padding-left: 0px;
+}
+.last_policy{
+    padding-right: 0px;
+}
+.coupon_first{
+    padding-left: 0px;
+}
+.coupon_last{
+    padding-right: 0px;
+}
+
+
 </style><?php /**PATH D:\xampp\htdocs\Project\glam_touch\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

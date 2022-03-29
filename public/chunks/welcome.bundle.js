@@ -311,6 +311,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -977,7 +979,7 @@ var staticRenderFns = [
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "row policy_section" }, [
       _c("div", { staticClass: "col-md-12" }, [
-        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6 first_policy" }, [
           _c("div", { staticClass: "policy" }, [
             _c("img", {
               staticClass: "img-fluid",
@@ -1013,7 +1015,7 @@ var staticRenderFns = [
           ])
         ]),
         _vm._v(" "),
-        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6" }, [
+        _c("div", { staticClass: "col-md-3 col-sm-6 col-xs-6 last_policy" }, [
           _c("div", { staticClass: "policy" }, [
             _c("img", {
               staticClass: "img-fluid",
@@ -1236,18 +1238,22 @@ var staticRenderFns = [
           _vm._v(" "),
           _c("div", { staticClass: "line" }),
           _vm._v(" "),
-          _c("div", { staticClass: "col-md-12 coupon_top" }, [
-            _c("div", { staticClass: "col-md-3 col-sm-3 col-xs-3" }, [
-              _c("div", { staticClass: "cupon" }, [
-                _c("img", {
-                  staticClass: "img-fluid",
-                  attrs: {
-                    src: "/storage/images/cupon/cupon-1.png",
-                    width: "100%"
-                  }
-                })
-              ])
-            ]),
+          _c("div", { staticClass: "coupon_top" }, [
+            _c(
+              "div",
+              { staticClass: "col-md-3 col-sm-3 col-xs-3 coupon_first" },
+              [
+                _c("div", { staticClass: "cupon" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: {
+                      src: "/storage/images/cupon/cupon-1.png",
+                      width: "100%"
+                    }
+                  })
+                ])
+              ]
+            ),
             _vm._v(" "),
             _c("div", { staticClass: "col-md-3 col-sm-3 col-xs-3" }, [
               _c("div", { staticClass: "cupon" }, [
@@ -1273,17 +1279,21 @@ var staticRenderFns = [
               ])
             ]),
             _vm._v(" "),
-            _c("div", { staticClass: "col-md-3 col-sm-3 col-xs-3" }, [
-              _c("div", { staticClass: "cupon" }, [
-                _c("img", {
-                  staticClass: "img-fluid",
-                  attrs: {
-                    src: "/storage/images/cupon/cupon-4.png",
-                    width: "100%"
-                  }
-                })
-              ])
-            ])
+            _c(
+              "div",
+              { staticClass: "col-md-3 col-sm-3 col-xs-3 coupon_last" },
+              [
+                _c("div", { staticClass: "cupon" }, [
+                  _c("img", {
+                    staticClass: "img-fluid",
+                    attrs: {
+                      src: "/storage/images/cupon/cupon-4.png",
+                      width: "100%"
+                    }
+                  })
+                ])
+              ]
+            )
           ])
         ]
       )

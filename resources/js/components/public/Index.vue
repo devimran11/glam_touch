@@ -20,7 +20,7 @@
     <div class="container">
       <div class="row policy_section">
         <div class="col-md-12">
-          <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="col-md-3 col-sm-6 col-xs-6 first_policy">
             <div class="policy">
               <img
                 class="img-fluid"
@@ -50,7 +50,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6 col-xs-6">
+          <div class="col-md-3 col-sm-6 col-xs-6 last_policy">
             <div class="policy">
               <img
                 class="img-fluid"
@@ -194,8 +194,9 @@
           <br />
           <hr />
           <div class="line"></div>
-          <div class="col-md-12 coupon_top">
-            <div class="col-md-3 col-sm-3 col-xs-3">
+          <!-- <div class="col-md-12 coupon_top"> -->
+          <div class="coupon_top">
+            <div class="col-md-3 col-sm-3 col-xs-3 coupon_first">
               <div class="cupon">
                 <img
                   class="img-fluid"
@@ -225,7 +226,7 @@
               </div>
             </div>
 
-            <div class="col-md-3 col-sm-3 col-xs-3">
+            <div class="col-md-3 col-sm-3 col-xs-3 coupon_last">
               <div class="cupon">
                 <img
                   class="img-fluid"
@@ -242,6 +243,7 @@
         <div class="row gown_kurtis">
           <div class="col-lg-12 col-md-12 col-xs-12">
             <h4 class="section_title_left">GOWN & KURTIS</h4>
+
             <br />
             <hr />
             <div class="line-left"></div>

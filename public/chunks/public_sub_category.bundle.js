@@ -122,6 +122,49 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -135,7 +178,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     }, 500);
     this.$store.dispatch("banners");
     this.getSubCatgory();
-    this.$store.dispatch('sub_category_sliders', this.$route.params.slug);
+    this.$store.dispatch("sub_category_sliders", this.$route.params.slug);
   },
   components: {
     CategoryProducts: _public_partials_CategoryProducts_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
@@ -144,8 +187,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
   data: function data() {
     return {
       products: [],
-      sub_category: '',
-      sub_categories: '',
+      sub_category: "",
+      sub_categories: "",
       page: 1,
       price_page: 1,
       price_filter: {
@@ -204,8 +247,8 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
         this.products = products;
       } else {
         Swal.fire({
-          type: 'warning',
-          text: ' ): no produtc found......',
+          type: "warning",
+          text: " ): no produtc found......",
           duration: 3000
         });
       }
@@ -215,7 +258,7 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
     price_sorting_asec_desc: function price_sorting_asec_desc() {
       var _this4 = this;
 
-      axios.get('/_public/api/sort/product/sub/category/according/to/asc/desc', {
+      axios.get("/_public/api/sort/product/sub/category/according/to/asc/desc", {
         params: {
           sort_value: this.sort_by_price,
           slug: this.$route.params.slug
@@ -253,7 +296,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.search-box{\n\n    margin-top: 20px;\n}\n.btn_search{\n\n     background: #FF4D03;\n     color:#fff;\n     border:1px dashed ;\n}\n.product-card-footer {\n  padding:0px;\n}\n.btnQuick:hover{\n\n   background: #ff4d03;\n}\ninput[type=\"radio\"]{\n    width: 16px !important;\n    height: 16px !important;\n    margin: 4px 8px 0 !important;\n}\ninput[id=\"exampleCheck1\"] + label {\n  display: inline-block;\n  width: 14px;\n  height: 14px;\n  border: 2px solid #bcbcbc;\n  border-radius: 0px;\n  cursor: pointer;\n}\ninput[id=\"exampleCheck1\"]:checked + label:after {\n  position: relative;\n  top: -4px;\n  left: 2px;\n  content: '\\2714';\n  font-size: 14px;\n}\ninput[id=\"exampleCheck1\"] {\n  display: block;\n}\n\n", ""]);
+exports.push([module.i, "\n.search-box {\r\n  margin-top: 20px;\n}\n.btn_search {\r\n  background: #ff4d03;\r\n  color: #fff;\r\n  border: 1px dashed;\n}\n.product-card-footer {\r\n  padding: 0px;\n}\n.btnQuick:hover {\r\n  background: #ff4d03;\n}\ninput[type=\"radio\"] {\r\n  width: 16px !important;\r\n  height: 16px !important;\r\n  margin: 4px 8px 0 !important;\n}\ninput[id=\"exampleCheck1\"] + label {\r\n  display: inline-block;\r\n  width: 14px;\r\n  height: 14px;\r\n  border: 2px solid #bcbcbc;\r\n  border-radius: 0px;\r\n  cursor: pointer;\n}\ninput[id=\"exampleCheck1\"]:checked + label:after {\r\n  position: relative;\r\n  top: -4px;\r\n  left: 2px;\r\n  content: \"\\2714\";\r\n  font-size: 14px;\n}\ninput[id=\"exampleCheck1\"] {\r\n  display: block;\n}\r\n", ""]);
 
 // exports
 
@@ -338,9 +381,9 @@ var render = function() {
                             },
                             [
                               _vm._v(
-                                "\n                Home\n                /\n                " +
+                                "\n              Home /\n              " +
                                   _vm._s(sub_category.name) +
-                                  "\n              "
+                                  "\n            "
                               )
                             ]
                           ),
@@ -362,9 +405,9 @@ var render = function() {
                                 staticClass: "fa fa-home footer_icon"
                               }),
                               _vm._v(
-                                "\n                >\n                " +
+                                "\n              >\n              " +
                                   _vm._s(sub_category.name) +
-                                  "\n              "
+                                  "\n            "
                               )
                             ]
                           )
