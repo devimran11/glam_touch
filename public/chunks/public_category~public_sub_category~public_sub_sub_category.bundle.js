@@ -219,6 +219,12 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: {
@@ -278,7 +284,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.v-lazy-image[data-v-22485cb8] {\r\n  filter: blur(1px);\r\n  transition: filter 0.3s;\n}\n.v-lazy-image-loaded[data-v-22485cb8] {\r\n  filter: blur(0);\n}\n.cart_bag[data-v-22485cb8] {\r\n  max-width: 30px;\r\n  max-height: 22px;\r\n  margin-top: 0px;\n}\n.cart_love[data-v-22485cb8] {\r\n  width: 36px;\r\n  height: 32px;\r\n  margin-top: 0px;\r\n  margin-left: 14px;\n}\n.form-control[data-v-22485cb8]{\r\n  height: 38px;\n}\r\n\r\n", ""]);
+exports.push([module.i, "\n.v-lazy-image[data-v-22485cb8] {\r\n  filter: blur(1px);\r\n  transition: filter 0.3s;\n}\n.v-lazy-image-loaded[data-v-22485cb8] {\r\n  filter: blur(0);\n}\n.cart_bag[data-v-22485cb8] {\r\n  max-width: 30px;\r\n  max-height: 22px;\r\n  margin-top: 0px;\n}\n.cart_love[data-v-22485cb8] {\r\n  width: 36px;\r\n  height: 32px;\r\n  margin-top: 0px;\r\n  margin-left: 14px;\n}\n.form-control[data-v-22485cb8]{\r\n  height: 38px;\n}\n@media screen and (max-width: 450px) {\n.cart_love[data-v-22485cb8]{\r\n        width: 32px;\r\n        height: 27px;\n}\n.content_card[data-v-22485cb8]{\r\n      margin-bottom: 12px;\n}\n.breadcrumb[data-v-22485cb8] {\r\n      margin-left: 60px;\r\n      background-color: white;\r\n      margin-top: 37px;\n}\n.sub_cat[data-v-22485cb8]{\r\n    margin-bottom: 5px;\n}\n}\r\n\r\n", ""]);
 
 // exports
 
@@ -338,7 +344,7 @@ var render = function() {
       _c("div", { staticClass: "row filter_row" }, [
         _c(
           "div",
-          { staticClass: "col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8" },
+          { staticClass: "col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-6" },
           [
             _c("div", { staticClass: "filter_button_container" }, [
               _c(
@@ -349,10 +355,14 @@ var render = function() {
                   on: { click: _vm.filterModalOpen }
                 },
                 [
-                  _vm._v("\n          Filter: "),
-                  _c("i", {
-                    staticClass: "fa fa-filter",
-                    staticStyle: { "font-size": "25px" }
+                  _vm._v("\n          Filter:\n           "),
+                  _vm._v(" "),
+                  _c("img", {
+                    staticClass: "filter",
+                    attrs: {
+                      src: _vm.base_url_link + "images/icons/filter.png",
+                      alt: ""
+                    }
                   })
                 ]
               )
@@ -362,7 +372,7 @@ var render = function() {
         _vm._v(" "),
         _c(
           "div",
-          { staticClass: "col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4" },
+          { staticClass: "col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6" },
           [
             _vm._m(0),
             _vm._v(" "),
@@ -448,6 +458,7 @@ var render = function() {
                           },
                           [
                             _c("v-lazy-image", {
+                              staticClass: "thumbnail_img",
                               attrs: {
                                 src: _vm.base_url + product.thumbnail_img,
                                 "src-placeholder":
@@ -473,7 +484,11 @@ var render = function() {
                                   }
                                 }
                               },
-                              [_vm._v(_vm._s(product.name))]
+                              [
+                                _vm._v(
+                                  _vm._s(product.name.substring(0, 20) + "..")
+                                )
+                              ]
                             )
                           ],
                           1

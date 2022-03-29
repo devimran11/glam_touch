@@ -296,7 +296,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.search-box {\r\n  margin-top: 20px;\n}\n.btn_search {\r\n  background: #ff4d03;\r\n  color: #fff;\r\n  border: 1px dashed;\n}\n.product-card-footer {\r\n  padding: 0px;\n}\n.btnQuick:hover {\r\n  background: #ff4d03;\n}\ninput[type=\"radio\"] {\r\n  width: 16px !important;\r\n  height: 16px !important;\r\n  margin: 4px 8px 0 !important;\n}\ninput[id=\"exampleCheck1\"] + label {\r\n  display: inline-block;\r\n  width: 14px;\r\n  height: 14px;\r\n  border: 2px solid #bcbcbc;\r\n  border-radius: 0px;\r\n  cursor: pointer;\n}\ninput[id=\"exampleCheck1\"]:checked + label:after {\r\n  position: relative;\r\n  top: -4px;\r\n  left: 2px;\r\n  content: \"\\2714\";\r\n  font-size: 14px;\n}\ninput[id=\"exampleCheck1\"] {\r\n  display: block;\n}\r\n", ""]);
+exports.push([module.i, "\n.search-box {\r\n  margin-top: 20px;\n}\n.btn_search {\r\n  background: #ff4d03;\r\n  color: #fff;\r\n  border: 1px dashed;\n}\n.product-card-footer {\r\n  padding: 0px;\n}\n.btnQuick:hover {\r\n  background: #ff4d03;\n}\ninput[type=\"radio\"] {\r\n  width: 16px !important;\r\n  height: 16px !important;\r\n  margin: 4px 8px 0 !important;\n}\r\n/* input[id=\"exampleCheck1\"] + label {\r\n  display: inline-block;\r\n  width: 14px;\r\n  height: 14px;\r\n  border: 2px solid #bcbcbc;\r\n  border-radius: 0px;\r\n  cursor: pointer;\r\n} */\r\n/* input[id=\"exampleCheck1\"]:checked + label:after {\r\n  position: relative;\r\n  top: -4px;\r\n  left: 2px;\r\n  content: \"\\2714\";\r\n  font-size: 14px;\r\n}\r\ninput[id=\"exampleCheck1\"] {\r\n  display: block;\r\n} */\n@media screen and (max-width: 768px) {\ninput[type=\"radio\"] {\r\n  width: 16px !important;\r\n  height: 16px !important;\r\n  margin: 4px 0px 0 !important;\n}\n}\n@media screen and (max-width: 450px) {\n.sub_cat{\r\n    margin-bottom: 5px !important;\n}\n}\r\n", ""]);
 
 // exports
 
@@ -424,7 +424,7 @@ var render = function() {
               _c(
                 "aside",
                 {
-                  staticClass: "col-xl-3 col-md-3 col-sm-3",
+                  staticClass: "col-xl-3 col-md-3 col-sm-3 sub_cat",
                   staticStyle: { "margin-bottom": "50px" }
                 },
                 [

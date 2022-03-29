@@ -3,17 +3,23 @@
     <div class="filter_line_top"></div>
     <div class="row filter_row">
       
-      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-xs-8">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-6 col-xs-6">
         <div class="filter_button_container">
           <button class="btn filter_customize_button" style="cursor: pointer"
               @click="filterModalOpen">
-            Filter: <i class="fa fa-filter" style="font-size:25px"></i>
+            Filter:
+             <!-- <i class="fa fa-filter" style="font-size:25px"></i> -->
+            <img
+              class="filter"
+              :src="base_url_link + 'images/icons/filter.png'"
+              alt=""
+            />
           </button>
 
         </div>
       </div>
 
-      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-xs-6">
         <div class="sort">
           <p>Sort by: </p>
         </div>
@@ -43,7 +49,7 @@
             <router-link
               :to="{ name: 'single', params: { slug: product.slug } }"
             >
-              <v-lazy-image
+              <v-lazy-image class="thumbnail_img"
                 :src="base_url + product.thumbnail_img"
                 :src-placeholder="base_url + 'images/preview.png'"
               />
@@ -53,7 +59,7 @@
               <router-link
                 class="product-link"
                 :to="{ name: 'single', params: { slug: product.slug } }"
-                >{{ product.name }}</router-link
+                >{{ product.name.substring(0, 20) + ".." }}</router-link
               >
             </p>
             <p class="price">
@@ -278,6 +284,24 @@ export default {
 
 .form-control{
   height: 38px;
+}
+
+@media screen and (max-width: 450px) {
+    .cart_love{
+        width: 32px;
+        height: 27px;
+    }
+    .content_card{
+      margin-bottom: 12px;
+    }
+    .breadcrumb {
+      margin-left: 60px;
+      background-color: white;
+      margin-top: 37px;
+  }
+  .sub_cat{
+    margin-bottom: 5px;
+  }
 }
 
 </style>

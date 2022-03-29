@@ -67,19 +67,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   created: function created() {
@@ -143,7 +130,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "\n.cart_bag[data-v-ad969a3e] {\r\n  max-width: 30px;\r\n  max-height: 22px;\r\n  margin-top: 0px;\n}\n.cart_love[data-v-ad969a3e] {\r\n  width: 36px;\r\n  height: 32px;\r\n  margin-top: 0px;\r\n  margin-left: 14px;\n}\r\n", ""]);
+exports.push([module.i, "\n.cart_bag[data-v-ad969a3e] {\r\n  max-width: 30px;\r\n  max-height: 22px;\r\n  margin-top: 0px;\n}\n.cart_love[data-v-ad969a3e] {\r\n  width: 36px;\r\n  height: 31px;\r\n  margin-top: 0px;\r\n  margin-left: 14px;\n}\r\n", ""]);
 
 // exports
 
@@ -234,6 +221,7 @@ var render = function() {
                               },
                               [
                                 _c("img", {
+                                  staticClass: "thumbnail_img",
                                   attrs: {
                                     src: _vm.base_url + item.thumbnail_img
                                   }

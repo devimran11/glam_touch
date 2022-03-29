@@ -40,7 +40,7 @@
           <!--Left Part Start -->
           <aside
             style="margin-bottom: 50px;"
-            class="col-xl-3 col-md-3 col-sm-3"
+            class="col-xl-3 col-md-3 col-sm-3 sub_cat"
           >
             <div class="categories hidden-xs bg-white shadow c-box">
               <h3 class="subtitle">FILTER BY</h3>
@@ -275,15 +275,15 @@ input[type="radio"] {
   height: 16px !important;
   margin: 4px 8px 0 !important;
 }
-input[id="exampleCheck1"] + label {
+/* input[id="exampleCheck1"] + label {
   display: inline-block;
   width: 14px;
   height: 14px;
   border: 2px solid #bcbcbc;
   border-radius: 0px;
   cursor: pointer;
-}
-input[id="exampleCheck1"]:checked + label:after {
+} */
+/* input[id="exampleCheck1"]:checked + label:after {
   position: relative;
   top: -4px;
   left: 2px;
@@ -292,5 +292,18 @@ input[id="exampleCheck1"]:checked + label:after {
 }
 input[id="exampleCheck1"] {
   display: block;
+} */
+@media screen and (max-width: 768px) {
+  input[type="radio"] {
+  width: 16px !important;
+  height: 16px !important;
+  margin: 4px 0px 0 !important;
+}
+}
+@media screen and (max-width: 450px) {
+    
+  .sub_cat{
+    margin-bottom: 5px !important;
+  }
 }
 </style>

@@ -14,7 +14,7 @@
                   params: { slug: item.slug },
                 }"
               >
-                <img :src="base_url + item.thumbnail_img" />
+                <img class="thumbnail_img" :src="base_url + item.thumbnail_img" />
               </router-link>
               <p class="content_link">
                 <router-link
@@ -31,19 +31,6 @@
                   &#2547; {{ item.sale_price }}</span
                 >
                 <span class="price-new"> &#2547; {{ item.price }}</span>
-                <!-- <span v-if="item.discount > 0" class="discount">
-                    <div class="star-icon" style="margin-top:-7px; margin-bottom: -32px">
-                      <i class="fa fa-star" aria-hidden="true"></i>
-                      <span style="margin-left:-3px">
-                        <i class="fa fa-star" aria-hidden="true"></i>
-                      </span>
-                    </div>
-                    <div class="discount-item" style="margin-top: 6px;">
-                      {{ ((item.discount / item.sale_price) * 100).toFixed(0) }}%
-                      <span class="d_off">off</span>
-                    </div>
-
-                  </span> -->
               </p>
               <div class="add-to-cart d-flex justify-content-center">
                 <button class="btn btn-warning btn-sm carts">
@@ -107,15 +94,5 @@ export default {
 };
 </script>
 <style scoped>
-.cart_bag {
-  max-width: 30px;
-  max-height: 22px;
-  margin-top: 0px;
-}
-.cart_love {
-  width: 36px;
-  height: 32px;
-  margin-top: 0px;
-  margin-left: 14px;
-}
+
 </style>

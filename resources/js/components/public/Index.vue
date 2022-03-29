@@ -147,9 +147,6 @@
             </div>
           </div>
         </div>
-        <div class="loved_categories_carousel" style="display: none">
-          <TopSellingProducts />
-        </div>
       </div>
 
       <div class="new_arrival_section">
