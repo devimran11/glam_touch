@@ -1750,7 +1750,7 @@ span.price-old {
        /* box-shadow: 0 1pt 12pt rgb(150 165 237) ; */
     }
 
-    .content_card_body img {
+    .content_card_body .thumbnail_img {
         width: 290px;
         height: 434px;
         margin: 5px;
@@ -2635,7 +2635,7 @@ span.price-old {
     font-weight: bold;
     height: 27px !important;
     width: 30px !important;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-right: 10px;
     text-align: center;
     border: none;
@@ -3070,6 +3070,37 @@ span.price-old {
 
 
 @media  screen and (max-width: 768px) {
+    .filter_list_container{
+        margin-right: 0px !important;
+    }
+    .filter_button_container>button {
+                /* height: 60px; */
+                margin: 0% 0%;
+                font-size: 15px;
+                background: none;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                margin-top: 3px;
+            }
+            .filter{
+                width: 28px !important;
+                height: 28px !important;
+            }
+            .filter_list_container>select {
+                height: 35px !important;
+                padding: 6px 12px;
+                font-size: 15px !important;
+                border: 1px solid var(--primary-color) !important;
+                 font-family: 'Poppins', sans-serif;
+                /* border-radius: 15px; */
+                margin-top: 10px;
+                margin-left: 8px;
+            }
+
+        .content_card {
+            max-height: 310px;
+            min-height: 325px;
+        }
 
     .facebook-login{
         float: left;
@@ -3079,9 +3110,9 @@ span.price-old {
     .policy_section{
         display: none;
     }
-    .loved-category{
+    /* .loved-category{
         display: none;
-    }
+    } */
     .loved_categories_carousel{
         display: block !important;
     }
@@ -3124,12 +3155,13 @@ span.price-old {
         text-align: left !important;
     }
 
-    .section_title{
+    .section_title {
         margin-left: 0px;
         margin-bottom: 0px;
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
-        font-size: 19px;
+        font-size: 15px;
+        text-align: left;
     }
 
     .line{
@@ -3517,9 +3549,9 @@ span.price-old {
             min-height: 360px;
         }
 
-        .content_card_body img {
-            width: 96%;
-            height: auto;
+        .content_card_body .thumbnail_img {
+            width: 100%;
+            height: 400px;
             margin: 5px;
             /* max-height: 300px; */
             min-height: 20px;
@@ -3561,10 +3593,10 @@ span.price-old {
         }
 
         .content_card_on_slider{
-            width: 280px;
+            width: 290px;
             height: auto;
             padding-bottom: 10px;
-            max-height: 360px;
+            max-height: 486px;
             min-height: 360px;
         }
 
@@ -3808,7 +3840,7 @@ span.price-old {
 
        .new_arrival_section{
         margin-top: 0px;
-        padding: 30px 0;
+        padding: 8px 0;
         margin-bottom:0px;
         }
 
@@ -4472,7 +4504,7 @@ span.price-old {
             min-height: 335px;
         }
 
-        .content_card_body img {
+        .content_card_body .thumbnail_img {
             max-height: 260px;
             min-height: 20px;
         }
@@ -4505,7 +4537,7 @@ span.price-old {
     }
 
     .card-body {
-    margin:10px;
+    margin:6px;
    }
 
     .user_profile_icon {
@@ -4627,7 +4659,7 @@ span.price-old {
             max-height: 310px;
             min-height: 310px;
         }
-        .content_card_body img {
+        .content_card_body .thumbnail_img {
             max-height: 240px;
             min-height: 20px;
         }
@@ -4685,7 +4717,7 @@ span.price-old {
             max-height: 300px;
             min-height: 300px;
         }
-        .content_card_body img {
+        .content_card_body .thumbnail_img {
             max-height: 230px;
             min-height: 20px;
         }
@@ -4716,7 +4748,34 @@ span.price-old {
 
 
 @media  screen and (max-width: 450px) {
-
+            .cart_love{
+                width: 32px;
+                height: 27px;
+            }
+            .filter_list_container{
+                margin-right: 0px !important;
+            }
+            .sort{
+                margin-top: 25px !important;
+            }
+            .sort p{
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+            }
+            .filter_button_container{
+                margin-left: -24px !important;
+            }
+            .section_title_left{
+                font-size: 15px !important;
+                margin-bottom: 0px;
+            }
+            .cart_love{
+                margin-left: 5px !important;
+            }
+            .add-to-cart{
+                margin-left: 15px;
+            }
            .incrementor_plus {
                 margin-left: 20%;
             }
@@ -4756,35 +4815,52 @@ span.price-old {
             }
 
             .filter_button_container>button {
-                height: 60px;
-                margin: 0% 2%;
-                font-size: 10px;
+                /* height: 60px; */
+                margin: 0% 0%;
+                font-size: 15px;
+                background: none;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                margin-top: 3px;
             }
-
+            .filter{
+                width: 23px !important;
+                height: 22px !important;
+            }
             .filter_list_container>select {
-                height: 40px !important;
+                height: 35px !important;
                 padding: 6px 12px;
                 font-size: 15px !important;
                 border: 1px solid var(--primary-color) !important;
                  font-family: 'Poppins', sans-serif;
-                border-radius: 15px;
+                /* border-radius: 15px; */
                 margin-top: 10px;
-                margin-left: 3px;
+                margin-left: 8px;
             }
 
         .content_card {
-            max-height: 270px;
-            min-height: 270px;
+            max-height: 310px;
+            min-height: 325px;
         }
 
         .content_card_on_slider{
             width: 185px;
         }
 
-        .content_card_body img {
-            max-height: 200px;
-            min-height: 20px;
+        .content_card_body .thumbnail_img {
+            max-height: 265px;
+            min-height: 265px;
         }
+        .carts{
+            padding: 2px 7px !important;
+        }
+        span.price-old{
+            font-size: 13px;
+        }
+        span.price-new{
+            font-size: 13px;
+        }
+
 
         .list_content_card_body img {
             max-height: 200px;
@@ -4874,7 +4950,7 @@ span.price-old {
 
         /* new arrival responsive issue */
         .new_arrival_section{
-            margin-top:15px ;
+            /* margin-top:15px ; */
         }
         .new_arrival_container{
             width: 120px;
@@ -4971,7 +5047,7 @@ span.price-old {
             min-height: 265px;
         }
 
-        .content_card_body img {
+        .content_card_body .thumbnail_img {
             max-height: 190px;
             min-height: 19px;
         }
@@ -5072,7 +5148,7 @@ span.price-old {
         }
 
 
-        .content_card_body img {
+        .content_card_body .thumbnail_img {
             max-height: 175px;
             min-height: 20px;
         }
@@ -5515,7 +5591,7 @@ input[data-v-c157765e] {
     font-weight: bold;
     background: #cc8e46;
     /* height: 34px; */
-    padding: 2px 7px;
+    padding: 7px 7px;
     padding-bottom: 0px !important;
 }
 .cart_amount h5{
@@ -5895,11 +5971,11 @@ input[type="radio"] .shop_checkbox{
 }
 .__minus{
     background: #F0F0F0;
-    padding: 6px 9px;
+    padding: 4px 11px;
 }
 .__plus{
     background: #F0F0F0;
-    padding: 6px 9px;
+    padding: 4px 11px;
 }
 .share_to_icon{
     padding: 6px;
@@ -5926,5 +6002,21 @@ input[type="radio"] .shop_checkbox{
     padding-right: 0px;
 }
 
-
+.cart_bag {
+  max-width: 38px;
+  max-height: 38px;
+  margin-top: 0px;
+}
+.cart_love {
+  width: 36px;
+  height: 31px;
+  margin-top: 0px;
+  margin-left: 14px;
+}
+.__plush_icon{
+    margin-top: 8px;
+}
+.__minus_icon{
+    margin-top: 8px;
+}
 </style><?php /**PATH D:\xampp\htdocs\Project\glam_touch\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

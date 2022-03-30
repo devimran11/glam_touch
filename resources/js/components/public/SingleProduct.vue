@@ -10,7 +10,7 @@
       <div class="container">
         <div class="single-product-box">
           <div class="row">
-            <div class="col-lg-7 col-md-7 col-xs-12">
+            <div class="col-lg-7 col-md-7 col-sm-12 col-xs-12">
               <div class="single_img_view">
                 <div class="zoom_btn">
                   <i class="fa fa-search-plus fa-2x" aria-hidden="true"></i>
@@ -42,7 +42,7 @@
               </div>
             </div>
 
-            <div class="col-lg-5 col-md-5 col-xs-12">
+            <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
               <ul class="list-unstyled description">
                 <li>
                   <h3 class="single_p_name">{{ product.name }}</h3>
@@ -55,20 +55,7 @@
                     </div>
                     <p>&#2547;{{ product.price }}</p>
                   </div>
-
-                  <!-- <div v-if="product.discount" class="s_price_container_3">
-                           <h4> You Save : </h4>
-                              <p>
-                                {{ ((product.discount/product.sale_price)*100).toFixed(0) }}% <span>off</span>
-                              </p>
-                        </div> -->
                 </li>
-
-                <!-- <li>
-                      <h4 class="single_p_code">
-                         Code: <span class="p_code"> {{ product.product_code }} </span>
-                      </h4>
-                    </li> -->
               </ul>
 
               <div id="product">
@@ -144,27 +131,27 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-lg-12 col-md-12 col-xs-12">
+                  <div class="col-lg-12 col-md-12 col-sm-7 col-xs-12">
                     <div class="qty_container">
                       <!-- <h4 >
                             Quantity:
                           </h4> -->
-                          <div @click="decrementQty" class="__minus">
-                            <i class="fa fa-minus"></i>
-                          </div>
+                      <div @click="decrementQty" class="__minus">
+                        <i class="fa fa-minus __minus_icon"></i>
+                      </div>
 
-                          <input
-                            type="text"
-                            name="quantity"
-                            v-model="cart.quantity"
-                            value="1"
-                            class="form-control input_qty"
-                            @change="validation"
-                            @keyup="validation"
-                          />
-                          <div @click="incrementQty" class="__plus">
-                            <i class="fa fa-plus"></i>
-                          </div>
+                      <input
+                        type="text"
+                        name="quantity"
+                        v-model="cart.quantity"
+                        value="1"
+                        class="form-control input_qty"
+                        @change="validation"
+                        @keyup="validation"
+                      />
+                      <div @click="incrementQty" class="__plus">
+                        <i class="fa fa-plus __plush_icon"></i>
+                      </div>
 
                       <div class="col-lg-5 col-md-5 col-sm-5">
                         <button
@@ -207,34 +194,14 @@
 
                   <div class="col-lg-12 col-md-12 col-xs-12">
                     <div class="share_to">
-                        <h4>Share to:</h4>
-                        <div class="share_to_icon">
-                          <img
-                            :src="
-                              base_url +
-                                'images/icons/fb.png'
-                            "
-                          />
-                          <img
-                            :src="
-                              base_url +
-                                'images/icons/insta.png'
-                            "
-                          />
-                          <img
-                            :src="
-                              base_url +
-                                'images/icons/whatsApp.png'
-                            "
-                          />
-                          <img
-                            :src="
-                              base_url +
-                                'images/icons/messanger.png'
-                            "
-                          />
-                        </div>
+                      <h4>Share to:</h4>
+                      <div class="share_to_icon">
+                        <img :src="base_url + 'images/icons/fb.png'" />
+                        <img :src="base_url + 'images/icons/insta.png'" />
+                        <img :src="base_url + 'images/icons/whatsApp.png'" />
+                        <img :src="base_url + 'images/icons/messanger.png'" />
                       </div>
+                    </div>
                   </div>
                 </div>
 
@@ -640,7 +607,7 @@ export default {
 };
 </script>
 <style scoped>
-  .ps-product__variations{
-    margin-left: 0px;
-  }
+.ps-product__variations {
+  margin-left: 0px;
+}
 </style>
