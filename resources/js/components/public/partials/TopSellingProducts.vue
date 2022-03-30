@@ -22,7 +22,7 @@
                     name: 'single',
                     params: { slug: item.slug },
                   }"
-                  >{{ item.name.substring(0, 20) + ".." }}</router-link
+                  >{{ item.name.substring(0, 10) + ".." }}</router-link
                 >
               </p>
 

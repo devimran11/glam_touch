@@ -2635,7 +2635,7 @@ span.price-old {
     font-weight: bold;
     height: 27px !important;
     width: 30px !important;
-    margin-top: 0px;
+    margin-top: 5px;
     margin-right: 10px;
     text-align: center;
     border: none;
@@ -3073,6 +3073,15 @@ span.price-old {
     .filter_list_container{
         margin-right: 0px !important;
     }
+    .cash_radio{
+        margin-top: 15px !important;
+    }
+    .payment-method img {
+        width: 230px !important;
+        height: 60px;
+    }
+
+   
     .filter_button_container>button {
                 /* height: 60px; */
                 margin: 0% 0%;
@@ -3550,8 +3559,8 @@ span.price-old {
         }
 
         .content_card_body .thumbnail_img {
-            width: 96%;
-            height: auto;
+            width: 100%;
+            height: 400px;
             margin: 5px;
             /* max-height: 300px; */
             min-height: 20px;
@@ -3593,10 +3602,10 @@ span.price-old {
         }
 
         .content_card_on_slider{
-            width: 280px;
+            width: 290px;
             height: auto;
             padding-bottom: 10px;
-            max-height: 360px;
+            max-height: 486px;
             min-height: 360px;
         }
 
@@ -4748,6 +4757,34 @@ span.price-old {
 
 
 @media  screen and (max-width: 450px) {
+                .login_img {
+                height: 25px !important;
+                width: 25px !important;
+            }
+            .facebook {
+                background: #0F549A;
+                color: white;
+                padding: 0px 6px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-weight: 14px;
+            }
+            .facebook {
+                padding: 0px 5px !important;
+                font-size: 10px;
+            }    
+            .facebook-login {
+                margin-left: 5px !important;
+            }
+            .cart-items{
+                margin-top: 0px;
+            }
+            .google {
+                padding: 0px 5px !important;
+            }
+            .google-login {
+                margin-top: 3px !important;
+            }
             .cart_love{
                 width: 32px;
                 height: 27px;
@@ -5020,7 +5057,9 @@ span.price-old {
 
 
 @media  screen and (max-width: 400px) {
-
+        .carts {
+            font-size: 10px !important;
+        }
         .header_search_form {
             margin-left: -65%;
             margin-top: 15%;
@@ -5699,7 +5738,7 @@ input[data-v-c157765e] {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 15px;
+    font-size: 14px;
 }
 .payment-line{
     border: 1px solid #B7B7B7;
@@ -5971,11 +6010,11 @@ input[type="radio"] .shop_checkbox{
 }
 .__minus{
     background: #F0F0F0;
-    padding: 6px 9px;
+    padding: 4px 11px;
 }
 .__plus{
     background: #F0F0F0;
-    padding: 6px 9px;
+    padding: 4px 11px;
 }
 .share_to_icon{
     padding: 6px;
@@ -6012,5 +6051,11 @@ input[type="radio"] .shop_checkbox{
   height: 31px;
   margin-top: 0px;
   margin-left: 14px;
+}
+.__plush_icon{
+    margin-top: 8px;
+}
+.__minus_icon{
+    margin-top: 8px;
 }
 </style><?php /**PATH D:\project\glam_touch_web_app\resources\views/frontend/partials/css.blade.php ENDPATH**/ ?>

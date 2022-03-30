@@ -331,51 +331,6 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 
 
 
@@ -774,7 +729,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.ps-product__variations[data-v-6e453e8c] {\r\n  margin-left: 0px;\n}\r\n", ""]);
+exports.push([module.i, "\n.ps-product__variations[data-v-6e453e8c] {\r\n  margin-left: 0px;\n}\n.content_card_on_slider[data-v-6e453e8c] {\r\n  margin-bottom: 20px;\n}\r\n", ""]);
 
 // exports
 
@@ -1629,7 +1584,7 @@ var render = function() {
                                   },
                                   [
                                     _vm._v(
-                                      _vm._s(item.name.substring(0, 20) + "..")
+                                      _vm._s(item.name.substring(0, 10) + "..")
                                     )
                                   ]
                                 )

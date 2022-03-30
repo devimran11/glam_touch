@@ -3081,6 +3081,15 @@ span.price-old {
     .filter_list_container{
         margin-right: 0px !important;
     }
+    .cash_radio{
+        margin-top: 15px !important;
+    }
+    .payment-method img {
+        width: 230px !important;
+        height: 60px;
+    }
+
+   
     .filter_button_container>button {
                 /* height: 60px; */
                 margin: 0% 0%;
@@ -4756,6 +4765,34 @@ span.price-old {
 
 
 @media screen and (max-width: 450px) {
+                .login_img {
+                height: 25px !important;
+                width: 25px !important;
+            }
+            .facebook {
+                background: #0F549A;
+                color: white;
+                padding: 0px 6px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                font-weight: 14px;
+            }
+            .facebook {
+                padding: 0px 5px !important;
+                font-size: 10px;
+            }    
+            .facebook-login {
+                margin-left: 5px !important;
+            }
+            .cart-items{
+                margin-top: 0px;
+            }
+            .google {
+                padding: 0px 5px !important;
+            }
+            .google-login {
+                margin-top: 3px !important;
+            }
             .cart_love{
                 width: 32px;
                 height: 27px;
@@ -5028,7 +5065,9 @@ span.price-old {
 
 
 @media screen and (max-width: 400px) {
-
+        .carts {
+            font-size: 10px !important;
+        }
         .header_search_form {
             margin-left: -65%;
             margin-top: 15%;
@@ -5707,7 +5746,7 @@ input[data-v-c157765e] {
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: black;
-    font-size: 15px;
+    font-size: 14px;
 }
 .payment-line{
     border: 1px solid #B7B7B7;

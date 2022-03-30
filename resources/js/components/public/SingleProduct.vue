@@ -204,51 +204,6 @@
                     </div>
                   </div>
                 </div>
-
-                <!-- <div v-if="product.stock > 0" class="row">
-
-                      <div class="col-lg-5 col-md-5 col-xs-6">
-                        <button
-                          @click.prevent="buyNow"
-                          type="button"
-                          style="background: rgb(73 26 78); color: #fff;"
-                          class="btn  btn-sm btn-block btn_buy_cart"
-                          >Buy Now</button>
-                      </div>
-
-                       <div class="col-lg-5 col-md-5 col-xs-6">
-
-                         <button
-                          @click.prevent="CartToAdd"
-                          type="button"
-                          class="btn btn-primary btn-sm btn-block btn_buy_cart"
-                          >
-                         <span>Add To Cart</span>
-                        </button>
-
-                      </div>
-                     <div class="col-lg-10 col-md-10 col-xs-12">
-                       <a @click="addToWishList(product.id)" class="btn single_p_wishlist_btn"><i class="fa fa-heart wishlist_icon"></i> Add To Wishlist</a>
-                    </div>
-                    </div> -->
-
-                <!-- <div  class="row">
-
-                      <div class="col-lg-5 col-md-5">
-                        <button
-                          type="button"
-                          class="btn btn-primary btn-sm btn-block btn_buy_cart"
-                          >
-                         <span>Stock Unavailable</span>
-                        </button>
-                      </div>
-
-                       <div class="col-lg-5 col-md-5">
-
-                        <a @click="addToWishList(product.id)" class="btn single_p_wishlist_btn"><i class="fa fa-heart wishlist_icon"></i> Wishlist</a>
-
-                      </div>
-                    </div> -->
               </div>
             </div>
           </div>
@@ -609,5 +564,8 @@ export default {
 <style scoped>
 .ps-product__variations {
   margin-left: 0px;
+}
+.content_card_on_slider {
+  margin-bottom: 20px;
 }
 </style>

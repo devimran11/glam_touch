@@ -8450,7 +8450,7 @@ exports = module.exports = __webpack_require__(/*! ../../css-loader/lib/css-base
 
 
 // module
-exports.push([module.i, ".vld-shown {\r\n  overflow: hidden;\r\n}\r\n\r\n.vld-overlay {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  align-items: center;\r\n  display: none;\r\n  justify-content: center;\r\n  overflow: hidden;\r\n  z-index: 9999;\r\n}\r\n\r\n.vld-overlay.is-active {\r\n  display: flex;\r\n}\r\n\r\n.vld-overlay.is-full-page {\r\n  z-index: 9999;\r\n  position: fixed;\r\n}\r\n\r\n.vld-overlay .vld-background {\r\n  bottom: 0;\r\n  left: 0;\r\n  position: absolute;\r\n  right: 0;\r\n  top: 0;\r\n  background: #fff;\r\n  opacity: 0.5;\r\n}\r\n\r\n.vld-overlay .vld-icon, .vld-parent {\r\n  position: relative;\r\n}\r\n\r\n", ""]);
+exports.push([module.i, ".vld-shown {\n  overflow: hidden;\n}\n\n.vld-overlay {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  align-items: center;\n  display: none;\n  justify-content: center;\n  overflow: hidden;\n  z-index: 9999;\n}\n\n.vld-overlay.is-active {\n  display: flex;\n}\n\n.vld-overlay.is-full-page {\n  z-index: 9999;\n  position: fixed;\n}\n\n.vld-overlay .vld-background {\n  bottom: 0;\n  left: 0;\n  position: absolute;\n  right: 0;\n  top: 0;\n  background: #fff;\n  opacity: 0.5;\n}\n\n.vld-overlay .vld-icon, .vld-parent {\n  position: relative;\n}\n\n", ""]);
 
 // exports
 
@@ -92687,8 +92687,8 @@ global.store = store;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! D:\xampp\htdocs\Project\glam_touch\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! D:\project\glam_touch_web_app\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! D:\project\glam_touch_web_app\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

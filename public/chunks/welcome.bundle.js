@@ -2221,7 +2221,7 @@ var render = function() {
                                   },
                                   [
                                     _vm._v(
-                                      _vm._s(item.name.substring(0, 20) + "..")
+                                      _vm._s(item.name.substring(0, 10) + "..")
                                     )
                                   ]
                                 )
